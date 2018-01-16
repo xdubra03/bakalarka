@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{proteiny}
+Alberts, B.: \emph{{\it Základy buněčné biologie: úvod do molekulární
+  biologie buňky}}. 1998, ISBN 80-902-9062-0.
+
+\bibitem{flegr}
+Flegr, J.: \emph{{\it Ǔvod do evoluční biologie}}. Academia, 2007, ISBN
+  978-80-200-1539-6.
+
+\bibitem{gromiha}
+Gromiha, M.~M.: \emph{{\it Protein Bioinformatics: From sequence to function}}.
+  Elsevier, 2010, ISBN 978-81-312-2297-3.
+
+\bibitem{Pravidla}
+Hlavsa, Z.; aj.: \emph{{\it Pravidla českého pravopisu}}. Academia, 2005,
+  ISBN 80-200-1327-X.
+
+\bibitem{free_energy}
+Ponnunswamy, P.; Gromiha, M.: On the conformational stability of folded
+  proteins. \emph{Journal of theoretical biology}, ročník 166, č.~1, 1994:
+  s. 63--74.
+
+\bibitem{Rybicka}
+Rybička, J.: \emph{{\it {\LaTeX} pro začátečníky}}. Konvoj, 1999, ISBN
+  ISBN~80-85615-77-0.
+
+\bibitem{fitWeb}
+Rábová, Z.; Hanáček, P.; Peringer, P.; aj.: {\it Užitečné rady pro
+  psaní odborného textu}. FIT VUT v Brně, Listopad 2008, [Online;
+  navštíveno 12.05.2015].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/info/statnice/psani_textu.html}
+
+\bibitem{aminokyseliny}
+Whitford, D.: \emph{{\it Proteins: Structure and function}}. Wiley, 2005.
+
+\bibitem{mutace}
+Řehout, J. B. B.~a., V.;~Čítek: {\it Základy genetiky a poradenství}.
+  Únor 2003, [Online; cit. 17.12.2017].
+\newline\urlprefix\url{http://www.zsf.jcu.cz/cs/katedra/katedra-klinickych-a-preklinickych-oboru/import/ucebni_texty/zaklady-genetiky-a-poradenstvi}
+
+\end{thebibliography}

@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: projekt.aux
+The style file: bib-styles/czechiso.bst
+Database file #1: projekt-20-literatura-bibliography.bib
+Warning--I didn't find a database entry for "bibid"
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Too many commas in name 1 of "Řehout, V.; Čítek, J.; Bláhová, B.; aj." for entry mutace
+while executing---line 1549 of file bib-styles/czechiso.bst
+Warning--empty publisher in proteiny
+Too many commas in name 1 of "Řehout, V.; Čítek, J.; Bláhová, B.; aj." for entry mutace
+while executing---line 1594 of file bib-styles/czechiso.bst
+You've used 9 entries,
+            3151 wiz_defined-function locations,
+            705 strings with 6555 characters,
+and the built_in function-call counts, 3500 in all, are:
+= -- 213
+> -- 98
+< -- 3
++ -- 47
+- -- 28
+* -- 177
+:= -- 408
+add.period$ -- 18
+call.type$ -- 9
+change.case$ -- 32
+chr.to.int$ -- 0
+cite$ -- 10
+duplicate$ -- 366
+empty$ -- 384
+format.name$ -- 31
+if$ -- 756
+int.to.chr$ -- 0
+int.to.str$ -- 9
+missing$ -- 95
+newline$ -- 39
+num.names$ -- 18
+pop$ -- 202
+preamble$ -- 1
+purify$ -- 30
+quote$ -- 0
+skip$ -- 128
+stack$ -- 0
+substring$ -- 73
+swap$ -- 177
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 1
+while$ -- 21
+width$ -- 10
+write$ -- 89
+(There were 2 error messages)
