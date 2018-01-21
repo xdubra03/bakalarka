@@ -292,14 +292,16 @@ Ak sú trénovacie dáta lineárne rozdeliteľné, potom pár $(\textbf{w},b)$ e
 s rozhodovacím pravidlom daným vzťahom $f_{\textbf{w},b} ( x ) = sgn(\textbf{w}^{T}x + b )$, kde $\textbf{w}$ je váhový vektor a $b$ je odchýlka (tzv. bias).
 
 V prípade, že dáta sú lineárne separovateľné do dvoch tried, optimálnu nadrovinu je možné nájsť minimalizovaním štvorcovej normy rozdeľujúcej nadroviny. Jedná sa o konvexný kvadratický programovací problém.
-Pri možnosti lineárneho rozdelenia sa SVM snaží nájsť 1-dimenzionálnu nadrovinu (priamku), ktorou rozdelí skupiny vstupných vektorov. Po rozdelení dát priamkou metóda zistí vzdialenosť priamky od najbližších podporných vektorov. Táto vzdialenosť sa označuje ako tzv. krajná hranica (margin) a hľadáme najväčšiu vzdialenosť medzi podpornými vektormi. Priamka, pri ktorej je táto vzdialenosť najväčšia, je výslednou nadrovinou. 
+Pri možnosti lineárneho rozdelenia sa SVM snaží nájsť 1-dimenzionálnu nadrovinu (priamku), ktorou rozdelí skupiny vstupných vektorov. Po rozdelení dát priamkou metóda zistí vzdialenosť priamky od najbližších podporných vektorov. Táto vzdialenosť sa označuje ako tzv. krajná hranica (margin), pričom sa hľadá najväčšia vzdialenosť medzi podpornými vektormi.  
 
 Lineárne rozdeliteľné dáta sú však len ideálnym príkladom. Ak by analýza pozostávala len z premenných z dvoch kategórií, dvoch predikovaných premenných a množiny bodov rozdeliteľných priamkou, bolo by to veľmi jednoduché. V skutočnosti sa tieto metódy musia vysporiadať s viac ako dvomi predikovanými premennými, rozdelením dát nelineárnymi krivkami alebo množinami dát, ktoré nemôžeme úplne rozdeliť. 
 
 \subsection{Jadrové funkcie}
 
-Pri väčšine reálnych problémov neexistuje lineárna nadrovina rozdeľujúca pozitívne a negatívne vzorky v trénovacích dátach. Jedným z riešení je namapovanie dát do priestoru, ktorý má viac dimenzí a definovať rozdeľujúcu nadrovinu v tomto priestore. Takýto viacdimenzionálny priestor sa nazýva priestor transformovaných vlastností. S vhodne vybraným priestorom transformovaných vlastností dostatočnej dimenzie, akýkoľvek trénovací dataset je možné rozdeliť.
-Mapovanie dát do iného (potencionálne nekonečného) Hilbertovho priestoru H je definované ako $\Phi:R^{d} \rightarrow H$. Trénovací algoritmus bude potom závisieť len na dátach skrz bodové produkty v H, napríklad na funkciách v tvare $\Phi(x_{i})\cdot\Phi(x_{j})$. Ak by existovala tzv. jadrová funkcia K taká, že $K(x_{i},x_{j}) = \Phi(x_{i})\cdot\Phi(x_{j})$, v algoritme by sme potrebovali iba K. Jadrové funkcie sú špeciálnou triedou funkcií umožňujúce výpočet vnútorných produktov priamo v priestore vlastností bez nutnosti mapovania dát tak ako to bolo popísané vyššie. 
+Pri väčšine reálnych problémov neexistuje lineárna nadrovina rozdeľujúca pozitívne a negatívne vzorky v trénovacích dátach. Jedným z riešení je namapovanie dát do priestoru, ktorý má viac dimenzí a definovať rozdeľujúcu nadrovinu v tomto priestore. Takýto viacdimenzionálny priestor sa nazýva priestor transformovaných vlastností. S vhodne vybraným priestorom transformovaných vlastností dostatočnej dimenzie, akúkoľvek trénovaciu dátovú sadu je možné rozdeliť.
+Mapovanie dát do iného (potencionálne nekonečného) Hilbertovho priestoru H je definované ako $\Phi:R^{d} \rightarrow H$. Trénovací algoritmus bude potom závisieť len na dátach skrz bodové produkty v H, napríklad na funkciách v tvare $\Phi(x_{i})\cdot\Phi(x_{j})$. Ak by existovala tzv. jadrová funkcia K taká, že $K(x_{i},x_{j}) = \Phi(x_{i})\cdot\Phi(x_{j})$, v algoritme by sme potrebovali iba K. 
+
+Jadrové funkcie sú špeciálnou triedou funkcií umožňujúce výpočet vnútorných produktov priamo v priestore vlastností bez nutnosti mapovania dát tak ako to bolo popísané vyššie. 
 Akonáhle je vytvorená nadrovina, jadrová funkcia je použitá na mapovanie nových bodov do priestoru vlastností pre klasifikáciu.
 \newpage
 Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia definuje transformovaný priestor vlastností v ktorom budú klasifikované trénovacie dáta. Medzi najpoužívanejšie jadrové funkcie patria
@@ -312,7 +314,13 @@ Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia d
 
 \subsection{Algoritmus SMO}
 
-\subsection{Algoritmus Naive Bayes}
+Sekvenčná minimalizačná optimalizácia (SMO) je algoritmus na trénovanie SVM, ktorý jednoducho rieši kvadratický SVM problém. SMO uskutočňuje dekompozíciu celkového problému na podproblémy riešené analyticky. Metóda si v každom kroku vyberá na vyriešenie najmenší optimalizačný problém. Pre typický kvadratický SVM problém, najmenší možný optimalizačný problém zahŕňa dva Lagraengove násobitele. V každom kroku si metóda vyberia dva tieto násobitele na spoločnú optimalizáciu, nájde pre ne optimálne hodnoty a aktualizuje SVM. Výhodou tohto algoritmu je, že množstvo potrebnej pamäte pri trénovacej sade je lineárne, čo umožňuje algoritmu pracovať s veľkými trénovacími sadami. 
+ 
+\section{Algoritmus Naive Bayes}
+
+Naive Bayes je klasifikačným algoritmom pre klasifikačné problémy, kde sa vyskytujú dve alebo viac tried. Je založený na Bayesovom teoréme s nezávislými predpokladmi medzi prediktormi. Klasifikátor predpokladá, že efekt hodnoty $x$ prediktoru na danú triedu $c$ je nezávislý na hodnotách ďaľších prediktorov. Predpoklad sa nazýva triedna podmienená nezávislosť. 
+
+Tento model je jednoduchý na vytvorenie, no napriek svojej jednoduchosti klasifikátor často poskytuje dobré výsledky a je široko používaný, pretože v mnohých prípadoch prekonáva komplikovanejšie klasifikačné metódy.
 
 \section{Ensemble metódy}
 
