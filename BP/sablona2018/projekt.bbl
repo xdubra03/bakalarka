@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -12,6 +12,14 @@
 Alberts, B.: \emph{{\it Základy buněčné biologie: úvod do molekulární
   biologie buňky}}. 1998, ISBN 80-902-9062-0.
 
+\bibitem{alpaydin}
+Alpaydin, E.: \emph{{\it Introduction to Machine Learning}}. MIT Press, 2010,
+  ISBN 978-0-262-01243-0.
+
+\bibitem{breiman}
+Breiman, L.: Random Forests. \emph{Machine Learning}, ročník ročník 45,
+  2001.
+
 \bibitem{flegr}
 Flegr, J.: \emph{{\it Ǔvod do evoluční biologie}}. Academia, 2007, ISBN
   978-80-200-1539-6.
@@ -23,6 +31,10 @@ Gromiha, M.~M.: \emph{{\it Protein Bioinformatics: From sequence to function}}.
 \bibitem{Pravidla}
 Hlavsa, Z.; aj.: \emph{{\it Pravidla českého pravopisu}}. Academia, 2005,
   ISBN 80-200-1327-X.
+
+\bibitem{machine_learning}
+Mařík, O. L.~J., V.;~Štěpánková: \emph{{\it Umělá inteligence. 1}}.
+  Academia, 1993, ISBN 80-200-0496-3.
 
 \bibitem{free_energy}
 Ponnunswamy, P.; Gromiha, M.: On the conformational stability of folded
@@ -38,6 +50,11 @@ Rábová, Z.; Hanáček, P.; Peringer, P.; aj.: {\it Užitečné rady pro
   psaní odborného textu}. FIT VUT v Brně, Listopad 2008, [Online;
   navštíveno 12.05.2015].
 \newline\urlprefix\url{http://www.fit.vutbr.cz/info/statnice/psani_textu.html}
+
+\bibitem{gibbs}
+Voet, J. G. P. C.~W., D.;~Voet: \emph{{\it Fundamentals of Biochemistry: Life
+  at the Molecular Level, 3rd Edition.}} John Wiley and Sons, Inc., 2008, ISBN
+  0470129301.
 
 \bibitem{aminokyseliny}
 Whitford, D.: \emph{{\it Proteins: Structure and function}}. Wiley, 2005.
