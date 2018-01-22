@@ -16,6 +16,9 @@ Alberts, B.: \emph{{\it Základy buněčné biologie: úvod do molekulární
 Alpaydin, E.: \emph{{\it Introduction to Machine Learning}}. MIT Press, 2010,
   ISBN 978-0-262-01243-0.
 
+\bibitem{breiman2}
+Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
+
 \bibitem{breiman}
 Breiman, L.: Random Forests. \emph{Machine Learning}, ročník ročník 45,
   2001.
@@ -36,6 +39,10 @@ Hlavsa, Z.; aj.: \emph{{\it Pravidla českého pravopisu}}. Academia, 2005,
 Mařík, O. L.~J., V.;~Štěpánková: \emph{{\it Umělá inteligence. 1}}.
   Academia, 1993, ISBN 80-200-0496-3.
 
+\bibitem{polikar}
+Polikar, R.: Ensemble based systems in decision making. \emph{IEEE Circuits
+  Syst Mag.}, 2006.
+
 \bibitem{free_energy}
 Ponnunswamy, P.; Gromiha, M.: On the conformational stability of folded
   proteins. \emph{Journal of theoretical biology}, ročník 166, č.~1, 1994:
@@ -50,6 +57,10 @@ Rábová, Z.; Hanáček, P.; Peringer, P.; aj.: {\it Užitečné rady pro
   psaní odborného textu}. FIT VUT v Brně, Listopad 2008, [Online;
   navštíveno 12.05.2015].
 \newline\urlprefix\url{http://www.fit.vutbr.cz/info/statnice/psani_textu.html}
+
+\bibitem{boosting}
+Schapire, R.~E.: The Strength of Weak Learnability. \emph{Machine Learning},
+  1990.
 
 \bibitem{gibbs}
 Voet, J. G. P. C.~W., D.;~Voet: \emph{{\it Fundamentals of Biochemistry: Life

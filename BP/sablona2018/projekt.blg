@@ -3,6 +3,16 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: projekt.aux
 The style file: bib-styles/czechiso.bst
 Database file #1: projekt-20-literatura-bibliography.bib
+I was expecting a `,' or a `}'---line 97 of file projekt-20-literatura-bibliography.bib
+ : 
+ : @article{boosting,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 107 of file projekt-20-literatura-bibliography.bib
+ : 
+ : @article{polikar,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "bibid"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Too many commas in name 1 of "Voet, D.; Voet, J. G.; Pratt, C. W." for entry gibbs
@@ -18,45 +28,45 @@ Too many commas in name 1 of "Voet, D.; Voet, J. G.; Pratt, C. W." for entry gib
 while executing---line 1594 of file bib-styles/czechiso.bst
 Too many commas in name 1 of "Řehout, V.; Čítek, J.; Bláhová, B.; aj." for entry mutace
 while executing---line 1594 of file bib-styles/czechiso.bst
-You've used 13 entries,
+You've used 16 entries,
             3151 wiz_defined-function locations,
-            726 strings with 6962 characters,
-and the built_in function-call counts, 4875 in all, are:
-= -- 287
-> -- 126
+            738 strings with 7138 characters,
+and the built_in function-call counts, 5822 in all, are:
+= -- 344
+> -- 147
 < -- 4
-+ -- 59
-- -- 36
-* -- 241
-:= -- 571
-add.period$ -- 26
-call.type$ -- 13
-change.case$ -- 44
++ -- 69
+- -- 42
+* -- 280
+:= -- 691
+add.period$ -- 32
+call.type$ -- 16
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 527
-empty$ -- 552
-format.name$ -- 39
-if$ -- 1054
+cite$ -- 17
+duplicate$ -- 641
+empty$ -- 657
+format.name$ -- 45
+if$ -- 1252
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 138
-newline$ -- 51
-num.names$ -- 26
-pop$ -- 288
+int.to.str$ -- 16
+missing$ -- 165
+newline$ -- 60
+num.names$ -- 32
+pop$ -- 342
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 51
 quote$ -- 0
-skip$ -- 175
+skip$ -- 211
 stack$ -- 0
-substring$ -- 93
-swap$ -- 247
+substring$ -- 109
+swap$ -- 292
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 34
+type$ -- 46
 warning$ -- 1
-while$ -- 29
-width$ -- 15
-write$ -- 125
-(There were 6 error messages)
+while$ -- 35
+width$ -- 18
+write$ -- 149
+(There were 8 error messages)

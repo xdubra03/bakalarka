@@ -1,36 +1,39 @@
 \select@language {czech}
-\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Mus\IeC {\'\i }me m\IeC {\'\i }t co \IeC {\v r}\IeC {\'\i }ci}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Mus\IeC {\'\i }me v\IeC {\v e}d\IeC {\v e}t, komu to chceme \IeC {\v r}\IeC {\'\i }ci}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Mus\IeC {\'\i }me si dokonale promyslet obsah}{2}{section.1.3}
-\contentsline {section}{\numberline {1.4}Mus\IeC {\'\i }me ps\IeC {\'a}t strukturovan\IeC {\v e}}{3}{section.1.4}
-\contentsline {chapter}{\numberline {2}Prote\IeC {\'\i }ny}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Z\IeC {\'a}kladn\IeC {\'e} rozdelenie prote\IeC {\'\i }nov}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}Aminokyseliny}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Synt\IeC {\'e}za prote\IeC {\'\i }nov}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}\IeC {\v S}trukt\IeC {\'u}ra prote\IeC {\'\i }nov}{6}{section.2.4}
-\contentsline {chapter}{\numberline {3}Vplyv aminokyselinov\IeC {\'y}ch substit\IeC {\'u}ci\IeC {\'\i } na stabilitu prote\IeC {\'\i }nu}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Stabilita prote\IeC {\'\i }nu}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Mut\IeC {\'a}cie}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Vznik mut\IeC {\'a}ci\IeC {\'\i }}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Typy mut\IeC {\'a}ci\IeC {\'\i }}{9}{subsection.3.2.2}
-\contentsline {chapter}{\numberline {4}Strojov\IeC {\'e} u\IeC {\v c}enie}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}\IeC {\'U}vod do strojov\IeC {\'e}ho u\IeC {\v c}enia}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Rozhodovacie stromy}{12}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Algoritmus J48}{12}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Algoritmus N\IeC {\'a}hodn\IeC {\'y} strom (Random Tree)}{12}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Algoritmus N\IeC {\'a}hodn\IeC {\'y} les (Random Forest)}{12}{subsection.4.2.3}
-\contentsline {section}{\numberline {4.3}Support vector machines (SVM)}{14}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Jadrov\IeC {\'e} funkcie}{14}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Algoritmus SMO}{15}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Algoritmus Naive Bayes}{15}{section.4.4}
-\contentsline {section}{\numberline {4.5}Ensemble met\IeC {\'o}dy}{15}{section.4.5}
-\contentsline {section}{\numberline {4.6}N\IeC {\'a}stroje pre predikciu stability vyu\IeC {\v z}\IeC {\'\i }vaj\IeC {\'u}ce strojov\IeC {\'e} u\IeC {\v c}enie}{15}{section.4.6}
-\contentsline {chapter}{\numberline {5}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{17}{section.5.1}
-\contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{19}{chapter.6}
-\contentsline {chapter}{Literatura}{20}{chapter*.2}
+\contentsline {chapter}{\numberline {1}\IeC {\'U}vod}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Mus\IeC {\'\i }me m\IeC {\'\i }t co \IeC {\v r}\IeC {\'\i }ci}{3}{section.1.1}
+\contentsline {section}{\numberline {1.2}Mus\IeC {\'\i }me v\IeC {\v e}d\IeC {\v e}t, komu to chceme \IeC {\v r}\IeC {\'\i }ci}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Mus\IeC {\'\i }me si dokonale promyslet obsah}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Mus\IeC {\'\i }me ps\IeC {\'a}t strukturovan\IeC {\v e}}{4}{section.1.4}
+\contentsline {chapter}{\numberline {2}Prote\IeC {\'\i }ny}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Z\IeC {\'a}kladn\IeC {\'e} rozdelenie prote\IeC {\'\i }nov}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Aminokyseliny}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Synt\IeC {\'e}za prote\IeC {\'\i }nov}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}\IeC {\v S}trukt\IeC {\'u}ra prote\IeC {\'\i }nov}{7}{section.2.4}
+\contentsline {chapter}{\numberline {3}Vplyv aminokyselinov\IeC {\'y}ch substit\IeC {\'u}ci\IeC {\'\i } na stabilitu prote\IeC {\'\i }nu}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Stabilita prote\IeC {\'\i }nu}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Mut\IeC {\'a}cie}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Vznik mut\IeC {\'a}ci\IeC {\'\i }}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Typy mut\IeC {\'a}ci\IeC {\'\i }}{10}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {4}Strojov\IeC {\'e} u\IeC {\v c}enie}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}\IeC {\'U}vod do strojov\IeC {\'e}ho u\IeC {\v c}enia}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Rozhodovacie stromy}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Algoritmus J48}{13}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Algoritmus N\IeC {\'a}hodn\IeC {\'y} strom (Random Tree)}{13}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Algoritmus N\IeC {\'a}hodn\IeC {\'y} les (Random Forest)}{13}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Support vector machines (SVM)}{15}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Jadrov\IeC {\'e} funkcie}{15}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Algoritmus SMO}{16}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Algoritmus Naive Bayes}{16}{section.4.4}
+\contentsline {section}{\numberline {4.5}Ensemble met\IeC {\'o}dy}{16}{section.4.5}
+\contentsline {section}{\numberline {4.6}Tvorba ensemble syst\IeC {\'e}mov}{17}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Bagging}{17}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Boosting}{17}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}N\IeC {\'a}stroje pre predikciu stability vyu\IeC {\v z}\IeC {\'\i }vaj\IeC {\'u}ce strojov\IeC {\'e} u\IeC {\v c}enie}{18}{section.4.7}
+\contentsline {chapter}{\numberline {5}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{20}{section.5.1}
+\contentsline {chapter}{\numberline {6}Z\IeC {\'a}v\IeC {\v e}r}{22}{chapter.6}
+\contentsline {chapter}{Literatura}{23}{chapter*.2}
 \ttl@starttoc {chapters@1}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{21}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{22}{section*.4}
+\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{24}{appendix.A}
+\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{25}{section*.4}
 \contentsfinish 

@@ -324,6 +324,37 @@ Tento model je jednoduchý na vytvorenie, no napriek svojej jednoduchosti klasif
 
 \section{Ensemble metódy}
 
+V posledných rokoch sa metódy strojového učenia využívajú vo veľkej miere v oblasti bioinformatiky. Napriek ich výhodám narážame na rôzne problémy spojené najmä s nedostatkom dát, veľkou rôznorodosťou dát alebo tzv. preučením metód. Jedným z riešení, ktoré vykazujú dobré výsledky, je využitie výstupov z viacerých klasifikátorov namiesto použitia jedného samostatného klasifikátora. Takáto kombinácia môže niekedy poskytnúť protichodné výsledky a tým pomôže zvýšiť presnosť a robustnosť predikcie. Prístup využitia viacerých klasifikátorov označujeme ako tzv. ensemble.
+
+Podľa \cite{polikar} existuje mnoho teoretických a praktických dôvodov na použitie ensemble systémov:
+\begin{itemize}
+	\item \textbf{Štatistické dôvody:} Dobrý výkon metódy na trénovacích dátach nemusí predpovedať dobrú výkonnosť zovšeobecňovania. Množina klasifikátorov s podobným výkonom na trénovacích dátach môže mať rôznu zovšeobecňovaciu výkonnosť. Toto je možné vidieť najmä ak testovacie dáta určené na rozlíšenie schopnosti zovšeobecňovať nie sú dostatočne reprezentatívne. V takýchto prípadoch môže spriemerovanie výstupov niekoľkých klasifikátorov znížiť riziko zlého výberu alebo slabého klasifikátoru. 
+	\item \textbf{Veľký objem dát:} V určitých oblastiach môže nastať problém príliš veľkého objemu dát, ktorý má byť spracovaný. To niekedy nie je možné efektívne uskutočniť len pomocou jedného klasifikátora. V takýchto situáciách je vhodné zvážiť rozdelenie dát na menšie celky, trénovať klasifikátory na menších celkoch a skombinovať ich výstupy pomocou vhodného kombinačného pravidla.
+	\item \textbf{Malý objem dát:} Dostupnosť dostatočného a reprezentatívneho mmnožstva trénovacích dát je dôležitá pre klasifikačný algoritmus, aby bol schopný úspešne sa naučiť rozdelenie dát. Pri nedostatku trénovacích dát sa osvedčili techniky prevzorkovania, ktoré sú vhodné na vytvorenie náhodných prekrývajúcich sa podmnožín dostupných dát a každá je možné použiť na učenie iného klasifikátora.
+	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná alebo leží mimo oblasti funkcií implementovateľných vybranýms klasifikačným modelom. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z častí.
+\end{itemize}
+
+
+\section{Tvorba ensemble systémov}
+
+Existujú dva základné spôsoby, ako vybrať členov ensemble systému: bagging a boosting.
+
+\subsection{Bagging}
+
+Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri  štatistickej klasifikácií a regresií. Rôznorodosť je dosiahnutá využitím bootstrapovaných (TODO ako to prelozit) podmnožín trénovacích dát, pričom rôzne trénovacie množiny sú náhodne vybrané s náhradou z celého množstva trénovacích dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva rozhodnutím ensemble systému.
+
+Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaisteneie dostatočného množstva trénovacích vzorkov v podmnožinách, približne 75 až 100\% vzorkov je prítomných v každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a mnoho vzorkov sa nachádza viackrát v danej podmnožine. V takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
+
+\subsection{Boosting}
+
+Boosting \cite{boosting} je ďaľším algoritmom na výber členov ensemble systému. Bolo dokázané, že slabý klasifikátor (iba o niečo úspešnejší ako náhodné hádanie) je možné pretvoriť na silný klasifikátor, ktorý poskytuje správne predikcie pre všetky prípady z ľubovoľne malej časti prípadov. Rovnako ako bagging, boosting vytvára súbor klasifikátorov prevzorkovaním dát s použitím hlasovania väčšiny. Prevzorkovanie je pri boostingu zlepšené, aby každému klasifikátoru boli poskytnuté najviac informatívne trénovacie dáta. Boosting vytvára tri slabé klasifikátory:
+\begin{itemize}
+	\item Prvý klasifikátor $C_{1}$ je trénovaný na náhodnej podmnožine dostupných dát.
+	\item Trénovacia podsada pre klasifikátor $C_{2}$ je vybraná ako najinformatívnejšia podsada vo vzťahu k $C_{1}$. Klasifikátor $C_{2}$ je teda trénovaný na dátach, na ktorých mal $C_{1}$ polovičnú úspešnosť. 
+	\item Tretí klasifikátor $C_{3}$ je trénovaný na dátach, kde $C_{1}$ a $C_{2}$ nesúhlasili.
+	\item Nakoniec sú klasifikátory skombinované hlasovaním väčšiny.
+\end{itemize}
+
 \section{Nástroje pre predikciu stability využívajúce strojové učenie}
 
 \chapter{Typografické a~jazykové zásady}
