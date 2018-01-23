@@ -207,9 +207,9 @@ V prípade, že k mutácií dôjde v kódujúcej oblasti, môžeme mutácie rozl
 
 \chapter{Strojové učenie}
 
-Strojové učenie je v súčasnej dobe chápané ako disciplína umelej inteligencie. Základnou technikou strojového učenia je prehľadávanie stavového priestoru. K charakteristickým rysom patrí využívanie znalostí, práca so symbolickými či štruktúrovanými premennými \cite{machine_learning}. Pojem strojové učenie takisto označuje počítačové metódy pracujúce s obrovským množstvom dát, medzi ktorými sa snažia nájsť vzťahy. Takéto metódy nachádzajú svoje uplatnenie pri hľadaní riešení v mnohých odvetviach akými sú počítačové videnie, rozpoznávanie reči a takisto bioinformatika. Keďže strojové učenie nachádza v mnohých odvetviach čoraz väčšie uplatnenie, je potrebné brať do úvahy jeho výhody a rovnako aj nevýhody. Medzi výhody patrí automatické hľadanie vzťahov vo veľkom množstve dát, čo by bolo pri mechanickom hľadaní takmer nemožné. Medzi hlavné nevýhody metód patrí neschopnosť správnej analýzy dát pri nevyváženosti predložených dát, nesprávne výsledky pri malom množstve testovacích dát pre metódu alebo nemožnosť práce s dátami obsahujúcimi veľké množstvo parametrov.
+Strojové učenie je v súčasnej dobe chápané ako disciplína umelej inteligencie. Základnou technikou strojového učenia je prehľadávanie stavového priestoru. K charakteristickým vlastnostiam patrí využívanie znalostí, práca so symbolickými či štruktúrovanými premennými \cite{machine_learning}. Pojem strojové učenie takisto označuje počítačové metódy pracujúce s obrovským množstvom dát, medzi ktorými je snahou nájsť vzťahy. Takéto metódy nachádzajú svoje uplatnenie pri hľadaní riešení v mnohých odvetviach akými sú počítačové videnie, rozpoznávanie reči a takisto bioinformatika. Keďže strojové učenie nachádza v mnohých odvetviach čoraz väčšie uplatnenie, je potrebné brať do úvahy jeho výhody a rovnako aj nevýhody. Medzi výhody patrí automatické hľadanie vzťahov vo veľkom množstve dát, čo by bolo pri mechanickom hľadaní takmer nemožné. Medzi hlavné nevýhody metód patrí neschopnosť správnej analýzy dát pri nevyváženosti predložených dát, nesprávne výsledky pri malom množstve tréningových dát pre metódu alebo nemožnosť práce s dátami obsahujúcimi veľké množstvo parametrov.
 
-V tejto kapitole sa budem venovať základným technikám strojového učenia, popisom používaných algoritmov. Priestor bude venovaný aj technikám zlepšujúcim základné postupy strojového učenia a nástrojom pre predikciu stability využívajúcich strojové učenie.
+V tejto kapitole sa budem venovať základným technikám strojového učenia a popisom používaných algoritmov. 
 
 \section{Úvod do strojového učenia}
 
@@ -220,9 +220,9 @@ Podľa \cite{alpaydin} je možné algoritmy strojového učenia rozdeliť do 3 z
 	\item hľadanie asociácií
 \end{itemize}
 
-Klasifikácia rieši problém priradenia výstupnej triedy vstupným dátam, ktoré môžu byť reprezentované vektorom hodnôt. Ako príklad je možné si predstaviť zatriedenie žiadateľov o pôžičku do tried s vysokým alebo nízkym rizikom toho, že pôžičku nebudú schopní splácať na základe rôznych údajov o nich.
+Klasifikácia rieši problém priradenia výstupnej triedy vstupným dátam, ktoré môžu byť reprezentované vektorom hodnôt. Ako príklad si je možné predstaviť zatriedenie žiadateľov o pôžičku do tried s vysokým alebo nízkym rizikom toho, že pôžičku nebudú schopní splácať na základe rôznych údajov o žiadateľoch.
 
-Regresné metódy narozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia určiť rovno číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
+Regresné metódy narozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia sa určiť priamo číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
 
 Asociačné pravidlá slúžia na hľadanie zaujímavých asociácií vo veľkom objeme dát. Pri ich hľadaní nás zaujíma podmienená pravdepodobnosť, ktorá sa uvádza vo forme $P(X|Y)$, $Y$ je produkt podmienený výskytom produktu $X$.
 
@@ -233,37 +233,38 @@ Metódy strojového učenie môžeme ďalej rozdeliť na základe spôsobu, aký
 \end{itemize}
 
 \section {Rozhodovacie stromy}
-Rozhodovací strom je hierarchický model so stromovou štruktúrou. Metódy tohto typu používajú učenie s učiteľom a môžeme ich použiť na klasifikáciu aj regresiu. Štruktúra stromu je tvorená z dvoch typov uzlov, vnútorných (nelistových) a listových uzlov. Každý z nelistových uzlov implementuje testovaciu funkciu. Po vyhodnotení tejto funkcie sa vyberie nasledujúci uzol v ktorom sa bude pokračovať. Tento proces začína v koreňovom uzle a pokračuje rekurzívne až do dosiahnutia listového uzlu. Listový uzol obsahuje označenie triedy do ktorej bude zaradený vstupný vektor alebo číselnú hodnotu.
+Rozhodovací strom je hierarchický model so stromovou štruktúrou. Metódy tohto typu používajú učenie s učiteľom a môžeme ich použiť na klasifikáciu aj regresiu. Štruktúra stromu je tvorená z dvoch typov uzlov, vnútorných (nelistových) a listových uzlov. Každý z nelistových uzlov obsahuje testovaciu funkciu. Po vyhodnotení tejto funkcie sa vyberie nasledujúci uzol, v ktorom sa bude pokračovať. Tento proces začína v koreňovom uzle a pokračuje rekurzívne až do dosiahnutia listového uzlu. Listový uzol obsahuje označenie triedy do ktorej bude zaradený vstupný vektor alebo číselnú hodnotu.
 
 \subsection{Algoritmus J48}
 
-Algoritmus J48 patrí k metódam rozhodovacích stromov. Algoritmus produkuje klasifikačno-rozhodovací strom pre poskytnuté dáta rekurzívnym rozdeľovaním dát. Rozhodnutie rastie použitím stratégie depth-first. Algortimus berie do úvahy všetky možné testy, ktoré môžu rozdeliť dáta a vyberá test udávajúci najlepšiu informačnú hodnotu. Pre každý diskrétny atribút je zvážený jeden test s výsledkami pre taký počet hodnôt koľko je rôznych hodnôt atribútov. 
+Algoritmus J48 patrí k metódam rozhodovacích stromov. Algoritmus produkuje klasifikačno-~rozhodovací strom pre poskytnuté dáta rekurzívnym rozdeľovaním dát. Pri rozhodovaní je využitá stratégia depth-first. Algortimus berie do úvahy všetky možné testy, ktoré môžu rozdeliť dáta a vyberá test udávajúci najlepšiu informačnú hodnotu. Pre každý diskrétny atribút je zvážený jeden test s počtom výsledkov, ktorý zodpovedá počtu rôznych hodnôt atribútov. 
+%výsledkami pre taký počet hodnôt, koľko je rôznych hodnôt atribútov. 
 
 \subsection{Algoritmus Náhodný strom (Random Tree)}
 
-Pri tomto algoritme je strom náhodným stromom vytvoreným náhodne z množstva potenciálne možných stromov. Každý list obsahuje $k$ náhodných parametrov. Náhodné vytvorenie stromu v tomto kontexte znamená, že každý strom v množine steomov má rovankú šancu byť vybratý. Kombinácia veľkého počtu náhodných stromov obvykle vedie k správnemu modelu. 
+Pri tomto algoritme je strom náhodným stromom vytvoreným náhodne z množstva všetkých možných stromov. Každý list obsahuje $k$ náhodných parametrov. Náhodné vytvorenie stromu v tomto kontexte znamená, že každý strom v množine stromov má rovankú šancu výberu. Kombinácia veľkého počtu náhodných stromov obvykle vedie k správnemu modelu. 
 
 \subsection{Algoritmus Náhodný les (Random Forest)}
 
-Random Forest je metóda založená na kombinácií viacerých rozhodovacích stromov. Každý strom závisí na hodnotách náhodného vektora hodnôt navzorkovaného nezávisle a s rovnakým rozložením pre všetky stromy v tzv. lese stromov. Prvýkrát bola metóda predstavená v práci \cite{breiman}. Obecne môžeme metódu popísať nasledujúcou definíciou:
+Random Forest \cite{breiman} je metóda založená na kombinácií viacerých rozhodovacích stromov. Každý strom závisí na hodnotách náhodného vektora hodnôt navzorkovaného nezávisle a s rovnakým rozložením pre všetky stromy v tzv. lese stromov. Obecne môžeme metódu popísať nasledujúcou definíciou:
 
 Náhodný les (random forest) je klasifikátor tvorený kolekciou klasifikátorov so stromovou štruktúrou $\{h(x,\Theta_{k}), k=1, ...\}, $ kde $\{k\}$ sú nezávisle identicky rozdelené náhodné vektory a každý strom hlasuje jednotlivo o najpopulárnejšej triede vo vstupe $x$.
 \newpage
-Najväčší pozornosť tejto metódy tvoria 3 vlastnosti:
+Najväčšiu pozornosť tejto metódy tvoria 3 vlastnosti:
 \begin{itemize}
 	\item poskytuje presnú predikciu pre mnohé typy aplikácií
 	\item je schopná merať dôležitosť jednotlivých parametrov pri trénovaní modelu
-	\item blízkosť medzi vzorkami môže byť merané trénovaným modelom
+	\item blízkosť medzi vzorkami môže byť meraná trénovaným modelom
 \end{itemize} 
 
-Algoritmus random forest pre klasifikáciu aj regresiu môžeme zjednodušene popísať nasledovne, pričom uvažujeme $M$ rozhodovacích stromov. Schéma metódy je znázornená na obrázku \ref{random_forest}:
+Algoritmus náhodný les pre klasifikáciu aj regresiu môžeme zjednodušene popísať nasledovne, pričom uvažujeme $M$ rozhodovacích stromov. Schéma metódy je znázornená na obrázku \ref{random_forest}:
 \begin{itemize}
-	\item Pre každý z $M$ rozhodovacích stromov vytvoríme sadu trénovacích dát z originálnych dát. Na ich výber slúži metóda tzv. bagging, ktorá náhodne vyberie zadaný počet trénovacích dát.
-	\item Pre každú množinu trénovacích dát vytvoríme klasifikačný alebo regresný strom, ktorý je následne natrénovaný na $M$-tej náhodnej množine trénovacích dát. V tejto metóde je každý uzol rozdelený najlepším rozdelením spomedzi podmnožiny prediktorov vybraných náhodne v tomto uzle. Naopak pri klasických stromoch je uzol rozdelený na základe najlepšieho rozdelenia medzi všetkými premennými.
-	\item Predikcia nových dát spojením výsledkov predikcie M stromov, napríklad hlasovaním väčšiny (tzv. majority voting) pri klasifikácií alebo priemerom hodnôt pri regresií.
+	\item Pre každý z $M$ rozhodovacích stromov vytvoríme sadu tréningových dát z originálnych dát. Na ich výber slúži metóda tzv. bagging, ktorá náhodne vyberie zadaný počet trénovacích dát.
+	\item Pre každú množinu tréningových dát vytvoríme klasifikačný alebo regresný strom, ktorý je následne natrénovaný na $M$-tej náhodnej množine tréningových dát. V tejto metóde je každý uzol rozdelený najlepším rozdelením spomedzi podmnožiny prediktorov náhodne vybraných v tomto uzle. Naopak, pri klasických stromoch je uzol rozdelený na základe najlepšieho rozdelenia medzi všetkými premennými.
+	\item Predikcia nových dát spojením výsledkov predikcie M stromov, napríklad hlasovaním väčšiny (tzv. majority voting) pri klasifikácií alebo priemerom hodnôt pri regresí.
 \end{itemize}
 
-Rozšírenie algoritmu random forest je momentálne veľmi aktívnou oblasťou vo výpočetnej biológií. Metóda nachádza veľké uplatnenie v bioinformatike, napríklad aj pri nástrojoch predikujúcich stabilitu proteínov.
+Rozšírenie algoritmu náhodný les je momentálne veľmi aktívnou oblasťou vo výpočetnej biológií. Metóda nachádza veľké uplatnenie v bioinformatike, napríklad aj pri nástrojoch predikujúcich stabilitu proteínov.
 
 \begin{figure}[H]
 	\centering
@@ -281,7 +282,7 @@ Rozšírenie algoritmu random forest je momentálne veľmi aktívnou oblasťou v
 
 \section {Support vector machines (SVM)}
 
-Support vector machines patria k najnovším metódam strojového učenia. Tieto metódy uskutočňujú klasifikáciu konštruovaním N-dimenzionálnej nadroviny, ktorá optimálne rozdeľuje dáta do dvoch kategórií. Cieľom je teda nájsť takú nadrovinu, ktorá rozdelí vstupné vektory tak, že jedna skupina vektorov je na jednej strane roviny a druhá na strane opačnej. Vektory nachádzajúce sa blízko nadroviny označujeme ako tzv. podporné vektory (support vectors). 
+Support vector machines patria k najnovším metódam strojového učenia. Tieto metódy uskutočňujú klasifikáciu konštruovaním N-dimenzionálnej nadroviny, ktorá optimálne rozdeľuje dáta do dvoch kategórií. Cieľom je nájsť takú nadrovinu, ktorá rozdelí vstupné vektory tak, že jedna skupina vektorov je na jednej strane roviny a druhá na strane opačnej. Vektory nachádzajúce sa blízko nadroviny označujeme ako tzv. podporné vektory (support vectors). 
 
 Ak sú trénovacie dáta lineárne rozdeliteľné, potom pár $(\textbf{w},b)$ existuje ako 
 
@@ -291,20 +292,20 @@ Ak sú trénovacie dáta lineárne rozdeliteľné, potom pár $(\textbf{w},b)$ e
     
 s rozhodovacím pravidlom daným vzťahom $f_{\textbf{w},b} ( x ) = sgn(\textbf{w}^{T}x + b )$, kde $\textbf{w}$ je váhový vektor a $b$ je odchýlka (tzv. bias).
 
-V prípade, že dáta sú lineárne separovateľné do dvoch tried, optimálnu nadrovinu je možné nájsť minimalizovaním štvorcovej normy rozdeľujúcej nadroviny. Jedná sa o konvexný kvadratický programovací problém.
-Pri možnosti lineárneho rozdelenia sa SVM snaží nájsť 1-dimenzionálnu nadrovinu (priamku), ktorou rozdelí skupiny vstupných vektorov. Po rozdelení dát priamkou metóda zistí vzdialenosť priamky od najbližších podporných vektorov. Táto vzdialenosť sa označuje ako tzv. krajná hranica (margin), pričom sa hľadá najväčšia vzdialenosť medzi podpornými vektormi.  
+V prípade, že dáta sú lineárne rozdeliteľné do dvoch tried, optimálnu nadrovinu je možné nájsť minimalizovaním štvorcovej normy rozdeľujúcej nadroviny. Jedná sa o konvexný kvadratický programovací problém.
+Pri možnosti lineárneho rozdelenia sa snaží SVM nájsť 1-dimenzionálnu nadrovinu (priamku), ktorou rozdelí skupiny vstupných vektorov. Po rozdelení dát priamkou metóda zistí vzdialenosť priamky od najbližších podporných vektorov. Táto vzdialenosť sa označuje ako tzv. krajná hranica (margin), pričom sa hľadá najväčšia vzdialenosť medzi podpornými vektormi.  
 
 Lineárne rozdeliteľné dáta sú však len ideálnym príkladom. Ak by analýza pozostávala len z premenných z dvoch kategórií, dvoch predikovaných premenných a množiny bodov rozdeliteľných priamkou, bolo by to veľmi jednoduché. V skutočnosti sa tieto metódy musia vysporiadať s viac ako dvomi predikovanými premennými, rozdelením dát nelineárnymi krivkami alebo množinami dát, ktoré nemôžeme úplne rozdeliť. 
 
 \subsection{Jadrové funkcie}
 
-Pri väčšine reálnych problémov neexistuje lineárna nadrovina rozdeľujúca pozitívne a negatívne vzorky v trénovacích dátach. Jedným z riešení je namapovanie dát do priestoru, ktorý má viac dimenzí a definovať rozdeľujúcu nadrovinu v tomto priestore. Takýto viacdimenzionálny priestor sa nazýva priestor transformovaných vlastností. S vhodne vybraným priestorom transformovaných vlastností dostatočnej dimenzie, akúkoľvek trénovaciu dátovú sadu je možné rozdeliť.
+Pri väčšine reálnych problémov neexistuje lineárna nadrovina rozdeľujúca pozitívne a negatívne vzorky v tréningových dátach. Jedným z riešení je prenesenie dát do priestoru, ktorý má viac dimenzí a definovať rozdeľujúcu nadrovinu v tomto priestore. Takýto viacdimenzionálny priestor sa nazýva priestor transformovaných vlastností. S vhodne vybraným priestorom transformovaných vlastností dostatočnej dimenzie je možné rozdeliť ľubovoľnú tréningovú dátovú sadu.
 Mapovanie dát do iného (potencionálne nekonečného) Hilbertovho priestoru H je definované ako $\Phi:R^{d} \rightarrow H$. Trénovací algoritmus bude potom závisieť len na dátach skrz bodové produkty v H, napríklad na funkciách v tvare $\Phi(x_{i})\cdot\Phi(x_{j})$. Ak by existovala tzv. jadrová funkcia K taká, že $K(x_{i},x_{j}) = \Phi(x_{i})\cdot\Phi(x_{j})$, v algoritme by sme potrebovali iba K. 
 
 Jadrové funkcie sú špeciálnou triedou funkcií umožňujúce výpočet vnútorných produktov priamo v priestore vlastností bez nutnosti mapovania dát tak ako to bolo popísané vyššie. 
 Akonáhle je vytvorená nadrovina, jadrová funkcia je použitá na mapovanie nových bodov do priestoru vlastností pre klasifikáciu.
 \newpage
-Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia definuje transformovaný priestor vlastností v ktorom budú klasifikované trénovacie dáta. Medzi najpoužívanejšie jadrové funkcie patria
+Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia definuje transformovaný priestor vlastností v ktorom budú klasifikované tréningové dáta. Medzi najpoužívanejšie jadrové funkcie patria
 \begin{itemize}
 	\item $K(x,y) = (x \cdot y + 1)^{P}$
 	\item $K(x,y) = e^{- {\parallel x - y \parallel}^{2}/ {2\sigma}^{2}}$
@@ -314,7 +315,7 @@ Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia d
 
 \subsection{Algoritmus SMO}
 
-Sekvenčná minimalizačná optimalizácia (SMO) je algoritmus na trénovanie SVM, ktorý jednoducho rieši kvadratický SVM problém. SMO uskutočňuje dekompozíciu celkového problému na podproblémy riešené analyticky. Metóda si v každom kroku vyberá na vyriešenie najmenší optimalizačný problém. Pre typický kvadratický SVM problém, najmenší možný optimalizačný problém zahŕňa dva Lagraengove násobitele. V každom kroku si metóda vyberia dva tieto násobitele na spoločnú optimalizáciu, nájde pre ne optimálne hodnoty a aktualizuje SVM. Výhodou tohto algoritmu je, že množstvo potrebnej pamäte pri trénovacej sade je lineárne, čo umožňuje algoritmu pracovať s veľkými trénovacími sadami. 
+Sekvenčná minimalizačná optimalizácia (SMO) je algoritmus na trénovanie SVM, ktorý jednoducho rieši kvadratický SVM problém. SMO uskutočňuje dekompozíciu celkového problému na podproblémy riešené analyticky. Metóda si v každom kroku vyberá na vyriešenie najmenší optimalizačný problém. Pre typický kvadratický SVM problém, najmenší možný optimalizačný problém zahŕňa dva Lagraengove násobitele. V každom kroku si metóda vyberia dva tieto násobitele na spoločnú optimalizáciu, nájde pre ne optimálne hodnoty a aktualizuje SVM. Výhodou tohto algoritmu je, že množstvo potrebnej pamäte pri trénovacej sade je lineárne, čo umožňuje algoritmu pracovať s veľkými tréningovými sadami. 
  
 \section{Algoritmus Naive Bayes}
 
@@ -322,16 +323,16 @@ Naive Bayes je klasifikačným algoritmom pre klasifikačné problémy, kde sa v
 
 Tento model je jednoduchý na vytvorenie, no napriek svojej jednoduchosti klasifikátor často poskytuje dobré výsledky a je široko používaný, pretože v mnohých prípadoch prekonáva komplikovanejšie klasifikačné metódy.
 
-\section{Ensemble metódy}
+\chapter{Ensemble metódy}
 
 V posledných rokoch sa metódy strojového učenia využívajú vo veľkej miere v oblasti bioinformatiky. Napriek ich výhodám narážame na rôzne problémy spojené najmä s nedostatkom dát, veľkou rôznorodosťou dát alebo tzv. preučením metód. Jedným z riešení, ktoré vykazujú dobré výsledky, je využitie výstupov z viacerých klasifikátorov namiesto použitia jedného samostatného klasifikátora. Takáto kombinácia môže niekedy poskytnúť protichodné výsledky a tým pomôže zvýšiť presnosť a robustnosť predikcie. Prístup využitia viacerých klasifikátorov označujeme ako tzv. ensemble.
 
 Podľa \cite{polikar} existuje mnoho teoretických a praktických dôvodov na použitie ensemble systémov:
 \begin{itemize}
-	\item \textbf{Štatistické dôvody:} Dobrý výkon metódy na trénovacích dátach nemusí predpovedať dobrú výkonnosť zovšeobecňovania. Množina klasifikátorov s podobným výkonom na trénovacích dátach môže mať rôznu zovšeobecňovaciu výkonnosť. Toto je možné vidieť najmä ak testovacie dáta určené na rozlíšenie schopnosti zovšeobecňovať nie sú dostatočne reprezentatívne. V takýchto prípadoch môže spriemerovanie výstupov niekoľkých klasifikátorov znížiť riziko zlého výberu alebo slabého klasifikátoru. 
-	\item \textbf{Veľký objem dát:} V určitých oblastiach môže nastať problém príliš veľkého objemu dát, ktorý má byť spracovaný. To niekedy nie je možné efektívne uskutočniť len pomocou jedného klasifikátora. V takýchto situáciách je vhodné zvážiť rozdelenie dát na menšie celky, trénovať klasifikátory na menších celkoch a skombinovať ich výstupy pomocou vhodného kombinačného pravidla.
-	\item \textbf{Malý objem dát:} Dostupnosť dostatočného a reprezentatívneho mmnožstva trénovacích dát je dôležitá pre klasifikačný algoritmus, aby bol schopný úspešne sa naučiť rozdelenie dát. Pri nedostatku trénovacích dát sa osvedčili techniky prevzorkovania, ktoré sú vhodné na vytvorenie náhodných prekrývajúcich sa podmnožín dostupných dát a každá je možné použiť na učenie iného klasifikátora.
-	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná alebo leží mimo oblasti funkcií implementovateľných vybranýms klasifikačným modelom. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z častí.
+	\item \textbf{Štatistické dôvody:} Dobrý výkon metódy na trénovacích dátach nemusí predpovedať dobrú výkonnosť zovšeobecňovania. Množina klasifikátorov s podobným výkonom na trénovacích dátach môže mať rôznu zovšeobecňovaciu výkonnosť. Tento poznatok je možné vidieť najmä ak testovacie dáta určené na rozlíšenie schopnosti zovšeobecňovať nie sú dostatočne reprezentatívne. V takýchto prípadoch môže spriemerovanie výstupov niekoľkých klasifikátorov znížiť riziko zlého výberu alebo slabého klasifikátoru. 
+	\item \textbf{Veľký objem dát:} V určitých oblastiach môže nastať problém príliš veľkého objemu dát, ktorý má byť spracovaný. To nie je niekedy možné efektívne uskutočniť len pomocou jedného klasifikátora. V takýchto situáciách je vhodné zvážiť rozdelenie dát na menšie celky, trénovať klasifikátory na menších celkoch a skombinovať ich výstupy pomocou vhodného kombinačného pravidla.
+	\item \textbf{Malý objem dát:} Dostupnosť dostatočného a reprezentatívneho mmnožstva tréningových dát je dôležitá pre klasifikačný algoritmus, aby bol schopný dosiahnuť úspešného naučenia rozdelenia dát. Pri nedostatku tréningových dát sa osvedčili techniky prevzorkovania, ktoré sú vhodné na vytvorenie náhodných prekrývajúcich sa podmnožín dostupných dát a každú je možné použiť na učenie iného klasifikátora.
+	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná alebo leží mimo oblasti funkcií dostupných pre vybraný klasifikačný model. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov tzv. ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z častí.
 \end{itemize}
 
 
@@ -341,19 +342,42 @@ Existujú dva základné spôsoby, ako vybrať členov ensemble systému: baggin
 
 \subsection{Bagging}
 
-Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri  štatistickej klasifikácií a regresií. Rôznorodosť je dosiahnutá využitím bootstrapovaných (TODO ako to prelozit) podmnožín trénovacích dát, pričom rôzne trénovacie množiny sú náhodne vybrané s náhradou z celého množstva trénovacích dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva rozhodnutím ensemble systému.
+Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri  štatistickej klasifikácií a regresií. Rôznorodosť je dosiahnutá využitím bootstrapovaných (TODO ako to prelozit) podmnožín tréningových dát, pričom rôzne tréningové množiny sú vybrané náhodne s náhradou z celého množstva tréningových dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
 
-Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaisteneie dostatočného množstva trénovacích vzorkov v podmnožinách, približne 75 až 100\% vzorkov je prítomných v každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a mnoho vzorkov sa nachádza viackrát v danej podmnožine. V takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
+Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaisteneie dostatočného množstva tréningových vzorkov v podmnožinách je približne 75 až 100\% vzorkov prítomných v každej podmnožine. Nastáva tak veľký prekryv medzi tréningovými podmnožinami a mnoho vzorkov sa nachádza viackrát v danej podmnožine. V takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s rôznymi tréningovými dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
 
 \subsection{Boosting}
 
 Boosting \cite{boosting} je ďaľším algoritmom na výber členov ensemble systému. Bolo dokázané, že slabý klasifikátor (iba o niečo úspešnejší ako náhodné hádanie) je možné pretvoriť na silný klasifikátor, ktorý poskytuje správne predikcie pre všetky prípady z ľubovoľne malej časti prípadov. Rovnako ako bagging, boosting vytvára súbor klasifikátorov prevzorkovaním dát s použitím hlasovania väčšiny. Prevzorkovanie je pri boostingu zlepšené, aby každému klasifikátoru boli poskytnuté najviac informatívne trénovacie dáta. Boosting vytvára tri slabé klasifikátory:
 \begin{itemize}
 	\item Prvý klasifikátor $C_{1}$ je trénovaný na náhodnej podmnožine dostupných dát.
-	\item Trénovacia podsada pre klasifikátor $C_{2}$ je vybraná ako najinformatívnejšia podsada vo vzťahu k $C_{1}$. Klasifikátor $C_{2}$ je teda trénovaný na dátach, na ktorých mal $C_{1}$ polovičnú úspešnosť. 
+	\item Tréningová podsada pre klasifikátor $C_{2}$ je vybraná ako najinformatívnejšia podsada vo vzťahu k $C_{1}$. Klasifikátor $C_{2}$ je teda trénovaný na dátach, na ktorých mal $C_{1}$ polovičnú úspešnosť. 
 	\item Tretí klasifikátor $C_{3}$ je trénovaný na dátach, kde $C_{1}$ a $C_{2}$ nesúhlasili.
 	\item Nakoniec sú klasifikátory skombinované hlasovaním väčšiny.
 \end{itemize}
+
+
+\section{Spojenie klasifikátorov}
+
+Po natrénovaní jednotlivých klasifikátorov je potrebné ich spojiť najvhodnejším spôsobom. Tieto metódy môžeme rozdeliť do dvoch kategórií: netrénovateľné a trénovateľné. Netrénovateľné sú použiteľné, ak samostatný klasifikátor poskytuje porovnateľné výsledky vo väčšine častí priestoru vlastností. Trénovateľné metódy dynamicky menia rozhodovacie pravidlá podľa špecifického typu klasifikovaného prípadu, sú užitočné v prípadoch, keď klasifikátory konštantne správne alebo nesprávne klasifikujú určité prípady.
+
+\subsection{Trénovateľné metódy}
+Medzi trénovateľné metódy patria nasledovné:
+\begin{itemize}
+	\item \textit{Stacked generalization:} Snahou je vytvoriť metaklasifikátor s využitím poznatkov o presnoti klasifikátorov. Dostupné dáta sú rozdelené na tréningovú a testovaciu sadu. Všetky nástroje sú trénované na tréningovej sade, testovacia sada je použitá na určenie výkonnosti klasifikátorov a tvorbu metaklasifikátoru
+	\item \textit{Rozhodcovské stromy:} Jedná sa o prístup zdola nahor prí tvorbe ensemble systému. V prvom kroku sú dáta rozdelené do konečného počtu neprekrývajúcich sa podsád a každá z nich je určená na trénovanie toho istého typu klasifikátora. Pre každý pár je vytvorený tzv. rozhodca a proces sa rekurzívne opakuje pokým nezostane len jeden klasifikátor na aktuálnej úrovni. 
+\end{itemize}
+
+\subsection{Netrénovateľné metódy}
+
+Do kategórie netrénovateľných metód môžeme zaradiť nasledujúce metódy:
+\begin{itemize}
+	\item \textit{Hlasovanie väčšiny:} Najjednoduchšia metóda, ktorá priradí objektu triedu na základe počtu hlasov jednotlivých klasifikátorov. Existujú 3 typy: jednotné hlasovanie, kde sa všetky klasifikátory musia zhodnúť na predikcií; jednoduché hlasovanie v ktorom sa aspoň polovica klasifikátorov musí zhodnúť na rozhodnutí; väčšinové hlasovanie kde je výsledok daný podľa počtu hlasov.
+	\item \textit{Váhované hlasovanie väčšiny:} Tento prístup je vylepšením predchádzajúceho prístupu, jednotlivé klasifikátory majú rôznu váhu v konečnom rozhodovaní a tieto váhy by mali byť prispôsobené ich presnosti.
+	\item \textit{Bayesova kombinácia:} Váhovaná metóda, váha spojená s klasifikátorom je posterior(TODO) pravdepodobnosť klasifikátora na tréningovej sade.
+	\item \textit{Váhovanie entropie:} Rovnako sa jedná o váhovanú metódu a váhy klasifikátorov sú nepriamo úmerné entropií klasifikačného vektoru.
+\end{itemize}
+
 
 \section{Nástroje pre predikciu stability využívajúce strojové učenie}
 
