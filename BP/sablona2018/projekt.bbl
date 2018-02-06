@@ -23,9 +23,19 @@ Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
 Breiman, L.: Random Forests. \emph{Machine Learning}, ročník ročník 45,
   2001.
 
+\bibitem{imutant}
+Capriotti, E.; Fariselli, P.; Rossi, I.; aj.: A Three-State Prediction of
+  Single Point Mutations on Protein Stability Changes. \emph{BMC
+  Bioinformatics}, 2008.
+
 \bibitem{flegr}
-Flegr, J.: \emph{{\it Ǔvod do evoluční biologie}}. Academia, 2007, ISBN
+Flegr, J.: \emph{{\it Úvod do evoluční biologie}}. Academia, 2007, ISBN
   978-80-200-1539-6.
+
+\bibitem{ease}
+Folkman, L.; Stantic, B.; Sattar, A.: Towards sequence-based prediction of
+  mutation-induced stability changes in unseen non-homologous proteins.
+  \emph{BMC Genomics}, 2014.
 
 \bibitem{gromiha}
 Gromiha, M.~M.: \emph{{\it Protein Bioinformatics: From sequence to function}}.
@@ -35,9 +45,28 @@ Gromiha, M.~M.: \emph{{\it Protein Bioinformatics: From sequence to function}}.
 Hlavsa, Z.; aj.: \emph{{\it Pravidla českého pravopisu}}. Academia, 2005,
   ISBN 80-200-1327-X.
 
+\bibitem{iptree}
+Huang, L. T.~.; Gromiha, M.~M.; Ho, S.~Y.: iPTREE-STAB: interpretable decision
+  tree based method for predicting protein stability changes upon mutations.
+  \emph{Bioinformatics}, 2007.
+
+\bibitem{maestro}
+Laimer, J.; Hofer, H.; Fritz, M.; aj.: MAESTRO - multi agent stability
+  prediction upon point mutations. \emph{BMC Bioinformatics}, 2015.
+
+\bibitem{automute}
+Masso, M.; Vaisman, I.~I.: AUTO-MUTE 2.0: A Portable Framework with Enhanced
+  Capabilities for Predicting Protein Functional Consequences upon Mutation.
+  \emph{Adv Bioinformatics}, 2014.
+
 \bibitem{machine_learning}
-Mařík, O. L.~J., V.;~Štěpánková: \emph{{\it Umělá inteligence. 1}}.
-  Academia, 1993, ISBN 80-200-0496-3.
+Mařík, V.; Štěpánková, O.; Lažanský, J.: \emph{{\it Umělá
+  inteligence. 1}}. Academia, 1993, ISBN 80-200-0496-3.
+
+\bibitem{mcsm}
+Pires, D.~E.; Ascher, D.~B.; Blundell, T.~L.: mCSM: predicting the effects of
+  mutations in proteins using graph-based signatures. \emph{Bioinformatics},
+  2014.
 
 \bibitem{polikar}
 Polikar, R.: Ensemble based systems in decision making. \emph{IEEE Circuits
@@ -63,16 +92,21 @@ Schapire, R.~E.: The Strength of Weak Learnability. \emph{Machine Learning},
   1990.
 
 \bibitem{gibbs}
-Voet, J. G. P. C.~W., D.;~Voet: \emph{{\it Fundamentals of Biochemistry: Life
-  at the Molecular Level, 3rd Edition.}} John Wiley and Sons, Inc., 2008, ISBN
-  0470129301.
+Voet, D.; Voet, J.~G.; Pratt, C.~W.: \emph{{\it Fundamentals of Biochemistry:
+  Life at the Molecular Level, 3rd Edition.}} John Wiley and Sons, Inc., 2008,
+  ISBN 0470129301.
 
 \bibitem{aminokyseliny}
 Whitford, D.: \emph{{\it Proteins: Structure and function}}. Wiley, 2005.
 
+\bibitem{elaspic}
+Witvliet, D.; Strokach, A.; Giraldo-Forero, A.~F.; aj.: ELASPIC web-server:
+  proteome-wide structure based prediction of mutation effects on protein
+  stability and binding affinity. \emph{Bioinformatics}, 2016.
+
 \bibitem{mutace}
-Řehout, J. B. B.~a., V.;~Čítek: {\it Základy genetiky a poradenství}.
-  Únor 2003, [Online; cit. 17.12.2017].
+Řehout, V.; Čítek, J.; Bláhová, B.; aj.: {\it Základy genetiky a
+  poradenství}. Únor 2003, [Online; cit. 17.12.2017].
 \newline\urlprefix\url{http://www.zsf.jcu.cz/cs/katedra/katedra-klinickych-a-preklinickych-oboru/import/ucebni_texty/zaklady-genetiky-a-poradenstvi}
 
 \end{thebibliography}

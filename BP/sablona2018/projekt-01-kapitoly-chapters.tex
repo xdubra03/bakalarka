@@ -116,6 +116,11 @@ Gibbsova voľná energia je termodynamický potenciál vyjadrujúci maximálne m
 \end{align}
 kde $H$ predstavuje entalpiu, $T$ teplotu a $S$ entropiu.
 
+Zmena voľnej Gibbsovej energie ($\Delta G$) je dana vzťahom
+\begin{align}
+	\Delta G = G_{folded} - G_{unfoldeded},
+\end{align}
+kde $G_{folded}$ predstavuje voľnú energiu v zloženom a $G_{unfolded}$ energiu v nezloženom stave.
   Existuje niekoľko laboratórnych metód na určenie stability ako napríklad cirkulárny dichroizmus (CD), diferencilna skenovacia kalorimetria (DSC), fluorescencia (Fl), absorpcia svetla (Abs), nukleárna magnetická rezonancia (NMR) \cite{gromiha}.
 
 Určenie stability bez použitia niektorej z laboratórnych metód je možné uskutočniť výpočtom jedného z existujúcich silových polí (Talaris, Score12, ...). Výpočet takéhoto poľa ukazuje nasledujúci jednoduchý príklad \cite{free_energy} \cite{gromiha}:
@@ -127,25 +132,12 @@ Voľná energia v zloženom stave je daná vzťahom
 
 kde $G_{hy}, G_{el}, G_{hb}, G_{ss}, G_{vw}$ sú hydrofóbne, elektrostatické, vodíkové, disulfidické a van der Waalsove voľné energie. 
 
-Hydrofóbnu voľnú energiu je možné odhadnúť z dostupnej rozpustnosti. Vypočítaná je podľa vzťahu
-	\begin{align}
-	G_{hy} =  \varSigma \Delta \sigma_{i}[A_i (folded) - A_i (unfolded)],
-	\end{align}
-
-kde $i$ predstavuje rôzne typy atómov, $A_i (folded)$ a $A_i (unfolded)$ sú dostupné povrchové plochy (ASA) jednotlivých typov atómov v zloženom a nezloženom stave a $\sigma_{i}$ reprezentuje atómové solvatačné parametre.
 
 Elektrostatickými interakciami najviac prispievajú nabité postranné reťazce reziduí Lysine, Hystodine, Arginine a kyselina asparagová a glutamová.
 
 Vodíkové väzby sú jednými z hlavných zúčastnených pri tvorbe sekundárnej štruktúry proteínu. Výpočet ich príspevku je založený najmä na ich geometrických informáciách.
 
-Van der Waalsove energie je možné vypočítať zjednotením Lennard-Jonesovho potenciálu ako
-	\begin{align}
-	G_{vw} = (A_{ij} /r^{12}_{ij} - B_{ij} /r^{6}_{ij}),
-\end{align}
-kde $A_{ij} = \varepsilon^{*}_{ij}(R^{*}_{ij})^{12}$, $B = 2\varepsilon^{*} (R^{*})^{6}$, $R^{*} = (R^{*} + R^{*})$,  $\varepsilon^{*} = (\varepsilon^{*} \varepsilon^{*}).$ $R^{*}$ a $\varepsilon^{*}$ sú van der Waalsov rádius a hĺbka TODO.
-
 Voľná energia v nezloženom stave je daná vzťahom
-
 \begin{align}
 	G_U = G_{en} + G_{ne},
 \end{align}
@@ -153,12 +145,6 @@ kde $G_{en}$ a $G_{ne}$ sú entropické a neentropické voľné energie.
 
 
 \section{Mutácie}
-Na stabilitu proteínu vplývajú aminokyselinové mútacie, ktoré môžu spôsobiť to, že proteín sa stane nestabilným. Preto do hlavnej oblasti skúmania stability patrí predikcia zmeny stability na základe aminokyselinovej mutácie. Jedná sa o predikciu zmeny Gibbsovej voľnej energie ($\Delta\Delta$G) medzi voľnou energiou pôvodného a zmutovaného proteínu. Môžeme ju definovať nasledujúcim vzťahom:
-\begin{align}
-	G_U = G_{mutant} - G_{original},
-\end{align}
-Podľa tejto hodnoty je možné rozdeliť mutácie na stabilizujúce, neutrálne a destabilizujúce. Väčšia snaha pri predikcií môže viesť k zlepšeniu návrhu nových odolnejších proteínov alebo pri štúdií rozličných chorôb.
-
 Mutácie sú náhodné alebo cielené zmeny v DNA. Sú naprosto nevyhnutné pre biologickú evolúciu, bez nich by sa skôr či neskôr zastavila. Ak by sa výraznejšie zmenili podmienky vonkajšieho prostredia, organizmy by bez mutácií nemuseli na zmeny zareagovať a pravdepodobne by vyhynuli. Mutáciami sú označované všetky také zmeny genetickej informácie, ktoré nie sú výsledkom segregácií a rekombinácií už existujúcich častí genotypov \cite{mutace}. 
 Podľa úrovne, na ktorej sa mutácia vyskytla, môžeme rozlišovať \cite{flegr}:
 \begin{itemize}
@@ -204,6 +190,14 @@ V prípade, že k mutácií dôjde v kódujúcej oblasti, môžeme mutácie rozl
 	\item \textbf{Posunové:} spôsobujú zmenu čítacieho rámca a často vedú k predčasnému ukončeniu prekladu proteínu.
 	\item \textbf{Nezmyselné:} vytvárajú STOP kodón a tým spôsobujú predčasné ukončenie prekladu proteínu.
 \end{itemize}
+\newpage
+Na stabilitu proteínu vplývajú aminokyselinové mútacie, ktoré môžu spôsobiť to, že proteín sa stane nestabilným. Preto do hlavnej oblasti skúmania stability patrí predikcia zmeny stability na základe aminokyselinovej mutácie. Jedná sa o predikciu zmeny Gibbsovej voľnej energie ($\Delta\Delta$G) medzi voľnou energiou pôvodného a zmutovaného proteínu. Môžeme ju definovať nasledujúcim vzťahom:
+\begin{align}
+	\Delta\Delta G = G_{mutant} - G_{wild\_type},
+\end{align}
+Podľa tejto hodnoty je možné rozdeliť mutácie na stabilizujúce, neutrálne a destabilizujúce. Väčšia snaha pri predikcií môže viesť k zlepšeniu návrhu nových odolnejších proteínov alebo pri štúdií rozličných chorôb.
+
+
 
 \chapter{Strojové učenie}
 
@@ -215,16 +209,11 @@ V tejto kapitole sa budem venovať základným technikám strojového učenia a 
 
 Podľa \cite{alpaydin} je možné algoritmy strojového učenia rozdeliť do 3 základných skupín:
 \begin{itemize}
-	\item klasifikácia
-	\item regresia
-	\item hľadanie asociácií
+	\item \textbf{Klasifikácia:} Rieši problém priradenia výstupnej triedy vstupným dátam, ktoré môžu byť reprezentované vektorom hodnôt. Ako príklad si je možné predstaviť zatriedenie žiadateľov o pôžičku do tried s vysokým alebo nízkym rizikom toho, že pôžičku nebudú schopní splácať na základe rôznych údajov o žiadateľoch.
+	\item \textbf{Regresia:} Regresné metódy narozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia sa určiť priamo číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
+	\item \textbf{Hľadanie asociácií:} Asociačné pravidlá slúžia na hľadanie zaujímavých asociácií vo veľkom objeme dát. Pri ich hľadaní nás zaujíma podmienená pravdepodobnosť, ktorá sa uvádza vo forme $P(X|Y)$, $Y$ je produkt podmienený výskytom produktu $X$. 
 \end{itemize}
 
-Klasifikácia rieši problém priradenia výstupnej triedy vstupným dátam, ktoré môžu byť reprezentované vektorom hodnôt. Ako príklad si je možné predstaviť zatriedenie žiadateľov o pôžičku do tried s vysokým alebo nízkym rizikom toho, že pôžičku nebudú schopní splácať na základe rôznych údajov o žiadateľoch.
-
-Regresné metódy narozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia sa určiť priamo číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
-
-Asociačné pravidlá slúžia na hľadanie zaujímavých asociácií vo veľkom objeme dát. Pri ich hľadaní nás zaujíma podmienená pravdepodobnosť, ktorá sa uvádza vo forme $P(X|Y)$, $Y$ je produkt podmienený výskytom produktu $X$.
 
 Metódy strojového učenie môžeme ďalej rozdeliť na základe spôsobu, akým sa učia. Podľa \cite{alpaydin} ich rozdeľujeme na:
 \begin{itemize}
@@ -379,7 +368,46 @@ Do kategórie netrénovateľných metód môžeme zaradiť nasledujúce metódy:
 \end{itemize}
 
 
-\section{Nástroje pre predikciu stability využívajúce strojové učenie}
+\chapter{Nástroje na predikciu stability}
+
+\section{Strojové učenie}
+
+\subsection{AUTO-MUTE}
+
+Nástroj využíva klasifikačné metódy na určenie vplyvu mutácie a~regresiu na určenie hodnoty $\Delta\Delta G$.
+Na začiatku je identifikovaných šesť najbližších susedov aminokyseliny na mutovanej pozícií a~určia sa ich vlastnosti. Vektor vlastností, tvorený vlastnosťami založenými na energií, je určený na natrénovanie vybranej metódy zvolenej užívateľom. Nástroj využíva algoritmy z~balíka programu WEKA, konktrétne je možné zvoliť metódy Random Forest a~SVM pre klasifikáciu alebo Tree Regression a~SVM Regression pre regresiu. AUTO-MUTE je dostupný ako webový server alebo ako samostatná aplikácia \cite{automute}.
+
+\subsection{I-Mutant}
+
+Nástroj poskytuje predikciu znamienka zmeny stability pomocou klasifikácie a~tiež určenie hodnoty $\Delta\Delta G$ pomocou regresie. I-Mutant pracuje so štrukturálnymi alebo sekvenčnými informáciami o mutovanej aminokyseline a~jej najbližších susedoch. Pre strojové učenie je použitá metóda SVM s~jadrovou funkciou RBF (Radial Basis Function). Tréningové dáta pozostávajú z~podmnožiny dát pochádzajúcich z~databázy ProTherm. Vstupný vektor vlastností mutácie tvorí spolu 42 hodnôt. Nástroj je dostupný ako webový server \cite{imutant}. 
+
+\subsection{iPTREE-STAB}
+
+iPTREE-STAB slúži na určenie vplyvu mutácie na stabilitu a~hodnoty $\Delta\Delta G$ z~informácií o~sekvencií. Predikcia je založená najmä na využítí rozhodovacích stromov spojených s~algoritmom adaptive boosting, a~ takisto využíva aj regresných a~klasifikačných stromov. Dáta slúžiace na natrénovanie metód tvorí databáza ProTherm. Pre predikciu využíva informácie zo~susedných aminokyselín, konkrétne používa okno o~veľkosti 7 reziduí. Vektor vlastností tvorí 5 hodnôt, ktorými sú aminokyselina po mutácií, pôvodná aminokyselina, hodnota pH, teplota pri ktorej bola meraná stabilita a~informácie o~troch susedných reziduách. Nástroj je dostupný iba ako webový server \cite{iptree}.
+
+\subsection{EASE-AA}
+
+Nástroj ponúka predikciu vplyvu mutácie a~takisto určenie hodnoty $\Delta\Delta G$. Predikcia je založená iba na informáciách o sekvencií. EASE-AA využíva informácie o~konzervovanosti, ktoré sú získané pomocou metódy SIFT. Konzerovanosť je vyjadrená pomocou tzv. SIFT skóre. Ďalej využíva štrukturálne informácie, kde patria sekundárna štruktúra, dostupná povrchová plocha (ASA), pravdepodobnosť poruchy (tzv. disorder probability) a~ informácie o~vlastnostiach aminokyselín, ktoré tvorí 7 hodnôt vlastností. Vektor vlastností je vstupom pre metódu SVM tvoriacu základ nástroja, rovnako ako I-Mutant využíva jadrovú funkciu RBF. Nástroj je dostupný ako samostatná aplikácia \cite{ease}.
+   
+\subsection{mCSM}
+
+Metóda identifikuje pre miesto mutácie všetky atómy v~zadanej vzdialenosti od geometrického stredu. Následne je uskutočnený výpočet vzdialenosti medzi jednotlivými atómami prostredia a~vygeneruje sa matica atómových vzdialeností. mCSM nakoniec vytvorí grafovo založené vzory atómových vzdialeností. Mutácia je reprezentovaná tzv. podpisovým vektorom, ktorý slúži na trénovanie a~testovanie metód strojového učenia. Nástroj je dostupný ako webová služba \cite{mcsm}.
+
+\subsection{MAESTRO}
+
+MAESTRO je multiagentný systém strojového učenia. K predikcií využíva informácie o sekvencií a štruktúre spoločne s 2 štatistickými funkciami, slúži na predikciu jednobodových ale aj viacbodových mutácií. Systém využíva kombináciu neurónových sietí, SVM a lineárnej regresie, ktoré sú natrénované na nezávislých dátach a nakoniec sú ich výsledky spojené. Vstupným vektorom strojového učenia je 9 hodnôt, ktoré sú rozdelené na štatistické skórovacie funkcie a vlastnosti proteínov, ako napríklad veľkosť proteínu. Špeciálnou vlastnosťou prediktoru je možnosť predikcie stabilizujúcich disulfidových mostíkov. Nástroj je dostupný ako samostatná aplikácia a aj ako webový server \cite{maestro}.
+
+\subsection{ELASPIC}
+
+ELASPIC je nástroj využívajúci ensemble stratégie. Slúži na predikciu hodnoty $\Delta\Delta G$. Na začiatku nástroj predikuje proteínové domény a ich interakcie a detekuje proteínové jadrá. Mutácie sú mapované a molekulárne, evolučné a energetické vlastnosti sú určené na vytvorenie prediktívneho modelu využívajúceho rozhodovacie stromy s algoritmom Stochaistic Gradient boosting. ELASPIC je dostupný ako samostatná aplikácia aj ako webový server \cite{elaspic}.
+
+\section{Energetická funkcia - fyzikálny potenciál}
+
+\section{Energetická funkcia - štatistický potenciál}
+
+
+
+
 
 \chapter{Typografické a~jazykové zásady}
 Při tisku odborného textu typu {\it technická zpráva} (anglicky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.

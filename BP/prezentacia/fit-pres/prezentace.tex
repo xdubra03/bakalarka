@@ -1,0 +1,126 @@
+\documentclass[10pt,xcolor=pdflatex]{beamer}
+\usepackage{newcent}
+\usepackage[utf8]{inputenc}
+%\usepackage[czech]{babel}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\usetheme{FIT}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Stabilita]{Využitie strojového učenia na predikciu vplyvu mutácií na stabilitu proteínov}
+
+\author[]{Juraj Ondrej Dúbrava}
+
+\institute[]{Brno University of Technology, Faculty of Information Technology\\
+Bo\v{z}et\v{e}chova 1/2. 612 66 Brno - Kr\'alovo Pole\\
+xdubra03@fit.vutbr.cz}
+
+%\date{January 1, 2016}
+\date{\today}
+%\date{} % bez data
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}\frametitle{Motivácia}
+    \begin{itemize}
+    	\item Vplyv mutácií na stabilitu
+    	\item Neuspokojivé výsledky predikčných nástrojov 
+    	\item Zlepšenie predikcie - návrh stabilnejších proteínov, účinnejších liečiv,...
+    \end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Proteíny}	
+	\begin{itemize}
+		\item základné stavebné prvky všetkých organizmov
+		\item zabezpečujú množstvo funkcií
+		\item proteín je tvorený reťazcom aminokyselín
+		\item vlastnosti proteínov sú ovplyvnené mutáciami
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Stabilita proteínov}
+	\begin{itemize}
+		\item jedna z dôležitých vlastností proteínov, súvisí so stavom proteínu
+		\item dôležitosť skúmania stability pre rôzne oblasti
+		\item stabilné proteíny - lepšie zvládnutie nepriaznivých okolitých podmienok, vysokých teplôt,...
+		\item pôsobenie mutácií na stabilitu, stabilizujúce vs. destabilizujúce mutácie 
+		\item snaha o predikciu ich vplyvu, využitie strojového učenia
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Dataset}
+	\begin{itemize}
+		\item základ pre strojové učenie
+		\item 1564 záznamov mutácií - 1255 destabilizújúcich, 309 stabilizujúcich
+		\item 7 parametrov datasetu 
+		\item výber metódy strojového učenia
+		\item prvotné testovanie - nástroj WEKA, odskúšanie ponúkaných algoritmov
+		\item najlepšie výsledky - metódy Random Forest, SVM
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Dataset}
+\begin{center}
+	\begin{tabular}{ | l | c | r | l| }
+		\hline 
+		Metóda & TP rate & FP rate & Accuracy \\ \hline
+		Naive Bayes & 0,784 & 0,719 & 0,765 \\ \hline
+		LibSVM &  0,786   & 0,706   & 0,766  \\ \hline
+		SMO & 0,774 & 0,774 & 0,6\\ \hline
+		DecisionTable & 0,774 & 0,774 & 0,6\\ \hline
+		RandomForest & 0,793 & 0,692 & 0,797\\ \hline
+		RandomTree & 0,793 & 0,574 & 0,766\\ \hline
+		J48 & 0,774 & 0,626 & 0,74\\ \hline
+		
+	\end{tabular}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Implementácia}
+	\begin{itemize}
+		\item spôsob implementácie - Python skript
+		\item použitie knižnice Scikit-learn na implementáciu algoritmov strojového učenia
+		\item prvá fáza - odskúšanie metódy Random Forest
+		\item neuspokojivé výsledky samostanej metódy
+		\item implementácia a odskúšanie metódy SVM 
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Implementácia}
+\begin{itemize}
+	\item vylepšenie predikcie - použitie ensemble systému
+	\item spojenie klasifikátorov - metódy Random Forest a SVM
+	\item použitie pri nedostatku dát, realistickejší výsledok
+	\item vytvorenie menších trénovacích podsád, bagging
+	\item vylepšenie výpočtu parametra konzervovanosti - Felensteinov algoritmus
+	\item presnosť predikcie - približne 74\%, korelácia 0.32
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Záver}
+\begin{itemize}
+	\item analýza dátovej sady a jej použitie pre strojové učenie
+	\item implementácia skriptu na výpočet parametrov
+	\item implemtácia a otestovanie metód Random Forest a SVM
+	\item použitie ensemble stratégie na vylepšenie presnosti
+	\item výhoda rýchlej a dostatočne presnej predikcie
+	\item možnosť použitia pre vytipovanie zaujímavých mutácií na ďaľšie skúmanie
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\bluepage{Ďakujem za pozornosť !}
+
+\end{document}
