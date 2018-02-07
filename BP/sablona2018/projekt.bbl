@@ -16,6 +16,10 @@ Alberts, B.: \emph{{\it Základy buněčné biologie: úvod do molekulární
 Alpaydin, E.: \emph{{\it Introduction to Machine Learning}}. MIT Press, 2010,
   ISBN 978-0-262-01243-0.
 
+\bibitem{ccpbsa}
+Benedix, A.; Becker, C.~M.; Groot, B.~L.; aj.: Predicting free energy changes
+  using structural ensembles. \emph{Nature methods}, 2009.
+
 \bibitem{breiman2}
 Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
 
@@ -27,6 +31,11 @@ Breiman, L.: Random Forests. \emph{Machine Learning}, ročník ročník 45,
 Capriotti, E.; Fariselli, P.; Rossi, I.; aj.: A Three-State Prediction of
   Single Point Mutations on Protein Stability Changes. \emph{BMC
   Bioinformatics}, 2008.
+
+\bibitem{popmusic}
+Dehouck, Y.; Kwasigroch, J.~M.; Gilis, D.; aj.: PoPMuSiC 2.1: a web server for
+  the estimation of protein stability changes upon mutation and sequence
+  optimality. \emph{BMC Bioinformatics}, 2011.
 
 \bibitem{flegr}
 Flegr, J.: \emph{{\it Úvod do evoluční biologie}}. Academia, 2007, ISBN
@@ -41,14 +50,29 @@ Folkman, L.; Stantic, B.; Sattar, A.: Towards sequence-based prediction of
 Gromiha, M.~M.: \emph{{\it Protein Bioinformatics: From sequence to function}}.
   Elsevier, 2010, ISBN 978-81-312-2297-3.
 
+\bibitem{foldx}
+Guerois, R.; Nielsen, J.~E.; Serrano, L.: Predicting changes in the stability
+  of proteins and protein complexes: a study of more than 1000 mutations.
+  \emph{Journal of Molecular Biology}, 2002.
+
 \bibitem{Pravidla}
 Hlavsa, Z.; aj.: \emph{{\it Pravidla českého pravopisu}}. Academia, 2005,
   ISBN 80-200-1327-X.
+
+\bibitem{dmutant}
+Hoppe, C.; Schomburg, D.: Prediction of protein thermostability with a
+  direction- and distance-dependent knowledge-based potential. \emph{Protein
+  Society}, 2005.
 
 \bibitem{iptree}
 Huang, L. T.~.; Gromiha, M.~M.; Ho, S.~Y.: iPTREE-STAB: interpretable decision
   tree based method for predicting protein stability changes upon mutations.
   \emph{Bioinformatics}, 2007.
+
+\bibitem{rosetta}
+Kellogg, E.; Leaver-Fay, A.; Baker, D.: Role of conformational sampling in
+  computing mutationinduced changes in protein structure and stability.
+  \emph{Proteins}, 2011.
 
 \bibitem{maestro}
 Laimer, J.; Hofer, H.; Fritz, M.; aj.: MAESTRO - multi agent stability
@@ -62,6 +86,10 @@ Masso, M.; Vaisman, I.~I.: AUTO-MUTE 2.0: A Portable Framework with Enhanced
 \bibitem{machine_learning}
 Mařík, V.; Štěpánková, O.; Lažanský, J.: \emph{{\it Umělá
   inteligence. 1}}. Academia, 1993, ISBN 80-200-0496-3.
+
+\bibitem{cupsat}
+Parthiban, V.; Gromiha, M.~M.; Schomburg, D.: CUPSAT: prediction of protein
+  stability upon point mutations. \emph{Nucleic Acids Research}, 2006.
 
 \bibitem{mcsm}
 Pires, D.~E.; Ascher, D.~B.; Blundell, T.~L.: mCSM: predicting the effects of
@@ -103,6 +131,10 @@ Whitford, D.: \emph{{\it Proteins: Structure and function}}. Wiley, 2005.
 Witvliet, D.; Strokach, A.; Giraldo-Forero, A.~F.; aj.: ELASPIC web-server:
   proteome-wide structure based prediction of mutation effects on protein
   stability and binding affinity. \emph{Bioinformatics}, 2016.
+
+\bibitem{eris}
+Yin, S.; Ding, F.; Dokholyan, N.~V.: Eris: an automated estimator of protein
+  stability. \emph{Nature methods}, 2007.
 
 \bibitem{mutace}
 Řehout, V.; Čítek, J.; Bláhová, B.; aj.: {\it Základy genetiky a

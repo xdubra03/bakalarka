@@ -41,11 +41,18 @@
 \contentsline {subsection}{\numberline {6.1.6}MAESTRO}{21}{subsection.6.1.6}
 \contentsline {subsection}{\numberline {6.1.7}ELASPIC}{21}{subsection.6.1.7}
 \contentsline {section}{\numberline {6.2}Energetick\IeC {\'a} funkcia - fyzik\IeC {\'a}lny potenci\IeC {\'a}l}{21}{section.6.2}
-\contentsline {section}{\numberline {6.3}Energetick\IeC {\'a} funkcia - \IeC {\v s}tatistick\IeC {\'y} potenci\IeC {\'a}l}{21}{section.6.3}
-\contentsline {chapter}{\numberline {7}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{22}{chapter.7}
-\contentsline {section}{\numberline {7.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{23}{section.7.1}
-\contentsline {chapter}{\numberline {8}Z\IeC {\'a}v\IeC {\v e}r}{25}{chapter.8}
-\contentsline {chapter}{Literatura}{26}{chapter*.2}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{28}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{29}{section*.4}
+\contentsline {subsection}{\numberline {6.2.1}CC/PBSA}{21}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}ERIS}{22}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Rosetta}{22}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}CUPSAT}{22}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Energetick\IeC {\'a} funkcia - \IeC {\v s}tatistick\IeC {\'y} potenci\IeC {\'a}l}{22}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}PopMuSiC}{22}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}DMutant}{22}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}FoldX}{22}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{24}{section.7.1}
+\contentsline {chapter}{\numberline {8}Z\IeC {\'a}v\IeC {\v e}r}{26}{chapter.8}
+\contentsline {chapter}{Literatura}{27}{chapter*.2}
+\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{29}{appendix.A}
+\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{30}{section*.4}
 \contentsfinish 

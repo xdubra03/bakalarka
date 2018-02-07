@@ -403,11 +403,36 @@ ELASPIC je nástroj využívajúci ensemble stratégie. Slúži na predikciu hod
 
 \section{Energetická funkcia - fyzikálny potenciál}
 
+\subsection{CC/PBSA}
+
+Jedná sa o štruktúrne založenú metódu pre rýchle a kvantitatívne odhadnutie voľnej energie potrebnej k zloženiu mutovaného proteínu. V prvom kroku metóda uskutočňuje rýchle generovanie alternatívnych proteínových konformácií pomocou programu CONCOORD na navzorkovanie dostupného konfiguračného priestoru. Energetická funkcia založená na silových poliach a riešenie Poisson-Boltzmannovej rovnice sú spriemerované nad vytvoreným celkom. Voľná energia je nakoniec aproximovaná ako suma elektrostatických interakcií, van der Waalsových energií a zmenou entropie. Nástroj je dostupný ako webová služba \cite{ccpbsa}. 
+
+\subsection{ERIS}
+
+Nástroj ERIS je zložený na silovom poli Medusa a pozostáva z celoatómového silového poľa, algoritmu obaľovania bočného reťazca a chrbtovej uvoľnujúcej metódy. (TODO backbone relaxation method) Parametre silového poľa boli trénované s vysokým rozlíšením proteínových štruktúr. ERIS je možné použiť ako webovú službu aj ako samostantý program \cite{eris}.
+
+\subsection{Rosetta}
+
+Rosetta predstavuje sadu softvéru na makromolekulárne modelovanie. Zahŕňa celú skupinu rôznych silových polí založených na kombinácií prispievateľov voľnej enrgie ako sú van der Waalsova energia alebo elektrostatické interakcie. Väčšina z protokolov tohto nástroja je veľmi časovo náročných a preto je nástroj dostupný iba ako samostatná aplikácia \cite{rosetta}.
+
+\subsection{CUPSAT}
+
+Metóda je založená na výpočte atómových potenciálov a potenciálov torzných uhlov, ktoré boli získané z proteínových štruktúr pomocou webového serveru PISCES. Hodnoty Boltzmannovej energie sú vypočítané z radiálnej párovej distribúcie atómov aminokyselín a Gaussovská apodizačná funkcia je aplikovaná na priradenie výhodných energetických hodnôt pre susediace orientácie pozorovaných torzných uhlov. Nástroj je dostupný ako webová služba \cite{cupsat}.  
+
 \section{Energetická funkcia - štatistický potenciál}
 
+\subsection{PopMuSiC}
+
+Zmena stability danej bodovej mutácie je vypočítaná na základe štruktúry pôvodného nezmutovaného proteínu a množine energetických funkcií. Hodnota $\Delta\Delta G$ je vyjadrená ako lineárna kombinácia 13 štatistických potenciálov. Nástroj je dostupný ako webová služba \cite{popmusic}.
 
 
+\subsection{DMutant}
 
+Nástroj DMutant využíva kombináciu orientácie na základe poznatkov, vdialenostne závislý potenciál atómov aminokyselín a potenciál torzného uhlu. Tieto časti tvoria diskriminačnú funkciu, ktorej parametre boli optimalizované tréningovou dátovou sadou. Nástroj je dostupný v podobe samostatného programu \cite{dmutant}.
+
+\subsection{FoldX}
+
+Energetická funkcia nástroja zahŕňa požiadavky u ktorých bolo zistené, že sú dôležité pre stabilitu. Patria tu van der Waalsovej príspevky, rozdiel solvatačnej energie alebo vodíkové väzby. Energetická funkcia je tvorená 8 časťami, ktoré sú nakoniec lineárne skombinované. Nástroj je dostupný ako samostatná aplikácia \cite{foldx}.
 
 \chapter{Typografické a~jazykové zásady}
 Při tisku odborného textu typu {\it technická zpráva} (anglicky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
