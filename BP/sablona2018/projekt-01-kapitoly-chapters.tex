@@ -200,7 +200,7 @@ Podľa tejto hodnoty je možné rozdeliť mutácie na stabilizujúce, neutrálne
 
 
 \chapter{Strojové učenie}
-
+\label{ml}
 Strojové učenie je v súčasnej dobe chápané ako disciplína umelej inteligencie. Základnou technikou strojového učenia je prehľadávanie stavového priestoru. K charakteristickým vlastnostiam patrí využívanie znalostí, práca so symbolickými či štruktúrovanými premennými \cite{machine_learning}. Pojem strojové učenie takisto označuje počítačové metódy pracujúce s obrovským množstvom dát, medzi ktorými je snahou nájsť vzťahy. Takéto metódy nachádzajú svoje uplatnenie pri hľadaní riešení v mnohých odvetviach akými sú počítačové videnie, rozpoznávanie reči a takisto bioinformatika. Keďže strojové učenie nachádza v mnohých odvetviach čoraz väčšie uplatnenie, je potrebné brať do úvahy jeho výhody a rovnako aj nevýhody. Medzi výhody patrí automatické hľadanie vzťahov vo veľkom množstve dát, čo by bolo pri mechanickom hľadaní takmer nemožné. Medzi hlavné nevýhody metód patrí neschopnosť správnej analýzy dát pri nevyváženosti predložených dát, nesprávne výsledky pri malom množstve tréningových dát pre metódu alebo nemožnosť práce s dátami obsahujúcimi veľké množstvo parametrov.
 
 V tejto kapitole sa budem venovať základným technikám strojového učenia a popisom používaných algoritmov. 
@@ -327,11 +327,11 @@ Podľa \cite{polikar} existuje mnoho teoretických a praktických dôvodov na po
 
 \section{Tvorba ensemble systémov}
 
-Existujú dva základné spôsoby, ako vybrať členov ensemble systému: bagging a boosting.
+Existujú dva základné spôsoby, ako vybrať členov ensemble systému: bagging a boosting. Príklad ensemble systému je možné vidieť na obrázku \ref{ensemble}.
 
 \subsection{Bagging}
 
-Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri  štatistickej klasifikácií a regresií. Rôznorodosť je dosiahnutá využitím bootstrapovaných (TODO ako to prelozit) podmnožín tréningových dát, pričom rôzne tréningové množiny sú vybrané náhodne s náhradou z celého množstva tréningových dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
+Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri  štatistickej klasifikácií a regresií. Rôznorodosť je dosiahnutá využitím tzv. bootstrap podmnožín tréningových dát, pričom rôzne tréningové množiny sú vybrané náhodne s náhradou z celého množstva tréningových dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
 
 Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaisteneie dostatočného množstva tréningových vzorkov v podmnožinách je približne 75 až 100\% vzorkov prítomných v každej podmnožine. Nastáva tak veľký prekryv medzi tréningovými podmnožinami a mnoho vzorkov sa nachádza viackrát v danej podmnožine. V takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s rôznymi tréningovými dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
 
@@ -345,6 +345,18 @@ Boosting \cite{boosting} je ďaľším algoritmom na výber členov ensemble sys
 	\item Nakoniec sú klasifikátory skombinované hlasovaním väčšiny.
 \end{itemize}
 
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		\scalebox{0.4}
+		{   
+			\includegraphics{ensemble.png}
+			%https://www.bbc.co.uk/education/guides/zc499j6/revision/2
+		}
+		\caption[ensemble]{Ensemble systém. Prevzaté a upravené z \cite{polikar}.}
+		\label{ensemble}	
+\end{center}
+\end{figure}
 
 \section{Spojenie klasifikátorov}
 
@@ -363,14 +375,19 @@ Do kategórie netrénovateľných metód môžeme zaradiť nasledujúce metódy:
 \begin{itemize}
 	\item \textit{Hlasovanie väčšiny:} Najjednoduchšia metóda, ktorá priradí objektu triedu na základe počtu hlasov jednotlivých klasifikátorov. Existujú 3 typy: jednotné hlasovanie, kde sa všetky klasifikátory musia zhodnúť na predikcií; jednoduché hlasovanie v ktorom sa aspoň polovica klasifikátorov musí zhodnúť na rozhodnutí; väčšinové hlasovanie kde je výsledok daný podľa počtu hlasov.
 	\item \textit{Váhované hlasovanie väčšiny:} Tento prístup je vylepšením predchádzajúceho prístupu, jednotlivé klasifikátory majú rôznu váhu v konečnom rozhodovaní a tieto váhy by mali byť prispôsobené ich presnosti.
-	\item \textit{Bayesova kombinácia:} Váhovaná metóda, váha spojená s klasifikátorom je posterior(TODO) pravdepodobnosť klasifikátora na tréningovej sade.
+	\item \textit{Bayesova kombinácia:} Váhovaná metóda, váha spojená s klasifikátorom je tzv. posterior pravdepodobnosť klasifikátora na tréningovej sade.
 	\item \textit{Váhovanie entropie:} Rovnako sa jedná o váhovanú metódu a váhy klasifikátorov sú nepriamo úmerné entropií klasifikačného vektoru.
 \end{itemize}
 
 
 \chapter{Nástroje na predikciu stability}
 
+Ako je už uvedené v kapitole \ref{ml}, strojové učenie nachádza čoraz väčšie uplatnenie v rôznych oblastiach akou je aj bioinformatika. V oblasti skúmania a predikcie stability vzniká mnoho nástrojov využívajúcich práve rôznych techník a metód strojového učenia. Takéto nástroje sú však zatiaľ len vo svojich začiatkoch a majú mnoho nedostatkov spojených najmä s potrebnými dátami. Ďaľšou skupinou nástrojov na predikciu stability sú také, ktoré využívajú tzv. silové polia. Túto skupinu nástrojov môžeme rozdeliť na také, ktoré využívajú fyzikálne efektívne energetické funkcie simulujúce základné sily pôsobiace medzi atómami a na metódy založené na štatistických potenciáloch, pre ktoré sú energie odvodené z výskytu reziduí alebo atómoých spojoch uvedených v dátových sadách pozostávajúcich z experimentálne charakterizovaných mutovaných proteínov.
+V tejto kapitole sa zameriam na stručné zhodnotenie a opis rôznych predikčných nástrojov patriacich do vyššie uvedených kategórií.
+
 \section{Strojové učenie}
+
+Strojové učenie nachádza čoraz širšie uplatnenie v bioinformatike a mnohé predikčné nástroje ho využívajú ako svoj základ. V tejto sekcií sa nachádza charakteristika nástrojov využívajúch práve metódy strojového učenia.
 
 \subsection{AUTO-MUTE}
 
@@ -403,6 +420,8 @@ ELASPIC je nástroj využívajúci ensemble stratégie. Slúži na predikciu hod
 
 \section{Energetická funkcia - fyzikálny potenciál}
 
+Nasledujúca sekcia obsahuje stručnú charakteristiku nástrojov využívajúcich k predikcií fyzikálny potenciál.
+
 \subsection{CC/PBSA}
 
 Jedná sa o štruktúrne založenú metódu pre rýchle a kvantitatívne odhadnutie voľnej energie potrebnej k zloženiu mutovaného proteínu. V prvom kroku metóda uskutočňuje rýchle generovanie alternatívnych proteínových konformácií pomocou programu CONCOORD na navzorkovanie dostupného konfiguračného priestoru. Energetická funkcia založená na silových poliach a riešenie Poisson-Boltzmannovej rovnice sú spriemerované nad vytvoreným celkom. Voľná energia je nakoniec aproximovaná ako suma elektrostatických interakcií, van der Waalsových energií a zmenou entropie. Nástroj je dostupný ako webová služba \cite{ccpbsa}. 
@@ -420,6 +439,8 @@ Rosetta predstavuje sadu softvéru na makromolekulárne modelovanie. Zahŕňa ce
 Metóda je založená na výpočte atómových potenciálov a potenciálov torzných uhlov, ktoré boli získané z proteínových štruktúr pomocou webového serveru PISCES. Hodnoty Boltzmannovej energie sú vypočítané z radiálnej párovej distribúcie atómov aminokyselín a Gaussovská apodizačná funkcia je aplikovaná na priradenie výhodných energetických hodnôt pre susediace orientácie pozorovaných torzných uhlov. Nástroj je dostupný ako webová služba \cite{cupsat}.  
 
 \section{Energetická funkcia - štatistický potenciál}
+
+Nasledujúca sekcia obsahuje stručnú charakteristiku nástrojov využívajúcich k predikcií štatistický potenciál.
 
 \subsection{PopMuSiC}
 
