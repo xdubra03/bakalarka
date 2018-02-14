@@ -2,7 +2,7 @@
 #imports
 
 from __future__ import division
-from sklearn.ensemble import RandomForestClassifier
+#from sklearn.ensemble import RandomForestClassifier
 import pandas as pd
 import Bio
 from Bio.PDB import *

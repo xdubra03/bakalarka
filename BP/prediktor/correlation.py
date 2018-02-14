@@ -114,16 +114,17 @@ def compute_conservation(file,residue_start,index):
 	return pos
 
 
-if not os.path.exists(name):
+"""if not os.path.exists(name):
     os.mkdir(name)
     copyfile(name+'clustal.fasta','./'+name+'/'+name+'clustal.fasta')
     copyfile(name+'.pdb','./'+name+'/'+name+'.pdb')
     copyfile(name+'_NEW.txt','./'+name+'/'+name+'_NEW.txt')
     createAlignementTable(correlation_file,filename)
     copyfile(name+'correlation.txt','./'+name+'/'+name+'correlation.txt')
+"""
 residue_start = PDB_parse(name)
 #column_index = compute_conservation(correlation_file,residue_start,index)
-os.chdir(name)
+#os.chdir(name)
 arr = []
 resArr = dict()
 nucleoColumn1 = dict()
@@ -180,7 +181,7 @@ with open(correlation_file,'r') as f:
                         correlation_score += resArr[key] * math.log(value,2)
             correlation_array.append(correlation_score)
             #fl.write(str(correlation_score)+'\n')
-            #print(correlation_score)
+            print(correlation_score)
             #new_arr = resArr
             correlation_score = 0
             resArr = dict()
