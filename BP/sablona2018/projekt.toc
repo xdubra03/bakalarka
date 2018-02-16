@@ -49,10 +49,12 @@
 \contentsline {subsection}{\numberline {6.3.1}PopMuSiC}{24}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}DMutant}{24}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}FoldX}{24}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{25}{chapter.7}
-\contentsline {section}{\numberline {7.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{26}{section.7.1}
-\contentsline {chapter}{\numberline {8}Z\IeC {\'a}v\IeC {\v e}r}{28}{chapter.8}
-\contentsline {chapter}{Literatura}{29}{chapter*.2}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{31}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{32}{section*.4}
+\contentsline {chapter}{\numberline {7}D\IeC {\'a}tov\IeC {\'a} sada}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Parametre muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu}{25}{section.7.1}
+\contentsline {chapter}{\numberline {8}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{27}{chapter.8}
+\contentsline {section}{\numberline {8.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{28}{section.8.1}
+\contentsline {chapter}{\numberline {9}Z\IeC {\'a}v\IeC {\v e}r}{30}{chapter.9}
+\contentsline {chapter}{Literatura}{31}{chapter*.2}
+\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{34}{appendix.A}
+\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{35}{section*.4}
 \contentsfinish 

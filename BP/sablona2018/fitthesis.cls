@@ -60,6 +60,7 @@
 % Balicky / Packages
 %-----------------------------------------------------------------------------
 \usepackage{amsmath}
+\usepackage{interval}
 \usepackage{amssymb}
 \usepackage[czech,slovak,english]{babel}
 \usepackage[utf8]{inputenc} %kodovani / encoding

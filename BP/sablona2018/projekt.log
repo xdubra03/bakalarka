@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  9 FEB 2018 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  16 FEB 2018 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -84,7 +84,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/interval/interval.sty
+Package: interval 2014/08/04 v0.3
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks19
+\pgfkeys@temptoks=\toks20
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks21
+)))) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -124,8 +135,8 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
@@ -502,7 +513,7 @@ Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks24
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
@@ -546,9 +557,9 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count105
-\float@exts=\toks22
+\float@exts=\toks25
 \float@box=\box28
-\@float@everytoks=\toks23
+\@float@everytoks=\toks26
 \@floatcapt=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
@@ -580,7 +591,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count111
 \c@LT@tables=\count112
 \c@LT@chunks=\count113
-\LT@p@ftn=\toks24
+\LT@p@ftn=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
@@ -627,11 +638,11 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen131
 \extrarowheight=\dimen132
-\NC@list=\toks25
+\NC@list=\toks28
 \extratabsurround=\skip70
 \backup@length=\skip71
 )
-\everycr=\toks26
+\everycr=\toks29
 \minrowclearance=\skip72
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
@@ -645,7 +656,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@target=\dimen137
 \TX@delta=\dimen138
 \TX@cols=\count118
-\TX@ftn=\toks27
+\TX@ftn=\toks30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -675,7 +686,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count137
 \lst@gtempboxa=\box34
-\lst@token=\toks28
+\lst@token=\toks31
 \lst@length=\count138
 \lst@currlwidth=\dimen139
 \lst@column=\count139
@@ -1325,12 +1336,12 @@ LaTeX Info: Redefining \selectfont on input line 166.
 \scratchbox=\box52
 \nofMPsegments=\count298
 \nofMParguments=\count299
-\everyMPshowfont=\toks29
+\everyMPshowfont=\toks32
 \MPscratchCnt=\count300
 \MPscratchDim=\dimen180
 \MPnumerator=\count301
 \makeMPintoPDFobject=\count302
-\everyMPtoPDFconversion=\toks30
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1380,7 +1391,7 @@ File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 \@vyskaobr=\skip82
 \@sirkaobr=\skip83
 
-<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=226, 167.13641pt x 165.87971pt
+<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=234, 167.13641pt x 165.87971pt
 >
 File: template-fig/VUT_symbol_barevne_CMYK_CZ.pdf Graphic file (type pdf)
  <use template-fig/VUT_symbol_barevne_CMYK_CZ.pdf>
@@ -1470,7 +1481,7 @@ a en-zým RNA-polymeráza,
 
 LaTeX Warning: Citation `bibid' on page 7 undefined on input line 87.
 
-<structure.png, id=370, 953.5625pt x 460.72125pt>
+<structure.png, id=380, 953.5625pt x 460.72125pt>
 File: structure.png Graphic file (type png)
  <use structure.png>
 Package pdftex.def Info: structure.png used on input line 98.
@@ -1484,7 +1495,7 @@ Overfull \hbox (47.94829pt too wide) in paragraph at lines 98--99
 Kapitola 3.
 [8
 
-] [9] <mutation_types.png, id=411, 626.34pt x 438.63875pt>
+] [9] <mutation_types.png, id=421, 626.34pt x 438.63875pt>
 File: mutation_types.png Graphic file (type png)
 
 <use mutation_types.png>
@@ -1504,7 +1515,7 @@ Overfull \hbox (1.54001pt too wide) in paragraph at lines 229--231
  Al-go-rit-mus pro-du-kuje klasifika£no-
  []
 
-[13] <rf.png, id=448, 445.665pt x 334.24875pt>
+[13] <rf.png, id=458, 445.665pt x 334.24875pt>
 File: rf.png Graphic file (type png)
  <use rf.png>
 Package pdftex.def Info: rf.png used on input line 265.
@@ -1514,7 +1525,7 @@ Package pdftex.def Info: rf.png used on input line 265.
 Kapitola 5.
 [17
 
-] <ensemble.png, id=480, 966.61125pt x 821.0675pt>
+] <ensemble.png, id=490, 966.61125pt x 821.0675pt>
 File: ensemble.png Graphic file (type png)
  <use ensemble.png>
 Package pdftex.def Info: ensemble.png used on input line 355.
@@ -1528,43 +1539,47 @@ Kapitola 6.
 Kapitola 7.
 [25
 
-] [26] [27]
+] [26]
 Kapitola 8.
-) (./projekt.bbl [28
+[27
 
-] [29
+] [28] [29]
+Kapitola 9.
+) (./projekt.bbl [30
 
-])
+] [31
+
+] [32])
 \c@ttl@toc@chapters=\count305
- (./projekt-30-prilohy-appendices.tex [30]
+ (./projekt-30-prilohy-appendices.tex [33]
 P\IeC {\v r}\IeC {\'\i }loha A.
-[31
+[34
 
-] [32] [33] [34])
+] [35] [36] [37])
 \tf@ptc=\write5
 \openout5 = `projekt.ptc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [35]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./projekt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `projekt.out' has not changed.
-(rerunfilecheck)             Checksum: 3E150A9BFC47D6FE5E97BDCB663B6CFF;8450.
+(rerunfilecheck)             Checksum: 9DAE47137E6FA528E8F9174674CC50A1;8763.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22347 strings out of 493039
- 363337 string characters out of 6136943
- 433204 words of memory out of 5000000
- 25346 multiletter control sequences out of 15000+600000
+ 22825 strings out of 493039
+ 376316 string characters out of 6136943
+ 445423 words of memory out of 5000000
+ 25799 multiletter control sequences out of 15000+600000
  129080 words of font info for 104 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 41i,11n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,11n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/f
 onts/enc/dvips/opensans/opensans-03.enc}{/usr/share/texlive/texmf-dist/fonts/en
@@ -1589,10 +1604,10 @@ re/texlive/texmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lm
 tt9.pfb>
-Output written on projekt.pdf (38 pages, 1059804 bytes).
+Output written on projekt.pdf (41 pages, 1068214 bytes).
 PDF statistics:
- 746 PDF objects out of 1000 (max. 8388607)
- 648 compressed objects within 7 object streams
- 152 named destinations out of 1000 (max. 500000)
- 492 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 779 PDF objects out of 1000 (max. 8388607)
+ 678 compressed objects within 7 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

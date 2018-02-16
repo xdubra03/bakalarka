@@ -16,9 +16,19 @@ Alberts, B.: \emph{{\it Základy buněčné biologie: úvod do molekulární
 Alpaydin, E.: \emph{{\it Introduction to Machine Learning}}. MIT Press, 2010,
   ISBN 978-0-262-01243-0.
 
+\bibitem{protherm}
+Bava, K.~A.; Gromiha, M.~M.; Uedaira, H.; aj.: ProTherm, version 4.0:
+  Thermodynamic Database for Proteins and Mutants. \emph{Nucleic Acids
+  Research}, 2004.
+
 \bibitem{ccpbsa}
 Benedix, A.; Becker, C.~M.; Groot, B.~L.; aj.: Predicting free energy changes
   using structural ensembles. \emph{Nature methods}, 2009.
+
+\bibitem{swissprot}
+Boeckmann, B.; Bairoch, A.; Apweiler, R.; aj.: The SWISS-PROT protein
+  knowledgebase and its supplement TrEMBL in 2003. \emph{Nucleic Acids
+  Research}, 2003.
 
 \bibitem{breiman2}
 Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
@@ -69,10 +79,18 @@ Huang, L. T.~.; Gromiha, M.~M.; Ho, S.~Y.: iPTREE-STAB: interpretable decision
   tree based method for predicting protein stability changes upon mutations.
   \emph{Bioinformatics}, 2007.
 
+\bibitem{pmd}
+Kawabata, T.; Ota, M.; Nishikawa, K.: The protein mutant database.
+  \emph{Nucleic Acids Research}, 1999.
+
 \bibitem{rosetta}
 Kellogg, E.; Leaver-Fay, A.; Baker, D.: Role of conformational sampling in
   computing mutationinduced changes in protein structure and stability.
   \emph{Proteins}, 2011.
+
+\bibitem{threshold}
+Khatum, J.; Khare, S.~D.; Dokholyan, N.~V.: Can contact potentials reliably
+  predict stability of proteins? \emph{Journal of Molecular Biology}, 2004.
 
 \bibitem{maestro}
 Laimer, J.; Hofer, H.; Fritz, M.; aj.: MAESTRO - multi agent stability
@@ -118,6 +136,11 @@ Rábová, Z.; Hanáček, P.; Peringer, P.; aj.: {\it Užitečné rady pro
 \bibitem{boosting}
 Schapire, R.~E.: The Strength of Weak Learnability. \emph{Machine Learning},
   1990.
+
+\bibitem{pdb}
+Sussman, J.~L.; Lin, D.; Jiang, J.; aj.: Protein Data Bank (PDB): Database of
+  Three-Dimensional Structural Information of Biological Macromolecules.
+  \emph{Acta Cryst.}, 1998.
 
 \bibitem{gibbs}
 Voet, D.; Voet, J.~G.; Pratt, C.~W.: \emph{{\it Fundamentals of Biochemistry:
