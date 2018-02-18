@@ -92,6 +92,10 @@ Kellogg, E.; Leaver-Fay, A.; Baker, D.: Role of conformational sampling in
 Khatum, J.; Khare, S.~D.; Dokholyan, N.~V.: Can contact potentials reliably
   predict stability of proteins? \emph{Journal of Molecular Biology}, 2004.
 
+\bibitem{hydrophobicity}
+Kyte, J.; Doolittle, R.~F.: A simple method for displaying the hydropathic
+  character of a protein. \emph{Journal of Molecular Biology}, 1982.
+
 \bibitem{maestro}
 Laimer, J.; Hofer, H.; Fritz, M.; aj.: MAESTRO - multi agent stability
   prediction upon point mutations. \emph{BMC Bioinformatics}, 2015.

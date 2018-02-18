@@ -16,45 +16,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "bibid"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in proteiny
-You've used 35 entries,
+You've used 36 entries,
             3151 wiz_defined-function locations,
-            812 strings with 9968 characters,
-and the built_in function-call counts, 14743 in all, are:
-= -- 953
-> -- 637
+            816 strings with 10084 characters,
+and the built_in function-call counts, 15122 in all, are:
+= -- 978
+> -- 651
 < -- 4
-+ -- 333
-- -- 182
-* -- 753
-:= -- 1793
-add.period$ -- 70
-call.type$ -- 35
-change.case$ -- 152
++ -- 341
+- -- 186
+* -- 771
+:= -- 1839
+add.period$ -- 72
+call.type$ -- 36
+change.case$ -- 156
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 1487
-empty$ -- 1373
-format.name$ -- 207
-if$ -- 3111
+cite$ -- 37
+duplicate$ -- 1528
+empty$ -- 1409
+format.name$ -- 212
+if$ -- 3190
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 387
-newline$ -- 117
-num.names$ -- 70
-pop$ -- 847
+int.to.str$ -- 36
+missing$ -- 397
+newline$ -- 120
+num.names$ -- 72
+pop$ -- 870
 preamble$ -- 1
-purify$ -- 150
+purify$ -- 154
 quote$ -- 0
-skip$ -- 586
+skip$ -- 600
 stack$ -- 0
-substring$ -- 207
-swap$ -- 679
+substring$ -- 213
+swap$ -- 696
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 122
+type$ -- 126
 warning$ -- 1
-while$ -- 73
-width$ -- 37
-write$ -- 301
+while$ -- 75
+width$ -- 38
+write$ -- 309
 (There were 2 error messages)

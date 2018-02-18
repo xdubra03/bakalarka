@@ -467,8 +467,8 @@ Databáza ProTherm bola naposledy aktualizovaná vo februári v roku 2013 a akt
 	\item Opačné znamienka hodnoty $\Delta\Delta G$ 
 \end{itemize}
 
-Aby bola vytvorená dátová sada spoľahlivá a aby eliminovala možné experimentálne chyby v nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s hodnotami $\Delta\Delta G$ z intervalu $(-0.5,0.5)$ boli odstránené. Záznamy s hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a záznamy s $\Delta\Delta G$ $\leq$ 0.5 $kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
-V prípade, že pre jednu mutáciu bolo uskutočnených viac meraní, ponechaný bol iba záznam merania, ktoré prebehlo pod experimentálnou hodnotou pH, ktorá bola blízko fyziologickej hodnote pH 7. Každý záznam bol rozšírený o štrukturálne informácie.
+Aby bola vytvorená dátová sada spoľahlivá a aby eliminovala možné experimentálne chyby v nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s hodnotami $\Delta\Delta G$ z intervalu $(-0.5,0.5)$ boli odstránené. Záznamy s hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a~záznamy s~$\Delta\Delta G$ $\leq$ 0.5~$kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
+V prípade, že pre jednu mutáciu bolo uskutočnených viac meraní, ponechaný bol iba záznam merania, ktoré prebehlo pod experimentálnou hodnotou pH, ktorá bola blízko fyziologickej hodnote pH 7. Každý záznam bol rozšírený o~štrukturálne informácie.
 
 \section{Parametre mutačného záznamu}
 
@@ -477,16 +477,14 @@ Každý záznam mutácie je tvorený z 8 hodnôt, ktoré tvoria vstupný vektor 
 \begin{itemize}
 	\item \textbf{Zmena polarity:} Tento údaj poskytuje informáciu o zmene v polarite aminokyseliny po mutácií oproti polarite pôvodnej aminokyseliny. Údaj bol získaný z tabuľkových hodnôt pre skúmané aminokyseliny. Uvažované boli len polárne a nepolárne aminokyseliny.
 	\item \textbf{Zmena náboja}: Hodnota vyjadruje informáciu o zmene náboja pôvodnej aminokyseliny a aminokyseliny po mutácií. Výsledný údaj bol získaný z tabuľkových hodnôt pre dané aminokyseliny. Uvažovaný bol negatívny, pozitívny a neutrálny náboj. 
-	\item \textbf{Zmena indexu hydrofobicity:} Údaj o výslednej zmene hydrofobicity mutovanej a pôvodnej aminokyseliny. Číselný údaj značí rozdiel medzi tabuľkovými hodnotami týchto porovnávaných aminokyselín. (hodila by se reference – vychází z práce od Kate and Doolitle)
+	\item \textbf{Zmena indexu hydrofobicity:} Údaj o výslednej zmene hydrofobicity mutovanej a pôvodnej aminokyseliny. Číselný údaj značí rozdiel medzi tabuľkovými hodnotami týchto porovnávaných aminokyselín \cite{hydrophobicity}. 
 	\item \textbf{Zmena veľkosti aminokyseliny:} Údaj o zmene veľkosti pôvodnej aminokyseliny. Aminokyseliny boli rozdelené do 3 intervalov na základe ich veľkosti. V jednom intervale sa tak nachádzajú len aminokyseliny, pre ktoré platí, že rozdiel ich veľkostí je menší alebo rovný hodnote 50. Následne sme zisťovali, do akého z jednotlivých intervalov patrí pôvodná a mutovaná aminokyselina. Z tohto údaju bolo možné určiť zmenu veľkosti z veľkej na malú, opačnú zmenu alebo žiadnu zmenu, ak aminokyseliny patrili do rovnakého intervalu.
 	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v knižnici BioPython. Pre zjednodušenie sme každému proteínu priradili tento údaj len z 3 možností, ktorými sú helix, coil a sheet.
 	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru sme opäť použili modul DSSP prítomný v knižnici BioPython.
 	\item \textbf{Konzervovanosť:} Jeden z najdôležitejších parametrov v zázname mutácie. Informácia o konzervovanosti pozície na ktorej došlo k mutácií je reprezentovaná
 	jednou z 5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felensteinov algoritmus. Mutácie na konzervovanej pozícií sú z hľadiska skúmania veľmi zaujímavé, pretože konzerované aminokyseliny bývajú dôležité pre stabilitu, aktivitu alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
-	\item \textbf{Korelácia:}
-	
+	\item \textbf{Korelácia:} Výpočet korelácie mutovanej pozície s ostatnými pozíciami vo viacnásobnom zarovnaní. Stĺpec v zarovnaní predstavuje náhodnú veličinu, počítame vzájomnú informáciu, ktorá vyjadruje závislosť dvojice náhodných veličín. Po vypočítaní koeficientov sa zistí, či sa medzi získanými koeficientami nachádza aspoň jeden s hodnotou nad stanoveným prahom. Ak áno, pozícia je korelovaná, v opačnom prípade nie je.
 \end{itemize}
-
 
 \chapter{Typografické a~jazykové zásady}
 Při tisku odborného textu typu {\it technická zpráva} (anglicky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
