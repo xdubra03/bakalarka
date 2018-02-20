@@ -23,11 +23,11 @@ cols3 = ['correlation','conservation','polaritychange','chargechange','secondary
 colsRes = ['class']
 
 
-trainArr = train_frame.as_matrix(cols)
+trainArr = train_frame.as_matrix(cols2)
 trainRes = train_frame.as_matrix(colsRes)
 trainRes = trainRes.ravel()
 
-testArr = test_frame.as_matrix(cols)
+testArr = test_frame.as_matrix(cols2)
 testRes = test_frame.as_matrix(colsRes)
 testRes = testRes.ravel()
 
@@ -37,11 +37,11 @@ classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
 classifier.fit(trainArr, trainRes)
 results = classifier.predict(testArr)
 
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .55, -1: .45 })
+classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
 classifier.fit(trainArr, trainRes)
 results2 = classifier.predict(testArr)
 
-predicted_class = results
+predicted_class = results2
 
 mcc = matthews_corrcoef(test_class, predicted_class)
 print(mcc)

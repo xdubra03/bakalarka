@@ -22,11 +22,11 @@ cols3 = ['correlation','conservation','polaritychange','chargechange','secondary
 colsRes = ['class']
 
 #dataset 150 150 vsetky parametre
-trainArr = train_frame.as_matrix(cols)
+trainArr = train_frame.as_matrix(cols2)
 trainRes = train_frame.as_matrix(colsRes)
 trainRes = trainRes.ravel()
 
-testArr = test_frame.as_matrix(cols)
+testArr = test_frame.as_matrix(cols2)
 testRes = test_frame.as_matrix(colsRes)
 testRes = testRes.ravel()
 
