@@ -21,7 +21,7 @@ cols3 = ['correlation','conservation','polaritychange','chargechange','secondary
 
 colsRes = ['class']
 
-#
+#dataset 150 150 vsetky parametre
 trainArr = train_frame.as_matrix(cols)
 trainRes = train_frame.as_matrix(colsRes)
 trainRes = trainRes.ravel()
@@ -32,20 +32,25 @@ testRes = testRes.ravel()
 
 test_class = test_frame[['class']]
 
-#correct = 0
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
-classifier.fit(trainArr, trainRes)
-results = classifier.predict(testArr)
+rf = RandomForestClassifier(max_features=0.3,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+rf.fit(trainArr,trainRes)
+result = rf.predict(testArr)
 
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .43, -1: .57 })
-classifier.fit(trainArr, trainRes)
-results2 = classifier.predict(testArr)
-
-predicted_class = results
+predicted_class = result
 
 mcc = matthews_corrcoef(test_class, predicted_class)
 print(mcc)
 
 #with open('majority_voting4_new.csv', 'w') as f:
 #	writer = csv.writer(f, delimiter=',')
-#	writer.writerows(zip(results))
+#	writer.writerows(zip(result))
+
+#classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
+#classifier.fit(trainArr0, trainRes0)
+#results = classifier.predict(testArr)
+#rf = RandomForestClassifier(max_features=0.3,n_estimators=400,n_jobs=1,min_samples_leaf=50)
+#rf.fit(trainArr0,trainRes0)
+#results = rf.predict(testArr)
+#test_frame['predicted1'] = results
+#test_frame.to_csv(sys.argv[1])
+#print(test_frame)

@@ -8,6 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import csv
 from sklearn.metrics import matthews_corrcoef
 
+
 #train_file = sys.argv[1]
 train_frame = pd.read_csv(sys.argv[1])
 
@@ -21,7 +22,7 @@ cols3 = ['correlation','conservation','polaritychange','chargechange','secondary
 
 colsRes = ['class']
 
-#
+
 trainArr = train_frame.as_matrix(cols)
 trainRes = train_frame.as_matrix(colsRes)
 trainRes = trainRes.ravel()
@@ -31,13 +32,12 @@ testRes = test_frame.as_matrix(colsRes)
 testRes = testRes.ravel()
 
 test_class = test_frame[['class']]
-
 #correct = 0
 classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
 classifier.fit(trainArr, trainRes)
 results = classifier.predict(testArr)
 
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .43, -1: .57 })
+classifier = svm.SVC(kernel = 'linear',class_weight={1: .55, -1: .45 })
 classifier.fit(trainArr, trainRes)
 results2 = classifier.predict(testArr)
 
@@ -45,6 +45,8 @@ predicted_class = results
 
 mcc = matthews_corrcoef(test_class, predicted_class)
 print(mcc)
+
+
 
 #with open('majority_voting4_new.csv', 'w') as f:
 #	writer = csv.writer(f, delimiter=',')

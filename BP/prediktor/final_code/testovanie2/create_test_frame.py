@@ -5,12 +5,6 @@ import pandas as pd
 import random
 import sys
 import csv
-
-
-
-
-
-
 def create_test_frame(self):
 	data_frame = pd.read_csv(sys.argv[1])
 
@@ -26,10 +20,10 @@ def create_test_frame(self):
 	positive_values = data_frame['class'] == 1
 	negative_values = data_frame['class'] == -1
 
-	pos_frame = pos_data.ix[random.sample(pos_data.index,200)]
+	pos_frame = pos_data.ix[random.sample(pos_data.index,250)]
 	neg_frame = neg_data.ix[random.sample(neg_data.index,200)]
-	print(len(pos_frame))
-	print(len(neg_frame))
+	print(pos_frame)
+	print(neg_frame)
 	#pos_frame = pos_data.take(np.random.permutation(len(pos_data))[:80])
 	#neg_frame = neg_data.take(np.random.permutation(len(neg_data))[:160])
 	#headers = ["conservation","polaritychange","chargechange","hydroindexchange","secondarystruc","asa","sizechange","class"]
