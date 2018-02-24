@@ -416,14 +416,17 @@ class MutationRecord():
 
     #run standalone BLASTP for searching homologue sequences
     def run_blast(self):
-    	subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'])
-
+        FNULL = open(os.devnull, 'w')
+    	subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'],stdout=FNULL, stderr=subprocess.STDOUT)
+        FNULL.close()
     #run CLUSTAL OMEGA to create multiple sequence alignement
     def run_clustal(self):
     	in_file = self.pdb_id + ".txt"
     	out_file = self.pdb_id + "clustal.fasta"
+        FNULL = open(os.devnull, 'w')
     	clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
-    	subprocess.call(['./tools/clustalo','-i','%s'%in_file,'--outfmt=vie','-o','%s'%out_file,'--auto','-v','--force'])
+    	subprocess.call(['./tools/clustalo','-i','%s'%in_file,'--outfmt=vie','-o','%s'%out_file,'--auto','-v','--force'],stdout=FNULL, stderr=subprocess.STDOUT)
+        FNULL.close()
 
     #create newick file with phylogenetic tree for conservation
     def create_newick_file(self):
@@ -432,8 +435,9 @@ class MutationRecord():
     	self.run_clustal()
     	protein = self.pdb_id+'clustal.fasta'
     	output = self.pdb_id+'_newick'
-    	subprocess.call(['./tools/FastTree','-out','%s'%output,'%s'%protein])
-
+        FNULL = open(os.devnull, 'w')
+        subprocess.call(['./tools/FastTree','-out','%s'%output,'%s'%protein],stdout=FNULL, stderr=subprocess.STDOUT)
+        FNULL.close()
     """compute conservation of mutated position"""
     def conservation(self,newick_file,clustal_file,residue_start):
         #create blosum matrix and probability_matrix for conservation computation
