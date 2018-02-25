@@ -3,19 +3,21 @@
 from __future__ import division
 import math
 import pandas as pd
-import Bio
-from Bio.PDB import *
 import urllib2
 import os
 import shutil
 import sys
 import subprocess
-from ete3 import Tree
-from blosum import *
+
+import Bio
+from Bio.PDB import *
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio import SeqIO
 from Bio.Align.Applications import ClustalOmegaCommandline
+
+from ete3 import Tree
+from blosum import *
 
 class Etree(Tree):
     """class for creating phylogenetic tree and computing conservation of mutated position"""
@@ -226,62 +228,62 @@ class Etree(Tree):
 class MutationRecord():
     """compute mutation record features and create record"""
 
-    #encoding secondary structure
-    __encode_sec_struc = {
+    # encoding secondary structure
+    _encode_sec_struc = {
     	'C':'1','H':'2','S':'3'
     }
 
-    #encoding conservation
-    __encode_conservation = {
+    # encoding conservation
+    _encode_conservation = {
     	'+':'1','-':'-1'
     }
 
-    #encoding charge
-    __encode_charge = {
+    # encoding charge
+    _encode_charge = {
     	'+':'1','-':'-1','0':'0'
     }
 
-    #encoding polarity
-    __encode_polarity = {
-    	'+':'1','-':'-1','0':'0'
+    # encoding polarity
+    _encode_polarity = {
+        '+':'1','-':'-1','0':'0'
     }
 
-    #encoding accessible surface area
-    __encode_asa = {
+    # encoding accessible surface area
+    _encode_asa = {
     	'burried':'10','partially_burried':'11','exposed':'12'
     }
 
-    #encoding size
-    __encode_size = {
+    # encoding size
+    _encode_size = {
     	'+':'1','-':'-1','0':'0'
     }
 
 
-    #dictionary for polarity of amino acid
-    __polarity = {'A':'-','R':'+','N':'+','D':'+','C':'-','E':'+',
+    # dictionary for polarity of amino acid
+    _polarity = {'A':'-','R':'+','N':'+','D':'+','C':'-','E':'+',
                 'Q':'+','G':'-','H':'+','I':'-','L':'-','K':'+',
                 'M':'-','F':'-','P':'-','S':'+','T':'+','W':'-',
                 'Y':'+','V':'-'
     }
-    #dictionary for charge of amino acids
-    #0 neutral
-    #+ positive
-    #- negative
-    __charge = {'A':'0','R':'+','N':'0','D':'-','C':'0','E':'-',
+    # dictionary for charge of amino acids
+    # 0 neutral
+    # + positive
+    # - negative
+    _charge = {'A':'0','R':'+','N':'0','D':'-','C':'0','E':'-',
                 'Q':'0','G':'0','H':'0','I':'0','L':'0','K':'+',
                 'M':'0','F':'0','P':'0','S':'0','T':'0','W':'0',
                 'Y':'0','V':'0'
     }
 
-    #dictionary for hydropathy index of amino acid
-    __hydro_index = {'A':1.8,'R':-4.5,'N':-3.5,'D':-3.5,'C':2.5,
+    # dictionary for hydropathy index of amino acid
+    _hydro_index = {'A':1.8,'R':-4.5,'N':-3.5,'D':-3.5,'C':2.5,
                    'E':-3.5,'Q':-3.5,'G':-0.4,'H':-3.2,'I':4.5,
                    'L':3.8,'K':-3.9,'M':1.9,'F':2.8,'P':-1.6,
                    'S':-0.8,'T':-0.7,'W':-0.9,'Y':-1.3,'V':4.2
     }
 
-    #dictionary for size change of amino acids
-    __size_change1 = {'G':75.1,'A':89.1,'S':105.1,'P':115.1, #first interval
+    # dictionary for size change of amino acids
+    _size_change1 = {'G':75.1,'A':89.1,'S':105.1,'P':115.1, #first interval
     				'V':117.1,'T':119.1,'C':121.2,'I':131.2,'L':131.2,'N':132.1,'D':133.1,
     				'Q':146.1,'K':146.2,'E':147.1,'M':149.2,'H':155.2, #second interval
     				'F':165.2,'R':174.2,'Y':181.2, #3rd interval
@@ -324,15 +326,15 @@ class MutationRecord():
     def get_fasta(self):
         """get FASTA file for selected chain"""
     	fasta_file = self.pdb_id + ".fasta"
-    	fasta_output = open(fasta_file,"w")
-        url_f = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
-    	#url_f = "http://www.rcsb.org/pdb/download/downloadFastaFiles.do?structureIdList=%s&compressionType=uncompressed"%self.name
-    	try:
-    		h = urllib2.urlopen(url_f)
-    	except urllib2.URLError as error:
-    		print(error.reason)
-    		sys.exit(1)
-    	fasta_output.write(h.read())
+    	with open(fasta_file,"w") as fasta_output:
+            url_f = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
+    	       #url_f = "http://www.rcsb.org/pdb/download/downloadFastaFiles.do?structureIdList=%s&compressionType=uncompressed"%self.name
+            try:
+                h = urllib2.urlopen(url_f)
+            except urllib2.URLError as error:
+                print(error.reason)
+                sys.exit(1)
+            fasta_output.write(h.read())
     	fasta_output.close()
 
     #parse XML file from BLASTP output and create file with sequences
@@ -622,50 +624,50 @@ class MutationRecord():
     #compute polarity change for wild-type amino acid and mutated acid
     def compute_polarity(self,x,y):
         """compute polarity change of amino acids"""
-    	if self.__polarity[x] == '-':
-    		if self.__polarity[y] == '+':
+    	if self._polarity[x] == '-':
+    		if self._polarity[y] == '+':
     			return '+'
-    		elif self.__polarity[y] == '-':
+    		elif self._polarity[y] == '-':
     			return '0'
-    	elif self.__polarity[x] == '+':
-    		if self.__polarity[y] == '+':
+    	elif self._polarity[x] == '+':
+    		if self._polarity[y] == '+':
     			return '0'
-    		elif self.__polarity[y] == '-':
+    		elif self._polarity[y] == '-':
     			return '-'
 
     #computing difference in charge of wild-type acid and mutated acid
     def compute_charge(self,x,y):
         """compute charge change of amino acids"""
-    	if self.__charge[x] == '+':
-    		if self.__charge[y] == '-':
+    	if self._charge[x] == '+':
+    		if self._charge[y] == '-':
     			return '-'
-    		elif self.__charge[y] == '0':
+    		elif self._charge[y] == '0':
     			return '-'
-    		elif self.__charge[y] == '+':
+    		elif self._charge[y] == '+':
     			return '0'
-    	elif self.__charge[x] == '0':
-    		if self.__charge[y] == '-':
+    	elif self._charge[x] == '0':
+    		if self._charge[y] == '-':
     			return '-'
-    		elif self.__charge[y] == '0':
+    		elif self._charge[y] == '0':
     			return '0'
-    		elif self.__charge[y] == '+':
+    		elif self._charge[y] == '+':
     			return '+'
-    	elif self.__charge[x] == '-':
-    		if self.__charge[y] == '-':
+    	elif self._charge[x] == '-':
+    		if self._charge[y] == '-':
     			return '0'
-    		elif self.__charge[y] == '0':
+    		elif self._charge[y] == '0':
     			return '+'
-    		elif self.__charge[y] == '+':
+    		elif self._charge[y] == '+':
     			return '+'
 
     #compute hydrophobicity index from difference of wild-type and mutant
     def compute_hydro_index(self,x,y):
         """compute hydrophobicity index"""
-        if self.__hydro_index[x] > self.__hydro_index[y]:
-    		return self.__hydro_index[y] - self.__hydro_index[x]
-    	elif self.__hydro_index[x] < self.__hydro_index[y]:
-    		return self.__hydro_index[y] - self.__hydro_index[x]
-    	elif self.__hydro_index[x] == self.__hydro_index[y]:
+        if self._hydro_index[x] > self._hydro_index[y]:
+    		return self._hydro_index[y] - self._hydro_index[x]
+    	elif self._hydro_index[x] < self._hydro_index[y]:
+    		return self._hydro_index[y] - self._hydro_index[x]
+    	elif self._hydro_index[x] == self._hydro_index[y]:
     		return 0
 
     #encode secondary structure to one of 3 options
@@ -734,22 +736,22 @@ class MutationRecord():
         conservation_code = self.conservation_score_encoding(conservation)
         #compute and encode polarity
         f_polarity = self.compute_polarity(x,y)
-        f_polarity = self.__encode_polarity[f_polarity]
+        f_polarity = self._encode_polarity[f_polarity]
         #compute and encode charge
         f_charge = self.compute_charge(x,y)
-        f_charge = self.__encode_charge[f_charge]
+        f_charge = self._encode_charge[f_charge]
         #compute and encode hydrophobicity index
         f_hydro_index = str(self.compute_hydro_index(x,y))
         size = self.size_change(x,y)
-        size = self.__encode_size[size]
+        size = self._encode_size[size]
         #compute asa and seconda structure
         struc_id,asa = self.compute_ASA(self.pdb_id)
         asa_val = self.divide_asa(asa)
-        asa_val = self.__encode_asa[asa_val]
-        struc_id = self.__encode_sec_struc[struc_id]
+        asa_val = self._encode_asa[asa_val]
+        struc_id = self._encode_sec_struc[struc_id]
         #save inforrmations as a record for predictor
         #record is stored in file pred_record.txt
-        record = open("mutation_record.csv","w")
-        record.write('%s,%s,%s,%s,%s,%s,%s,%s\n' %("correlation","conservation","polaritychange","chargechange","hydroindexchange","secondarystruc","asa","sizechange"))
-        record.write('%s,%s,%s,%s,%s,%s,%s,%s' %(correlation,conservation_code,f_polarity,f_charge,f_hydro_index,struc_id,asa_val,size))
+        with open("mutation_record.csv","w") as record:
+            record.write('%s,%s,%s,%s,%s,%s,%s,%s\n' %("correlation","conservation","polaritychange","chargechange","hydroindexchange","secondarystruc","asa","sizechange"))
+            record.write('%s,%s,%s,%s,%s,%s,%s,%s' %(correlation,conservation_code,f_polarity,f_charge,f_hydro_index,struc_id,asa_val,size))
         record.close()

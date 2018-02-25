@@ -1,26 +1,32 @@
 #!/usr/bin/python
-#imports
+"""main module of predictor"""
 
 from __future__ import division
-import pandas as pd
-import Bio
-from Bio.PDB import *
+
+__version__ = '1.0'
+__author___ = 'Juraj Ondrej Dubrava'
+
 import os
 import shutil
 import sys
 import subprocess
-from mutation_record import *
-from blosum import *
+import csv
+import pandas as pd
+import numpy as np
+
+import Bio
+from Bio.PDB import *
 from Bio.Blast import NCBIWWW
 from Bio.Blast import NCBIXML
 from Bio.Align.Applications import ClustalOmegaCommandline
-import numpy as np
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
-import csv
+
+from mutation_record import *
+from blosum import *
 
 class Ensemble():
-
+    """ensemble system class"""
     def __init__(self):
         self.X_frame1 = pd.read_csv("train200_250_2.csv")
         self.X_frame2 = pd.read_csv("train250_250.csv")
@@ -31,6 +37,8 @@ class Ensemble():
         self.X_test = pd.read_csv("mutation_record.csv")
 
     def predict(self):
+        """predict class of mutation"""
+
         columns = ['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','asa','sizechange']
         columns_asa = ['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','sizechange']
         class_column = ['class']
@@ -72,10 +80,7 @@ class Ensemble():
         Y_testResults1 = self.X_test.as_matrix(class_column)
         Y_testResults1 = Y_testResults1.ravel()
 
-        """
-        train classifiers on specific subset of dataset
-        3 SVM classifiers and 4 Random Forest
-        """
+        #train classifiers on specific subset of dataset, 3 SVM classifiers and 4 Random Forest
         #200 250  SVM
         classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
         classifier.fit(X_trainArray1, Y_trainResults1)
@@ -130,7 +135,7 @@ class Ensemble():
 
 
 class StabilityPredictor():
-    """main predictor class, creates new predictor object."""
+    """main predictor class, creates new predictor object"""
     def __init__(self, arg):
         self.pdb_id = ''
         self.chain = ''
