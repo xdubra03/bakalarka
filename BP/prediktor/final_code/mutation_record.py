@@ -1,4 +1,4 @@
-#this is module for preparing mutation record, e.g. all features in record
+#module for preparing mutation record, e.g. all features in record
 
 from __future__ import division
 import math
@@ -30,47 +30,21 @@ class Etree(Tree):
     #clustal_file = sys.argv[1]
     #_probability_matrix = ProbabilityMatrix(clustal_file+'clustal.fasta',_matrix)
 
-     #parse PDB file to find stating position
-    def PDB_parse(self,name):
-		p = PDBParser()
-		structure = p.get_structure(name,name+".pdb")
-		model = structure[0]
-		#pridat try na jednotlive chainy
-		try:
-			chain = model['A']
-		except KeyError as error:
-			try:
-				chain = model['B']
-			except KeyError as error:
-				try:
-					chain = model['C']
-				except KeyError as error:
-					try:
-						chain = model['I']
-					except KeyError as error:
-						try:
-							chain = model['X']
-						except KeyError as error:
-							print("Cannot find this type of chain.")
-							sys.exit(1)
-						else:
-							pass
-					else:
-						pass
-				else:
-					pass
-			else:
-				pass
-		else:
-			pass
-		#always returns position of first chain which could no be correct
-		residue_list = Selection.unfold_entities(chain,'A')
-		#print(residue_list[0].get_full_id()[3][1])
-		residue_start = residue_list[0].get_full_id()[3][1]
-		return residue_start
+    def PDB_parse(self,name,chain_type):
+        p = PDBParser()
+        structure = p.get_structure(name,name+".pdb")
+        model = structure[0]
+        try:
+            chain = model[chain_type]
+        except KeyError as error:
+            print("key error.\n")
+        residue_list = Selection.unfold_entities(chain,chain_type)
+        residue_start = residue_list[0].get_full_id()[3][1]
+        return residue_start
 
     #compute conservation score on entered position
     def compute_conservation(self,file,residue_start,index,weightsArray,acid1):
+        #"""computes conservation of mutated position"""
 		count_mezera = 0
 		count_basic_acid = 0
 		count_mutated_acid = 0
@@ -160,7 +134,7 @@ class Etree(Tree):
 
 
     def create_names_table(self,file):
-		"""create lookup table for complete sequence ID according to its abbrevation"""
+		"""creates lookup table for complete sequence ID according to its abbrevation"""
 		with open(file,'r') as f:
 			lines = iter(f.readlines())
 			for line in lines:
@@ -185,7 +159,7 @@ class Etree(Tree):
 				self._names.append(leaf.name)
 
     def print_names(self):
-		"""function for printing leafs names"""
+		"""printing leafs names"""
 		for name in self._names:
 			print(name)
 
@@ -203,7 +177,7 @@ class Etree(Tree):
 			node.create_array()
 
     def calculate_weights(self,probability_matrix):
-		"""calculates the values in weights array in each node"""
+		"""calculates weights array values in each node"""
 
 		#fudge factor constant to prevent 0 in the weights array
 		fugde_factor = 0.1
@@ -236,7 +210,7 @@ class Etree(Tree):
 							seq1 = child._idArray[childItem]
 							probability = probability_matrix.find_pair(seq1,seq2)
 
-							#vzorec Pi*Li*t
+							#calculate Pi*Li*t
 							result += probability * child.weightsArray[childItem] * (child.dist + fugde_factor)
 
 						#value from each child needs to be multiplicated
@@ -246,74 +220,67 @@ class Etree(Tree):
 
 						i+=1
 					i = 0
-
-			#print(node.weightsArray.values())
-
 		return self.get_tree_root().weightsArray
 
 
 class MutationRecord():
-    """class for computing mutation record features"""
+    """compute mutation record features and create record"""
 
-    """encoding secondary structure"""
+    #encoding secondary structure
     __encode_sec_struc = {
     	'C':'1','H':'2','S':'3'
     }
 
-    """encoding conservation"""
+    #encoding conservation
     __encode_conservation = {
     	'+':'1','-':'-1'
     }
 
-    """encoding charge"""
+    #encoding charge
     __encode_charge = {
     	'+':'1','-':'-1','0':'0'
     }
 
-    """encoding polarity"""
+    #encoding polarity
     __encode_polarity = {
     	'+':'1','-':'-1','0':'0'
     }
 
-    """encoding accessible surface area"""
+    #encoding accessible surface area
     __encode_asa = {
     	'burried':'10','partially_burried':'11','exposed':'12'
     }
 
-    """encoding size"""
+    #encoding size
     __encode_size = {
     	'+':'1','-':'-1','0':'0'
     }
 
 
-    """dictionary for polarity of amino acids
-     +  polar
-     -  nonpolar
-     """
+    #dictionary for polarity of amino acid
     __polarity = {'A':'-','R':'+','N':'+','D':'+','C':'-','E':'+',
                 'Q':'+','G':'-','H':'+','I':'-','L':'-','K':'+',
                 'M':'-','F':'-','P':'-','S':'+','T':'+','W':'-',
                 'Y':'+','V':'-'
     }
-    """dictionary for charge of amino acids
-     0 neutral
-     + positive
-     - negative
-    """
+    #dictionary for charge of amino acids
+    #0 neutral
+    #+ positive
+    #- negative
     __charge = {'A':'0','R':'+','N':'0','D':'-','C':'0','E':'-',
                 'Q':'0','G':'0','H':'0','I':'0','L':'0','K':'+',
                 'M':'0','F':'0','P':'0','S':'0','T':'0','W':'0',
                 'Y':'0','V':'0'
     }
 
-    """dictionary for hydropathy index of amino acid"""
+    #dictionary for hydropathy index of amino acid
     __hydro_index = {'A':1.8,'R':-4.5,'N':-3.5,'D':-3.5,'C':2.5,
                    'E':-3.5,'Q':-3.5,'G':-0.4,'H':-3.2,'I':4.5,
                    'L':3.8,'K':-3.9,'M':1.9,'F':2.8,'P':-1.6,
                    'S':-0.8,'T':-0.7,'W':-0.9,'Y':-1.3,'V':4.2
     }
 
-    """dictionary for size change of amino acids"""
+    #dictionary for size change of amino acids
     __size_change1 = {'G':75.1,'A':89.1,'S':105.1,'P':115.1, #first interval
     				'V':117.1,'T':119.1,'C':121.2,'I':131.2,'L':131.2,'N':132.1,'D':133.1,
     				'Q':146.1,'K':146.2,'E':147.1,'M':149.2,'H':155.2, #second interval
@@ -330,56 +297,32 @@ class MutationRecord():
 
     #get pdb file for entered pdb id
     def get_pdb(self):
-		protein_file = self.pdb_id + ".pdb"
-		pdb_output  = open(protein_file, "w")
-		url_pdb = "https://files.rcsb.org/download/%s.pdb" %self.pdb_id
-		try:
-			handle = urllib2.urlopen(url_pdb)
-		except URLError as error:
-			print(error.reason)
-			sys.exit(1)
-		pdb_output.write(handle.read())
-		pdb_output.close()
+        """get PDB file"""
+        protein_file = self.pdb_id + ".pdb"
+        with open(protein_file, "w") as pdb_output:
+            url_pdb = "https://files.rcsb.org/download/%s.pdb" %self.pdb_id
+            try:
+                handle = urllib2.urlopen(url_pdb)
+            except URLError as error:
+                print(error.reason)
+                sys.exit(1)
+            pdb_output.write(handle.read())
+        pdb_output.close()
 
-    def PDB_parse(self,name):
-		p = PDBParser()
-		structure = p.get_structure(name,name+".pdb")
-		model = structure[0]
-		#pridat try na jednotlive chainy
-		try:
-			chain = model['A']
-		except KeyError as error:
-			try:
-				chain = model['B']
-			except KeyError as error:
-				try:
-					chain = model['C']
-				except KeyError as error:
-					try:
-						chain = model['I']
-					except KeyError as error:
-						try:
-							chain = model['X']
-						except KeyError as error:
-							print("Cannot find this type of chain.")
-							sys.exit(1)
-						else:
-							pass
-					else:
-						pass
-				else:
-					pass
-			else:
-				pass
-		else:
-			pass
-		#always returns position of first chain which could no be correct
-		residue_list = Selection.unfold_entities(chain,'A')
-		#print(residue_list[0].get_full_id()[3][1])
-		residue_start = residue_list[0].get_full_id()[3][1]
-		return residue_start
+    def PDB_parse(self,name,chain_type):
+        p = PDBParser()
+        structure = p.get_structure(name,name+".pdb")
+        model = structure[0]
+        try:
+            chain = model[chain_type]
+        except KeyError as error:
+            print("key error.\n")
+        residue_list = Selection.unfold_entities(chain,chain_type)
+        residue_start = residue_list[0].get_full_id()[3][1]
+        return residue_start
 
     def get_fasta(self):
+        """get FASTA file for selected chain"""
     	fasta_file = self.pdb_id + ".fasta"
     	fasta_output = open(fasta_file,"w")
         url_f = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
@@ -394,9 +337,14 @@ class MutationRecord():
 
     #parse XML file from BLASTP output and create file with sequences
     def parse_XML(self):
+        """parse XML output from BLASTP and create sequence file"""
     	i=0
-    	output = open(self.pdb_id+".txt","w")
-    	f = open(self.pdb_id+".xml","r")
+        try:
+            output = open(self.pdb_id+".txt","w")
+            f = open(self.pdb_id+".xml","r")
+        except IOError as e:
+            print(e.reason)
+            sys.exit(1)
     	blast = NCBIXML.parse(f)
     	names = []
     	protein = ''
@@ -404,11 +352,11 @@ class MutationRecord():
     		for align in record.alignments:
     			for hsp in align.hsps:
     				i+= 1
-    				protein = '>'+align.hit_id+align.hit_def
+    				protein = '>'+align.hit_id+align.hit_def    #protein name
     				if(protein in names):
-    					break
+    					break          #name already added
     				else:
-    					names.append(protein)
+    					names.append(protein)  #add name
     					output.write('>'+align.hit_id+align.hit_def+'\n')
     				output.write(hsp.sbjct+'\n') #find out
     	f.close()
@@ -416,11 +364,13 @@ class MutationRecord():
 
     #run standalone BLASTP for searching homologue sequences
     def run_blast(self):
+        """search homologue sequences with BLASTP"""
         FNULL = open(os.devnull, 'w')
     	subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'],stdout=FNULL, stderr=subprocess.STDOUT)
         FNULL.close()
     #run CLUSTAL OMEGA to create multiple sequence alignement
     def run_clustal(self):
+        """create multiple sequence alignement with CLUSTAL"""
     	in_file = self.pdb_id + ".txt"
     	out_file = self.pdb_id + "clustal.fasta"
         FNULL = open(os.devnull, 'w')
@@ -430,6 +380,7 @@ class MutationRecord():
 
     #create newick file with phylogenetic tree for conservation
     def create_newick_file(self):
+        """create file with phylogenetic tree"""
         self.run_blast()
     	self.parse_XML()
     	self.run_clustal()
@@ -438,15 +389,17 @@ class MutationRecord():
         FNULL = open(os.devnull, 'w')
         subprocess.call(['./tools/FastTree','-out','%s'%output,'%s'%protein],stdout=FNULL, stderr=subprocess.STDOUT)
         FNULL.close()
-    """compute conservation of mutated position"""
+
+    #compute conservation of mutated position
     def conservation(self,newick_file,clustal_file,residue_start):
+        """compute conservation score of mutated position"""
         #create blosum matrix and probability_matrix for conservation computation
         matrix = BlosumMatrix('./tools/blosum62.txt')
         probability_matrix = ProbabilityMatrix(clustal_file,matrix)
-
+        #create tree object
         t = Etree(newick_file)
         t.create_alignement_table(clustal_file)
-
+        #root the tree
         R = t.get_midpoint_outgroup()
         t.set_outgroup(R)
 
@@ -457,9 +410,6 @@ class MutationRecord():
 
         t.create_ID_table()
         rootWeightsArray = t.calculate_weights(probability_matrix)
-
-        #get starting position of residue
-        #start_pos = t.PDB_parse(self.pdb_id)
 
         #just for testing purpose
         """f = open(self.pdb_id+'_NEW.txt','r')
@@ -474,11 +424,12 @@ class MutationRecord():
             """
         #compute conservation score
         conservation_score = t.compute_conservation(clustal_file,residue_start,self.position,rootWeightsArray,self.wild_type)
-        print(conservation_score)
+        #print(conservation_score)
         return conservation_score
 
-    """encode conservation score to int value"""
+    #encode conservation score to int value
     def conservation_score_encoding(self,conservation_score):
+        """encoding conservation score"""
         if(conservation_score >=0 and conservation_score <= 0.2):
             return 0
         elif(conservation_score > 0.2 and conservation_score <= 0.4):
@@ -490,7 +441,7 @@ class MutationRecord():
         else:
             return 4
 
-    """compute index of mutated position in aligned sequence"""
+    #compute index of mutated position in aligned sequence
     def compute_conservation(self,file,residue_start,index):
         count_mezera = 0
         count_basic_acid = 0
@@ -547,7 +498,7 @@ class MutationRecord():
         print(pos)
         return pos
 
-    """create file sequences only"""
+    #create sequences file
     def create_sequence_file(self,correlation_file,clustal_file):
         with open(clustal_file,'r') as f:
             lines = iter(f.readlines())
@@ -561,6 +512,7 @@ class MutationRecord():
         f.close()
 
     def correlation_scores(self,correlation_file,position,column_index,residue_start):
+        """compute correlation scores"""
         #residue_start = self.PDB_parse(self.pdb_id)
         arr = []
         resArr = dict()
@@ -602,9 +554,6 @@ class MutationRecord():
                             value = resArr[key] / (nucleoColumn1[i] * nucleoColumn2[j])
                             correlation_score += resArr[key] * math.log(value,2)
                 correlation_array.append(correlation_score)
-                #fl.write(str(correlation_score)+'\n')
-                #print(correlation_array)
-                #new_arr = resArr
                 correlation_score = 0
                 resArr = dict()
                 nucleoColumn1 = dict()
@@ -614,8 +563,9 @@ class MutationRecord():
 
     #compute correlation of mutated position
     def correlation(self,position,column_index,residue_start):
+        """compute correlation of mutated position"""
         corr_scores = self.correlation_scores(self.pdb_id+"correlation.txt",position,column_index,residue_start)
-        threshold = 1
+        threshold = 1   #correlated position must be above this threshold value
         is_correlated = 0
         above_threshold = 0
         for item in corr_scores:
@@ -627,12 +577,12 @@ class MutationRecord():
                 is_correlated = 0
         return is_correlated
 
-    """computes size change of original amino acid and mutated amino acid
-     0 - acids are in the same size group
-     + change from small to big one
-     - change from big to small one
-    """
+    #computes size change of original amino acid and mutated amino acid
+    #0 - acids are in the same size group
+    #+ change from small to big one
+    #- change from big to small one
     def size_change(self,x,y):
+        """compute size change of amino acids"""
     	if(x in ['G','A','S','P']):
     		if(y in ['V','T','C','I','L','N','D','Q','K','E','M','H']):
     			return '+'
@@ -669,8 +619,9 @@ class MutationRecord():
     			return '0'
 
 
-    """compute polarity change for wild-type amino acid and mutated acid"""
+    #compute polarity change for wild-type amino acid and mutated acid
     def compute_polarity(self,x,y):
+        """compute polarity change of amino acids"""
     	if self.__polarity[x] == '-':
     		if self.__polarity[y] == '+':
     			return '+'
@@ -682,8 +633,9 @@ class MutationRecord():
     		elif self.__polarity[y] == '-':
     			return '-'
 
-    """computing difference in charge of wild-type acid and mutated acid"""
+    #computing difference in charge of wild-type acid and mutated acid
     def compute_charge(self,x,y):
+        """compute charge change of amino acids"""
     	if self.__charge[x] == '+':
     		if self.__charge[y] == '-':
     			return '-'
@@ -706,21 +658,22 @@ class MutationRecord():
     		elif self.__charge[y] == '+':
     			return '+'
 
-    """compute hydrophobicity index from difference of wild-type and mutant"""
+    #compute hydrophobicity index from difference of wild-type and mutant
     def compute_hydro_index(self,x,y):
-    	if self.__hydro_index[x] > self.__hydro_index[y]:
+        """compute hydrophobicity index"""
+        if self.__hydro_index[x] > self.__hydro_index[y]:
     		return self.__hydro_index[y] - self.__hydro_index[x]
     	elif self.__hydro_index[x] < self.__hydro_index[y]:
     		return self.__hydro_index[y] - self.__hydro_index[x]
     	elif self.__hydro_index[x] == self.__hydro_index[y]:
     		return 0
 
-    """encode secondary structure to one of 3 options
-    H,G,I   H(helix)
-    E,B     S(sheet)
-    T,S,-   C(coil)
-    """
+    #encode secondary structure to one of 3 options
+    #H,G,I   H(helix)
+    #E,B     S(sheet)
+    #T,S,-   C(coil)
     def sec_struc_code(self,id):
+        """encode secondary structure"""
     	if(id == 'H' or id == 'G' or id == 'I'):
     		sec_struc_res = 'H'
     	elif(id == 'E' or id == 'B'):
@@ -729,16 +682,17 @@ class MutationRecord():
     		sec_struc_res = 'C'
     	return sec_struc_res
 
-    """compute ASA value and secondary structure"""
-    def compute_ASA(self):
+    #compute ASA value and secondary structure
+    def compute_ASA(self,pdb_id):
+        """compute accessible surface area and secondary structure"""
     	p = PDBParser()
-    	structure = p.get_structure("1a2p","1a2p.pdb")
+    	structure = p.get_structure(pdb_id,pdb_id+".pdb")
     	model = structure[0]
         #treba nakoniec urobit strukturu s potrebnymi skriptami a tu dat cestu k dssp
-    	dssp = DSSP(model,"1a2p.pdb",dssp='/home/juraj/dssp-2.0.4-linux-amd64')
+    	dssp = DSSP(model,pdb_id+".pdb",dssp='/home/juraj/dssp-2.0.4-linux-amd64')
     	#index is position of mutation
     	#zatial je asi potrebne mat residue_start+1 aby sedela hodnota ASA
-        residue_start = self.PDB_parse(self.pdb_id)
+        residue_start = self.PDB_parse(self.pdb_id,self.chain)
         index = self.position
     	asa_key = list(dssp.keys())[index -residue_start+1-1]
     	asa = str(dssp[asa_key][3])
@@ -751,6 +705,7 @@ class MutationRecord():
 
     #divide asa values into 3 groups for predictor
     def divide_asa(self,asa):
+        """encode asa values"""
     	encoded_asa = float(asa)
     	if(encoded_asa < 0.25 ):
     		return "burried"
@@ -761,13 +716,14 @@ class MutationRecord():
 
     #prepare mutation record
     def create_record(self):
+        """create mutation record file"""
         x = self.wild_type
         y = self.mutant
 
         self.get_fasta()
         self.get_pdb()
         self.create_newick_file()
-        residue_start = self.PDB_parse(self.pdb_id)
+        residue_start = self.PDB_parse(self.pdb_id,self.chain)
         self.create_sequence_file(self.pdb_id+"correlation.txt",self.pdb_id+"clustal.fasta")
         mutated_column_index = self.compute_conservation(self.pdb_id+"correlation.txt",residue_start,self.position)
 
@@ -787,7 +743,7 @@ class MutationRecord():
         size = self.size_change(x,y)
         size = self.__encode_size[size]
         #compute asa and seconda structure
-        struc_id,asa = self.compute_ASA()
+        struc_id,asa = self.compute_ASA(self.pdb_id)
         asa_val = self.divide_asa(asa)
         asa_val = self.__encode_asa[asa_val]
         struc_id = self.__encode_sec_struc[struc_id]
