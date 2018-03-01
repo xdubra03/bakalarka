@@ -456,35 +456,67 @@ Nástroj DMutant využíva kombináciu orientácie na základe poznatkov, vdiale
 Energetická funkcia nástroja zahŕňa požiadavky u ktorých bolo zistené, že sú dôležité pre stabilitu. Patria tu van der Waalsovej príspevky, rozdiel solvatačnej energie alebo vodíkové väzby. Energetická funkcia je tvorená 8 časťami, ktoré sú nakoniec lineárne skombinované. Nástroj je dostupný ako samostatná aplikácia \cite{foldx}.
 
 
-\chapter{Dátová sada}
+\chapter{Dátová sada a jej parametre}
 
-Vytvorenie spoľahlivej, dostatočne veľkej a rozmanitej tréningovej dátovej sady je rozhodujúcou vlastnosťou pri tvorbe každého predikčného nástroja. Dáta pre testovanie a trénovanie prediktoru boli z veľkej časti získané z databázy ProTherm \cite{protherm}. Jedná sa o najrozsiahlejšiu databázu obsahujúcu termodynamické parametre akými sú Gibssova voľná energia, tepelná kapacita alebo entalpia. Databáza taktiež obsahuje informácie o použitých metódach a meraniach, experimentálnych podmienkach a informácie o aktivite proteínu, sekundárnej štruktúre a dostupnosti pôvodných reziduí. ProTherm je prepojená aj s ďaľšími databázami, napríklad so sekvenčnou SWISS--PROT \cite{swissprot}, štrukturálnou PDB \cite{pdb} alebo funkcionálnou PMD \cite{pmd}.
+Vytvorenie spoľahlivej, dostatočne veľkej a~rozmanitej tréningovej dátovej sady je rozhodujúcou vlastnosťou pri tvorbe každého predikčného nástroja. Dáta pre testovanie a~trénovanie prediktoru boli z~veľkej časti získané z~databázy ProTherm \cite{protherm}. Jedná sa o~najrozsiahlejšiu databázu obsahujúcu termodynamické parametre akými sú Gibssova voľná energia, tepelná kapacita alebo entalpia. Databáza taktiež obsahuje informácie o~použitých metódach a~meraniach, experimentálnych podmienkach a~informácie o~aktivite proteínu, sekundárnej štruktúre a~dostupnosti pôvodných reziduí. ProTherm je prepojená aj s~ďaľšími databázami, napríklad so sekvenčnou SWISS--PROT \cite{swissprot}, štrukturálnou PDB \cite{pdb} alebo funkcionálnou PMD \cite{pmd}.
 
 
-Databáza ProTherm bola naposledy aktualizovaná vo februári v roku 2013 a aktuálne obsahuje približne 26 000 záznamov jedno a viacbodových mutantov navrhnutých nad viac ako 740 unikátnymi proteínmi získaných rôznymi experimentálnymi technikami. Pre tvorbu testovacích a tréningových dátových sád pre existujúce nástroje predikujúce vplyv aminokyselinových substitúcií na stabilitu proteínu je najpoužívanejším zdrojom dát práve databáza ProTherm. V súčasnom stave však trpí množstvom serióznych nedostatkov. Aby sme sa vyhli problémom tejto databázy, vyextrahovali sme iba mutácie u ktorých sú uvedené zmeny stability a overili všetky zdroje. Najväčšími problémami pri získavaní dát boli:
+Databáza ProTherm bola naposledy aktualizovaná vo februári v~roku 2013 a~aktuálne obsahuje približne 26 000 záznamov jedno a~viacbodových mutantov navrhnutých nad viac ako 740 unikátnymi proteínmi získaných rôznymi experimentálnymi technikami. Pre tvorbu testovacích a~tréningových dátových sád pre existujúce nástroje predikujúce vplyv aminokyselinových substitúcií na stabilitu proteínu je najpoužívanejším zdrojom dát práve databáza ProTherm. V~súčasnom stave však trpí množstvom serióznych nedostatkov. Aby sme sa vyhli problémom tejto databázy, vyextrahovali sme iba mutácie u~ktorých sú uvedené zmeny stability a~overili všetky zdroje. Najväčšími problémami pri získavaní dát boli:
 \begin{itemize}
 	\item Chýbajúca hodnota $\Delta\Delta G$
 	\item Opačné znamienka hodnoty $\Delta\Delta G$ 
+	\item Trojstavové skladanie - niektoré publikácie uvažujú 3 hodnoty Gibbsovej voľnej energie: nezložený stav, medzistav a~zložený stav. Databáza ProTherm však nerozlišuje medzi prechodom z~nezloženého stavu do medzistavu a z~medzistavu do zloženého stavu.
 \end{itemize}
 
-Aby bola vytvorená dátová sada spoľahlivá a aby eliminovala možné experimentálne chyby v nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s hodnotami $\Delta\Delta G$ z intervalu $(-0.5,0.5)$ boli odstránené. Záznamy s hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a~záznamy s~$\Delta\Delta G$ $\leq$ 0.5~$kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
-V prípade, že pre jednu mutáciu bolo uskutočnených viac meraní, ponechaný bol iba záznam merania, ktoré prebehlo pod experimentálnou hodnotou pH, ktorá bola blízko fyziologickej hodnote pH 7. Každý záznam bol rozšírený o~štrukturálne informácie.
+Aby bola vytvorená dátová sada spoľahlivá a~aby eliminovala možné experimentálne chyby v~nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s~hodnotami $\Delta\Delta G$ z~intervalu $\left[-0.5,0.5\right]$ boli odstránené. Záznamy s~hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a~záznamy s~$\Delta\Delta G$ $\leq$ 0.5~$kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
+V~prípade, že pre jednu mutáciu bolo uskutočnených viac meraní, ponechaný bol iba záznam merania, ktoré prebehlo pod experimentálnou hodnotou pH, ktorá bola blízko fyziologickej hodnote pH 7. Každý záznam bol rozšírený o~štrukturálne informácie.
 
 \section{Parametre mutačného záznamu}
 
-Každý záznam mutácie je tvorený z 8 hodnôt, ktoré tvoria vstupný vektor pre strojové učenie a určenie vplyvu mutácie. V tejto časti sú popísané jednotlivé parametre záznamu.
+Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor pre strojové učenie a~určenie vplyvu mutácie. V~tejto časti sú popísané jednotlivé parametre záznamu.
 
 \begin{itemize}
-	\item \textbf{Zmena polarity:} Tento údaj poskytuje informáciu o zmene v polarite aminokyseliny po mutácií oproti polarite pôvodnej aminokyseliny. Údaj bol získaný z tabuľkových hodnôt pre skúmané aminokyseliny. Uvažované boli len polárne a nepolárne aminokyseliny.
-	\item \textbf{Zmena náboja}: Hodnota vyjadruje informáciu o zmene náboja pôvodnej aminokyseliny a aminokyseliny po mutácií. Výsledný údaj bol získaný z tabuľkových hodnôt pre dané aminokyseliny. Uvažovaný bol negatívny, pozitívny a neutrálny náboj. 
-	\item \textbf{Zmena indexu hydrofobicity:} Údaj o výslednej zmene hydrofobicity mutovanej a pôvodnej aminokyseliny. Číselný údaj značí rozdiel medzi tabuľkovými hodnotami týchto porovnávaných aminokyselín \cite{hydrophobicity}. 
-	\item \textbf{Zmena veľkosti aminokyseliny:} Údaj o zmene veľkosti pôvodnej aminokyseliny. Aminokyseliny boli rozdelené do 3 intervalov na základe ich veľkosti. V jednom intervale sa tak nachádzajú len aminokyseliny, pre ktoré platí, že rozdiel ich veľkostí je menší alebo rovný hodnote 50. Následne sme zisťovali, do akého z jednotlivých intervalov patrí pôvodná a mutovaná aminokyselina. Z tohto údaju bolo možné určiť zmenu veľkosti z veľkej na malú, opačnú zmenu alebo žiadnu zmenu, ak aminokyseliny patrili do rovnakého intervalu.
-	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v knižnici BioPython. Pre zjednodušenie sme každému proteínu priradili tento údaj len z 3 možností, ktorými sú helix, coil a sheet.
-	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru sme opäť použili modul DSSP prítomný v knižnici BioPython.
-	\item \textbf{Konzervovanosť:} Jeden z najdôležitejších parametrov v zázname mutácie. Informácia o konzervovanosti pozície na ktorej došlo k mutácií je reprezentovaná
-	jednou z 5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felensteinov algoritmus. Mutácie na konzervovanej pozícií sú z hľadiska skúmania veľmi zaujímavé, pretože konzerované aminokyseliny bývajú dôležité pre stabilitu, aktivitu alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
-	\item \textbf{Korelácia:} Výpočet korelácie mutovanej pozície s ostatnými pozíciami vo viacnásobnom zarovnaní. Stĺpec v zarovnaní predstavuje náhodnú veličinu, počítame vzájomnú informáciu, ktorá vyjadruje závislosť dvojice náhodných veličín. Po vypočítaní koeficientov sa zistí, či sa medzi získanými koeficientami nachádza aspoň jeden s hodnotou nad stanoveným prahom. Ak áno, pozícia je korelovaná, v opačnom prípade nie je.
+	\item \textbf{Zmena polarity:} Tento údaj poskytuje informáciu o~zmene v~polarite aminokyseliny po mutácií oproti polarite pôvodnej aminokyseliny. Údaj bol získaný z~tabuľkových hodnôt pre skúmané aminokyseliny. Uvažované boli len polárne a~nepolárne aminokyseliny.
+	\item \textbf{Zmena náboja}: Hodnota vyjadruje informáciu o~zmene náboja pôvodnej aminokyseliny a~aminokyseliny po mutácií. Výsledný údaj bol získaný z~tabuľkových hodnôt pre dané aminokyseliny. Uvažovaný bol negatívny, pozitívny a~neutrálny náboj. 
+	\item \textbf{Zmena indexu hydrofobicity:} Údaj o~výslednej zmene hydrofobicity mutovanej a~pôvodnej aminokyseliny. Číselný údaj značí rozdiel medzi tabuľkovými hodnotami týchto porovnávaných aminokyselín \cite{hydrophobicity}. 
+	\item \textbf{Zmena veľkosti aminokyseliny:} Údaj o~zmene veľkosti pôvodnej aminokyseliny. Aminokyseliny boli rozdelené do 3 intervalov na základe ich veľkosti. V~jednom intervale sa tak nachádzajú len aminokyseliny, pre ktoré platí, že rozdiel ich veľkostí je menší alebo rovný hodnote 50. Následne sme zisťovali, do akého z~jednotlivých intervalov patrí pôvodná a~mutovaná aminokyselina. Z~tohto údaju bolo možné určiť zmenu veľkosti z~veľkej na malú, opačnú zmenu alebo žiadnu zmenu, ak aminokyseliny patrili do rovnakého intervalu.
+	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o~sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v knižnici BioPython. Pre zjednodušenie sme každému proteínu priradili tento údaj len z~3 možností, ktorými sú helix, coil a sheet.
+	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o~údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru sme opäť použili modul DSSP prítomný v~knižnici BioPython.
+	\item \textbf{Konzervovanosť:} Jeden z~najdôležitejších parametrov v~zázname mutácie. Informácia o konzervovanosti pozície na ktorej došlo k~mutácií je reprezentovaná
+	jednou z~5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felsteinov algoritmus, ktorý je podrobnejšie popísaný v časti \ref{felstein}. Mutácie na konzervovanej pozícií sú z~hľadiska skúmania veľmi zaujímavé, pretože konzerované aminokyseliny bývajú dôležité pre stabilitu, aktivitu alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
+	\item \textbf{Korelácia:} Výpočet korelácie mutovanej pozície s~ostatnými pozíciami vo viacnásobnom zarovnaní. Stĺpec v~zarovnaní predstavuje náhodnú veličinu, počítame vzájomnú informáciu, ktorá vyjadruje závislosť dvojice náhodných veličín. Údaj o vzájomnej informácií dostaneme pomocou nasledujúceho vzťahu: 	
+	\begin{align}
+	I(X;Y) = \underset{y \in Y}{\sum} \underset{x \in X}{\sum} p(x,y) \log_{2}\frac{p(x,y)}{p(x) p(y)}
+	\end{align}  
+	Po vypočítaní koeficientov sa zistí, či sa medzi získanými koeficientami nachádza aspoň jeden s~hodnotou nad stanoveným prahom. Ak áno, pozícia je korelovaná, v~opačnom prípade nie je. Korelácia danej pozície tiež znamená, že sa v priebehu evolúcie menila spoločne s pozíciami v sekvencií, na ktorých boli získané korelačné koeficienty nad stanoveným prahom. 
+	
 \end{itemize}
+
+\section{Felsteinov algoritmus}
+\label{felstein}
+Felensteinov algorimus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
+Algoritmus je založený na princípe dynamického programovania a~pozostáva z~viacerých krokov.
+Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty pre každý uzol podľa pravidiel, ktoré sú nasledovné:
+\begin{itemize}
+	\item listový uzol
+	\begin{align}
+	L_{s_{k}} (k) = \bigg\{_{1\quad k\ =\ nukleotid\ v\  liste}^{0\quad k\ \neq\ nukleotid\ v\  liste}
+	\end{align}  
+	
+	\item vnútorný uzol
+	\begin{align}
+	L_{s_{k}} (k) = \Bigg[\underset{s_{i}}{\sum}P_{s_{k}s_{i}}(t_{i})\cdotp L_{s_{i}}(i)\Bigg] \times \Bigg[\underset{s_{j}}{\sum}P_{s_{k}s_{j}}(t_{j})\cdotp L_{s_{j}}(j)\Bigg]
+	\end{align}
+	
+	\item koreňový uzol
+	\begin{align}
+	L = \underset{s_{0}}{\sum}\pi_{s_{0}} \cdotp L_{s_{0}}(0)
+	\end{align} 
+
+\end{itemize}
+
+L--hodnota je uložená v poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~našom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
+
 
 \chapter{Typografické a~jazykové zásady}
 Při tisku odborného textu typu {\it technická zpráva} (anglicky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
