@@ -1,6 +1,11 @@
 #module for preparing mutation record, e.g. all features in record
+"""module for preparing mutation record"""
 
 from __future__ import division
+
+__version__ = '1.0'
+__author___ = 'Juraj Ondrej Dubrava'
+
 import math
 import pandas as pd
 import urllib2
@@ -16,31 +21,29 @@ from Bio.Blast import NCBIXML
 from Bio import SeqIO
 from Bio.Align.Applications import ClustalOmegaCommandline
 
+#third-party and custom imports
 from ete3 import Tree
-from blosum import *
+from blosum import BlosumMatrix
+from blosum import ProbabilityMatrix
 
 class Etree(Tree):
     """class for creating phylogenetic tree and computing conservation of mutated position"""
     _names = []
-    alignements = dict()
+    _alignements = dict()
     _identificators = []
     _IDs = dict()
     _idArray = dict()
 
-    #_matrix = BlosumMatrix('./tools/blosum62.txt')
-    #TODO predat meno do funkcie
-    #clustal_file = sys.argv[1]
-    #_probability_matrix = ProbabilityMatrix(clustal_file+'clustal.fasta',_matrix)
-
     def PDB_parse(self,name,chain_type):
-        p = PDBParser()
-        structure = p.get_structure(name,name+".pdb")
+        """get start position of residue from PDB file"""
+        parser = PDBParser()
+        structure = parser.get_structure(name,name+".pdb")
         model = structure[0]
         try:
-            chain = model[chain_type]
+            chain = model['A']
         except KeyError as error:
-            print("key error.\n")
-        residue_list = Selection.unfold_entities(chain,chain_type)
+            print(error.reason)
+        residue_list = Selection.unfold_entities(chain,'A')
         residue_start = residue_list[0].get_full_id()[3][1]
         return residue_start
 
@@ -69,10 +72,10 @@ class Etree(Tree):
 		 			#		count_pos -=1#-residue_start+1
 
 		 			if(residue_start > len(word)):
-		 				print(residue_start)
-		 				print(index)
+		 				#print(residue_start)
+		 				#print(index)
 		 				count_pos = residue_start
-		 				print(count_pos)
+		 				#print(count_pos)
 		 				for i in range(0,len(word),1):
 		 					if(word[i] != '-'):
 		 						count_pos +=1
@@ -81,26 +84,26 @@ class Etree(Tree):
 		 							print(word[i])
 		 							break
 		 			else:
-		 				print(residue_start)
-		 				print(index)
-		 				count_pos = residue_start
+		 				print("Residue start: " + str(residue_start))
+		 				print("Index mutation:" + str(index))
+		 				count_pos = 0
 		 				if(residue_start < 0):
-		 					chain_res = index#+residue_start #+ abs(residue_start) + abs(residue_start) -1
+		 					chain_res = index + abs(residue_start) - 1#+residue_start #+ abs(residue_start) + abs(residue_start) -1
 		 				elif (residue_start == 1):
 		 					chain_res= index+residue_start
 		 				else:
-		 					chain_res= index+residue_start+2
+		 					chain_res= index+residue_start-1
 
 		 				for i in range(0,len(word),1):
 		 					if(word[i] != '-'):
 		 						count_pos +=1
 		 						if(count_pos == chain_res):
 		 							pos = i
-		 							#print(pos)
-		 							print(word[i])
+		 							print(chain_res)
+		 							print("ACID: " + str(word[i]))
 		 							break
 	 		break
-	 	print(pos)
+	 	print("POSITION:" + str(pos))
 	 	conservation_value = 0
 	 	base_acid = 0
 	 	weights = 0
@@ -121,7 +124,7 @@ class Etree(Tree):
 		"""create table where key is node name and value is sequence to speed up lookup"""
 		for name in self._names:
 			key1 = self._IDs.get(name)
-			seq1 = self.alignements[key1]
+			seq1 = self._alignements[key1]
 			self._idArray[name] = seq1
 
     def create_alignement_table(self,file):
@@ -132,8 +135,7 @@ class Etree(Tree):
 				if(line.startswith('>')):
 					name = line.strip('>').strip('\n')
 					sequence = lines.next().strip('\n')
-					self.alignements[name] = sequence
-
+					self._alignements[name] = sequence
 
     def create_names_table(self,file):
 		"""creates lookup table for complete sequence ID according to its abbrevation"""
@@ -143,6 +145,7 @@ class Etree(Tree):
 				if(line.startswith('>')):
 					self._identificators.append(line.strip('>').strip('\n'))
 
+
 		for item in self._identificators:
 			for name in self._names:
 				if(name in item):
@@ -151,7 +154,7 @@ class Etree(Tree):
 
     def get_table_value(self,value):
 		"""get value from alignements table"""
-		return self.alignements[value]
+		return self._alignements[value]
 
 
     def get_names(self):
@@ -197,28 +200,28 @@ class Etree(Tree):
 
 				i = 0
 				#array where value of multiplication for each item in array is stored
-				vals = [1]*250
+				weight_vals = [1]*250
 
 				#calculate value for each child
 				for child in children:
 
 					for parentItem in node._names:
 						result = 0
-						seq2 = node._idArray[parentItem]
+						sequence2 = node._idArray[parentItem]
 
 						for childItem in child._names:
 
 							#calculate probability of changing child sequence to parent sequence
-							seq1 = child._idArray[childItem]
-							probability = probability_matrix.find_pair(seq1,seq2)
+							sequence1 = child._idArray[childItem]
+							probability = probability_matrix.find_pair(sequence1,sequence2)
 
 							#calculate Pi*Li*t
 							result += probability * child.weightsArray[childItem] * (child.dist + fugde_factor)
 
 						#value from each child needs to be multiplicated
-						vals[i] *= result
+						weight_vals[i] *= result
 						#store actual value to weightsArray item in parent node
-						node.weightsArray[parentItem] = vals[i]
+						node.weightsArray[parentItem] = weight_vals[i]
 
 						i+=1
 					i = 0
@@ -291,6 +294,7 @@ class MutationRecord():
     }
 
     def __init__(self,pdb_id,chain,position,wild_type,mutant):
+        """create new record object"""
         self.pdb_id = pdb_id
         self.chain = chain
         self.position = position
@@ -299,7 +303,7 @@ class MutationRecord():
 
     #get pdb file for entered pdb id
     def get_pdb(self):
-        """get PDB file"""
+        """download PDB file"""
         protein_file = self.pdb_id + ".pdb"
         with open(protein_file, "w") as pdb_output:
             url_pdb = "https://files.rcsb.org/download/%s.pdb" %self.pdb_id
@@ -312,14 +316,15 @@ class MutationRecord():
         pdb_output.close()
 
     def PDB_parse(self,name,chain_type):
-        p = PDBParser()
-        structure = p.get_structure(name,name+".pdb")
+        """get start position of residue from PDB file"""
+        parser = PDBParser()
+        structure = parser.get_structure(name,name+".pdb")
         model = structure[0]
         try:
-            chain = model[chain_type]
+            chain = model['A']
         except KeyError as error:
-            print("key error.\n")
-        residue_list = Selection.unfold_entities(chain,chain_type)
+            print(error.reason)
+        residue_list = Selection.unfold_entities(chain,'A')
         residue_start = residue_list[0].get_full_id()[3][1]
         return residue_start
 
@@ -327,14 +332,13 @@ class MutationRecord():
         """get FASTA file for selected chain"""
     	fasta_file = self.pdb_id + ".fasta"
     	with open(fasta_file,"w") as fasta_output:
-            url_f = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
-    	       #url_f = "http://www.rcsb.org/pdb/download/downloadFastaFiles.do?structureIdList=%s&compressionType=uncompressed"%self.name
+            url = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
             try:
-                h = urllib2.urlopen(url_f)
+                handle = urllib2.urlopen(url)
             except urllib2.URLError as error:
                 print(error.reason)
                 sys.exit(1)
-            fasta_output.write(h.read())
+            fasta_output.write(handle.read())
     	fasta_output.close()
 
     #parse XML file from BLASTP output and create file with sequences
@@ -343,13 +347,14 @@ class MutationRecord():
     	i=0
         try:
             output = open(self.pdb_id+".txt","w")
-            f = open(self.pdb_id+".xml","r")
+            xml_file = open(self.pdb_id+".xml","r")
         except IOError as e:
             print(e.reason)
             sys.exit(1)
-    	blast = NCBIXML.parse(f)
+    	blast = NCBIXML.parse(xml_file)
     	names = []
     	protein = ''
+        #extract sequences from records in PDB
     	for record in blast:
     		for align in record.alignments:
     			for hsp in align.hsps:
@@ -361,7 +366,7 @@ class MutationRecord():
     					names.append(protein)  #add name
     					output.write('>'+align.hit_id+align.hit_def+'\n')
     				output.write(hsp.sbjct+'\n') #find out
-    	f.close()
+    	xml_file.close()
     	output.close()
 
     #run standalone BLASTP for searching homologue sequences
@@ -370,6 +375,7 @@ class MutationRecord():
         FNULL = open(os.devnull, 'w')
     	subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'],stdout=FNULL, stderr=subprocess.STDOUT)
         FNULL.close()
+
     #run CLUSTAL OMEGA to create multiple sequence alignement
     def run_clustal(self):
         """create multiple sequence alignement with CLUSTAL"""
@@ -392,6 +398,7 @@ class MutationRecord():
         subprocess.call(['./tools/FastTree','-out','%s'%output,'%s'%protein],stdout=FNULL, stderr=subprocess.STDOUT)
         FNULL.close()
 
+
     #compute conservation of mutated position
     def conservation(self,newick_file,clustal_file,residue_start):
         """compute conservation score of mutated position"""
@@ -401,7 +408,7 @@ class MutationRecord():
         #create tree object
         t = Etree(newick_file)
         t.create_alignement_table(clustal_file)
-        #root the tree
+        #tree rooting
         R = t.get_midpoint_outgroup()
         t.set_outgroup(R)
 
@@ -413,20 +420,9 @@ class MutationRecord():
         t.create_ID_table()
         rootWeightsArray = t.calculate_weights(probability_matrix)
 
-        #just for testing purpose
-        """f = open(self.pdb_id+'_NEW.txt','r')
-        out = open(+'_conservation_results1.txt','w')
-        for line in f.readlines():
-        	original_acid = line[0]
-        	out.write(original_acid+ " ")
-        	position = int(line[1:])
-        	out.write(str(position)+ ' ')
-            conservation_score = t.compute_conservation(clustal_file,start_pos,self.position,rootWeightsArray,self.wild_type)
-         	out.write(str(conservation_score)+ '\n')
-            """
         #compute conservation score
         conservation_score = t.compute_conservation(clustal_file,residue_start,self.position,rootWeightsArray,self.wild_type)
-        #print(conservation_score)
+        print(conservation_score)
         return conservation_score
 
     #encode conservation score to int value
@@ -486,7 +482,7 @@ class MutationRecord():
                         elif (residue_start == 1):
                             chain_res= index+residue_start
                         else:
-                            chain_res= index+residue_start+2
+                            chain_res= index+residue_start-1
 
                         for i in range(0,len(word),1):
                             if(word[i] != '-'):
@@ -502,6 +498,7 @@ class MutationRecord():
 
     #create sequences file
     def create_sequence_file(self,correlation_file,clustal_file):
+        """creates file only with sequences"""
         with open(clustal_file,'r') as f:
             lines = iter(f.readlines())
             with open(correlation_file,'w') as corr:
@@ -515,49 +512,48 @@ class MutationRecord():
 
     def correlation_scores(self,correlation_file,position,column_index,residue_start):
         """compute correlation scores"""
-        #residue_start = self.PDB_parse(self.pdb_id)
-        arr = []
-        resArr = dict()
-        nucleoColumn1 = dict()
-        nucleoColumn2 = dict()
+        resultArray = dict()
+        nucleoColumn1 = dict()    #changes in mutated column
+        nucleoColumn2 = dict()    #changes in second column
 
         with open(correlation_file,'r') as f:
             lines = list(iter(f.readlines()))
             correlation_array = []
             #iterate through all colums in sequence
-            new_arr = dict()
             #compute correlaton scores
-            for index in range(len(lines[0])-1):
+            seq_len = len(lines[0])-1
+            for index in range(seq_len):
                 for line in lines:
                     #create arrays for mutated columns and other columns
                     nucleoColumn1[line[index]] = 0
                     nucleoColumn2[line[column_index]] = 0
                     #array for storing pairs from 2 columns
-                    resArr[line[index]+line[column_index]] =0
+                    resultArray[line[index]+line[column_index]] =0
 
                 for line in lines:
                     #count number of acids/pairs in columns
                     nucleoColumn1[line[index]] += 1
                     nucleoColumn2[line[column_index]] +=1
-                    resArr[line[index]+line[column_index]] +=1
+                    resultArray[line[index]+line[column_index]] +=1
                 #count occurance of acid/pair in columns(in )
                 for i in nucleoColumn1:
                     nucleoColumn1[i] /= 250
                 for i in nucleoColumn2:
                     nucleoColumn2[i] /= 250
-                for i in resArr:
-                    resArr[i] /= 250
+                for i in resultArray:
+                    resultArray[i] /= 250
 
                 correlation_score = 0
+                #compute scores for all columns
                 for i in nucleoColumn1:
                     for j in nucleoColumn2:
                         key = i+j
-                        if(key in resArr.keys()):
-                            value = resArr[key] / (nucleoColumn1[i] * nucleoColumn2[j])
-                            correlation_score += resArr[key] * math.log(value,2)
+                        if(key in resultArray.keys()):
+                            value = resultArray[key] / (nucleoColumn1[i] * nucleoColumn2[j])
+                            correlation_score += resultArray[key] * math.log(value,2)
                 correlation_array.append(correlation_score)
                 correlation_score = 0
-                resArr = dict()
+                resultArray = dict()
                 nucleoColumn1 = dict()
                 nucleoColumn2 = dict()
         f.close()
@@ -687,22 +683,17 @@ class MutationRecord():
     #compute ASA value and secondary structure
     def compute_ASA(self,pdb_id):
         """compute accessible surface area and secondary structure"""
-    	p = PDBParser()
-    	structure = p.get_structure(pdb_id,pdb_id+".pdb")
+    	parser = PDBParser()
+    	structure = parser.get_structure(pdb_id,pdb_id+".pdb")
     	model = structure[0]
-        #treba nakoniec urobit strukturu s potrebnymi skriptami a tu dat cestu k dssp
     	dssp = DSSP(model,pdb_id+".pdb",dssp='/home/juraj/dssp-2.0.4-linux-amd64')
     	#index is position of mutation
-    	#zatial je asi potrebne mat residue_start+1 aby sedela hodnota ASA
         residue_start = self.PDB_parse(self.pdb_id,self.chain)
         index = self.position
     	asa_key = list(dssp.keys())[index -residue_start+1-1]
     	asa = str(dssp[asa_key][3])
     	sec_structure = str(dssp[asa_key][2])
     	sec_struc_id = self.sec_struc_code(sec_structure)
-    	#print("Skratka pre sek strukturu:%s" %sec_struc_id)
-    	#print("Secondary structure %s" %dssp[a_key][2])
-    	#print("ASA %.8f" %dssp[a_key][3])
     	return sec_struc_id,asa
 
     #divide asa values into 3 groups for predictor

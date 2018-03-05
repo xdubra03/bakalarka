@@ -119,7 +119,7 @@ class Ensemble():
 
         #get final result by majority voting
         countNeg = 0
-    	countPos = 0
+        countPos = 0
         final_class = 1
         for item in predicted_class:
             if(item == -1):

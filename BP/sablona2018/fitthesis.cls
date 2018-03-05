@@ -972,7 +972,6 @@ Management}{\@fit@EN}%
 \ifczech
   \usepackage{ae}
 \fi
-
 %--------------------------------------------------------
 % Oprava pro Čechy a Slováky -- vyžaduje aktuální balíčky!
 % Fix for CZECH and SLOVAK -- needs up to date packages!

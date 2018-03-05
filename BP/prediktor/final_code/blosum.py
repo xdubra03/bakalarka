@@ -1,6 +1,11 @@
 #module for handling operations with matrices
+"""module for matrix operations"""
 
 from __future__ import division
+
+__version__ = '1.0'
+__author___ = 'Juraj Ondrej Dubrava'
+
 import sys
 import os
 import numpy as np
@@ -13,7 +18,7 @@ class BlosumMatrix:
 		self.load_matrix(matrix)
 
 	def load_matrix(self,matrix):
-		"""load BLOSUM matrix from file and create dictionary representing matrix"""
+		"""load BLOSUM matrix from file and create matrix"""
 		with open(matrix,'r') as blosum_file:
 			blosum_matrix = blosum_file.read()
 
@@ -30,6 +35,7 @@ class BlosumMatrix:
 			for column_name in columns:
 				blosum_matrix[row_name][column_name] = entries.pop(0)
 
+		blosum_file.close()
 		self._blosum_matrix = blosum_matrix
 
 	def find_score(self,acid1,acid2):
@@ -84,21 +90,6 @@ class ProbabilityMatrix:
 			max_score = 0
 
 		self._probability_matrix = probability_matrix
-
-		#print(probabilities)
-
-		#z_array = np.array(probabilities)
-		#z_result = stats.zscore(z_array)
-
-		#k = 0
-		#for i in alignements:
-		#	for j in alignements:
-		#		probability_matrix[i][j] = z_result[k]
-		#		k+=1
-
-
-
-
 
 	def find_pair(self,seq1,seq2):
 		"""find probability for entered sequnces"""

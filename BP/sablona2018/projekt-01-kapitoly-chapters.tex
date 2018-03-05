@@ -494,7 +494,7 @@ Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor 
 
 \section{Felsteinov algoritmus}
 \label{felstein}
-Felensteinov algorimus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
+Felsteinov algoritmus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
 Algoritmus je založený na princípe dynamického programovania a~pozostáva z~viacerých krokov.
 Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty pre každý uzol podľa pravidiel, ktoré sú nasledovné:
 \begin{itemize}
@@ -515,7 +515,35 @@ Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty
 
 \end{itemize}
 
-L--hodnota je uložená v poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~našom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
+L--hodnota je uložená v poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~našom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkzom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
+
+\chapter{Implementácia}
+
+\section{Testovanie vo WEKE}
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavovalo prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady som zvolil nástroj WEKA.
+
+WEKA \cite{bibid} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade, nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
+Pred otestovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu pre tento nástroj. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybratých niekoľko algoritmov, ktoré boli popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
+
+Testovanie algoritmov bolo vykonané na celej dátovej sade, pričom dátová sada bola rozdelená v~pomere 66\% tréningové dáta a~zvyšné záznamy slúžili ako testovacie dáta. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie destabilizjúcich položiek, pretože ich je v~dátovej sade väčší počet ako stabilizujúcich a~poslúžila na vyvažovanie. Tabuľka obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. 
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ | l | c | r | l| }
+		\hline 
+		Metóda strojového učenia & TP rate & FP rate & Accuracy \\ \hline
+		Naive Bayes & 0,776 & 0,626 & 0,737 \\ \hline
+		LibSVM &  0,786   & 0,706   & 0,766  \\ \hline
+		SMO & 0,774 & 0,774 & 0,6\\ \hline
+		DecisionTable & 0,774 & 0,774 & 0,6\\ \hline
+		RandomForest & 0,793 & 0,692 & 0,797\\ \hline
+		RandomTree & 0,793 & 0,574 & 0,766\\ \hline
+		J48 & 0,774 & 0,626 & 0,74\\ \hline		
+	\end{tabular}
+	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
+\end{table}
+
+Z tabuľky \ref{testovanie} je vidieť, že z~algoritmov založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda RandomForest a z~algoritmov implementujúcich SVM mal najlepší výsledok algoritmus LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu RandomForest aj SVM a preto boli tieto metódy určené ako základ pri tvorbe ensemble systému predikčného nástroja.
 
 
 \chapter{Typografické a~jazykové zásady}
