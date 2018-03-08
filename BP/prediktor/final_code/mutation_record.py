@@ -1,5 +1,5 @@
 #module for preparing mutation record, e.g. all features in record
-"""module for preparing mutation record"""
+"""This module is used for preparing mutation record"""
 
 from __future__ import division
 

@@ -6,8 +6,8 @@ import sys
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 import csv
-
-
+from sklearn.metrics import matthews_corrcoef
+from sklearn.metrics import classification_report
 #train_file = sys.argv[1]
 train_frame0 = pd.read_csv("train200_250_2.csv")
 train_frame1 = pd.read_csv("train250_250.csv")
@@ -139,6 +139,49 @@ result4 = rf.predict(testArr)
 with open('majority_voting4_new.csv', 'w') as f:
 	writer = csv.writer(f, delimiter=',')
 	writer.writerows(zip(results0,results1,results2,result0,result2,result3,result4))
+
+csv_file = open("majority_voting4_new.csv",'r')
+data_frame = csv.reader(csv_file,delimiter = ',')
+res = list()
+countNeg = 0
+countPos = 0
+for row in data_frame:
+	for item in row:
+		if(item == '-1'):
+			countNeg +=1
+		else:
+			countPos +=1
+	if(countPos > countNeg):
+		res.append(1)
+	elif(countPos < countNeg):
+		res.append(-1)
+	else:
+		res.append(1)
+
+	countNeg = 0
+	countPos = 0
+
+frame = pd.read_csv(test_file)
+frame['predicted1'] = res
+frame.to_csv(test_file)
+
+data_frame = pd.read_csv(test_file)
+new_frame = data_frame[(data_frame['class'] == 1) & (data_frame['predicted1'] == 1)]
+neg_frame = data_frame[(data_frame['class'] == -1) & (data_frame['predicted1'] == -1)]
+#print(len(new_frame))
+#print(len(neg_frame))
+count = len(new_frame) + len(neg_frame)
+print(count)
+r = count / 250
+print(str(r))
+
+testarr = data_frame['class'].values
+trainarr = data_frame['predicted1'].values
+target_names = ['1', '-1']
+print(classification_report(testarr,trainarr, target_names=target_names))
+test_class = test_frame[['class']]
+mcc = matthews_corrcoef(test_class, res)
+print(str(mcc))
 
 #classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
 #classifier.fit(trainArr0, trainRes0)

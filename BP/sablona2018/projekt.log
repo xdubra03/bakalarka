@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  5 MAR 2018 14:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  8 MAR 2018 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1302,7 +1302,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
-) (./projekt.aux)
+) (./projekt.aux
+
+LaTeX Warning: Label `pythontest' multiply defined.
+
+)
 \openout1 = `projekt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
@@ -1322,8 +1326,7 @@ LaTeX Font Info:    ... okay on input line 166.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
 LaTeX Font Info:    ... okay on input line 166.
 LaTeX Font Info:    Try loading font information for T1+lmr on input line 166.
-
-(/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 ABD: EverySelectfont initializing macros
@@ -1391,7 +1394,7 @@ File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 \@vyskaobr=\skip82
 \@sirkaobr=\skip83
 
-<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=246, 167.13641pt x 165.87971pt
+<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=258, 167.13641pt x 165.87971pt
 >
 File: template-fig/VUT_symbol_barevne_CMYK_CZ.pdf Graphic file (type pdf)
  <use template-fig/VUT_symbol_barevne_CMYK_CZ.pdf>
@@ -1460,6 +1463,10 @@ File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 7.
+
+
+LaTeX Warning: Citation `Rybicka' on page 3 undefined on input line 16.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1481,7 +1488,7 @@ a en-zým RNA-polymeráza,
 
 LaTeX Warning: Citation `bibid' on page 7 undefined on input line 87.
 
-<structure.png, id=395, 953.5625pt x 460.72125pt>
+<structure.png, id=408, 953.5625pt x 460.72125pt>
 File: structure.png Graphic file (type png)
  <use structure.png>
 Package pdftex.def Info: structure.png used on input line 98.
@@ -1495,7 +1502,7 @@ Overfull \hbox (47.94829pt too wide) in paragraph at lines 98--99
 Kapitola 3.
 [8
 
-] [9] <mutation_types.png, id=436, 626.34pt x 438.63875pt>
+] [9] <mutation_types.png, id=449, 626.34pt x 438.63875pt>
 File: mutation_types.png Graphic file (type png)
 
 <use mutation_types.png>
@@ -1515,7 +1522,7 @@ Overfull \hbox (1.54001pt too wide) in paragraph at lines 229--231
  Al-go-rit-mus pro-du-kuje klasifika£no-
  []
 
-[13] <rf.png, id=473, 445.665pt x 334.24875pt>
+[13] <rf.png, id=487, 445.665pt x 334.24875pt>
 File: rf.png Graphic file (type png)
  <use rf.png>
 Package pdftex.def Info: rf.png used on input line 265.
@@ -1525,7 +1532,7 @@ Package pdftex.def Info: rf.png used on input line 265.
 Kapitola 5.
 [17
 
-] <ensemble.png, id=505, 966.61125pt x 821.0675pt>
+] <ensemble.png, id=518, 966.61125pt x 821.0675pt>
 File: ensemble.png Graphic file (type png)
  <use ensemble.png>
 Package pdftex.def Info: ensemble.png used on input line 355.
@@ -1541,50 +1548,59 @@ Kapitola 7.
 
 ] [26] [27]
 Kapitola 8.
-
-LaTeX Warning: Citation `bibid' on page 28 undefined on input line 525.
-
 [28
 
 ] [29]
+Overfull \hbox (28.19458pt too wide) in paragraph at lines 588--606
+ [][] 
+ []
+
+[30] [31] [32]
 Kapitola 9.
-[30
+[33
 
-] [31] [32]
+]
+
+LaTeX Warning: Citation `Pravidla' on page 34 undefined on input line 712.
+
+[34] [35]
 Kapitola 10.
-) (./projekt.bbl [33
+) (./projekt.bbl [36
 
-] [34
+] [37
 
-] [35])
+] [38])
 \c@ttl@toc@chapters=\count305
- (./projekt-30-prilohy-appendices.tex [36]
+ (./projekt-30-prilohy-appendices.tex [39]
 P\IeC {\v r}\IeC {\'\i }loha A.
-[37
+[40
 
-] [38] [39] [40])
+] [41] [42] [43])
 \tf@ptc=\write5
 \openout5 = `projekt.ptc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [41]
+ [44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./projekt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `projekt.out' has not changed.
-(rerunfilecheck)             Checksum: 1BD701BC807E586B34D6771C2A340D46;9279.
+(rerunfilecheck)             Checksum: 65180E09F18ECAD973C1B8A8BB5152EC;10029.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 22845 strings out of 493039
- 376552 string characters out of 6136943
- 445586 words of memory out of 5000000
- 25807 multiletter control sequences out of 15000+600000
- 129080 words of font info for 104 fonts, out of 8000000 for 9000
+ 22868 strings out of 493039
+ 376773 string characters out of 6136943
+ 451890 words of memory out of 5000000
+ 25816 multiletter control sequences out of 15000+600000
+ 124816 words of font info for 103 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  47i,12n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
@@ -1609,13 +1625,13 @@ sr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></usr/share/texlive
 s/type1/public/lm/lmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm
 /lmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/lm/lmri8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/
-lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on projekt.pdf (44 pages, 1096096 bytes).
+xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm
+/lmtt9.pfb>
+Output written on projekt.pdf (47 pages, 1103376 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 722 compressed objects within 8 object streams
- 174 named destinations out of 1000 (max. 500000)
- 532 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 878 PDF objects out of 1000 (max. 8388607)
+ 769 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 556 words of extra memory for PDF output out of 10000 (max. 10000000)
 

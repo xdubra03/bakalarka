@@ -520,12 +520,13 @@ L--hodnota je uložená v poli, ktoré obsahuje každý uzol stromu. V~tomto pr�
 \chapter{Implementácia}
 
 \section{Testovanie vo WEKE}
-Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavovalo prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady som zvolil nástroj WEKA.
+\label{wekatest}
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavovalo prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj WEKA.
 
-WEKA \cite{bibid} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade, nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
-Pred otestovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu pre tento nástroj. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybratých niekoľko algoritmov, ktoré boli popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
+WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade, nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
+Pred otestovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu pre tento nástroj. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybratých niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
 
-Testovanie algoritmov bolo vykonané na celej dátovej sade, pričom dátová sada bola rozdelená v~pomere 66\% tréningové dáta a~zvyšné záznamy slúžili ako testovacie dáta. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie destabilizjúcich položiek, pretože ich je v~dátovej sade väčší počet ako stabilizujúcich a~poslúžila na vyvažovanie. Tabuľka obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. 
+Testovanie algoritmov bolo vykonané na celej dátovej sade, pri testovaní bola rozdelená v~pomere 66\% tréningové dáta a~zvyšné záznamy slúžili ako testovacie dáta. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie destabilizjúcich položiek, pretože ich je v~dátovej sade väčší počet ako stabilizujúcich a~poslúžila na vyvažovanie. Tabuľka obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. Na základe tohto údaju boli vybraté najlepšie metódy.
 
 \begin{table}[H]
 	\centering
@@ -543,11 +544,141 @@ Testovanie algoritmov bolo vykonané na celej dátovej sade, pričom dátová sa
 	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
 \end{table}
 
-Z tabuľky \ref{testovanie} je vidieť, že z~algoritmov založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda RandomForest a z~algoritmov implementujúcich SVM mal najlepší výsledok algoritmus LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu RandomForest aj SVM a preto boli tieto metódy určené ako základ pri tvorbe ensemble systému predikčného nástroja.
+Z tabuľky \ref{testovanie} je vidieť, že z~algoritmov založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda RandomForest a z~algoritmov implementujúcich SVM mal najlepší výsledok algoritmus LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu RandomForest aj SVM a~preto boli tieto metódy určené ako základ pri tvorbe ensemble systému predikčného nástroja.
 
+\section{Príprava mutačného záznamu v Pythone}
+
+Na implementáciu predikčného nástroja sme zvolili programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre existenciu knižníc strojového učenia.
+
+Prvou fázou pri tvorbe nástroja bola implementácia prípravy mutačného záznamu, ktorý tvorí vstup pre strojové učenie. Výpočet zahŕňa výpočet jednotlivých parametrov mutácie. Príprava záznamu pozostáva z výpočtu 8 hodnôt a~výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
+
+Pre výpočet hodnôt zmeny náboja, zmeny polarity, zmeny indexu hydrofobicity, zmeny veľkosti aminokyseliny sú v~príslušnej triede prítomné dátové štruktúry obsahujúce hodnoty náboja, polarity, indexu hydrofobity a~veľkosti pre jednotlivé aminokyseliny. Hodnoty parametrov sa vypočítajú na základe zmeny podľa určenia pôvodnej aminokyseliny a~aminokyseliny po mutácií.
+
+Výpočet údajov o~sekundárnej štruktúre a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica Biopython\footnote{Dostupné na \url{www.biopython.org}}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program \textbf{dssp}, ktorý modul používa na výpočet.
+
+Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu \textbf{BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencí. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu \textbf{Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencí.
+PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinového algorimtmu na výpočet váh. Na vytvorenie stromu je použitý program \textbf{FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v Pythone bola použitá knižnica \textbf{ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
+
+Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovananie sekvencí. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu sú nakoniec zakódované do svojej číselnej reprezentácie, aby s nimi mohla pracovať metóda strojového učenia.
+
+\section{Testovanie metód strojového učenia v Pythone}
+
+Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov strojového učenia sme zvolili knižnicu \textbf{Scikit-learn}\footnote{\url{}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a zahŕňa v sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a gradient boosting.
+
+Podľa výsledkov testovania rôznych metód uvedených v časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a RandomForest. Na začiatku tejto fázy vývoja sme otestovali implementácie týchto metód s knižnice Scikit-learn na dátovej sade, z ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a bola vytvorená náhodným výberom z pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a 206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a hodnotou korelácie vyjadrenej Matthesovým korelačným koeficientom. Výsledky testovania sú prítomné v tabuľke \ref{scikittest}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ | l | c | r | l| }
+		\hline 
+		Metóda  & Accuracy & MCC \\ \hline
+		Random Forest & 0,712 & 0,356\\ \hline
+		SVM & 0,81 & -0,029 \\\hline
+	\end{tabular}
+	\caption {Výsledky testovanie algoritmov z knižnice Scikit-learn} \label{scikittest} 
+\end{table}
+
+Tabuľka \ref{scikittest} ukazuje, že v presnosti dosiahla metóda SVM veľmi dobré výsledky a presnosť dosiahla až 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Napriek tomu, že metóda SVM mala vysokú presnosť, hodnota MCC dosiahla veľmi malej hodnoty, čo predstavuje veľmi zlý výsledok, oproti tomu metóda Random Forest dosiahla výrazne lepšiu hodnotu 0.35. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a vyjadruje vzťah predikovaných a skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a vytvoreného ensemble systému.
+
+\section{Ensemble systém v Pythone}
+
+Základom ensemble systému je použitie viacerých klasifikátorov a spojenie ich výsledkov. Pred natrénovaním jednotlivých metód bolo potrebné zostaviť tréningové dáta pre tento systém. Vytvorenie dát spočívalo vo vytvorení menších podsád z pôvodnej sady. Na zostavenie podsád bola použitá sada 1315 záznamov z predchádzajúceho testovania. Celkovo bolo vytvorených 14 tréningových podsád, ktoré boli najskôr samostatne otestované na jednotlivých metódach. 
+  
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |l | c | c | c | c|}
+		\hline 
+		Dátová sada & Stabilizujúce záznamy & Destabilizujúce záznamy & MCC (SVM) & MCC (RF)  \\ \hline
+	1. & 100 & 100 & 0.32 & 0.3\\ \hline
+	2. & 100 & 150 & 0.34 & 0.28\\ \hline
+	3. & 150 & 100 & 0.24 & 0.31\\ \hline
+	4. & 130 & 100 & 0.25 & 0.24\\ \hline
+	5. & 150 & 150 & 0.33 & 0.29\\ \hline
+	6. & 150 & 200 & 0.34 & 0.34\\ \hline
+	7. & 200 & 150 & 0.24 & 0.3\\ \hline
+	8. & 200 & 200 & 0.31 & 0.34\\ \hline
+	9. & 200 & 250 & 0.34 & 0.32\\ \hline
+	10. & 250 & 200 & 0.3 & 0.36\\ \hline
+	11. & 250 & 250 & 0.37 & 0.31\\ \hline
+	12. & 300 & 300 & 0.27 & 0.35\\ \hline
+	13. & 300 & 300 & 0.32 & 0.37\\ \hline
+	14. & 300 & 300 & 0.29 & 0.34\\ \hline
+	\end{tabular}
+	\caption {Výsledky testovania podsád na jednotlivých metódach} \label{pythontest} 
+\end{table}
+
+Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na jednotlivých metódach. Podsady boli testované s prítomnosťou všetkých parametrov, v ďaľšom testovaní sme pristúpili k odstránení niektorých parametrov, ktoré by nemuseli mať taký výrazný vplyv na predikciu. Testovali sme podsady bez parametra zmeny náboja, veľkosti dostupnej povrchovej plochy a kombinácií parametrov zmeny indexu hydrofobicity a dostupnej povrchovej plochy.
+      
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |l | c | c | c | c|}
+		\hline 
+		Dátová sada  & MCC (SVM) & MCC (RF)  \\ \hline
+		1. & 0.32 & 0.3\\ \hline
+		2.  & 0.34 & 0.28\\ \hline
+		3. & 0.24 & 0.31\\ \hline
+		4.  & 0.25 & 0.24\\ \hline
+		5.  & 0.33 & 0.29\\ \hline
+		6.  & 0.34 & 0.34\\ \hline
+		7. & 0.24 & 0.3\\ \hline
+		8.  & 0.31 & 0.34\\ \hline
+		9.  & 0.34 & 0.32\\ \hline
+		10.  & 0.3 & 0.36\\ \hline
+		11.  & 0.37 & 0.31\\ \hline
+		12.  & 0.27 & 0.35\\ \hline
+		13.  & 0.32 & 0.37\\ \hline
+		14.  & 0.29 & 0.34\\ \hline
+	\end{tabular}
+	\caption {Výsledky testovania podsád na jednotlivých metódach} \label{pythontest} 
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |l | c | c | c | c|}
+		\hline 
+		Dátová sada  & MCC (SVM) & MCC (RF)  \\ \hline
+		1. & 0.32 & 0.3\\ \hline
+		2.  & 0.34 & 0.28\\ \hline
+		3. & 0.24 & 0.31\\ \hline
+		4.  & 0.25 & 0.24\\ \hline
+		5.  & 0.33 & 0.29\\ \hline
+		6.  & 0.34 & 0.34\\ \hline
+		7. & 0.24 & 0.3\\ \hline
+		8.  & 0.31 & 0.34\\ \hline
+		9.  & 0.34 & 0.32\\ \hline
+		10.  & 0.3 & 0.36\\ \hline
+		11.  & 0.37 & 0.31\\ \hline
+		12.  & 0.27 & 0.35\\ \hline
+		13.  & 0.32 & 0.37\\ \hline
+		14.  & 0.29 & 0.34\\ \hline
+	\end{tabular}
+	\caption {Výsledky testovania podsád na jednotlivých metódach} \label{pythontest} 
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ |l | c | c | c | c|}
+		\hline 
+		Dátová sada  & MCC (SVM) & MCC (RF)  \\ \hline
+		1. & 0.32 & 0.3\\ \hline
+		2.  & 0.34 & 0.28\\ \hline
+		3. & 0.24 & 0.31\\ \hline
+		4.  & 0.25 & 0.24\\ \hline
+		5.  & 0.33 & 0.29\\ \hline
+		6.  & 0.34 & 0.34\\ \hline
+		7. & 0.24 & 0.3\\ \hline
+		8.  & 0.31 & 0.34\\ \hline
+		9.  & 0.34 & 0.32\\ \hline
+		10.  & 0.3 & 0.36\\ \hline
+		11.  & 0.37 & 0.31\\ \hline
+		12.  & 0.27 & 0.35\\ \hline
+		13.  & 0.32 & 0.37\\ \hline
+		14.  & 0.29 & 0.34\\ \hline
+	\end{tabular}
+	\caption {Výsledky testovania podsád na jednotlivých metódach} \label{pythontest} 
+\end{table} 
 
 \chapter{Typografické a~jazykové zásady}
-Při tisku odborného textu typu {\it technická zpráva} (anglicky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
+Při tisku odborného textu typu {\it technická zpráva} (anglicvky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
 
 Horní a~spodní okraj volte stejně veliký, případně potištěnou část posuňte mírně nahoru (horní okraj menší než dolní). Počítejte s~tím, že při vazbě budou okraje mírně oříznuty.
 
