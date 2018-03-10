@@ -7,7 +7,7 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 import csv
 from sklearn.metrics import matthews_corrcoef
-from sklearn.metrics import classification_report
+
 #train_file = sys.argv[1]
 train_frame0 = pd.read_csv("train200_250_2.csv")
 train_frame1 = pd.read_csv("train250_250.csv")
@@ -40,7 +40,7 @@ trainRes0 = train_frame0.as_matrix(colsRes)
 trainRes0 = trainRes0.ravel()
 
 #dataset 100 150 vsetky parametre
-trainArr1 = train_frame1.as_matrix(cols)
+trainArr1 = train_frame1.as_matrix(cols1)
 trainRes1 = train_frame1.as_matrix(colsRes)
 trainRes1 = trainRes1.ravel()
 
@@ -65,7 +65,7 @@ trainRes5 = train_frame5.as_matrix(colsRes)
 trainRes5 = trainRes5.ravel()
 
 #daatset 250 250 bez asa/hydro
-trainArr6 = train_frame0.as_matrix(cols2)
+trainArr6 = train_frame0.as_matrix(cols3)
 trainRes6 = train_frame0.as_matrix(colsRes)
 trainRes6 = trainRes6.ravel()
 
@@ -87,11 +87,11 @@ testArr1 = test_frame.as_matrix(cols2)
 testRes1 = test_frame.as_matrix(colsRes)
 testRes1 = testRes1.ravel()
 
-testArr2 = test_frame.as_matrix(cols)
+testArr2 = test_frame.as_matrix(cols3)
 testRes2 = test_frame.as_matrix(colsRes)
 testRes2 = testRes2.ravel()
 
-testArr3 = test_frame.as_matrix(cols)
+testArr3 = test_frame.as_matrix(cols1)
 testRes3 = test_frame.as_matrix(colsRes)
 testRes3 = testRes3.ravel()
 
@@ -103,11 +103,11 @@ results0 = classifier.predict(testArr)
 #250 250 SVM
 classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
 classifier.fit(trainArr1, trainRes1)
-results1 = classifier.predict(testArr)
+results1 = classifier.predict(testArr3)
 #200 250 bez asa SVM
 classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
 classifier.fit(trainArr6, trainRes6)
-results2 = classifier.predict(testArr1)
+results2 = classifier.predict(testArr2)
 #res_frame['predicted1'] = results
 #res_frame.to_csv("majority_voting.csv")
 #print(results)
@@ -175,10 +175,7 @@ print(count)
 r = count / 250
 print(str(r))
 
-testarr = data_frame['class'].values
-trainarr = data_frame['predicted1'].values
-target_names = ['1', '-1']
-print(classification_report(testarr,trainarr, target_names=target_names))
+
 test_class = test_frame[['class']]
 mcc = matthews_corrcoef(test_class, res)
 print(str(mcc))
