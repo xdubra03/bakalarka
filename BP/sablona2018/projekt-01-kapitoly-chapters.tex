@@ -468,7 +468,7 @@ Databáza ProTherm bola naposledy aktualizovaná vo februári v~roku 2013 a~aktu
 	\item Trojstavové skladanie - niektoré publikácie uvažujú 3 hodnoty Gibbsovej voľnej energie: nezložený stav, medzistav a~zložený stav. Databáza ProTherm však nerozlišuje medzi prechodom z~nezloženého stavu do medzistavu a z~medzistavu do zloženého stavu.
 \end{itemize}
 
-Aby bola vytvorená dátová sada spoľahlivá a~aby eliminovala možné experimentálne chyby v~nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s~hodnotami $\Delta\Delta G$ z~intervalu $\left[-0.5,0.5\right]$ boli odstránené. Záznamy s~hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a~záznamy s~$\Delta\Delta G$ $\leq$ 0.5~$kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
+Aby bola vytvorená dátová sada spoľahlivá a~aby eliminovala možné experimentálne chyby v~nameraných hodnotách zmeny Gibssovej voľnej energie ($\Delta\Delta G$), záznamy s~hodnotami $\Delta\Delta G$ z~intervalu $\left[-0.5,0.5\right]$ boli odstránené. Záznamy s~hodnotou $\Delta\Delta G$ $\geq$ 0.5 $kcal.mol^{-1}$ boli označené za destabilizujúce a~záznamy s~$\Delta\Delta G$ $\leq$ -0.5~$kcal.mol^{-1}$ boli označené za stabilizujúce. Tento rozhodovací prah bol zvolený podľa tvrdenia, že experimentálna chyba merania $\Delta\Delta G$ je približne 0.48 $kcal.mol^{-1}$ \cite{threshold}.
 V~prípade, že pre jednu mutáciu bolo uskutočnených viac meraní, ponechaný bol iba záznam merania, ktoré prebehlo pod experimentálnou hodnotou pH, ktorá bola blízko fyziologickej hodnote pH 7. Každý záznam bol rozšírený o~štrukturálne informácie.
 
 \section{Parametre mutačného záznamu}
@@ -518,19 +518,21 @@ Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty
 L--hodnota je uložená v poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~našom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkzom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
 
 \chapter{Implementácia}
-
+TODO
 \section{Testovanie vo WEKE}
 \label{wekatest}
-Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavovalo prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj WEKA.
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj WEKA.
 
-WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade, nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
-Pred otestovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu pre tento nástroj. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybratých niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
+WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade, a nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
+Pred testovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu nástroja. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybraných niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~na základe výsledkov boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
 
-Testovanie algoritmov bolo vykonané na celej dátovej sade, pri testovaní bola rozdelená v~pomere 66\% tréningové dáta a~zvyšné záznamy slúžili ako testovacie dáta. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie destabilizjúcich položiek, pretože ich je v~dátovej sade väčší počet ako stabilizujúcich a~poslúžila na vyvažovanie. Tabuľka obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. Na základe tohto údaju boli vybraté najlepšie metódy.
+Testovanie zvolených metód bolo vykonané na celej dátovej sade, pri testovaní boli dáta rozdelené v~pomere 66\% tréningové dáta a~zvyšné záznamy slúžili ako testovacie dáta. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie predikcie stabilizujúcich mutácií ako destabilizjúcich, pretože v tréningovej sade je väčší počet destabilizujúcich mutácií ako stabilizujúcich a~poslúžila na vyvažovanie nerovnomerného počtu záznamov. Výsledky testovania jednotlivých metód sú v tabuľke \ref{testovanie}. 
+
+Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. Na základe tohto údaju boli vybraté najlepšie metódy.
 
 \begin{table}[H]
 	\centering
-	\begin{tabular}{ | l | c | r | l| }
+	\begin{tabular}{ | l | c | c | c| }
 		\hline 
 		Metóda strojového učenia & TP rate & FP rate & Accuracy \\ \hline
 		Naive Bayes & 0,776 & 0,626 & 0,737 \\ \hline
@@ -544,26 +546,26 @@ Testovanie algoritmov bolo vykonané na celej dátovej sade, pri testovaní bola
 	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
 \end{table}
 
-Z tabuľky \ref{testovanie} je vidieť, že z~algoritmov založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda RandomForest a z~algoritmov implementujúcich SVM mal najlepší výsledok algoritmus LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu RandomForest aj SVM a~preto boli tieto metódy určené ako základ pri tvorbe ensemble systému predikčného nástroja.
+Z tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda Random Forest a z~metód implementujúcich SVM mala najlepší výsledok metóda LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes založená na bayesovskej pravdepodobnosti dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu Random Forest aj SVM a~preto boli tieto metódy určené ako základ vytváraného ensemble systému predikčného nástroja.
 
 \section{Príprava mutačného záznamu v Pythone}
 
-Na implementáciu predikčného nástroja sme zvolili programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre existenciu knižníc strojového učenia.
+Na implementáciu predikčného nástroja sme zvolili programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre jednoduché implementovanie strojového učenia vďaka dostupným knižniciam.
 
-Prvou fázou pri tvorbe nástroja bola implementácia prípravy mutačného záznamu, ktorý tvorí vstup pre strojové učenie. Výpočet zahŕňa výpočet jednotlivých parametrov mutácie. Príprava záznamu pozostáva z výpočtu 8 hodnôt a~výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
+Prvou fázou pri tvorbe nástroja bola implementácia prípravy mutačného záznamu, ktorý tvorí vstup pre strojové učenie. Príprava záznamu zahŕňa výpočet jednotlivých parametrov mutácie a celkovo pozostáva z výpočtu 8 hodnôt. Výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
 
-Pre výpočet hodnôt zmeny náboja, zmeny polarity, zmeny indexu hydrofobicity, zmeny veľkosti aminokyseliny sú v~príslušnej triede prítomné dátové štruktúry obsahujúce hodnoty náboja, polarity, indexu hydrofobity a~veľkosti pre jednotlivé aminokyseliny. Hodnoty parametrov sa vypočítajú na základe zmeny podľa určenia pôvodnej aminokyseliny a~aminokyseliny po mutácií.
+Pre výpočet hodnôt zmien náboja, polarity, indexu hydrofobicity a veľkosti aminokyseliny sú v~príslušnej triede prítomné dátové štruktúry obsahujúce hodnoty náboja, polarity, indexu hydrofobity a~veľkosti pre jednotlivé aminokyseliny. Hodnoty parametrov sa vypočítajú na základe zmeny podľa určenia pôvodnej aminokyseliny a~aminokyseliny po mutácií.
 
-Výpočet údajov o~sekundárnej štruktúre a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica Biopython\footnote{Dostupné na \url{www.biopython.org}}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program \textbf{dssp}, ktorý modul používa na výpočet.
+Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica Biopython\footnote{Dostupné na \url{www.biopython.org}}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program \textbf{dssp}, ktorý modul používa na výpočet.
 
-Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu \textbf{BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencí. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu \textbf{Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencí.
-PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinového algorimtmu na výpočet váh. Na vytvorenie stromu je použitý program \textbf{FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v Pythone bola použitá knižnica \textbf{ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
+Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu \textbf{BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu \textbf{Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
+PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinového algoritmu. Na vytvorenie stromu je použitý program \textbf{FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v Pythone bola použitá knižnica \textbf{ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
 
-Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovananie sekvencí. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu sú nakoniec zakódované do svojej číselnej reprezentácie, aby s nimi mohla pracovať metóda strojového učenia.
+Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovananie sekvencií. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu sú nakoniec zakódované do svojej číselnej reprezentácie, aby s nimi mohla pracovať metóda strojového učenia.
 
 \section{Testovanie metód strojového učenia v Pythone}
 
-Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov strojového učenia sme zvolili knižnicu \textbf{Scikit-learn}\footnote{\url{}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a zahŕňa v sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a gradient boosting.
+Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov sme zvolili knižnicu \textbf{Scikit-learn}\footnote{\url{}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a zahŕňa v sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a gradient boosting.
 
 Podľa výsledkov testovania rôznych metód uvedených v časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a RandomForest. Na začiatku tejto fázy vývoja sme otestovali implementácie týchto metód s knižnice Scikit-learn na dátovej sade, z ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a bola vytvorená náhodným výberom z pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a 206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a hodnotou korelácie vyjadrenej Matthesovým korelačným koeficientom. Výsledky testovania sú prítomné v tabuľke \ref{scikittest}
 \begin{table}[H]
@@ -687,7 +689,16 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 
 Tento systém bol otestovaný aj za použitia iných podsád, konkrétne bola nahradená sada č. 9 bez prítomnosti dvoch parametrov a postupne bola nahradená sadami s odstráneným parametrom zmeny náboja a odstránenou hodnotou dostupnej povrchovej plochy, pretože obidve sady pri testovaní dosiahli vysokej hodnoty korelácie 0.39 a 0.37. Pri teste so sadou s koreláciou 0.39 sme dosihli výslednej korelácie 0.42 a pri teste tejto sady s koreláciou 0.37 bola výsledná korelácia 0.40.
 
-Teraz graf s korelaciami samostatnych metod a ensemblu
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		\scalebox{0.7}
+		{   
+			\includegraphics{mcc.png}
+		}
+		\caption{Graf s porovnaním hodnôt MCC na testovacej sade}
+	\end{center}
+\end{figure}
 
 
 

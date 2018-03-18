@@ -34,8 +34,8 @@ def count_results(self):
 	frame.to_csv(self)
 	print(res)
 
-def count_neg(self):
-	csv_file = open("test250_data_new.csv",'r')
+def count_neg(name):
+	csv_file = open(name,'r')
 	data_frame = csv.reader(csv_file,delimiter = ',')
 	res = list()
 	countNeg = 0
@@ -49,4 +49,4 @@ def count_neg(self):
 	print('POSITIVES: ' +str(countPos))
 	print('NEGATIVES:' + str(countNeg))
 
-count_neg('d')
+count_neg(sys.argv[1])

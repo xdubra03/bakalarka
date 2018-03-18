@@ -101,11 +101,11 @@ for name in names:
     i = 0
     train_frame = pd.read_csv(name)
     #dataset 150 150 vsetky parametre
-    trainArr = train_frame.as_matrix(cols3)
+    trainArr = train_frame.as_matrix(cols)
     trainRes = train_frame.as_matrix(colsRes)
     trainRes = trainRes.ravel()
 
-    testArr = test_frame.as_matrix(cols3)
+    testArr = test_frame.as_matrix(cols)
     testRes = test_frame.as_matrix(colsRes)
     testRes = testRes.ravel()
 
@@ -114,7 +114,7 @@ for name in names:
     rf.fit(trainArr,trainRes)
     result = rf.predict(testArr)
     """
-    classifier = svm.SVC(kernel = 'linear',class_weight=weights[i])
+    classifier = svm.SVC(kernel = 'poly',class_weight='balanced')
     classifier.fit(trainArr, trainRes)
     result = classifier.predict(testArr)
 
