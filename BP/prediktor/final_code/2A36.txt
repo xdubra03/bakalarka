@@ -1,0 +1,500 @@
+>gi|85544066|pdb|2A36|AChain A, Solution Structure Of The N-Terminal Sh3 Domain Of Drk >gi|85544194|pdb|2AZS|A Chain A, Nmr Structure Of The N-Terminal Sh3 Domain Of Drk (Calculated Without Noe Restraints)
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1060239607|ref|XP_017864786.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila arizonae]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|85544067|pdb|2A37|AChain A, Solution Structure Of The T22g Mutant Of N-Terminal Sh3 Domain Of Drk (Drkn Sh3 Domain) >gi|85544195|pdb|2AZV|A Chain A, Solution Structure Of The T22g Mutant Of N-Terminal Sh3 Domain Of Drk (Calculated Without Noes)
+MEAIAKHDFSATADDELSFRKGQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1037066224|ref|XP_016990963.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila rhopaloa] >gi|1037066226|ref|XP_016990964.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila rhopaloa] >gi|1037066228|ref|XP_016990965.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila rhopaloa]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1062676382|ref|XP_017960182.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila navojoa]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1036868246|ref|XP_016957217.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila biarmipes] >gi|1036868264|ref|XP_016957218.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila biarmipes] >gi|1036868285|ref|XP_016957219.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila biarmipes]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1314979204|ref|XP_023171182.1|protein enhancer of sevenless 2B [Drosophila hydei]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|924556360|gb|ALC41633.1|drk [Drosophila busckii]
+MEAVAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1036950527|ref|XP_017051194.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila ficusphila] >gi|1036950546|ref|XP_017051195.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila ficusphila]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|17136708|ref|NP_476858.1|downstream of receptor kinase, isoform A [Drosophila melanogaster] >gi|24653398|ref|NP_725302.1| downstream of receptor kinase, isoform B [Drosophila melanogaster] >gi|24653400|ref|NP_725303.1| downstream of receptor kinase, isoform C [Drosophila melanogaster] >gi|24653402|ref|NP_725304.1| downstream of receptor kinase, isoform D [Drosophila melanogaster] >gi|24653406|ref|NP_725306.1| downstream of receptor kinase, isoform F [Drosophila melanogaster] >gi|195058409|ref|XP_001995447.1| GH22624 [Drosophila grimshawi] >gi|195400535|ref|XP_002058872.1| uncharacterized protein Dvir_GJ19679 [Drosophila virilis] >gi|195425486|ref|XP_002061033.1| protein enhancer of sevenless 2B [Drosophila willistoni] >gi|195484967|ref|XP_002090896.1| uncharacterized protein Dyak_GE13357, isoform A [Drosophila yakuba] >gi|969511606|ref|XP_015052514.1| uncharacterized protein Dyak_GE13357, isoform C [Drosophila yakuba] >gi|969511608|ref|XP_015052515.1| uncharacterized protein Dyak_GE13357, isoform B [Drosophila yakuba] >gi|1013912183|ref|XP_016027399.1| drk, isoform B [Drosophila simulans] >gi|1013912185|ref|XP_016027400.1| drk, isoform C [Drosophila simulans] >gi|1036078511|ref|XP_016943334.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila suzukii] >gi|1036078513|ref|XP_016943335.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila suzukii] >gi|1036078515|ref|XP_016943336.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila suzukii] >gi|1036873982|ref|XP_017001019.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila takahashii] >gi|1036874001|ref|XP_017001020.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila takahashii] >gi|1036874019|ref|XP_017001021.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila takahashii] >gi|1037112024|ref|XP_017131964.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila elegans] >gi|1037112028|ref|XP_017131965.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila elegans] >gi|1037112030|ref|XP_017131966.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila elegans] >gi|1037112034|ref|XP_017131967.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila elegans] >gi|1037112038|ref|XP_017131968.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila elegans] >gi|1286064389|ref|XP_023037817.1| protein enhancer of sevenless 2B [Drosophila willistoni] >gi|729368|sp|Q08012.1|DRK_DROME RecName: Full=Protein enhancer of sevenless 2B; Short=Protein E(sev)2B; AltName: Full=Downstream of receptor kinase; AltName: Full=SH2-SH3 adapter protein drk >gi|52000619|sp|Q6YKA8.1|DRK_DROSI RecName: Full=Protein E(sev)2B; AltName: Full=Downstream of receptor kinase; AltName: Full=Protein enhancer of sevenless 2B; AltName: Full=SH2-SH3 adapter protein drk >gi|304809|gb|AAA28898.1| downstream of receptor kinases (drk) [Drosophila melanogaster] >gi|7303308|gb|AAF58368.1| downstream of receptor kinase, isoform A [Drosophila melanogaster] >gi|16768942|gb|AAL28690.1| LD12029p [Drosophila melanogaster] >gi|21627236|gb|AAM68581.1| downstream of receptor kinase, isoform B [Drosophila melanogaster] >gi|21627237|gb|AAM68582.1| downstream of receptor kinase, isoform C [Drosophila melanogaster] >gi|21627238|gb|AAM68583.1| downstream of receptor kinase, isoform D [Drosophila melanogaster] >gi|21627240|gb|AAM68585.1| downstream of receptor kinase, isoform F [Drosophila melanogaster] >gi|23344808|gb|AAN17564.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344810|gb|AAN17565.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344812|gb|AAN17566.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344814|gb|AAN17567.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344816|gb|AAN17568.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344818|gb|AAN17569.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344820|gb|AAN17570.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344822|gb|AAN17571.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344824|gb|AAN17572.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344826|gb|AAN17573.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344828|gb|AAN17574.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344830|gb|AAN17575.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344832|gb|AAN17576.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344834|gb|AAN17577.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344836|gb|AAN17578.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344838|gb|AAN17579.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344840|gb|AAN17580.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344842|gb|AAN17581.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344844|gb|AAN17582.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344846|gb|AAN17583.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344848|gb|AAN17584.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344850|gb|AAN17585.1| downstream of receptor kinase [Drosophila melanogaster] >gi|23344994|gb|AAN17586.1| downstream of receptor kinase [Drosophila simulans] >gi|193899653|gb|EDV98519.1| GH22624 [Drosophila grimshawi] >gi|194156223|gb|EDW71407.1| uncharacterized protein Dvir_GJ19679 [Drosophila virilis] >gi|194157118|gb|EDW72019.1| uncharacterized protein Dwil_GK10660 [Drosophila willistoni] >gi|194176997|gb|EDW90608.1| uncharacterized protein Dyak_GE13357, isoform A [Drosophila yakuba] >gi|220943096|gb|ACL84091.1| drk-PA, partial [synthetic construct] >gi|220952784|gb|ACL88935.1| drk-PA [synthetic construct] >gi|900891972|gb|KMY93517.1| drk, isoform B [Drosophila simulans] >gi|900891973|gb|KMY93518.1| drk, isoform C [Drosophila simulans] >gi|948553623|gb|KRJ99318.1| uncharacterized protein Dyak_GE13357, isoform B [Drosophila yakuba] >gi|948553624|gb|KRJ99319.1| uncharacterized protein Dyak_GE13357, isoform C [Drosophila yakuba] >gi|1067108759|gb|AOQ03079.1| drk-RA [synthetic construct] >gi|1067120550|gb|AOQ04820.1| drk-RB, partial [synthetic construct] >gi|1067124232|gb|AOQ06289.1| drk-RA [synthetic construct] >gi|1067128294|gb|AOQ07910.1| drk-RA [synthetic construct]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1036836868|ref|XP_017090811.1|PREDICTED: protein enhancer of sevenless 2B isoform X2 [Drosophila bipectinata]
+MEAIAKHDFSATADDELSFRKTQTLKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1067108352|gb|AOQ02975.1|drk-RB, partial [synthetic construct] >gi|1067113315|gb|AOQ03533.1| drk-RB, partial [synthetic construct] >gi|1067121356|gb|AOQ05104.1| drk-RB, partial [synthetic construct] >gi|1067131665|gb|AOQ09037.1| drk-RB, partial [synthetic construct]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|125809017|ref|XP_001360956.1|uncharacterized protein Dpse_GA19310 [Drosophila pseudoobscura pseudoobscura] >gi|195153917|ref|XP_002017870.1| GL17069 [Drosophila persimilis] >gi|1037009641|ref|XP_017150034.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila miranda] >gi|54636129|gb|EAL25532.1| uncharacterized protein Dpse_GA19310 [Drosophila pseudoobscura pseudoobscura] >gi|194113666|gb|EDW35709.1| GL17069 [Drosophila persimilis]
+MEAVAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|194883329|ref|XP_001975755.1|uncharacterized protein Dere_GG22486, isoform A [Drosophila erecta] >gi|968021319|ref|XP_015012454.1| uncharacterized protein Dere_GG22486, isoform B [Drosophila erecta] >gi|1236497916|ref|XP_022226958.1| protein enhancer of sevenless 2B [Drosophila obscura] >gi|1236497918|ref|XP_022226959.1| protein enhancer of sevenless 2B [Drosophila obscura] >gi|1236497920|ref|XP_022226960.1| protein enhancer of sevenless 2B [Drosophila obscura] >gi|1236497922|ref|XP_022226962.1| protein enhancer of sevenless 2B [Drosophila obscura] >gi|190658942|gb|EDV56155.1| uncharacterized protein Dere_GG22486, isoform A [Drosophila erecta] >gi|945203599|gb|KQS62728.1| uncharacterized protein Dere_GG22486, isoform B [Drosophila erecta]
+MEAVAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1060202740|ref|XP_017835744.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila busckii]
+MEAVAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|195334089|ref|XP_002033717.1|GM20273 [Drosophila sechellia] >gi|194125687|gb|EDW47730.1| GM20273 [Drosophila sechellia]
+MEAIAKHDFSATADDELNFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1037059707|ref|XP_017081584.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila eugracilis] >gi|1037059721|ref|XP_017081585.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila eugracilis] >gi|1037059739|ref|XP_017081587.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila eugracilis]
+MEAIAKHDFSATADDELSFRKTQILKILNMEDDSNWYRAELEGKEGLIPSNYIEMKNHD
+>gi|194757677|ref|XP_001961089.1|uncharacterized protein Dana_GF11180 [Drosophila ananassae] >gi|1036836830|ref|XP_017090809.1| PREDICTED: protein enhancer of sevenless 2B isoform X1 [Drosophila bipectinata] >gi|1036836849|ref|XP_017090810.1| PREDICTED: protein enhancer of sevenless 2B isoform X1 [Drosophila bipectinata] >gi|190622387|gb|EDV37911.1| uncharacterized protein Dana_GF11180 [Drosophila ananassae]
+MEAIAKHDFSATADDELSFRKTQTLKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|195124900|ref|XP_002006921.1|uncharacterized protein Dmoj_GI21333 [Drosophila mojavensis] >gi|193911989|gb|EDW10856.1| uncharacterized protein Dmoj_GI21333 [Drosophila mojavensis]
+MEAIAKHDFSANADDELSFRKTQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|906465973|gb|KNC27518.1|hypothetical protein FF38_12356 [Lucilia cuprina]
+MEAIAKHDFSATADDELSFRKNQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|907698878|ref|XP_013109313.1|PREDICTED: protein enhancer of sevenless 2B [Stomoxys calcitrans] >gi|907698881|ref|XP_013109314.1| PREDICTED: protein enhancer of sevenless 2B [Stomoxys calcitrans] >gi|907698946|ref|XP_013109315.1| PREDICTED: protein enhancer of sevenless 2B [Stomoxys calcitrans] >gi|907698949|ref|XP_013109316.1| PREDICTED: protein enhancer of sevenless 2B [Stomoxys calcitrans] >gi|907698988|ref|XP_013109318.1| PREDICTED: protein enhancer of sevenless 2B [Stomoxys calcitrans]
+MEAVAKHDFSATADDELSFRKNQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1036738632|ref|XP_017016979.1|PREDICTED: protein enhancer of sevenless 2B [Drosophila kikkawai] >gi|1036738658|ref|XP_017016980.1| PREDICTED: protein enhancer of sevenless 2B [Drosophila kikkawai] >gi|1189053175|ref|XP_020809114.1| protein enhancer of sevenless 2B [Drosophila serrata] >gi|1189053177|ref|XP_020809184.1| protein enhancer of sevenless 2B [Drosophila serrata] >gi|1189053179|ref|XP_020809252.1| protein enhancer of sevenless 2B [Drosophila serrata]
+MEAIAKHDFSATAEDELSFRKTQILKILNMEDDSNWYRAELEGKEGLIPSNYIEMKNHD
+>gi|751474022|ref|XP_011192389.1|PREDICTED: protein enhancer of sevenless 2B [Zeugodacus cucurbitae] >gi|751474024|ref|XP_011192390.1| PREDICTED: protein enhancer of sevenless 2B [Zeugodacus cucurbitae] >gi|751474026|ref|XP_011192391.1| PREDICTED: protein enhancer of sevenless 2B [Zeugodacus cucurbitae] >gi|751474028|ref|XP_011192392.1| PREDICTED: protein enhancer of sevenless 2B [Zeugodacus cucurbitae] >gi|751474030|ref|XP_011192393.1| PREDICTED: protein enhancer of sevenless 2B [Zeugodacus cucurbitae] >gi|751784765|ref|XP_011201691.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera dorsalis] >gi|751784767|ref|XP_011201692.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera dorsalis] >gi|751784769|ref|XP_011201693.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera dorsalis] >gi|929353295|ref|XP_014085703.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera oleae] >gi|1048000951|ref|XP_017468329.1| PREDICTED: protein enhancer of sevenless 2B [Rhagoletis zephyria] >gi|1098652296|ref|XP_018790608.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera latifrons] >gi|1132382126|ref|XP_019845386.1| PREDICTED: protein enhancer of sevenless 2B [Bactrocera dorsalis]
+MEAIAKHDFSATADDELSFRKSQILKILNMEDDSNWYRAELDSKEGLIPSNYIEMKNHD
+>gi|1135087241|ref|XP_019893905.1|PREDICTED: protein enhancer of sevenless 2B [Musca domestica]
+MEAIAKHDFTATADDELCFRKNQILKILNMEDDSNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|498924838|ref|XP_004517525.1|protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924840|ref|XP_004517526.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924844|ref|XP_004517527.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924848|ref|XP_004517528.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924852|ref|XP_004517529.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924854|ref|XP_004517530.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|498924858|ref|XP_004517531.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|807015051|ref|XP_012162565.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|1184334220|ref|XP_020717937.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata] >gi|1184334229|ref|XP_020717949.1| protein enhancer of sevenless 2B isoform X1 [Ceratitis capitata]
+MEAIAKHDFAATADDELSFRKSQILKILNMEDDSNWYRAELDSKEGLIPSNYIEMKNHD
+>gi|498924879|ref|XP_004517534.1|protein enhancer of sevenless 2B isoform X2 [Ceratitis capitata]
+MEAIAKHDFAATADDELSFRKSQILKILNMEDDSNWYRAELDSKEGLIPSNYIEMKNHD
+>gi|158300944|ref|XP_320742.3|AGAP011768-PA [Anopheles gambiae str. PEST] >gi|157013402|gb|EAA00404.4| AGAP011768-PA [Anopheles gambiae str. PEST]
+MEAVAKHDFNATADDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1108463554|emb|CRL07912.1|CLUMA_CG020900, isoform A [Clunio marinus]
+MEAVAKHDFNATADDELSFRKQQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|662184507|ref|XP_008472180.1|PREDICTED: protein enhancer of sevenless 2B-like, partial [Diaphorina citri]
+MEAIAKHDFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1247041714|gb|PCG76473.1|hypothetical protein B5V51_9410, partial [Heliothis virescens]
+MEAIAKHDFNATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|1218260441|ref|XP_021709031.1|protein enhancer of sevenless 2B isoform X1 [Aedes aegypti] >gi|1218260443|ref|XP_021709032.1| protein enhancer of sevenless 2B isoform X1 [Aedes aegypti] >gi|1218260445|ref|XP_021709033.1| protein enhancer of sevenless 2B isoform X1 [Aedes aegypti] >gi|1218260447|ref|XP_021709034.1| protein enhancer of sevenless 2B isoform X1 [Aedes aegypti] >gi|1218260449|ref|XP_021709035.1| protein enhancer of sevenless 2B isoform X1 [Aedes aegypti] >gi|1218260451|ref|XP_021709036.1| protein enhancer of sevenless 2B isoform X1 [Aedes aegypti]
+MEAVAKHDFNATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1101346518|ref|XP_018899061.1|PREDICTED: protein enhancer of sevenless 2B [Bemisia tabaci]
+MEAIAKHDFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1121094088|ref|XP_019537694.1|PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus] >gi|1121155631|ref|XP_019564599.1| PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus] >gi|1121155634|ref|XP_019564600.1| PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus] >gi|1121155637|ref|XP_019564601.1| PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus] >gi|1121155640|ref|XP_019564603.1| PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus] >gi|1121155643|ref|XP_019564604.1| PREDICTED: protein enhancer of sevenless 2B [Aedes albopictus]
+MEAVAKHDFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|662184536|ref|XP_008472352.1|PREDICTED: protein enhancer of sevenless 2B [Diaphorina citri]
+MEAIAKHDFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1229705451|ref|XP_022114432.1|protein enhancer of sevenless 2B [Pieris rapae]
+MEAIAKHDFTATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKNH
+>gi|1233167637|ref|XP_022185828.1|protein enhancer of sevenless 2B [Nilaparvata lugens]
+MEAIAKHDFNATAEDELSFRKSQILKILNMEDDMNWYRAELDAKEGLIPSNYIEMKNHD
+>gi|1228004348|ref|XP_021934064.1|protein enhancer of sevenless 2B [Zootermopsis nevadensis] >gi|1228004350|ref|XP_021934066.1| protein enhancer of sevenless 2B [Zootermopsis nevadensis] >gi|1228004352|ref|XP_021934067.1| protein enhancer of sevenless 2B [Zootermopsis nevadensis] >gi|1228004354|ref|XP_021934068.1| protein enhancer of sevenless 2B [Zootermopsis nevadensis] >gi|646702619|gb|KDR11728.1| Protein E(sev)2B [Zootermopsis nevadensis]
+MEAIAKHDFNATADDELSFRKNQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKSHD
+>gi|379698898|ref|NP_001243920.1|DRK protein [Bombyx mori] >gi|326632041|gb|ADZ99023.1| DRK [Bombyx mori]
+MEALAKHDFTATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKNH
+>gi|1253760373|ref|XP_022664231.1|protein enhancer of sevenless 2B isoform X4 [Varroa destructor] >gi|1268031235|ref|XP_022688856.1| protein enhancer of sevenless 2B isoform X3 [Varroa jacobsoni]
+MEAIAKHDFNATADDELSFRRSQVLKVLNMEDDMNWYRAELDGKEGLIPSNYIEMKKHD
+>gi|817057514|ref|XP_012269666.1|protein enhancer of sevenless 2B [Athalia rosae]
+MEAVAKHDFNATADDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|998513641|ref|XP_015517460.1|PREDICTED: protein enhancer of sevenless 2B [Neodiprion lecontei] >gi|998513643|ref|XP_015517461.1| PREDICTED: protein enhancer of sevenless 2B [Neodiprion lecontei]
+MEAIAKHDFNATADDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1253760371|ref|XP_022664230.1|protein enhancer of sevenless 2B isoform X3 [Varroa destructor]
+MEAIAKHDFNATADDELSFRRSQVLKVLNMEDDMNWYRAELDGKEGLIPSNYIEMKKHD
+>gi|939662257|ref|XP_014278848.1|PREDICTED: protein enhancer of sevenless 2B [Halyomorpha halys]
+MEATAKHDFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKNHD
+>gi|768426431|ref|XP_011554260.1|PREDICTED: protein enhancer of sevenless 2B isoform X2 [Plutella xylostella]
+MEAVAKHDFSATADDELSFKKNQVLKILNMEDDMNWYRAELDGREGLIPSNYIQMKNH
+>gi|1316163507|ref|XP_023227029.1|protein enhancer of sevenless 2B [Centruroides sculpturatus]
+MEAIAKHDFNATADDELSFRKGQVLKVLNMEDDMNWYRAELDGREGLIPSNYIEMKKHD
+>gi|350422009|ref|XP_003493027.1|PREDICTED: protein enhancer of sevenless 2B [Bombus impatiens] >gi|571570113|ref|XP_006560290.1| PREDICTED: protein enhancer of sevenless 2B [Apis mellifera] >gi|572300218|ref|XP_006616216.1| PREDICTED: protein enhancer of sevenless 2B-like [Apis dorsata] >gi|805824043|ref|XP_012151974.1| PREDICTED: protein enhancer of sevenless 2B [Megachile rotundata] >gi|808139412|ref|XP_012171843.1| protein enhancer of sevenless 2B [Bombus terrestris] >gi|820835903|ref|XP_012343292.1| PREDICTED: protein enhancer of sevenless 2B [Apis florea] >gi|1032010431|ref|XP_016771740.1| PREDICTED: protein enhancer of sevenless 2B [Apis mellifera] >gi|1035602464|ref|XP_016908703.1| PREDICTED: protein enhancer of sevenless 2B [Apis cerana] >gi|1035602466|ref|XP_016908704.1| PREDICTED: protein enhancer of sevenless 2B [Apis cerana] >gi|1059230506|ref|XP_017760601.1| PREDICTED: protein enhancer of sevenless 2B [Eufriesea mexicana] >gi|1061117074|ref|XP_017884582.1| PREDICTED: protein enhancer of sevenless 2B [Ceratina calcarata]
+MEAIAKHDFTATAEDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|768426429|ref|XP_011554259.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Plutella xylostella]
+MEAVAKHDFSATADDELSFKKNQVLKILNMEDDMNWYRAELDGREGLIPSNYIQMKNH
+>gi|817192412|ref|XP_012271643.1|protein enhancer of sevenless 2B [Orussus abietinus]
+MEAIAKHDFTATAEDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1274133243|ref|XP_022831308.1|protein enhancer of sevenless 2B [Spodoptera litura]
+MEAIAKHDFTATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|91089049|ref|XP_969998.1|PREDICTED: protein enhancer of sevenless 2B [Tribolium castaneum] >gi|270012400|gb|EFA08848.1| Protein enhancer of sevenless 2B-like Protein [Tribolium castaneum]
+MEAIAKHEFNATADDELSFRRSQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKNH
+>gi|766918335|ref|XP_011497742.1|PREDICTED: protein enhancer of sevenless 2B [Ceratosolen solmsi marchali]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|795114235|ref|XP_011882887.1|PREDICTED: protein enhancer of sevenless 2B isoform X2 [Vollenhovia emeryi]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|1285013769|ref|XP_023018933.1|protein enhancer of sevenless 2B [Leptinotarsa decemlineata] >gi|927544359|gb|ALE20585.1| GRB2 [Leptinotarsa decemlineata]
+MEAVAKHEFNATADDELSFRKSQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKPHD
+>gi|1241832975|gb|PBC29310.1|hypothetical protein APICC_02507 [Apis cerana cerana]
+MEAIAKHDFTATAEDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1199377642|ref|XP_021183177.1|protein enhancer of sevenless 2B [Helicoverpa armigera]
+MEAIAKHDFNATADDELSFRKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|925684754|gb|KOX81204.1|Protein E(sev)2B [Melipona quadrifasciata]
+MEAIAKHDFTATAEDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1339080817|ref|XP_023701400.1|protein enhancer of sevenless 2B [Cryptotermes secundus] >gi|1339080819|ref|XP_023701401.1| protein enhancer of sevenless 2B [Cryptotermes secundus] >gi|1339080821|ref|XP_023701402.1| protein enhancer of sevenless 2B [Cryptotermes secundus] >gi|1330927633|gb|PNF39920.1| Protein E(sev)2B [Cryptotermes secundus]
+MEATAKHDFNATADDELSFRKNQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKSHD
+>gi|1000736663|ref|XP_015590824.1|PREDICTED: protein enhancer of sevenless 2B [Cephus cinctus]
+MEAIARHDFTATAEDELSFRRSQILKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|939248650|ref|XP_014243826.1|protein enhancer of sevenless 2B [Cimex lectularius]
+MEATAKHDFKATAEDELSFRKSQVLKILNMEDDMNWYRAELDGNEGLIPSNYIEMKNHD
+>gi|644991842|ref|XP_008202697.1|PREDICTED: protein enhancer of sevenless 2B [Nasonia vitripennis]
+MEAIAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1228396085|ref|XP_021956872.1|protein enhancer of sevenless 2B-like [Folsomia candida] >gi|1228396087|ref|XP_021956873.1| protein enhancer of sevenless 2B-like [Folsomia candida] >gi|1228396089|ref|XP_021956874.1| protein enhancer of sevenless 2B-like [Folsomia candida] >gi|1215264402|gb|OXA50718.1| Protein E(sev)2B [Folsomia candida]
+MEAIAKHDFTATADDELSFKRGQVLKILNMEDDSNWFRAELDGREGLIPSNYIEMKSH
+>gi|675388724|gb|KFM81621.1|Protein E(sev)2B, partial [Stegodyphus mimosarum]
+MEAIAKHDFNATADDELSFRKGQVLKVLNMEDDMNWYRAELDAKEGLIPSNYIEMKKHD
+>gi|909575339|ref|XP_013143401.1|PREDICTED: protein enhancer of sevenless 2B [Papilio polytes]
+MEAIAKHDFTATADDELSFKKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|1133416124|ref|XP_019880938.1|PREDICTED: protein enhancer of sevenless 2B [Aethina tumida]
+MEAIAKHEFNATAEDELSFRKSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKSH
+>gi|910331782|ref|XP_013169227.1|PREDICTED: protein enhancer of sevenless 2B [Papilio xuthus] >gi|943972540|ref|XP_014367751.1| PREDICTED: protein enhancer of sevenless 2B [Papilio machaon] >gi|1344801884|ref|XP_023943444.1| protein enhancer of sevenless 2B [Bicyclus anynana] >gi|930660757|gb|KPJ02732.1| Protein E(sev)2B [Papilio xuthus] >gi|930667115|gb|KPJ08203.1| Protein E(sev)2B [Papilio machaon]
+MEAIAKHDFTATADDELSFKKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|1209703166|gb|OWR53635.1|DRK protein [Danaus plexippus plexippus]
+MEAVAKHDFTATADDELSFKKNQVLKILNMEDDMNWYRAELDGKEGLIPSNYIQMKSH
+>gi|952511467|gb|KRT78359.1|SH3 domain-containing protein, partial [Oryctes borbonicus]
+MEAVAKHEFTATADDELSFKRLQVLKVLNMEDDMNWYRAELDGREGLIPSNYIELKNHN
+>gi|936598184|ref|XP_014212605.1|protein enhancer of sevenless 2B isoform X1 [Copidosoma floridanum]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|240952180|ref|XP_002399341.1|C. elegans sem-5, putative [Ixodes scapularis] >gi|215490547|gb|EEC00190.1| C. elegans sem-5, putative [Ixodes scapularis]
+MEAIAKHDFNATADDELSFRKGQVLKVLNMEDDMNWYRAELDSKEGLIPSNYIEMKKHD
+>gi|665794583|ref|XP_008544994.1|PREDICTED: protein enhancer of sevenless 2B [Microplitis demolitor]
+MEATAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSKEGLIPSNYIEMKNHD
+>gi|1316152817|ref|XP_023221449.1|protein enhancer of sevenless 2B-like [Centruroides sculpturatus]
+MEALAKHDFNATADDELSFRKGQVLKILNMEDDTNWYRAELEGKEGLIPSNYIEMKPH
+>gi|815797998|ref|XP_012219669.1|PREDICTED: protein enhancer of sevenless 2B [Linepithema humile]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|913301146|ref|XP_013199900.1|PREDICTED: protein enhancer of sevenless 2B [Amyelois transitella]
+MEAIAKHDFTATADDELSFKKNQVLKILNMEDDMNWYRAELDGREGLIPSNYIQMKSH
+>gi|861659961|gb|KMR04788.1|protein enhancer of sevenless 2b-like protein [Lasius niger]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|826409843|ref|XP_012535273.1|PREDICTED: protein enhancer of sevenless 2B [Monomorium pharaonis]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|746855716|ref|XP_011058536.1|PREDICTED: protein enhancer of sevenless 2B [Acromyrmex echinatior] >gi|769853886|ref|XP_011638455.1| PREDICTED: protein enhancer of sevenless 2B [Pogonomyrmex barbatus] >gi|795114230|ref|XP_011882886.1| PREDICTED: protein enhancer of sevenless 2B isoform X1 [Vollenhovia emeryi] >gi|801385417|ref|XP_012055971.1| PREDICTED: protein enhancer of sevenless 2B [Atta cephalotes] >gi|1068380122|ref|XP_018053938.1| PREDICTED: protein enhancer of sevenless 2B [Atta colombica] >gi|1070150884|ref|XP_018339636.1| PREDICTED: protein enhancer of sevenless 2B isoform X1 [Trachymyrmex septentrionalis] >gi|1070615674|ref|XP_018405923.1| PREDICTED: protein enhancer of sevenless 2B [Cyphomyrmex costatus] >gi|1009422847|gb|KYN41207.1| Protein E(sev)2B [Trachymyrmex septentrionalis]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|1080049901|ref|XP_018566379.1|protein enhancer of sevenless 2B [Anoplophora glabripennis]
+MEAIAKHEFNATADDELSFRKAQVLKILNMEDDMNWYRAELDGREGLIPSNYIEMKPHE
+>gi|1153711330|ref|XP_020277470.1|protein enhancer of sevenless 2B isoform X1 [Pseudomyrmex gracilis] >gi|1153711332|ref|XP_020277471.1| protein enhancer of sevenless 2B isoform X1 [Pseudomyrmex gracilis]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|1069802150|ref|XP_018325509.1|PREDICTED: protein enhancer of sevenless 2B [Agrilus planipennis]
+MEAIAKHEFNATAEDELSFKRSQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKNHN
+>gi|242017402|ref|XP_002429178.1|protein E, putative [Pediculus humanus corporis] >gi|212514056|gb|EEB16440.1| protein E, putative [Pediculus humanus corporis]
+MEAIAKHDFNATAEDELSFRKTQVLKVLNMEDDMNWYRAELDSKEGLIPSNYIEMKNHD
+>gi|1059403460|ref|XP_017774642.1|PREDICTED: protein enhancer of sevenless 2B [Nicrophorus vespilloides]
+MEAVAKHEFNATAEDELSFRKAQVLKILNMEDDMNWYRAELDGKEGLIPSNYIEMKDHN
+>gi|1078800855|ref|XP_018497662.1|PREDICTED: protein enhancer of sevenless 2B [Galendromus occidentalis]
+MEAVAKHDFNATACDELSFRKAQVLKVLNMEDDMNWYRAELDGKEGLIPSNYIEMRKHD
+>gi|951571694|ref|XP_014484033.1|PREDICTED: protein enhancer of sevenless 2B [Dinoponera quadriceps]
+MEAIAKHDFTATAEDELSFRRCQILKILNMEDDMNWYKAELDSKEGLIPSNYIEMKSHD
+>gi|1227095502|gb|OXU20555.1|hypothetical protein TSAR_004354 [Trichomalopsis sarcophagae]
+MEAIAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|954544365|ref|XP_014611678.1|PREDICTED: protein enhancer of sevenless 2B [Polistes canadensis] >gi|954544368|ref|XP_014611692.1| PREDICTED: protein enhancer of sevenless 2B [Polistes canadensis] >gi|954544370|ref|XP_014611701.1| PREDICTED: protein enhancer of sevenless 2B [Polistes canadensis]
+MEAVAKHDFTATAEDELSFRRCQVLKILNMEDDINWFRAELDSREGLIPSNYIEMKNHD
+>gi|972188569|ref|XP_015175899.1|PREDICTED: protein enhancer of sevenless 2B [Polistes dominula] >gi|972188571|ref|XP_015175900.1| PREDICTED: protein enhancer of sevenless 2B [Polistes dominula] >gi|972188573|ref|XP_015175901.1| PREDICTED: protein enhancer of sevenless 2B [Polistes dominula]
+MEAVAKHDFTATAEDELSFRRCQVLKILNMEDDINWFRAELDSREGLIPSNYIEMKNHD
+>gi|749731759|ref|XP_011136622.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Harpegnathos saltator]
+MEAIAKHDFTATAEDELSFRRCQILKILNMEDDMNWYKAELDSKEGLIPSNYIEMKSHD
+>gi|1009601321|ref|XP_015928903.1|protein enhancer of sevenless 2B isoform X2 [Parasteatoda tepidariorum]
+MEAIAKHDFNATADDELSFRKGQVLKVLNMEDDMNWYRAELEAKEGLIPSNYIEMKKHD
+>gi|1067100261|ref|XP_018012221.1|PREDICTED: protein enhancer of sevenless 2B [Hyalella azteca]
+MEATAKHDFSATADDELSFRRGQILKVLNMEDDMNWYRAELDSKEGLIPSNYIEMRKHD
+>gi|1009601318|ref|XP_015928902.1|protein enhancer of sevenless 2B isoform X1 [Parasteatoda tepidariorum]
+MEAIAKHDFNATADDELSFRKGQVLKVLNMEDDMNWYRAELEAKEGLIPSNYIEMKKHD
+>gi|970882947|ref|XP_015124285.1|PREDICTED: protein enhancer of sevenless 2B [Diachasma alloeum]
+MEAVAKHDFTATADDELSFRRNQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1059862120|ref|XP_017797735.1|PREDICTED: protein enhancer of sevenless 2B [Habropoda laboriosa]
+MEATAKHDFTATAEDELSFRRSQVLKIINMEDDMNWYRAELDNREGLIPSNYIEMKNHD
+>gi|755953689|ref|XP_011302510.1|PREDICTED: protein enhancer of sevenless 2B [Fopius arisanus]
+MEAVAKHDFTATADDELSFRRNQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|1005952934|ref|XP_015784850.1|PREDICTED: protein enhancer of sevenless 2B-like [Tetranychus urticae]
+MEAIAKHDFNATADDELSFRKFDVLKILNMEDDVNWYRAELDGREGLIPSNYIQMKPHD
+>gi|759044478|ref|XP_011331157.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Ooceraea biroi] >gi|759044480|ref|XP_011331158.1| PREDICTED: protein enhancer of sevenless 2B isoform X1 [Ooceraea biroi] >gi|607365171|gb|EZA59373.1| Protein E(sev)2B [Ooceraea biroi]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHE
+>gi|752879508|ref|XP_011257282.1|PREDICTED: protein enhancer of sevenless 2B isoform X2 [Camponotus floridanus]
+MEATAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSKEGLIPSNYIEMKSHD
+>gi|307214975|gb|EFN89820.1|Protein E(sev)2B [Harpegnathos saltator]
+MEAIAKHDFTATAEDELSFRRCQILKILNMEDDMNWYKAELDSKEGLIPSNYIEMKSHE
+>gi|1070137840|ref|XP_018365514.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Trachymyrmex cornetzi] >gi|1009410502|gb|KYN29583.1| Protein E(sev)2B [Trachymyrmex cornetzi]
+MEAIAKHDFTAPAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|1022770557|gb|KZS14957.1|Enhancer of sevenless 2B protein [Daphnia magna]
+MEANSKHDFNATAEDELSFRKGQVLKILNMEDDLNWYRAELDGKEGLIPSNYIEMKNHD
+>gi|1009367390|gb|KYM92374.1|Protein E(sev)2B [Atta colombica]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHE
+>gi|936714090|ref|XP_014235004.1|protein enhancer of sevenless 2B [Trichogramma pretiosum]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWFRAELDSREGLIPSNYIEMKNHD
+>gi|1009368606|gb|KYM93451.1|Protein E(sev)2B [Cyphomyrmex costatus]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|1061469341|gb|ODM89191.1|Protein E(sev)2B [Orchesella cincta]
+MEAIAKHDFAATADDELSFRRGQVLKVLNMEDDANWFRAELDGREGLIPSNYIEMRSH
+>gi|1069665933|ref|XP_018306009.1|PREDICTED: protein enhancer of sevenless 2B [Trachymyrmex zeteki] >gi|1012986894|gb|KYQ60312.1| Protein E(sev)2B [Trachymyrmex zeteki]
+MEAIAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|478256432|gb|ENN76619.1|hypothetical protein YQE_06876, partial [Dendroctonus ponderosae]
+MEAVAKHEFTATADDELSFRKGQVLKVLNMEDDMNWYRAELDGREGLIPSNYIEMKPHD
+>gi|1130232017|ref|XP_019760879.1|PREDICTED: protein enhancer of sevenless 2B [Dendroctonus ponderosae] >gi|332374264|gb|AEE62273.1| unknown [Dendroctonus ponderosae] >gi|546677597|gb|ERL88402.1| hypothetical protein D910_05788 [Dendroctonus ponderosae]
+MEAVAKHEFTATADDELSFRKGQVLKVLNMEDDMNWYRAELDGREGLIPSNYIEMKPHD
+>gi|780643178|ref|XP_011688511.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Wasmannia auropunctata]
+MEAVAKHDFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|752879506|ref|XP_011257281.1|PREDICTED: protein enhancer of sevenless 2B isoform X1 [Camponotus floridanus]
+MEATAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSKEGLIPSNYIEMKSHD
+>gi|926620703|ref|XP_013775658.1|protein enhancer of sevenless 2B-like [Limulus polyphemus] >gi|1238850040|ref|XP_022242956.1| protein enhancer of sevenless 2B-like [Limulus polyphemus] >gi|1238850042|ref|XP_022242957.1| protein enhancer of sevenless 2B-like [Limulus polyphemus]
+MEAIAKYDFNATADDELSFKKGQILKVLNVEDDMNWYRAELEGREGLIPSNYIEMKKHE
+>gi|926617113|ref|XP_013773707.1|protein enhancer of sevenless 2B-like isoform X1 [Limulus polyphemus]
+MEATAKYDFNATADDELSFKKGEVLKVLNVEDDMNWYRAELDGKEGLIPSNYIEMKKHD
+>gi|914577828|gb|KOB79435.1|Uncharacterized protein OBRU01_00238 [Operophtera brumata]
+MEAIAKHDFTATADDELSFKKNQVLKILNMEDDMNWYRAELEGKEGLIPSNYIQMKSH
+>gi|675380713|gb|KFM73615.1|Protein E(sev)2B, partial [Stegodyphus mimosarum]
+MEAIAKHDFSATAEDELSFRKGQILKILNME-DSDWYRAELETKEGFIPSNYIEMKNHD
+>gi|307179459|gb|EFN67783.1|Tubby protein-like protein [Camponotus floridanus]
+MEATAKHDFTATAEDELSFRRNQVLKILNMEDDMNWYRAELDSKEGLIPSNYIEMKSHD
+>gi|1325260434|ref|XP_023329434.1|protein enhancer of sevenless 2B [Eurytemora affinis] >gi|1325260450|ref|XP_023329451.1| protein enhancer of sevenless 2B [Eurytemora affinis] >gi|1325260465|ref|XP_023329468.1| protein enhancer of sevenless 2B [Eurytemora affinis] >gi|1325260473|ref|XP_023329479.1| protein enhancer of sevenless 2B [Eurytemora affinis]
+MEAIAKHDFNATADDELSFRKHNILKVLNKEDDMNWFRAELDGREGLIPSNYIEMKPH
+>gi|1279731292|ref|XP_022910343.1|protein enhancer of sevenless 2B [Onthophagus taurus]
+MEAVAKHDFNATADDELSFKRFQVLKVLNMEDDMNWYRAELDGKEGLIPSNYIELKDH
+>gi|1009580847|ref|XP_015921768.1|protein enhancer of sevenless 2B [Parasteatoda tepidariorum]
+MEAIAKHDFDATAEDEMSFRKGQILKILNIED-SDWFRAELDGKEGFIPSNYIEMKNHD
+>gi|1101382069|dbj|GAV00623.1|hypothetical protein RvY_11448 [Ramazzottius varieornatus]
+MEAVAKHDFVATAEDELSFKRTQILKVINMDDDQNWYRAELDGKEGLIPSNYIEMRPHE
+>gi|290562095|gb|ADD38444.1|Protein enhancer of sevenless 2B [Lepeophtheirus salmonis]
+MEAVAKHDFSATAEDELSFRKGQILKVLNIEDDKNWYRAESGGKEGLIPSNYIDMKPHD
+>gi|926646817|ref|XP_013789765.1|protein enhancer of sevenless 2B-like [Limulus polyphemus] >gi|1238892188|ref|XP_022257741.1| protein enhancer of sevenless 2B-like [Limulus polyphemus]
+MEAISKHDFTATADDELSFCKGQVLKVLNVENDMNWYRAELDGAEGLIPSNYIEMKKHD
+>gi|1204714525|gb|OWA51689.1|Protein E(sev)2B [Hypsibius dujardini]
+MEAVAKHDFTATAEDELSFKRTQTLKVLNMDDDQNWYRAELDGKEGLIPSNYIDMAPH
+>gi|1048042212|ref|XP_017478033.1|PREDICTED: protein enhancer of sevenless 2B-like [Rhagoletis zephyria]
+MEAIAKHEFNATAEDELSFRRGETLKVLNIEDDTNWYRAELDSREGLIPSNYIEMKPHE
+>gi|915667614|gb|KOC69392.1|Protein E(sev)2B [Habropoda laboriosa]
+MEATAKHDFTATAEDELSFRRSQVLKVPAIFFLQIINMEDDMNWYRAELDNREGLIPSNYIEMKNHD
+>gi|934152781|gb|KPM03598.1|enhancer of sevenless 2B-like protein [Sarcoptes scabiei]
+MEAIAKHDFTATAEDELSFKRGDVLKVLNKEDDANWFRAELESREGLIPSNYIEMKSHN
+>gi|985386667|ref|XP_015370959.1|PREDICTED: protein enhancer of sevenless 2B [Diuraphis noxia]
+MEATAKHDFKATAPDELSFKKGSLLRVINMEDDVNWFRAEFEGKEGLIPSNYIEMKNHD
+>gi|240848707|ref|NP_001155827.1|protein enhancer of sevenless 2B-like [Acyrthosiphon pisum] >gi|1229977303|ref|XP_022176013.1| protein enhancer of sevenless 2B [Myzus persicae] >gi|239791904|dbj|BAH72357.1| ACYPI009973 [Acyrthosiphon pisum]
+MEATAKHDFKATAPDELSFKKGSLLRVINMEDDVNWFRAEFEGKEGLIPSNYIEMKNHD
+>gi|402586465|gb|EJW80403.1|hypothetical protein WUBG_08685, partial [Wuchereria bancrofti]
+MEAVAEHDFNATAEDELSFRKNQILKVLNKDEDPHWYKAELDGHEGFIPSNYIRMNEHD
+>gi|1242754609|ref|XP_022316188.1|LOW QUALITY PROTEIN: protein enhancer of sevenless 2B-like [Crassostrea virginica]
+MEAIAKHDFRATADDELSFSKNNILKILSMDDDXNWYKAELDGKEGYVPNNYIEMKPH
+>gi|1191542843|gb|OTF69029.1|enhancer of sevenless 2B-like protein [Euroglyphus maynei]
+MEAIAKHDFNATANDELSFHRGDVLKVLNKEEDINWYKAELDSREGLIPSNYIEMKNHD
+>gi|987916125|ref|XP_015434044.1|PREDICTED: protein enhancer of sevenless 2B [Dufourea novaeangliae]
+NFTATAEDELSFRRSQVLKILNMEDDMNWYRAELDSREGLIPSNYIEMKNHD
+>gi|762093200|ref|XP_011429051.1|PREDICTED: protein enhancer of sevenless 2B isoform X2 [Crassostrea gigas]
+MEAIAKHDFRATADDELSFAKNNILKILSMDDDQNWFKAELDGKEGYVPNNYIEMKPH
+>gi|762093198|ref|XP_011429050.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Crassostrea gigas]
+MEAIAKHDFRATADDELSFAKNNILKILSMDDDQNWFKAELDGKEGYVPNNYIEMKPH
+>gi|734555088|gb|KHN82166.1|Sex muscle abnormal protein 5 [Toxocara canis]
+MEAVAEHDFTATAEDELSFRKSQILKVLNKDEDPHWYKAELDGQEGFVPSNYIKMSEHD
+>gi|332022831|gb|EGI63104.1|Protein E(sev)2B [Acromyrmex echinatior]
+MEAIAKHDFTATAEDELSFRRSQVLKVGRTSEMATWADPYPRHLILNMEDDMNWYRAELDSREGLIPSNYIEMKSHD
+>gi|675854730|ref|XP_009012925.1|hypothetical protein HELRODRAFT_73962 [Helobdella robusta] >gi|555705670|gb|ESO08903.1| hypothetical protein HELRODRAFT_73962 [Helobdella robusta]
+MEATAKHDFQATANDELSFSRGAKLKVLSMEEDKNWYKAELDGREGYVPSNYIEMKPH
+>gi|2554819|pdb|4GBQ|AChain A, Solution Nmr Structure Of The Grb2 N-Terminal Sh3 Domain Complexed With A Ten-Residue Peptide Derived From Sos Direct Refinement Against Noes, J-Couplings, And 1h And 13c Chemical Shifts, 15 Structures >gi|2554823|pdb|3GBQ|A Chain A, Solution Nmr Structure Of The Grb2 N-Terminal Sh3 Domain Complexed With A Ten-Residue Peptide Derived From Sos Direct Refinement Against Noes, J-Couplings, And 1h And 13c Chemical Shifts, Minimized Average Structure >gi|2554827|pdb|2GBQ|A Chain A, Solution Nmr Structure Of The Grb2 N-Terminal Sh3 Domain Complexed With A Ten-Residue Peptide Derived From Sos Direct Refinement Against Noes, J-Couplings, And 1h And 13c Chemical Shifts, 15 Structures >gi|2554849|pdb|1GBQ|A Chain A, Solution Nmr Structure Of The Grb2 N-Terminal Sh3 Domain Complexed With A Ten-Residue Peptide Derived From Sos Direct Refinement Against Noes, J-Couplings, And 1h And 13c Chemical Shifts, Minimized Average Structure >gi|159162347|pdb|1GBR|A Chain A, Orientation Of Peptide Fragments From Sos Proteins Bound To The N-Terminal Sh3 Domain Of Grb2 Determined By Nmr Spectroscopy
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|914961|dbj|BAA08646.1|Ash-s [Rattus norvegicus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|312077972|ref|XP_003141535.1|sex muscle abnormal protein 5 [Loa loa] >gi|307763300|gb|EFO22534.1| sex muscle abnormal protein 5 [Loa loa]
+MEAIAEHDFNATAEDELSFRKNQILKVLNKDEDPHWYKAELDGHEGFIPSNYIRMNEHD
+>gi|1233063033|gb|OZC09255.1|SH3 domain protein [Onchocerca flexuosa]
+MEAIAEHDFNATAEDELSFRKNQILKVLNKDEDPHWYKAELDGHEGFIPSNYIRMNEHD
+>gi|1020412329|ref|XP_016124887.1|PREDICTED: growth factor receptor-bound protein 2-A isoform X2 [Sinocyclocheilus grahami] >gi|1020412331|ref|XP_016124888.1| PREDICTED: growth factor receptor-bound protein 2-A isoform X2 [Sinocyclocheilus grahami]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|642098136|emb|CDQ78277.1|unnamed protein product [Oncorhynchus mykiss]
+MEAIAKYDFKATADDELSFKRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKGHP
+>gi|932355373|gb|ALG64481.1|growth factor receptor-bound protein 2 [Meretrix meretrix]
+MEAVAKHDFTATAEDELSFSKGDVLKVLSKEDDQNWYKAELQGKEGFVPNNYIEMKPHE
+>gi|1025383764|ref|XP_016401254.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous] >gi|1025383768|ref|XP_016401255.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous]
+MEAIAKYDFKATADDELSFKRGEILKILNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|1024946510|ref|XP_016362316.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis] >gi|1024946512|ref|XP_016362317.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis]
+MEAIAKYDFKATADDELSFKRGEILKILNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|1331772647|gb|PNI32345.1|GRB2 isoform 5, partial [Pan troglodytes] >gi|1331940025|gb|PNJ87832.1| GRB2 isoform 9, partial [Pongo abelii]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1051169405|ref|XP_017667391.1|PREDICTED: growth factor receptor-bound protein 2 [Lepidothrix coronata]
+MEAIAKYDFKATADDELSFKRGDVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1025347036|ref|XP_016393767.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous] >gi|1025347040|ref|XP_016393768.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous] >gi|1025347044|ref|XP_016393769.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|1020412327|ref|XP_016124886.1|PREDICTED: growth factor receptor-bound protein 2-A isoform X1 [Sinocyclocheilus grahami]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1331940024|gb|PNJ87831.1|GRB2 isoform 7 [Pongo abelii]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1331772649|gb|PNI32347.1|GRB2 isoform 8 [Pan troglodytes]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|260809113|ref|XP_002599351.1|hypothetical protein BRAFLDRAFT_200175 [Branchiostoma floridae] >gi|229284628|gb|EEN55363.1| hypothetical protein BRAFLDRAFT_200175 [Branchiostoma floridae]
+MEAMAKYDFKATAEDELSFAKGSILKILNLEYDQNWYKAEQNGKEGFVPKNYIQMKPHE
+>gi|1083325267|ref|XP_018612937.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Scleropages formosus]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|198436723|ref|XP_002131475.1|PREDICTED: protein enhancer of sevenless 2B [Ciona intestinalis]
+MESIAKYDFKATAPDELSFRKSDILKVLNLEDDRNWCRAEIDGRMGLVPKNYIELKAHD
+>gi|696989392|ref|XP_009562256.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Cuculus canorus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|701369988|ref|XP_009962915.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Tyto alba]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|700392367|ref|XP_009936603.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Opisthocomus hoazin]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|543270422|ref|XP_005424630.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Geospiza fortis] >gi|678011725|ref|XP_009081330.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Acanthisitta chloris]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|663263411|ref|XP_008492719.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Calypte anna] >gi|694861095|ref|XP_009472390.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Nipponia nippon] >gi|695164344|ref|XP_009510560.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Phalacrocorax carbo] >gi|697012637|ref|XP_009574481.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Fulmarus glacialis] >gi|697831543|ref|XP_009636135.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Egretta garzetta] >gi|699611787|ref|XP_009873895.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Apaloderma vittatum] >gi|699623628|ref|XP_009894191.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Charadrius vociferus] >gi|701307398|ref|XP_010014521.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Nestor notabilis] >gi|701375157|ref|XP_009987292.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Tauraco erythrolophus] >gi|704244368|ref|XP_010145834.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Eurypyga helias] >gi|704456396|ref|XP_010071565.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Pterocles gutturalis] >gi|704553252|ref|XP_010180382.1| PREDICTED: growth factor receptor-bound protein 2 isoform X4 [Mesitornis unicolor] >gi|706143318|ref|XP_010204095.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Colius striatus] >gi|723132336|ref|XP_010282628.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Phaethon lepturus] >gi|723567052|ref|XP_010304012.1| PREDICTED: SH3 domain-containing protein 21 isoform X3 [Balearica regulorum gibbericeps]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|5107454|pdb|1AZE|AChain A, Nmr Structure Of The Complex Between The C32s-Y7v Mutant Of The Nsh3 Domain Of Grb2 With A Peptide From Sos, 10 Structures
+MEAIAKVDFKATADDELSFKRGDILKVLNEESDQNWYKAELNGKDGFIPKNYIEMK
+>gi|701422064|ref|XP_010000952.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Chaetura pelagica]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|505844462|ref|XP_004615722.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Sorex araneus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|795065476|ref|XP_011834192.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Mandrillus leucophaeus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|471367361|ref|XP_004374210.1|growth factor receptor-bound protein 2 [Trichechus manatus latirostris] >gi|585660358|ref|XP_006886273.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Elephantulus edwardii] >gi|586478217|ref|XP_006869644.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Chrysochloris asiatica] >gi|634829509|ref|XP_007957845.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Orycteropus afer afer]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|45359859|ref|NP_987102.1|growth factor receptor-bound protein 2 isoform 2 [Homo sapiens] >gi|332260097|ref|XP_003279122.1| PREDICTED: growth factor receptor-bound protein 2 isoform X4 [Nomascus leucogenys] >gi|472349395|ref|XP_004394398.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Odobenus rosmarus divergens] >gi|504166170|ref|XP_004592967.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Ochotona princeps] >gi|555992462|ref|XP_005908007.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Bos mutus] >gi|556780503|ref|XP_005985282.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Pantholops hodgsonii] >gi|602684316|ref|XP_007454411.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Lipotes vexillifer] >gi|640831803|ref|XP_008071511.1| growth factor receptor-bound protein 2 isoform X3 [Carlito syrichta] >gi|641726519|ref|XP_008153286.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Eptesicus fuscus] >gi|1335180557|ref|XP_023600512.1| growth factor receptor-bound protein 2 isoform X3 [Myotis lucifugus] >gi|498178|gb|AAC37549.1| growth factor receptor-bound protein 3 [Homo sapiens] >gi|119609677|gb|EAW89271.1| growth factor receptor-bound protein 2, isoform CRA_b [Homo sapiens] >gi|149054789|gb|EDM06606.1| growth factor receptor bound protein 2, isoform CRA_b [Rattus norvegicus] >gi|1331772644|gb|PNI32342.1| GRB2 isoform 1 [Pan troglodytes] >gi|1331772650|gb|PNI32348.1| GRB2 isoform 9 [Pan troglodytes] >gi|1331940018|gb|PNJ87825.1| GRB2 isoform 1 [Pongo abelii] >gi|1331940021|gb|PNJ87828.1| GRB2 isoform 4 [Pongo abelii]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1195509316|ref|XP_021067280.1|growth factor receptor-bound protein 2 isoform X2 [Mus pahari] >gi|1375041|dbj|BAA12862.1| Grb3-3 [Mus musculus] >gi|148702568|gb|EDL34515.1| growth factor receptor bound protein 2, isoform CRA_a [Mus musculus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|585660150|ref|XP_006816331.1|PREDICTED: growth factor receptor-bound protein 2-like [Saccoglossus kowalevskii]
+MEALAKFDFTASADDELSFKRGDILKVLNIDYDANWYKAELDGREGFIPKNYITMRPHD
+>gi|919029277|ref|XP_013398391.1|protein enhancer of sevenless 2B [Lingula anatina]
+MEATAKHDFKATAEDELTFKKGNLLKILSIEEDHNWYKAEIDGKEGYIPSNYIDMKEHN
+>gi|617550190|ref|XP_007524908.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Erinaceus europaeus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|591356651|ref|XP_007072623.1|PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Chelonia mydas]
+MEAIAKYDFKATADDELSFKRGDVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|795092026|ref|XP_011800360.1|PREDICTED: growth factor receptor-bound protein 2 [Colobus angolensis palliatus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|545687288|ref|NP_001270013.1|growth factor receptor-bound protein 2 [Equus caballus] >gi|914957|dbj|BAA08645.1| Ash-m [Rattus norvegicus] >gi|119609678|gb|EAW89272.1| growth factor receptor-bound protein 2, isoform CRA_c [Homo sapiens] >gi|149054790|gb|EDM06607.1| growth factor receptor bound protein 2, isoform CRA_c [Rattus norvegicus] >gi|149054791|gb|EDM06608.1| growth factor receptor bound protein 2, isoform CRA_c [Rattus norvegicus] >gi|328909157|gb|AEB61246.1| growth factor receptor-bound protein 2-like protein [Equus caballus] >gi|328909335|gb|AEB61335.1| growth factor receptor-bound protein 2-like protein [Equus caballus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|701422061|ref|XP_010000951.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Chaetura pelagica]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|965961774|ref|XP_014954445.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Ovis aries]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1132319696|gb|APU94145.1|growth factor receptor-bound protein 2 [Sinonovacula constricta]
+MEAEAKHEFNATADDELSFRKKDILKILSKEEDQNWYKAEFNGKEGYVPNNYIEMKPHE
+>gi|957820313|ref|XP_014679002.1|PREDICTED: protein enhancer of sevenless 2B-like [Priapulus caudatus] >gi|957820315|ref|XP_014679010.1| PREDICTED: protein enhancer of sevenless 2B-like [Priapulus caudatus]
+MEAMAKHDFQATAADELSFKQGAVIKVLSKDEDENWYRAEVDGREGFVPRNYIEMKSHD
+>gi|1049273517|ref|XP_017577109.1|PREDICTED: growth factor receptor-bound protein 2-like [Pygocentrus nattereri] >gi|1049273519|ref|XP_017577110.1| PREDICTED: growth factor receptor-bound protein 2-like [Pygocentrus nattereri]
+MEAIAKYDFNATADDELSFRRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|339248817|ref|XP_003373396.1|Sex muscle abnormal protein 5 [Trichinella spiralis] >gi|316970483|gb|EFV54416.1| Sex muscle abnormal protein 5 [Trichinella spiralis] >gi|954301683|gb|KRX90261.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954414950|gb|KRY66973.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954433804|gb|KRY82773.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954482157|gb|KRZ11956.1| Sex muscle abnormal protein 5 [Trichinella zimbabwensis] >gi|954493376|gb|KRZ22517.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954493377|gb|KRZ22518.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954509657|gb|KRZ37930.1| Sex muscle abnormal protein 5 [Trichinella pseudospiralis] >gi|954597771|gb|KRZ74849.1| Sex muscle abnormal protein 5 [Trichinella papuae] >gi|1194522571|gb|OUC49675.1| SH3 domain protein [Trichinella nativa]
+MEAEAEHDFQATAIDELSFKKGNILKVLNKDEDPNWYRAELDGKEGYIPSNYIKMRDH
+>gi|831305487|ref|XP_012684928.1|PREDICTED: growth factor receptor-bound protein 2-like [Clupea harengus]
+MEAVAKYDFKATAEDELSFKRGDILKVLNEECDQNWYKAEVNGREGFIPKNYIEMKPH
+>gi|821000502|ref|XP_012368893.1|growth factor receptor-bound protein 2-like isoform X2 [Octodon degus]
+MEAIAKYAFKATADDELSFKKGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|56090176|ref|NP_001007770.1|growth factor receptor-bound protein 2a [Danio rerio] >gi|55716030|gb|AAH85549.1| Zgc:103549 [Danio rerio] >gi|182890672|gb|AAI65040.1| Zgc:103549 protein [Danio rerio]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|597787520|ref|XP_007257196.1|growth factor receptor-bound protein 2 [Astyanax mexicanus] >gi|1248979655|ref|XP_022518271.1| growth factor receptor-bound protein 2-like [Astyanax mexicanus]
+MEAVAKYDFNATADDELSFRRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|954256687|gb|KRX50904.1|Sex muscle abnormal protein 5, partial [Trichinella murrelli] >gi|954362590|gb|KRY29499.1| Sex muscle abnormal protein 5, partial [Trichinella spiralis] >gi|954615680|gb|KRZ91382.1| Sex muscle abnormal protein 5, partial [Trichinella sp. T8]
+MEAEAEHDFQATAIDELSFKKGNILKVLNKDEDPNWYRAELDGKEGYIPSNYIKMRDH
+>gi|954273972|gb|KRX66149.1|Sex muscle abnormal protein 5, partial [Trichinella sp. T9] >gi|954338349|gb|KRY11894.1| Sex muscle abnormal protein 5, partial [Trichinella patagoniensis]
+MEAEAEHDFQATAIDELSFKKGNILKVLNKDEDPNWYRAELDGKEGYIPSNYIKMRDH
+>gi|1101601802|ref|XP_018966124.1|PREDICTED: growth factor receptor-bound protein 2 [Cyprinus carpio] >gi|1101601804|ref|XP_018966125.1| PREDICTED: growth factor receptor-bound protein 2 [Cyprinus carpio] >gi|1101601806|ref|XP_018966126.1| PREDICTED: growth factor receptor-bound protein 2 [Cyprinus carpio]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKEGFIPKNYIEMKPH
+>gi|954209581|gb|KRX18911.1|Sex muscle abnormal protein 5, partial [Trichinella nelsoni]
+MEAEAEHDFQATAIDELSFKKGNILKVLNKDEDPNWYRAELDGKEGYIPSNYIKMRDH
+>gi|1126163668|ref|XP_019642516.1|PREDICTED: growth factor receptor-bound protein 2-like isoform X3 [Branchiostoma belcheri]
+MEAIAKYDFKATAEDELSFAKGSILKILNLEYDQNWYKAEQNGKEGFVPKNYIQMKPHE
+>gi|954285635|gb|KRX76532.1|Sex muscle abnormal protein 5, partial [Trichinella sp. T6] >gi|954394310|gb|KRY56602.1| Sex muscle abnormal protein 5, partial [Trichinella britovi] >gi|954533218|gb|KRZ57687.1| Sex muscle abnormal protein 5, partial [Trichinella nativa]
+MEAEAEHDFQATAIDELSFKKGNILKVLNKDEDPNWYRAELDGKEGYIPSNYIKMRDH
+>gi|1126163670|ref|XP_019642527.1|PREDICTED: growth factor receptor-bound protein 2-like isoform X4 [Branchiostoma belcheri]
+MEAIAKYDFKATAEDELSFAKGSILKILNLEYDQNWYKAEQNGKEGFVPKNYIQMKPHE
+>gi|999969387|gb|KXJ08561.1|Protein E(sev)2B [Exaiptasia pallida] >gi|999974454|gb|KXJ13628.1| Protein E(sev)2B [Exaiptasia pallida]
+MEATAKHDFQASSDDELSFKKGTILKILNIDPEHQWYKAESEGREGYIPANYIEMKPHD
+>gi|1024966401|ref|XP_016304428.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis] >gi|1024966403|ref|XP_016304429.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis] >gi|1024966405|ref|XP_016304430.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELSGKEGFIPKNYIEMKPH
+>gi|957827334|ref|XP_014663512.1|PREDICTED: protein enhancer of sevenless 2B-like [Priapulus caudatus]
+MEAIAKHDFHATAEDELSFTKGSILKVLSKDEDENWYRAEYNGRDGFIPKNYIEMKPHD
+>gi|1143414561|ref|XP_019961408.1|PREDICTED: growth factor receptor-bound protein 2 [Paralichthys olivaceus]
+MEAIAKYDFTATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|318227683|ref|NP_001187313.1|growth factor receptor-bound protein 2 [Ictalurus punctatus] >gi|1042262676|ref|XP_017336117.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Ictalurus punctatus] >gi|308322691|gb|ADO28483.1| growth factor receptor-bound protein 2 [Ictalurus punctatus]
+MEAIAKYDFNATADDELSFKRGEILKVLNEECDQNWYKAELYGKEGFIPKNYIEMKPH
+>gi|1083325263|ref|XP_018612935.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Scleropages formosus] >gi|1083325265|ref|XP_018612936.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Scleropages formosus] >gi|938071686|gb|KPP69947.1| hypothetical protein Z043_111264 [Scleropages formosus]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|54261769|ref|NP_998200.1|growth factor receptor-bound protein 2 [Danio rerio] >gi|528473803|ref|XP_005171631.1| growth factor receptor-bound protein 2 isoform X1 [Danio rerio] >gi|528473805|ref|XP_005171632.1| growth factor receptor-bound protein 2 isoform X1 [Danio rerio] >gi|688542289|ref|XP_009297635.1| growth factor receptor-bound protein 2 isoform X1 [Danio rerio] >gi|1040683253|ref|XP_017209262.1| growth factor receptor-bound protein 2 isoform X1 [Danio rerio] >gi|1040683255|ref|XP_017209264.1| growth factor receptor-bound protein 2 isoform X1 [Danio rerio] >gi|37590325|gb|AAH59450.1| Growth factor receptor-bound protein 2 [Danio rerio]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1176082466|ref|XP_020611381.1|protein enhancer of sevenless 2B-like [Orbicella faveolata]
+MEAVTKHEFHATADDELSFKKGSVIKVLSKEEDNNWFRAEQDGRTGLVPANYITLKPH
+>gi|1348588505|ref|XP_024003529.1|growth factor receptor-bound protein 2-like [Salvelinus alpinus]
+MEAIAKYDFKATADDELSFKRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKGH
+>gi|1348549760|ref|XP_023993095.1|growth factor receptor-bound protein 2-like [Salvelinus alpinus] >gi|1348549763|ref|XP_023993096.1| growth factor receptor-bound protein 2-like [Salvelinus alpinus]
+MEAIAKYDFKATADDELSFKRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKGH
+>gi|1079768820|ref|XP_018554148.1|PREDICTED: growth factor receptor-bound protein 2 [Lates calcarifer] >gi|1169051946|ref|XP_020478812.1| growth factor receptor-bound protein 2 [Monopterus albus] >gi|1169051948|ref|XP_020478813.1| growth factor receptor-bound protein 2 [Monopterus albus] >gi|1228965977|ref|XP_022046392.1| growth factor receptor-bound protein 2 [Acanthochromis polyacanthus] >gi|1250164989|ref|XP_022623206.1| growth factor receptor-bound protein 2 [Seriola dumerili] >gi|1308394324|ref|XP_023125056.1| growth factor receptor-bound protein 2 [Amphiprion ocellaris] >gi|1317149321|ref|XP_023287368.1| growth factor receptor-bound protein 2 [Seriola lalandi dorsalis]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1357685614|ref|XP_024128392.1|growth factor receptor-bound protein 2 [Oryzias melastigma]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|742107613|ref|XP_010871279.1|PREDICTED: growth factor receptor-bound protein 2-like isoform X1 [Esox lucius] >gi|929067877|ref|XP_014030589.1| PREDICTED: growth factor receptor-bound protein 2-like [Salmo salar] >gi|929067879|ref|XP_014030599.1| PREDICTED: growth factor receptor-bound protein 2-like [Salmo salar] >gi|929220330|ref|XP_013986362.1| PREDICTED: growth factor receptor-bound protein 2-like [Salmo salar] >gi|1158851353|ref|XP_020335318.1| growth factor receptor-bound protein 2-like [Oncorhynchus kisutch] >gi|1158924002|ref|XP_020309838.1| growth factor receptor-bound protein 2-like [Oncorhynchus kisutch] >gi|1158924004|ref|XP_020309839.1| growth factor receptor-bound protein 2-like [Oncorhynchus kisutch] >gi|1211256558|ref|XP_021412668.1| growth factor receptor-bound protein 2-like [Oncorhynchus mykiss] >gi|1211279064|ref|XP_021423578.1| growth factor receptor-bound protein 2-like [Oncorhynchus mykiss]
+MEAIAKYDFKATADDELSFKRGETLKVLNEECDQNWYKAELNGKEGFIPKNYIEMKGH
+>gi|1049244201|ref|XP_017561163.1|PREDICTED: growth factor receptor-bound protein 2 [Pygocentrus nattereri] >gi|1049244203|ref|XP_017561164.1| PREDICTED: growth factor receptor-bound protein 2 [Pygocentrus nattereri]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1042310971|ref|XP_017308916.1|PREDICTED: growth factor receptor-bound protein 2 [Ictalurus punctatus]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|657560029|ref|XP_008283830.1|PREDICTED: growth factor receptor-bound protein 2 [Stegastes partitus]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1025304439|ref|XP_016382207.1|PREDICTED: growth factor receptor-bound protein 2 [Sinocyclocheilus rhinocerous] >gi|1025304442|ref|XP_016382208.1| PREDICTED: growth factor receptor-bound protein 2 [Sinocyclocheilus rhinocerous]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|700392363|ref|XP_009936601.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Opisthocomus hoazin] >gi|677554041|gb|KFR13725.1| Growth factor receptor-bound protein 2 [Opisthocomus hoazin]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|558222520|ref|XP_006136488.1|PREDICTED: growth factor receptor-bound protein 2 [Pelodiscus sinensis]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1025004815|ref|XP_016321485.1|PREDICTED: growth factor receptor-bound protein 2 [Sinocyclocheilus anshuiensis] >gi|1025004817|ref|XP_016321486.1| PREDICTED: growth factor receptor-bound protein 2 [Sinocyclocheilus anshuiensis]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|928047758|ref|XP_013872894.1|PREDICTED: growth factor receptor-bound protein 2 [Austrofundulus limnaeus] >gi|928047760|ref|XP_013872895.1| PREDICTED: growth factor receptor-bound protein 2 [Austrofundulus limnaeus] >gi|1007718458|ref|XP_015800741.1| PREDICTED: growth factor receptor-bound protein 2 [Nothobranchius furzeri] >gi|1041098955|ref|XP_017272290.1| PREDICTED: growth factor receptor-bound protein 2 [Kryptolebias marmoratus]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|701369974|ref|XP_009962913.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Tyto alba] >gi|678180419|gb|KFV48141.1| Growth factor receptor-bound protein 2 [Tyto alba]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|700392365|ref|XP_009936602.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Opisthocomus hoazin]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|690442404|ref|XP_009322034.1|PREDICTED: growth factor receptor-bound protein 2 [Pygoscelis adeliae] >gi|679138107|gb|KFW66933.1| Growth factor receptor-bound protein 2 [Pygoscelis adeliae]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|699650361|ref|XP_009896249.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Picoides pubescens]
+MEAIAKYVFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|47496673|emb|CAG29359.1|GRB2, partial [Homo sapiens]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1083333154|ref|XP_018617083.1|PREDICTED: growth factor receptor-bound protein 2-like [Scleropages formosus]
+MEAVAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|961765336|ref|XP_014941599.1|PREDICTED: LOW QUALITY PROTEIN: growth factor receptor-bound protein 2 [Acinonyx jubatus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1248985873|ref|XP_022520680.1|growth factor receptor-bound protein 2 [Astyanax mexicanus]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|701369981|ref|XP_009962914.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Tyto alba]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1168942314|ref|XP_020514367.1|growth factor receptor-bound protein 2 [Labrus bergylta]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1025324967|ref|XP_016387797.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus rhinocerous]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|831272328|ref|XP_012673789.1|PREDICTED: growth factor receptor-bound protein 2 [Clupea harengus]
+MEAIAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELSGKDGFIPKNYIEMKAH
+>gi|1343960524|ref|XP_023813751.1|growth factor receptor-bound protein 2 isoform X2 [Oryzias latipes]
+MEAVAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|975102072|ref|XP_015266212.1|PREDICTED: growth factor receptor-bound protein 2 [Gekko japonicus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPQNYIEMKPH
+>gi|1158876665|ref|XP_020342361.1|growth factor receptor-bound protein 2 [Oncorhynchus kisutch] >gi|1158889617|ref|XP_020349304.1| growth factor receptor-bound protein 2 isoform X1 [Oncorhynchus kisutch] >gi|1211253477|ref|XP_021481045.1| growth factor receptor-bound protein 2 isoform X1 [Oncorhynchus mykiss]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1343960522|ref|XP_023813750.1|growth factor receptor-bound protein 2 isoform X1 [Oryzias latipes]
+MEAVAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1025003430|ref|XP_016320730.1|PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis] >gi|1025003432|ref|XP_016320731.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis] >gi|1025003434|ref|XP_016320732.1| PREDICTED: growth factor receptor-bound protein 2-like [Sinocyclocheilus anshuiensis]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|676591179|gb|KFO78476.1|Growth factor receptor-bound protein 2, partial [Cuculus canorus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|663263408|ref|XP_008492718.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Calypte anna] >gi|694861093|ref|XP_009472389.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Nipponia nippon] >gi|695164342|ref|XP_009510559.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Phalacrocorax carbo] >gi|697012635|ref|XP_009574472.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Fulmarus glacialis] >gi|697831541|ref|XP_009636134.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Egretta garzetta] >gi|699611784|ref|XP_009873894.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Apaloderma vittatum] >gi|699623625|ref|XP_009894184.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Charadrius vociferus] >gi|701307396|ref|XP_010014520.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Nestor notabilis] >gi|701375150|ref|XP_009987291.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Tauraco erythrolophus] >gi|704244364|ref|XP_010145833.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Eurypyga helias] >gi|704456392|ref|XP_010071558.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Pterocles gutturalis] >gi|704553241|ref|XP_010180381.1| PREDICTED: growth factor receptor-bound protein 2 isoform X3 [Mesitornis unicolor] >gi|706143315|ref|XP_010204094.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Colius striatus] >gi|723132334|ref|XP_010282627.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Phaethon lepturus] >gi|723567049|ref|XP_010304011.1| PREDICTED: SH3 domain-containing protein 21 isoform X2 [Balearica regulorum gibbericeps] >gi|729761350|ref|XP_010577616.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Haliaeetus leucocephalus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|350537223|ref|NP_001232281.1|growth factor receptor-bound protein 2 [Taeniopygia guttata] >gi|197128030|gb|ACH44528.1| putative growth factor receptor-bound protein 2 [Taeniopygia guttata] >gi|197128031|gb|ACH44529.1| putative growth factor receptor-bound protein 2 [Taeniopygia guttata] >gi|197128032|gb|ACH44530.1| putative growth factor receptor-bound protein 2 [Taeniopygia guttata] >gi|197128034|gb|ACH44532.1| putative growth factor receptor-bound protein 2 [Taeniopygia guttata] >gi|197128035|gb|ACH44533.1| putative growth factor receptor-bound protein 2 [Taeniopygia guttata]
+MEAIAKYDFRATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|525017014|ref|XP_005056067.1|PREDICTED: growth factor receptor-bound protein 2 [Ficedula albicollis] >gi|543270419|ref|XP_005424629.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Geospiza fortis] >gi|543366918|ref|XP_005526817.1| PREDICTED: growth factor receptor-bound protein 2 [Pseudopodoces humilis] >gi|678011722|ref|XP_009081329.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Acanthisitta chloris] >gi|683924326|ref|XP_009092679.1| PREDICTED: growth factor receptor-bound protein 2 [Serinus canaria] >gi|727053452|ref|XP_010405800.1| growth factor receptor-bound protein 2 [Corvus cornix cornix] >gi|929517629|ref|XP_014128634.1| PREDICTED: growth factor receptor-bound protein 2 [Zonotrichia albicollis] >gi|1099043583|ref|XP_018864070.1| PREDICTED: growth factor receptor-bound protein 2 [Parus major] >gi|1209973467|ref|XP_021410109.1| growth factor receptor-bound protein 2 [Lonchura striata domestica] >gi|1341033396|ref|XP_023794393.1| growth factor receptor-bound protein 2 [Cyanistes caeruleus] >gi|677306632|gb|KFP89060.1| Growth factor receptor-bound protein 2 [Acanthisitta chloris] >gi|1208031230|gb|OWK57651.1| Growth factor receptor-bound protein 2 [Lonchura striata domestica]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|326931056|ref|XP_003211652.1|PREDICTED: growth factor receptor-bound protein 2 [Meleagris gallopavo] >gi|514713385|ref|XP_005012055.1| growth factor receptor-bound protein 2 [Anas platyrhynchos] >gi|529447958|ref|XP_005243678.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Falco peregrinus] >gi|541994454|ref|XP_005447353.1| PREDICTED: growth factor receptor-bound protein 2 [Falco cherrug] >gi|557265794|ref|XP_006018326.1| PREDICTED: growth factor receptor-bound protein 2 [Alligator sinensis] >gi|663263406|ref|XP_008492717.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Calypte anna] >gi|686603122|ref|XP_009277917.1| PREDICTED: growth factor receptor-bound protein 2 [Aptenodytes forsteri] >gi|694861091|ref|XP_009472388.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Nipponia nippon] >gi|695164340|ref|XP_009510557.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Phalacrocorax carbo] >gi|697012633|ref|XP_009574464.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Fulmarus glacialis] >gi|697442927|ref|XP_009664506.1| PREDICTED: growth factor receptor-bound protein 2 [Struthio camelus australis] >gi|697831538|ref|XP_009636133.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Egretta garzetta] >gi|699611781|ref|XP_009873893.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Apaloderma vittatum] >gi|699623622|ref|XP_009894178.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Charadrius vociferus] >gi|701307394|ref|XP_010014519.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Nestor notabilis] >gi|701375143|ref|XP_009987289.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Tauraco erythrolophus] >gi|704244359|ref|XP_010145832.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Eurypyga helias] >gi|704456387|ref|XP_010071550.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Pterocles gutturalis] >gi|704553237|ref|XP_010180380.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Mesitornis unicolor] >gi|706143312|ref|XP_010204093.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Colius striatus] >gi|723132332|ref|XP_010282626.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Phaethon lepturus] >gi|723567046|ref|XP_010304010.1| PREDICTED: SH3 domain-containing protein 21 isoform X1 [Balearica regulorum gibbericeps] >gi|729761348|ref|XP_010577615.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Haliaeetus leucocephalus] >gi|768375748|ref|XP_011585381.1| PREDICTED: growth factor receptor-bound protein 2 [Aquila chrysaetos canadensis] >gi|902890155|ref|XP_013034531.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Anser cygnoides domesticus] >gi|909810043|ref|XP_013159681.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Falco peregrinus] >gi|926501549|ref|XP_013799558.1| PREDICTED: growth factor receptor-bound protein 2 [Apteryx australis mantelli] >gi|950995157|ref|XP_014457418.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Alligator mississippiensis] >gi|960949755|ref|XP_014806593.1| PREDICTED: growth factor receptor-bound protein 2 [Calidris pugnax] >gi|971425014|ref|XP_015150864.1| PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Gallus gallus] >gi|1003972539|ref|XP_015735756.1| PREDICTED: growth factor receptor-bound protein 2 [Coturnix japonica] >gi|1003972542|ref|XP_015735757.1| PREDICTED: growth factor receptor-bound protein 2 [Coturnix japonica] >gi|1117244047|ref|XP_019373715.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Gavialis gangeticus] >gi|1121869282|ref|XP_019398088.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Crocodylus porosus] >gi|1201846045|ref|XP_021270798.1| growth factor receptor-bound protein 2 [Numida meleagris] >gi|1201846047|ref|XP_021270799.1| growth factor receptor-bound protein 2 [Numida meleagris] >gi|1201846049|ref|XP_021270800.1| growth factor receptor-bound protein 2 [Numida meleagris] >gi|1201846051|ref|XP_021270801.1| growth factor receptor-bound protein 2 [Numida meleagris] >gi|1201846053|ref|XP_021270802.1| growth factor receptor-bound protein 2 [Numida meleagris] >gi|124110120|gb|ABM91436.1| growth factor receptor-bound protein 2 [Gallus gallus] >gi|675312536|gb|KFM07798.1| Growth factor receptor-bound protein 2 [Aptenodytes forsteri] >gi|676248594|gb|KFO12466.1| Growth factor receptor-bound protein 2 [Balearica regulorum gibbericeps] >gi|676773017|gb|KFP01384.1| Growth factor receptor-bound protein 2 [Calypte anna] >gi|676820257|gb|KFP15089.1| Growth factor receptor-bound protein 2 [Egretta garzetta] >gi|677070333|gb|KFP26587.1| Growth factor receptor-bound protein 2 [Colius striatus] >gi|677309419|gb|KFP91847.1| Growth factor receptor-bound protein 2 [Apaloderma vittatum] >gi|677461694|gb|KFQ51108.1| Growth factor receptor-bound protein 2 [Nestor notabilis] >gi|677477353|gb|KFQ66767.1| Growth factor receptor-bound protein 2 [Phaethon lepturus] >gi|677493397|gb|KFQ82802.1| Growth factor receptor-bound protein 2 [Phoenicopterus ruber ruber] >gi|677546725|gb|KFR07732.1| Growth factor receptor-bound protein 2 [Nipponia nippon] >gi|678127649|gb|KFU96837.1| Growth factor receptor-bound protein 2 [Pterocles gutturalis] >gi|678150485|gb|KFV19636.1| Growth factor receptor-bound protein 2 [Tauraco erythrolophus] >gi|678209556|gb|KFV76535.1| Growth factor receptor-bound protein 2 [Struthio camelus australis] >gi|678989373|gb|KFV96962.1| Growth factor receptor-bound protein 2 [Fulmarus glacialis] >gi|678996884|gb|KFW01401.1| Growth factor receptor-bound protein 2 [Eurypyga helias] >gi|679216811|gb|KFW95038.1| Growth factor receptor-bound protein 2 [Phalacrocorax carbo] >gi|697445190|gb|KGL86092.1| Growth factor receptor-bound protein 2 [Charadrius vociferus] >gi|1011582284|gb|KYO31143.1| growth factor receptor-bound protein 2 [Alligator mississippiensis] >gi|1159663041|gb|OPJ88605.1| growth factor receptor-bound protein 2 [Patagioenas fasciata monilis]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|126308450|ref|XP_001369479.1|PREDICTED: growth factor receptor-bound protein 2 [Monodelphis domestica]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|657803781|ref|XP_008328995.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Cynoglossus semilaevis]
+MEAIAKYDFNATADDELTFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMRAH
+>gi|1188105788|ref|XP_020774793.1|growth factor receptor-bound protein 2 [Boleophthalmus pectinirostris]
+MEAVAKYDFKATADDELSFKRGEILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|658861826|ref|XP_008413680.1|PREDICTED: growth factor receptor-bound protein 2 [Poecilia reticulata]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|1348547926|ref|XP_023867104.2|growth factor receptor-bound protein 2 isoform X1 [Salvelinus alpinus]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|704553234|ref|XP_010180379.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Mesitornis unicolor]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|148225330|ref|NP_001085669.1|growth factor receptor-bound protein 2-B [Xenopus laevis] >gi|1069395311|ref|XP_018092944.1| PREDICTED: growth factor receptor-bound protein 2-B isoform X1 [Xenopus laevis] >gi|82236546|sp|Q6GPJ9.1|GRB2B_XENLA RecName: Full=Growth factor receptor-bound protein 2-B; AltName: Full=Adapter protein GRB2-B; AltName: Full=SH2/SH3 adapter GRB2-B >gi|49119572|gb|AAH73118.1| MGC83624 protein [Xenopus laevis] >gi|1050358474|gb|OCT60680.1| hypothetical protein XELAEV_18046701mg [Xenopus laevis]
+MEAIAKYDFKATADDELSFKRGDVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|617426618|ref|XP_007560368.1|PREDICTED: growth factor receptor-bound protein 2 [Poecilia formosa] >gi|831537522|ref|XP_012723345.1| growth factor receptor-bound protein 2 [Fundulus heteroclitus] >gi|961918836|ref|XP_014907784.1| PREDICTED: growth factor receptor-bound protein 2 [Poecilia latipinna] >gi|961947492|ref|XP_014868201.1| PREDICTED: growth factor receptor-bound protein 2 [Poecilia mexicana] >gi|974090404|ref|XP_015243418.1| PREDICTED: growth factor receptor-bound protein 2 [Cyprinodon variegatus] >gi|1316057881|ref|XP_023205114.1| growth factor receptor-bound protein 2 [Xiphophorus maculatus]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1072263287|ref|XP_018417054.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Nanorana parkeri]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|821013569|ref|XP_012367935.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Nomascus leucogenys]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|259155072|ref|NP_001158778.1|Growth factor receptor-bound protein 2 [Salmo salar] >gi|929077385|ref|XP_014049040.1| PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Salmo salar] >gi|929096414|ref|XP_014059118.1| PREDICTED: growth factor receptor-bound protein 2 [Salmo salar] >gi|223647354|gb|ACN10435.1| Growth factor receptor-bound protein 2 [Salmo salar]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|395532932|ref|XP_003768518.1|growth factor receptor-bound protein 2 [Sarcophilus harrisii] >gi|1190415861|ref|XP_020858133.1| growth factor receptor-bound protein 2 [Phascolarctos cinereus] >gi|1190415863|ref|XP_020858134.1| growth factor receptor-bound protein 2 [Phascolarctos cinereus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|696989386|ref|XP_009562254.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Cuculus canorus]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|966668055|gb|KTG01436.1|hypothetical protein cypCar_00005532 [Cyprinus carpio]
+MEAIAKYDFKATADDELSFKRGEVLKVLNEECDQNWYKAELNGKDGFIPKNYIEMKAH
+>gi|1072263289|ref|XP_018417055.1|PREDICTED: growth factor receptor-bound protein 2 isoform X2 [Nanorana parkeri]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|959061134|ref|XP_014733655.1|PREDICTED: growth factor receptor-bound protein 2 [Sturnus vulgaris]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|944206178|gb|KQK73435.1|growth factor receptor-bound protein 2 [Amazona aestiva]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|701422058|ref|XP_010000950.1|PREDICTED: growth factor receptor-bound protein 2 isoform X1 [Chaetura pelagica] >gi|678118166|gb|KFU93397.1| Growth factor receptor-bound protein 2 [Chaetura pelagica]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|589962265|ref|XP_006993691.1|PREDICTED: growth factor receptor-bound protein 2 [Peromyscus maniculatus bairdii]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH
+>gi|562832904|ref|XP_006145876.1|PREDICTED: growth factor receptor-bound protein 2 [Tupaia chinensis]
+MEAIAKYDFKATADDELSFKRGDILKVLNEECDQNWYKAELNGKDGFIPKNYIEMKPH

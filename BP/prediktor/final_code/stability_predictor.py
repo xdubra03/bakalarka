@@ -13,6 +13,7 @@ import subprocess
 import csv
 import pandas as pd
 import numpy as np
+import pickle
 
 import Bio
 from Bio.PDB import *
@@ -28,12 +29,12 @@ from blosum import *
 class Ensemble():
     """ensemble system class"""
     def __init__(self):
-        self.X_frame1 = pd.read_csv("train200_250_2.csv")
-        self.X_frame2 = pd.read_csv("train250_250.csv")
-        self.X_frame3 = pd.read_csv("train250_200.csv")
-        self.X_frame4 = pd.read_csv("train300_300.csv")
-        self.X_frame5 = pd.read_csv("train300_300_1.csv")
-        self.X_frame6 = pd.read_csv("train300_300_2.csv")
+        #self.X_frame1 = pd.read_csv("train200_250_2.csv")
+        #self.X_frame2 = pd.read_csv("train250_250.csv")
+        #self.X_frame3 = pd.read_csv("train250_200.csv")
+        #self.X_frame4 = pd.read_csv("train300_300.csv")
+        #self.X_frame5 = pd.read_csv("train300_300_1.csv")
+        #self.X_frame6 = pd.read_csv("train300_300_2.csv")
         self.X_test = pd.read_csv("mutation_record.csv")
 
     def predict(self):
@@ -44,7 +45,7 @@ class Ensemble():
         class_column = ['class']
         predicted_class = list()
         # prepare X_frame1
-        X_trainArray1 = self.X_frame1.as_matrix(columns)
+        """X_trainArray1 = self.X_frame1.as_matrix(columns)
         Y_trainResults1 = self.X_frame1.as_matrix(class_column)
         Y_trainResults1 = Y_trainResults1.ravel()
         #prepare X_frame2
@@ -71,6 +72,7 @@ class Ensemble():
         X_trainArray7 = self.X_frame1.as_matrix(columns_asa)
         Y_trainResults7 = self.X_frame1.as_matrix(class_column)
         Y_trainRes7 = Y_trainResults7.ravel()
+        """
         #prepare frame for test record with all columns
         X_testArray = self.X_test.as_matrix(columns)
         Y_testResults = self.X_test.as_matrix(class_column)
@@ -82,40 +84,51 @@ class Ensemble():
 
         #train classifiers on specific subset of dataset, 3 SVM classifiers and 4 Random Forest
         #200 250  SVM
-        classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
-        classifier.fit(X_trainArray1, Y_trainResults1)
+        #classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
+        #classifier.fit(X_trainArray1, Y_trainResults1)
+        classifier = pickle.load(open('svm_model10.sav', 'rb'))
         svm_results1 = classifier.predict(X_testArray)
         predicted_class.append(svm_results1)
+        
         #250 250 SVM
-        classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
-        classifier.fit(X_trainArray2, Y_trainResults2)
+        #classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
+        #classifier.fit(X_trainArray2, Y_trainResults2)
+        classifier = pickle.load(open('svm_model11.sav', 'rb'))
         svm_results2 = classifier.predict(X_testArray)
         predicted_class.append(svm_results2)
+
         #200 250 bez asa SVM
-        classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
-        classifier.fit(X_trainArray7, Y_trainResults7)
-        svm_results3 = classifier.predict(X_testArray1)
+        classifier = pickle.load(open('svm_model12.sav', 'rb'))
+        svm_results3 = classifier.predict(X_testArray)
         predicted_class.append(svm_results3)
 
-        rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-        rf.fit(X_trainArray3,Y_trainResults3)
+        classifier = pickle.load(open('svm_model13.sav', 'rb'))
+        svm_results4 = classifier.predict(X_testArray)
+        predicted_class.append(svm_results4)
+
+        #rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+        #rf.fit(X_trainArray3,Y_trainResults3)
+        rf = pickle.load(open('rf_model10.sav', 'rb'))
         rf_result1 = rf.predict(X_testArray)
         predicted_class.append(rf_result1)
 
-        rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-        rf.fit(X_trainArray4,Y_trainResults4)
+        #rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+        #rf.fit(X_trainArray4,Y_trainResults4)
+        rf = pickle.load(open('rf_model11.sav', 'rb'))
         rf_result2 = rf.predict(X_testArray)
         predicted_class.append(rf_result2)
 
-        rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-        rf.fit(X_trainArray5,Y_trainResults5)
+        #rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+        #rf.fit(X_trainArray5,Y_trainResults5)
+        rf = pickle.load(open('rf_model12.sav', 'rb'))
         rf_result3 = rf.predict(X_testArray)
         predicted_class.append(rf_result3)
 
-        rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-        rf.fit(X_trainArray6,Y_trainResults6)
-        rf_result4 = rf.predict(X_testArray)
-        predicted_class.append(rf_result4)
+        #rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+        #rf.fit(X_trainArray6,Y_trainResults6)
+        #rf = pickle.load(open('rf_model4.sav', 'rb'))
+        #rf_result4 = rf.predict(X_testArray)
+        #predicted_class.append(rf_result4)
 
         #get final result by majority voting
         countNeg = 0
@@ -173,24 +186,27 @@ class StabilityPredictor():
     def predict(self):
         ensemble = Ensemble()
         stability_class = ensemble.predict()
-        if(stability_class == -1):
+        return stability_class
+
+        """if(stability_class == -1):
             return "destabilizing"
         else:
-            return "stabilizing"
+            return "stabilizing"""
 
 def main():
     predictor = StabilityPredictor(object)
     predictor.parseArguments()
     predictor.createMutationRecord()
     result_class = predictor.predict()
-
-    print("------------RESULTS------------")
+    print("Result "+str(result_class))
+    return result_class
+    """print("------------RESULTS------------")
     print("PDB ID: " + str(predictor.getPdb()))
     print("CHAIN TYPE: " + str(predictor.getChain()))
     print("WILD TYPE ACID: " + str(predictor.getWildType()))
     print("MUTANT ACID: " + str(predictor.getMutant()))
     print("POSITION OF MUTATION: " + str(predictor.getPosition()))
-    print("TYPE OF MUTATION: " + str(result_class))
+    print("TYPE OF MUTATION: " + str(result_class))"""
 
 if __name__ == '__main__':
     main()

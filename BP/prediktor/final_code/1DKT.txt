@@ -1,0 +1,500 @@
+>gi|1008749943|ref|XP_006976380.2|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Peromyscus maniculatus bairdii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|30585357|gb|AAP36951.1|Homo sapiens CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|60653169|gb|AAX29279.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|60653171|gb|AAX29280.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|4502857|ref|NP_001817.1|cyclin-dependent kinases regulatory subunit 1 [Homo sapiens] >gi|8393135|ref|NP_058600.1| cyclin-dependent kinases regulatory subunit 1 [Mus musculus] >gi|164518990|ref|NP_001106782.1| cyclin-dependent kinases regulatory subunit 1 [Bos taurus] >gi|209364532|ref|NP_001129221.1| cyclin-dependent kinases regulatory subunit 1 [Rattus norvegicus] >gi|343780903|ref|NP_001230471.1| cyclin-dependent kinases regulatory subunit 1 [Sus scrofa] >gi|357527348|ref|NP_001239475.1| cyclin-dependent kinases regulatory subunit 1 [Pan troglodytes] >gi|388452736|ref|NP_001252676.1| cyclin-dependent kinases regulatory subunit 1 [Macaca mulatta] >gi|73961622|ref|XP_855067.1| cyclin-dependent kinases regulatory subunit 1 [Canis lupus familiaris] >gi|296229027|ref|XP_002760106.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Callithrix jacchus] >gi|297663348|ref|XP_002810136.1| cyclin-dependent kinases regulatory subunit 1 [Pongo abelii] >gi|301774234|ref|XP_002922528.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X4 [Ailuropoda melanoleuca] >gi|332220553|ref|XP_003259420.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Nomascus leucogenys] >gi|338725001|ref|XP_003365059.1| cyclin-dependent kinases regulatory subunit 1 [Equus caballus] >gi|344286824|ref|XP_003415156.1| cyclin-dependent kinases regulatory subunit 1 [Loxodonta africana] >gi|397473545|ref|XP_003808269.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Pan paniscus] >gi|397492476|ref|XP_003817148.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Pan paniscus] >gi|402855114|ref|XP_003892186.1| cyclin-dependent kinases regulatory subunit 1 [Papio anubis] >gi|402856431|ref|XP_003892793.1| cyclin-dependent kinases regulatory subunit 1 [Papio anubis] >gi|403293625|ref|XP_003937813.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Saimiri boliviensis boliviensis] >gi|410986966|ref|XP_003999779.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Felis catus] >gi|426331814|ref|XP_004026888.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Gorilla gorilla gorilla] >gi|466082176|ref|XP_004284691.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Orcinus orca] >gi|471414134|ref|XP_004388606.1| cyclin-dependent kinases regulatory subunit 1 [Trichechus manatus latirostris] >gi|472367008|ref|XP_004403038.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Odobenus rosmarus divergens] >gi|478523956|ref|XP_004436179.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Ceratotherium simum simum] >gi|488528179|ref|XP_004455897.1| cyclin-dependent kinases regulatory subunit 1 isoform X1 [Dasypus novemcinctus] >gi|507567302|ref|XP_004667288.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Jaculus jaculus] >gi|507698445|ref|XP_004714708.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Echinops telfairi] >gi|507980225|ref|XP_004693835.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Condylura cristata] >gi|511918872|ref|XP_004778684.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Mustela putorius furo] >gi|524960607|ref|XP_005080242.1| cyclin-dependent kinases regulatory subunit 1 [Mesocricetus auratus] >gi|532048932|ref|XP_005367241.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Microtus ochrogaster] >gi|544402062|ref|XP_005541698.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Macaca fascicularis] >gi|548457278|ref|XP_005677475.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Capra hircus] >gi|555973457|ref|XP_005898725.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Bos mutus] >gi|556759601|ref|XP_005975125.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Pantholops hodgsonii] >gi|560901815|ref|XP_006177298.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Camelus ferus] >gi|560985045|ref|XP_006214729.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Vicugna pacos] >gi|585165500|ref|XP_006734877.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Leptonychotes weddellii] >gi|585695666|ref|XP_006895891.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Elephantulus edwardii] >gi|586461861|ref|XP_006861578.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Chrysochloris asiatica] >gi|586537526|ref|XP_006923615.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Pteropus alecto] >gi|591323861|ref|XP_007087989.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Panthera tigris altaica] >gi|593725737|ref|XP_007108961.1| cyclin-dependent kinases regulatory subunit 1 [Physeter catodon] >gi|594074381|ref|XP_006060994.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Bubalus bubalis] >gi|594660535|ref|XP_007178530.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Balaenoptera acutorostrata scammoni] >gi|602691836|ref|XP_007458040.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Lipotes vexillifer] >gi|635027331|ref|XP_007959371.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Chlorocebus sabaeus] >gi|635042998|ref|XP_007997067.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Chlorocebus sabaeus] >gi|635104478|ref|XP_007975098.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Chlorocebus sabaeus] >gi|640782292|ref|XP_008046781.1| cyclin-dependent kinases regulatory subunit 1 [Carlito syrichta] >gi|664728330|ref|XP_008521343.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Equus przewalskii] >gi|667248779|ref|XP_008590859.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Galeopterus variegatus] >gi|671007909|ref|XP_008694820.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Ursus maritimus] >gi|674037032|ref|XP_008852853.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Nannospalax galili] >gi|724812938|ref|XP_010359632.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rhinopithecus roxellana] >gi|724831427|ref|XP_010362971.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rhinopithecus roxellana] >gi|742111597|ref|XP_010836621.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Bison bison bison] >gi|743717178|ref|XP_010952266.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Camelus bactrianus] >gi|744539861|ref|XP_010978294.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Camelus dromedarius] >gi|759138313|ref|XP_011364736.1| cyclin-dependent kinases regulatory subunit 1 [Pteropus vampyrus] >gi|795146027|ref|XP_011837503.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Mandrillus leucophaeus] >gi|795172276|ref|XP_011842831.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Mandrillus leucophaeus] >gi|795172281|ref|XP_011842832.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Mandrillus leucophaeus] >gi|795347112|ref|XP_011783635.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Colobus angolensis palliatus] >gi|795354259|ref|XP_011932150.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cercocebus atys] >gi|795471112|ref|XP_011767944.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Macaca nemestrina] >gi|795656554|ref|XP_011741381.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Macaca nemestrina] >gi|803255482|ref|XP_011987698.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X3 [Ovis aries musimon] >gi|821131174|ref|XP_012386503.1| cyclin-dependent kinases regulatory subunit 1 [Dasypus novemcinctus] >gi|826334435|ref|XP_012514153.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Propithecus coquereli] >gi|829782005|ref|XP_012623378.1| cyclin-dependent kinases regulatory subunit 1 [Microcebus murinus] >gi|958682398|ref|XP_014692570.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Equus asinus] >gi|961766709|ref|XP_014942321.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Acinonyx jubatus] >gi|965916364|ref|XP_014947768.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Ovis aries] >gi|984132661|ref|XP_015358294.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Marmota marmota marmota] >gi|1012078258|ref|XP_015991138.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rousettus aegyptiacus] >gi|1022985733|ref|XP_001373559.2| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Monodelphis domestica] >gi|1032933725|ref|XP_007612621.2| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus] >gi|1040173695|ref|XP_008262587.2| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Oryctolagus cuniculus] >gi|1044349586|ref|XP_017380483.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cebus capucinus imitator] >gi|1059099886|ref|XP_017723217.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rhinopithecus bieti] >gi|1059134168|ref|XP_017727624.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rhinopithecus bieti] >gi|1111222420|ref|XP_019286934.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Panthera pardus] >gi|1121854877|ref|XP_019518145.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Hipposideros armiger] >gi|1131256967|ref|XP_019809860.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Bos indicus] >gi|1147280182|ref|XP_020021710.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Castor canadensis] >gi|1187629912|ref|XP_020768028.1| cyclin-dependent kinases regulatory subunit 1 [Odocoileus virginianus texanus] >gi|1190394392|ref|XP_020847296.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Phascolarctos cinereus] >gi|1195543884|ref|XP_021052318.1| cyclin-dependent kinases regulatory subunit 1 [Mus pahari] >gi|1195709659|ref|XP_021012757.1| cyclin-dependent kinases regulatory subunit 1 [Mus caroli] >gi|1211367375|ref|XP_021486937.1| cyclin-dependent kinases regulatory subunit 1 [Meriones unguiculatus] >gi|1212173806|ref|XP_021537839.1| cyclin-dependent kinases regulatory subunit 1 [Neomonachus schauinslandi] >gi|1212363586|ref|XP_021528754.1| cyclin-dependent kinases regulatory subunit 1 [Aotus nancymaae] >gi|1244141559|ref|XP_022346508.1| cyclin-dependent kinases regulatory subunit 1 [Enhydra lutris kenyoni] >gi|1246236118|ref|XP_022415130.1| cyclin-dependent kinases regulatory subunit 1 [Delphinapterus leucas] >gi|1297657972|ref|XP_023069649.1| cyclin-dependent kinases regulatory subunit 1 [Piliocolobus tephrosceles] >gi|46577579|sp|P61024.1|CKS1_HUMAN RecName: Full=Cyclin-dependent kinases regulatory subunit 1; Short=CKS-1 >gi|46577580|sp|P61025.1|CKS1_MOUSE RecName: Full=Cyclin-dependent kinases regulatory subunit 1; Short=CKS-1; AltName: Full=Sid 1334 >gi|118572225|sp|Q0P5A5.1|CKS1_BOVIN RecName: Full=Cyclin-dependent kinases regulatory subunit 1; Short=CKS-1 >gi|1421472|pdb|1DKS|A Chain A, CKSHS1: HUMAN CYCLIN DEPENDENT KINASE SUBUNIT, TYPE 1 IN COMPLEX WITH PHOSPHATE >gi|1421473|pdb|1DKS|B Chain B, CKSHS1: HUMAN CYCLIN DEPENDENT KINASE SUBUNIT, TYPE 1 IN COMPLEX WITH PHOSPHATE >gi|1421474|pdb|1DKT|A Chain A, CKSHS1: HUMAN CYCLIN DEPENDENT KINASE SUBUNIT, TYPE 1 COMPLEX WITH METAVANADATE >gi|1421475|pdb|1DKT|B Chain B, CKSHS1: HUMAN CYCLIN DEPENDENT KINASE SUBUNIT, TYPE 1 COMPLEX WITH METAVANADATE >gi|6729910|pdb|1BUH|B Chain B, Crystal Structure Of The Human Cdk2 Kinase Complex With Cell Cycle-Regulatory Protein Ckshs1 >gi|12751047|gb|AAK07518.1|AF274941_1 PNAS-16 [Homo sapiens] >gi|12751121|gb|AAK07553.1|AF279897_1 PNAS-143 [Homo sapiens] >gi|29977|emb|CAA38702.1| Cks1 protein homologue [Homo sapiens] >gi|5931567|dbj|BAA84694.1| sid1334p [Mus musculus] >gi|12848124|dbj|BAB27837.1| unnamed protein product [Mus musculus] >gi|14043535|gb|AAH07751.1| CDC28 protein kinase regulatory subunit 1B [Homo sapiens] >gi|15990489|gb|AAH15629.1| CDC28 protein kinase regulatory subunit 1B [Homo sapiens] >gi|26368983|dbj|BAC25295.1| unnamed protein product [Mus musculus] >gi|30583231|gb|AAP35860.1| CDC28 protein kinase regulatory subunit 1B [Homo sapiens] >gi|47125424|gb|AAH70319.1| CDC28 protein kinase regulatory subunit 1B [Homo sapiens] >gi|47125427|gb|AAH70320.1| CDC28 protein kinase regulatory subunit 1B [Homo sapiens] >gi|49904656|gb|AAH76579.1| CDC28 protein kinase 1b [Mus musculus] >gi|60656223|gb|AAX32675.1| CDC28 protein kinase regulatory subunit 1B [synthetic construct] >gi|60656225|gb|AAX32676.1| CDC28 protein kinase regulatory subunit 1B [synthetic construct] >gi|112362118|gb|AAI20302.1| CDC28 protein kinase regulatory subunit 1B [Bos taurus] >gi|119573549|gb|EAW53164.1| CDC28 protein kinase regulatory subunit 1B, isoform CRA_b [Homo sapiens] >gi|123979594|gb|ABM81626.1| CDC28 protein kinase regulatory subunit 1B [synthetic construct] >gi|123989962|gb|ABM83898.1| CDC28 protein kinase regulatory subunit 1B [synthetic construct] >gi|123994417|gb|ABM84810.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|123998565|gb|ABM86884.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|148683250|gb|EDL15197.1| mCG17538 [Mus musculus] >gi|149048054|gb|EDM00630.1| RGD1561797 (predicted) [Rattus norvegicus] >gi|157927982|gb|ABW03287.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|187469557|gb|AAI67077.1| RGD1561797 protein [Rattus norvegicus] >gi|189053090|dbj|BAG34712.1| unnamed protein product [Homo sapiens] >gi|197245984|gb|AAI68780.1| RGD1561797 protein [Rattus norvegicus] >gi|296489703|tpg|DAA31816.1| TPA: CDC28 protein kinase 1B [Bos taurus] >gi|307684726|dbj|BAJ20403.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct] >gi|355558519|gb|EHH15299.1| hypothetical protein EGK_01367 [Macaca mulatta] >gi|431892367|gb|ELK02807.1| Cyclin-dependent kinases regulatory subunit 1 [Pteropus alecto] >gi|440903599|gb|ELR54236.1| Cyclin-dependent kinases regulatory subunit 1 [Bos mutus] >gi|649099207|gb|AIC48513.1| CKS1B, partial [synthetic construct] >gi|649150821|gb|AIC62472.1| CKS1B, partial [synthetic construct] >gi|1147670022|emb|SJX24262.1| unnamed protein product, partial [Human ORFeome Gateway entry vector] >gi|1331831408|gb|PNI90676.1| CKS1B isoform 1 [Pan troglodytes] >gi|1331908452|gb|PNJ56486.1| CKS1B isoform 3 [Pongo abelii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|355745710|gb|EHH50335.1|hypothetical protein EGM_01146 [Macaca fascicularis]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGIQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|821481139|ref|XP_012403651.1|cyclin-dependent kinases regulatory subunit 1 [Sarcophilus harrisii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMTESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|822599531|pdb|4YC6|BChain B, Cdk1/cks1 >gi|822599533|pdb|4YC6|D Chain D, Cdk1/cks1 >gi|822599535|pdb|4YC6|F Chain F, Cdk1/cks1 >gi|822599537|pdb|4YC6|H Chain H, Cdk1/cks1
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|1124014285|ref|XP_019567434.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Rhinolophus sinicus]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|852745522|ref|XP_012870571.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Dipodomys ordii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPNKPKK
+>gi|634869597|ref|XP_007946712.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Orycteropus afer afer] >gi|157927984|gb|ABW03288.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct]
+MSHKQIYYSDKYDDDEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|617613555|ref|XP_007525470.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Erinaceus europaeus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPK
+>gi|975118451|ref|XP_015274622.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Gekko japonicus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|348579742|ref|XP_003475638.1|cyclin-dependent kinases regulatory subunit 1 [Cavia porcellus] >gi|507639770|ref|XP_004630000.1| cyclin-dependent kinases regulatory subunit 1 [Octodon degus] >gi|562849406|ref|XP_006153492.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Tupaia chinensis] >gi|731259485|ref|XP_010642218.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Fukomys damarensis] >gi|861502887|ref|XP_004871380.2| cyclin-dependent kinases regulatory subunit 1 [Heterocephalus glaber] >gi|676269576|gb|KFO24932.1| Cyclin-dependent kinases regulatory subunit 1 [Fukomys damarensis]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPNK
+>gi|1048431455|ref|XP_017531982.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Manis javanica]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKSHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|12835151|dbj|BAB23169.1|unnamed protein product [Mus musculus]
+MSHKQIYYSDKYDDKEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|395845285|ref|XP_003795372.1|cyclin-dependent kinases regulatory subunit 1 [Otolemur garnettii] >gi|554546004|ref|XP_005867569.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Myotis brandtii] >gi|558153561|ref|XP_006095142.1| cyclin-dependent kinases regulatory subunit 1 [Myotis lucifugus] >gi|641727701|ref|XP_008153960.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Eptesicus fuscus] >gi|521026780|gb|EPQ08568.1| Cyclin-dependent kinases regulatory subunit 1 [Myotis brandtii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPK
+>gi|1016713797|ref|XP_016076831.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Miniopterus natalensis]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPK
+>gi|12847359|dbj|BAB27540.1|unnamed protein product [Mus musculus]
+MSHKQIYYSDKYEDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|504154145|ref|XP_004589037.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Ochotona princeps]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPDK
+>gi|355701008|gb|EHH29029.1|hypothetical protein EGK_09339 [Macaca mulatta] >gi|355754713|gb|EHH58614.1| hypothetical protein EGM_08503 [Macaca fascicularis]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIQEPEPHILLFRRPLPKKPKK
+>gi|163914386|ref|NP_001106277.1|cyclin-dependent kinases regulatory subunit 1 [Gallus gallus] >gi|530572264|ref|XP_005280693.1| cyclin-dependent kinases regulatory subunit 1 [Chrysemys picta bellii] >gi|1209988948|ref|XP_021387919.1| cyclin-dependent kinases regulatory subunit 1 isoform X3 [Lonchura striata domestica] >gi|1208028575|gb|OWK55095.1| Cyclin-dependent kinases regulatory subunit 1 [Lonchura striata domestica] >gi|1215451117|gb|OXB54169.1| hypothetical protein ASZ78_015385 [Callipepla squamata] >gi|1215451261|gb|OXB54255.1| hypothetical protein H355_009902 [Colinus virginianus]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|533197897|ref|XP_005411592.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Chinchilla lanigera]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPNQ
+>gi|557297360|ref|XP_006031001.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Alligator sinensis] >gi|564250594|ref|XP_006264362.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Alligator mississippiensis] >gi|1117235212|ref|XP_019370093.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Gavialis gangeticus] >gi|1121808560|ref|XP_019412392.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Crocodylus porosus] >gi|1011596122|gb|KYO38547.1| cyclin-dependent kinases regulatory subunit 1 [Alligator mississippiensis]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPRTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|584062624|ref|XP_006775722.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Myotis davidii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSRGWVHYMIHEPEPHILLFRRPLPKKPK
+>gi|193788590|ref|NP_001106278.1|cyclin-dependent kinases regulatory subunit 1 [Taeniopygia guttata] >gi|525023338|ref|XP_005059150.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Ficedula albicollis] >gi|543378367|ref|XP_005532386.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Pseudopodoces humilis] >gi|726995397|ref|XP_010412378.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Corvus cornix cornix] >gi|959088514|ref|XP_014748291.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Sturnus vulgaris] >gi|998734588|ref|XP_015505544.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X4 [Parus major] >gi|1051221989|ref|XP_017694493.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Lepidothrix coronata] >gi|1341054665|ref|XP_023802824.1| cyclin-dependent kinases regulatory subunit 1 isoform X4 [Cyanistes caeruleus] >gi|197127297|gb|ACH43795.1| putative CDC28 protein kinase 1B [Taeniopygia guttata] >gi|197127298|gb|ACH43796.1| putative CDC28 protein kinase 1B [Taeniopygia guttata]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|1159636503|gb|OPJ69139.1|cyclin-dependent kinases regulatory subunit 1 [Patagioenas fasciata monilis]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSETEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|444729708|gb|ELW70115.1|Cyclin-dependent kinases regulatory subunit 1 [Tupaia chinensis]
+MSHKQIYHSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMLHEPEPHILLFRRPLPKKPNK
+>gi|327289866|ref|XP_003229645.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Anolis carolinensis]
+MSQKQIYYSDKYDDEEYEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|1002604616|ref|XP_015681538.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Protobothrops mucrosquamatus]
+MTHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKIEK
+>gi|965916362|ref|XP_014947767.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Ovis aries]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPALTLSEPHILLFRRPLPKKPKK
+>gi|741919670|ref|XP_010801232.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Bos taurus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPDLTLSEPHILLFRRPLPKKPKK
+>gi|729732841|ref|XP_010562328.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Haliaeetus leucocephalus] >gi|768399206|ref|XP_011595469.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Aquila chrysaetos canadensis]
+MAHKQIYYSDKYDDEEFEYRHVMLPKEVAKLVPRTHLLSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|543286297|ref|XP_005429463.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Geospiza fortis]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPEPHILPFRRPLPKKPEK
+>gi|1032842802|ref|XP_016830671.1|PREDICTED: LOW QUALITY PROTEIN: cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMMIHEPELHILLFRQPLPKKPKK
+>gi|344242000|gb|EGV98103.1|Cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMMIHEPELHILLFRQPLPKKPKK
+>gi|1003987624|ref|XP_015740037.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Coturnix japonica]
+MAHKEIYYSDKYFDEQYEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|355701820|gb|EHH29173.1|hypothetical protein EGK_09525 [Macaca mulatta]
+MSHKQIDYSDKYDDEEFEYRHVVLPKDIAKLVPKTRLMSESEWRNLGIQQSQGWVHYMIQEPEPHILLFRRPLPKKPKK
+>gi|354487098|ref|XP_003505712.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus] >gi|625292349|ref|XP_007637927.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus] >gi|344244218|gb|EGW00322.1| Cyclin-dependent kinases regulatory subunit 1 [Cricetulus griseus]
+MSHKQIYYLDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMMIHEPELHILLFRQPLPKKPKK
+>gi|444511892|gb|ELV09966.1|Cyclin-dependent kinases regulatory subunit 1 [Tupaia chinensis]
+MSHKQIYCSDKYDDEEFEYRHVMLPKAIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMTHEPEPHLWLFRRPLPKKAKK
+>gi|85702318|ref|NP_001033011.1|predicted gene 6531 [Mus musculus] >gi|74188323|dbj|BAE25818.1| unnamed protein product [Mus musculus] >gi|148679055|gb|EDL11002.1| mCG132387 [Mus musculus] >gi|187955166|gb|AAI47101.1| Predicted gene, EG624855 [Mus musculus] >gi|187955558|gb|AAI47102.1| Predicted gene, EG624855 [Mus musculus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIDKLVPKTHLMSESEWRKLGVQQSQGWVHYMIHEPELHILLFQWPLPKKPKK
+>gi|1042262913|ref|XP_017336199.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Ictalurus punctatus]
+MSHKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1049249296|ref|XP_017563942.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Pygocentrus nattereri]
+MSHKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1334033809|ref|XP_023572021.1|cyclin-dependent kinases regulatory subunit 1-like [Octodon degus]
+MSHKQIYYSDKYDDEEFECRHVMLPKDIAKLVPKPHLMPESEWRNLGVQQSQGWVHYMIHEPEPRILLFRRALPKKPNK
+>gi|1129914202|ref|XP_019723488.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Hippocampus comes] >gi|1129914204|ref|XP_019723489.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Hippocampus comes]
+MSHKQIYYSDKYDDEKYEYRHVMLPKDIAKRVPKTHLMSESEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPNQ
+>gi|1209988946|ref|XP_021387918.1|cyclin-dependent kinases regulatory subunit 1 isoform X2 [Lonchura striata domestica]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPGERRGAAGGAQGARPDPLFCPAEPHILLFRRPLPKKPEK
+>gi|557001830|ref|XP_006003377.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Latimeria chalumnae]
+MSYKQIYYSDKYDDEDFEYRHVILPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRSLPNR
+>gi|831304458|ref|XP_012684367.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Clupea harengus]
+MSHKQIYYSDKYDDEKFEYRHVMLPKDLAKLVPKTHLMSETEWRNLGVQQSQGWVHYMTHQPEPHILLFRRPLP
+>gi|1025197666|ref|XP_016425151.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus rhinocerous] >gi|1025364691|ref|XP_016396112.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus rhinocerous]
+MSHKQIYYSDKYDDDKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|1101643645|ref|XP_018921017.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cyprinus carpio]
+MSHKQIYYSDKYDDDKFEYRHVMLPKDIAKKVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|966712520|gb|KTG44758.1|hypothetical protein cypCar_00025061, partial [Cyprinus carpio]
+MSHKQIFYSDKYDDDKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|57525739|ref|NP_001003593.1|cyclin-dependent kinases regulatory subunit 1 [Danio rerio] >gi|50418152|gb|AAH77092.1| Zgc:101026 [Danio rerio]
+MSHKQIYYSDKYDDDKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1049249294|ref|XP_017563941.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Pygocentrus nattereri]
+MSHKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|928032337|ref|XP_013864660.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Austrofundulus limnaeus]
+MSHKQIYYSDKYDDEKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|525023334|ref|XP_005059148.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Ficedula albicollis]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPCEGAGGAQRARPDPLFCPAEPHILLFRRPLPKKPEK
+>gi|1101542597|ref|XP_018937105.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cyprinus carpio]
+MSHKQIFYSDKYDDDKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|742228431|ref|XP_010900382.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Esox lucius]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1020451374|ref|XP_016133451.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus grahami] >gi|1025110730|ref|XP_016348143.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus anshuiensis] >gi|1025364688|ref|XP_016396111.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus rhinocerous]
+MSHKQIFYSDKYDDDKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|657805870|ref|XP_008330096.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cynoglossus semilaevis]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPNQ
+>gi|1051221987|ref|XP_017694492.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Lepidothrix coronata]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPHGGAGSARRARPDRPSPPAEPHILLFRRPLPKKPEK
+>gi|597736640|ref|XP_007230574.1|cyclin-dependent kinases regulatory subunit 1 [Astyanax mexicanus]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1020482406|ref|XP_016146709.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus grahami] >gi|1024997174|ref|XP_016317964.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Sinocyclocheilus anshuiensis]
+MSHKQIYYSDKYDDDKFEYRHVVLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPQ
+>gi|929243127|ref|XP_013997590.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|929243129|ref|XP_013997593.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|1158903157|ref|XP_020356347.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Oncorhynchus kisutch] >gi|1158912818|ref|XP_020361402.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus kisutch] >gi|1158912820|ref|XP_020361403.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus kisutch] >gi|1158912822|ref|XP_020361404.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus kisutch] >gi|1211263583|ref|XP_021416386.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|1211263585|ref|XP_021416387.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|1211263635|ref|XP_021416414.1| cyclin-dependent kinases regulatory subunit 1 isoform X1 [Oncorhynchus mykiss] >gi|1211263637|ref|XP_021416415.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Oncorhynchus mykiss] >gi|1211285967|ref|XP_021427277.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|1211285969|ref|XP_021427278.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|1211285971|ref|XP_021427279.1| cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|1343059408|ref|XP_023832362.1| cyclin-dependent kinases regulatory subunit 1 isoform X2 [Salvelinus alpinus] >gi|1348553802|ref|XP_023994007.1| cyclin-dependent kinases regulatory subunit 1 [Salvelinus alpinus] >gi|209734488|gb|ACI68113.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|209735050|gb|ACI68394.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|642114807|emb|CDQ68565.1| unnamed protein product [Oncorhynchus mykiss] >gi|642132231|emb|CDQ56666.1| unnamed protein product [Oncorhynchus mykiss]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWIHYMIHQPEPHILLFRRPLP
+>gi|225706988|gb|ACO09340.1|Cyclin-dependent kinases regulatory subunit 1 [Osmerus mordax]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWIHYMIHQPEPHILLFRRPLP
+>gi|1357734671|ref|XP_024154262.1|cyclin-dependent kinases regulatory subunit 1 [Oryzias melastigma]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPNQ
+>gi|998734586|ref|XP_015505543.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X3 [Parus major]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPRGGAGDAQGAWPDPLFCPAEPHILLFRRPLPKKPEK
+>gi|974063736|ref|XP_015229167.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Cyprinodon variegatus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|617430244|ref|XP_007561560.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Poecilia formosa] >gi|941765529|ref|XP_014329725.1| cyclin-dependent kinases regulatory subunit 1 [Xiphophorus maculatus] >gi|961852113|ref|XP_014843239.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Poecilia mexicana] >gi|961902108|ref|XP_014903399.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Poecilia latipinna] >gi|1228998518|ref|XP_022064112.1| cyclin-dependent kinases regulatory subunit 1 [Acanthochromis polyacanthus] >gi|1250123350|ref|XP_022602964.1| cyclin-dependent kinases regulatory subunit 1 [Seriola dumerili] >gi|1308631379|ref|XP_023116871.1| cyclin-dependent kinases regulatory subunit 1 [Amphiprion ocellaris] >gi|1317108366|ref|XP_023265696.1| cyclin-dependent kinases regulatory subunit 1 [Seriola lalandi dorsalis]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|154147625|ref|NP_001093685.1|cyclin-dependent kinases regulatory subunit 1 [Xenopus tropicalis] >gi|140833016|gb|AAI35374.1| cks1b protein [Xenopus tropicalis] >gi|1270540311|gb|ATO97563.1| CDC28 protein kinase regulatory subunit 1B, partial [synthetic construct]
+MSAKNIYYSDKYDDELYEYRHVMLPKDIAKMVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPIKKP
+>gi|736155103|ref|XP_010769217.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Notothenia coriiceps] >gi|1168922387|ref|XP_020504260.1| cyclin-dependent kinases regulatory subunit 1 [Labrus bergylta]
+MSHKQIYYSDKYDDEKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPL
+>gi|1041062913|ref|XP_017277517.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Kryptolebias marmoratus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|959088512|ref|XP_014748290.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Sturnus vulgaris]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPRGGAGGAQGARPDPLFCPAEPHILLFRRPLPKKPEK
+>gi|726995394|ref|XP_010412377.1|cyclin-dependent kinases regulatory subunit 1 isoform X1 [Corvus cornix cornix]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPRGGAGGARGARPDPFFCPTEPHILLFRRPLPKKPEK
+>gi|225716180|gb|ACO13936.1|Cyclin-dependent kinases regulatory subunit 1 [Esox lucius]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYIIHQPEPHILLFRRPLP
+>gi|1338796636|ref|XP_023695514.1|cyclin-dependent kinases regulatory subunit 1 isoform X1 [Paramormyrops kingsleyae]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPRP
+>gi|1188084845|ref|XP_020788429.1|cyclin-dependent kinases regulatory subunit 1 [Boleophthalmus pectinirostris] >gi|1188084847|ref|XP_020788430.1| cyclin-dependent kinases regulatory subunit 1 [Boleophthalmus pectinirostris]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSESEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPL
+>gi|1343905727|ref|XP_023815490.1|cyclin-dependent kinases regulatory subunit 1 [Oryzias latipes]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPNQ
+>gi|543378365|ref|XP_005532385.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Pseudopodoces humilis] >gi|1341054659|ref|XP_023802821.1| cyclin-dependent kinases regulatory subunit 1 isoform X1 [Cyanistes caeruleus]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHEPGEPRGGAGGAQGAWPDPLFCPAEPHILLFRRPLPKKPEK
+>gi|734644095|ref|XP_010751070.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Larimichthys crocea]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPSQ
+>gi|1338796638|ref|XP_023695515.1|cyclin-dependent kinases regulatory subunit 1 isoform X2 [Paramormyrops kingsleyae]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPRP
+>gi|808876362|gb|KKF24998.1|Cyclin-dependent kinases regulatory subunit 1 [Larimichthys crocea]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPSQ
+>gi|82407881|pdb|2ASS|CChain C, Crystal Structure Of The Skp1-Skp2-Cks1 Complex >gi|82407884|pdb|2AST|C Chain C, Crystal Structure Of Skp1-Skp2-Cks1 In Complex With A P27 Peptide
+QIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPL
+>gi|657555280|ref|XP_008282086.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Stegastes partitus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLP
+>gi|1169053094|ref|XP_020479428.1|cyclin-dependent kinases regulatory subunit 1 [Monopterus albus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|213515540|ref|NP_001134910.1|Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|209737086|gb|ACI69412.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar]
+MSQKQIYYSDKYDDEKFEYRHVMLPKDIAKRVPKTHLMSGTEWRNLGVQQSQGWIHYMIHQPEPHILLFRRPLP
+>gi|831558999|ref|XP_012730901.1|cyclin-dependent kinases regulatory subunit 1 [Fundulus heteroclitus] >gi|1199327569|ref|XP_021178673.1| cyclin-dependent kinases regulatory subunit 1 [Fundulus heteroclitus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPL
+>gi|658875462|ref|XP_008420722.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Poecilia reticulata]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|1143406636|ref|XP_019957586.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Paralichthys olivaceus]
+MSNKQIYYSDKYDDEKYEYRHVMLPKDIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPL
+>gi|1007784333|ref|XP_015829081.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Nothobranchius furzeri]
+MSHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMTETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|348529993|ref|XP_003452496.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Oreochromis niloticus] >gi|498977526|ref|XP_004549124.1| cyclin-dependent kinases regulatory subunit 1 [Maylandia zebra] >gi|548411104|ref|XP_005740714.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Pundamilia nyererei] >gi|554834279|ref|XP_005927660.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Haplochromis burtoni] >gi|554834281|ref|XP_005927661.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Haplochromis burtoni] >gi|583985601|ref|XP_006788050.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like isoform X1 [Neolamprologus brichardi] >gi|583985603|ref|XP_006788051.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like isoform X2 [Neolamprologus brichardi] >gi|583985605|ref|XP_006788052.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like isoform X3 [Neolamprologus brichardi] >gi|583985607|ref|XP_006788053.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like isoform X4 [Neolamprologus brichardi] >gi|62079648|gb|AAX61170.1| CDC28 protein kinase 1 [Oreochromis mossambicus]
+MSHKQIYYSDKYDDDKYEYRHVMLPKELAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|296208171|ref|XP_002750969.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Callithrix jacchus]
+MSHKQIYYSDKYDDEEFEYRHYRHVMLPKDITKLVPKTHWMSESEWRNLGVQQSQGWVRYVIHEPEPHILLFWRPLPKKLKK
+>gi|1079742349|ref|XP_018540562.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Lates calcarifer]
+MSHKQIFYSEKYDDDKYEYRHVMLPKDIAKRVPKTHLMTETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPLPN
+>gi|1083353229|ref|XP_018621410.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Scleropages formosus]
+MSTKQIYYSDKYDDDKFEYRHVMLPKDLAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILLFRRPRP
+>gi|284448134|ref|NP_001165208.1|CDC28 protein kinase regulatory subunit 1B L homeolog [Xenopus laevis] >gi|126631756|gb|AAI33267.1| LOC100049098 protein [Xenopus laevis]
+MSAKNIYYSDKYDDELYEYRHVMLPKDIAKQVPKTHLMSETEWRNLGVQQSQGWVHYMIHEPEPHILLFRRSLPIK
+>gi|284448130|ref|NP_001165207.1|CDC28 protein kinase regulatory subunit 1B S homeolog [Xenopus laevis] >gi|77748350|gb|AAI06545.1| MGC131304 protein [Xenopus laevis]
+MSAKNIYYSDKYDDELYEYRHVMLPKDIAKRVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRLLPIK
+>gi|1050367383|gb|OCT69586.1|hypothetical protein XELAEV_18040898mg [Xenopus laevis]
+MSAKNIYYSDKYDDELYEYRHVMLPKDIAKQVPKTHLMSETEWRNLGVQQSQGWVHYMIHEPEPHILLFRRSLPIK
+>gi|1160108219|ref|XP_020381386.1|cyclin-dependent kinases regulatory subunit 1 [Rhincodon typus]
+MDRNEIYYSDRYNDGEYEYRHVMLPKKIAKLVPKTHLMSETEWRNLGVQQSPGWIHYMIHEPEPHILLFRRPLPKK
+>gi|957862376|ref|XP_014679583.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Priapulus caudatus]
+MAHKQIYYSDKYTDEKYEYRHVMLPKEIAKLVPKTHLMSETEWRGIGVQQSQGWIHYMFHEPEPHILLFRRP
+>gi|557008694|ref|XP_006005424.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Latimeria chalumnae] >gi|942192039|ref|XP_014349615.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Latimeria chalumnae]
+MSHKQIYYSDKYFDDHYEYRHVMLPKDIAKQVPKTHLMTEEEWRRLGVQQSLGWVHYMIHDPEPHILLFRRPLPKDQQK
+>gi|1338822584|ref|XP_023653849.1|cyclin-dependent kinases regulatory subunit 1-like [Paramormyrops kingsleyae]
+MSKKQIYYSDKYTDEEFEYRHVMLPKQLSKLVPTSHLMSEEEWRGLGVQQSQGWIHYMVHKPEPHILLFRRPLPK
+>gi|597742447|ref|XP_007233330.1|cyclin-dependent kinases regulatory subunit 1-like [Astyanax mexicanus]
+MSKKQIYYSDKYTDDEFEYRHVMLPKQLSKLVPTSHLMSEEEWRGLGVQQSQGWVHYMIHKPEPHILLFRRPLPKE
+>gi|148698450|gb|EDL30397.1|mCG5547 [Mus musculus]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSRGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|632964012|ref|XP_007898191.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Callorhinchus milii] >gi|387915790|gb|AFK11504.1| cyclin-dependent kinases regulatory subunit 2 [Callorhinchus milii]
+MSHKQIYYSDKYFDDEYEYRHVMLPKELAKQVPKTHLMSEDEWRKLGVQQSLGWVHYMMHEPEPHILLFRRPLPKDQDK
+>gi|225717428|gb|ACO14560.1|Cyclin-dependent kinases regulatory subunit 1 [Caligus clemensi]
+MGSKQIYYSDKYYDDKFEYRHVMLPKELAKLVPKTHLMSESEWRNLGVQQSQGWVHYMAHEPEPHILLFRRPKSK
+>gi|742103692|ref|XP_010870030.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Esox lucius]
+MSKKQIYYSDKYTDEEFEYRHVMLPKQLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|148232357|ref|NP_001081798.1|cyclin-dependent kinases regulatory subunit 2 [Xenopus laevis] >gi|2493726|sp|Q91879.1|CKS2_XENLA RecName: Full=Cyclin-dependent kinases regulatory subunit 2; AltName: Full=Xe-p9 >gi|1465749|gb|AAC59914.1| essential; similar to human cyclin dependent kinase subunit type 2, Swiss-Prot Accession Number P33552 [Xenopus laevis] >gi|46250308|gb|AAH68722.1| Cks2a protein [Xenopus laevis] >gi|1050395773|gb|OCT97963.1| hypothetical protein XELAEV_18010191mg [Xenopus laevis]
+MSYKNIYYSDKYTDEHFEYRHVMLPKELAKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|973202388|ref|XP_015221163.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Lepisosteus oculatus]
+MSKKQIYYSDKYTDEEYEYRHVMLPKQMSKLVPTSHLMSEEEWRSLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|975099110|ref|XP_015264588.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Gekko japonicus]
+MSHKQIYYSDKYFDENYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKGQQK
+>gi|919095907|ref|XP_013384680.1|cyclin-dependent kinases regulatory subunit 1 [Lingula anatina]
+MSTKQIYYSDKYYDDEYEYRHVMLPRDIAKLVPKTHLMSEAEWRGLGVQQSQGWVHYMMHEPEQHILLFRRPVQK
+>gi|1041070370|ref|XP_017262740.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Kryptolebias marmoratus]
+MSKKQIYYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|557278814|ref|XP_006022457.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Alligator sinensis] >gi|564265703|ref|XP_006271681.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Alligator mississippiensis] >gi|1117346544|ref|XP_019372857.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Gavialis gangeticus] >gi|1121926093|ref|XP_019410959.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Crocodylus porosus] >gi|1011564909|gb|KYO20655.1| cyclin-dependent kinases regulatory subunit 2 [Alligator mississippiensis]
+MAHKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKTHLMTEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|525027191|ref|XP_005061027.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Ficedula albicollis] >gi|542154835|ref|XP_005486260.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Zonotrichia albicollis] >gi|543267515|ref|XP_005423627.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Geospiza fortis] >gi|959044326|ref|XP_014724664.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Sturnus vulgaris]
+MAHKQIYYSDKYSDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|734603119|ref|XP_010728550.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Larimichthys crocea] >gi|808860025|gb|KKF12088.1| Cyclin-dependent kinases regulatory subunit 1 [Larimichthys crocea]
+MSKKQIYYSDKYNDEEFEYRHVVLPKQLSKLVPTSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|62859187|ref|NP_001016170.1|cyclin-dependent kinases regulatory subunit 2 [Xenopus tropicalis] >gi|213624042|gb|AAI70572.1| CDC28 protein kinase regulatory subunit 2 [Xenopus tropicalis] >gi|213625418|gb|AAI70574.1| CDC28 protein kinase regulatory subunit 2 [Xenopus tropicalis] >gi|1043437873|gb|OCA50499.1| hypothetical protein XENTR_v90002373mg [Xenopus tropicalis]
+MSFKNIYYSDKYSDENYEYRHVMLPKELAKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|229367972|gb|ACQ58966.1|Cyclin-dependent kinases regulatory subunit 1 [Anoplopoma fimbria]
+MSKKQIYYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|1250150540|ref|XP_022615315.1|cyclin-dependent kinases regulatory subunit 1-like [Seriola dumerili] >gi|1317099549|ref|XP_023260989.1| cyclin-dependent kinases regulatory subunit 1-like [Seriola lalandi dorsalis]
+MSKKQIYYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|13384804|ref|NP_079691.1|cyclin-dependent kinases regulatory subunit 2 [Mus musculus] >gi|186910245|ref|NP_001119555.1| cyclin-dependent kinases regulatory subunit 2 [Rattus norvegicus] >gi|126333770|ref|XP_001363480.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Monodelphis domestica] >gi|301768489|ref|XP_002919658.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Ailuropoda melanoleuca] >gi|345785622|ref|XP_003432704.1| cyclin-dependent kinases regulatory subunit 2 [Canis lupus familiaris] >gi|348552144|ref|XP_003461888.1| cyclin-dependent kinases regulatory subunit 2 [Cavia porcellus] >gi|410977958|ref|XP_003995365.1| cyclin-dependent kinases regulatory subunit 2 [Felis catus] >gi|472381021|ref|XP_004409907.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Odobenus rosmarus divergens] >gi|507569604|ref|XP_004668423.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Jaculus jaculus] >gi|507698190|ref|XP_004714646.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Echinops telfairi] >gi|507699471|ref|XP_004644148.1| cyclin-dependent kinases regulatory subunit 2 [Octodon degus] >gi|511878356|ref|XP_004759130.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Mustela putorius furo] >gi|512978685|ref|XP_004851379.1| cyclin-dependent kinases regulatory subunit 2 [Heterocephalus glaber] >gi|524924231|ref|XP_005066363.1| cyclin-dependent kinases regulatory subunit 2 [Mesocricetus auratus] >gi|532057339|ref|XP_005371372.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Microtus ochrogaster] >gi|532111160|ref|XP_005340280.1| cyclin-dependent kinases regulatory subunit 2 [Ictidomys tridecemlineatus] >gi|533192214|ref|XP_005408937.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Chinchilla lanigera] >gi|589928182|ref|XP_006976914.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Peromyscus maniculatus bairdii] >gi|625201161|ref|XP_007642345.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Cricetulus griseus] >gi|625281806|ref|XP_007632562.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X2 [Cricetulus griseus] >gi|731273538|ref|XP_010605891.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Fukomys damarensis] >gi|821467849|ref|XP_003761295.2| cyclin-dependent kinases regulatory subunit 2 [Sarcophilus harrisii] >gi|1111170365|ref|XP_019319325.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Panthera pardus] >gi|1147268749|ref|XP_020016529.1| cyclin-dependent kinases regulatory subunit 2 [Castor canadensis] >gi|1190429821|ref|XP_020865178.1| cyclin-dependent kinases regulatory subunit 2 [Phascolarctos cinereus] >gi|1195516833|ref|XP_021071371.1| cyclin-dependent kinases regulatory subunit 2 [Mus pahari] >gi|1211451650|ref|XP_021509995.1| cyclin-dependent kinases regulatory subunit 2 [Meriones unguiculatus] >gi|1212183461|ref|XP_021541873.1| cyclin-dependent kinases regulatory subunit 2 [Neomonachus schauinslandi] >gi|1212198924|ref|XP_021550084.1| cyclin-dependent kinases regulatory subunit 2 [Neomonachus schauinslandi] >gi|1244114519|ref|XP_022368388.1| cyclin-dependent kinases regulatory subunit 2 [Enhydra lutris kenyoni] >gi|3023502|sp|P56390.1|CKS2_MOUSE RecName: Full=Cyclin-dependent kinases regulatory subunit 2; Short=CKS-2 >gi|12832445|dbj|BAB22110.1| unnamed protein product [Mus musculus] >gi|12835243|dbj|BAB23199.1| unnamed protein product [Mus musculus] >gi|18490948|gb|AAH22647.1| CDC28 protein kinase regulatory subunit 2 [Mus musculus] >gi|63101712|gb|AAH94919.1| CDC28 protein kinase regulatory subunit 2 [Mus musculus] >gi|74177695|dbj|BAE38947.1| unnamed protein product [Mus musculus] >gi|148682328|gb|EDL14275.1| mCG124255 [Mus musculus] >gi|149045004|gb|EDL98090.1| similar to Cyclin-dependent kinases regulatory subunit 2 (CKS-2) (predicted), isoform CRA_b [Rattus norvegicus] >gi|171847427|gb|AAI62005.1| Cks2 protein [Rattus norvegicus] >gi|351711633|gb|EHB14552.1| Cyclin-dependent kinases regulatory subunit 2 [Heterocephalus glaber] >gi|537212330|gb|ERE80758.1| cyclin-dependent kinases regulatory subunit 1-like protein [Cricetulus griseus]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|927148678|ref|XP_013915411.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Thamnophis sirtalis]
+MSHKQIYYSDKYFDENYEYRHVMLPRELSKQVPKTHLMTEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKGQQK
+>gi|327263367|ref|XP_003216491.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Anolis carolinensis]
+MAHKQIYYSDKYCDENYEYRHVMLPRELSKQVPKTHLMTEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKGQQK
+>gi|1143366707|ref|XP_019936704.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Paralichthys olivaceus]
+MSKKQIYYSDKYTDEEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|736198223|ref|XP_010773672.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Notothenia coriiceps] >gi|961452219|gb|ALS30219.1| c28 protein kinase regulatory subunit 1 [Dicentrarchus labrax]
+MSKKQIYYSDKYTDEEFEYRHVVLPKQLSKLVPTSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|225716420|gb|ACO14056.1|Cyclin-dependent kinases regulatory subunit 1 [Esox lucius]
+MSKKQIYYSDKYTDEEFEYRHVMLPKQLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYVIHKPEPHILLFRRPLPK
+>gi|1072266503|ref|XP_018418807.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Nanorana parkeri] >gi|1276597115|gb|PIO28978.1| Cyclin-dependent kinases regulatory subunit 2 [Rana catesbeiana]
+MSFKNIYYSDKYTDEKYEYRHVMLPKELAKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|929295722|ref|XP_014025201.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Salmo salar] >gi|1158887326|ref|XP_020348082.1| cyclin-dependent kinases regulatory subunit 1-like [Oncorhynchus kisutch] >gi|1211348634|ref|XP_021454684.1| cyclin-dependent kinases regulatory subunit 1-like [Oncorhynchus mykiss] >gi|1343006752|ref|XP_023854744.1| cyclin-dependent kinases regulatory subunit 1-like [Salvelinus alpinus] >gi|221219544|gb|ACM08433.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|221219678|gb|ACM08500.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|221221464|gb|ACM09393.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|642026725|emb|CDQ94896.1| unnamed protein product [Oncorhynchus mykiss]
+MSKKQIYYSDKYTDEAFEYRHVMLPKQLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|551488277|ref|XP_005795713.1|cyclin-dependent kinases regulatory subunit 1-like [Xiphophorus maculatus] >gi|617421949|ref|XP_007558799.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Poecilia formosa] >gi|658845523|ref|XP_008405196.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Poecilia reticulata] >gi|961846040|ref|XP_014888638.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Poecilia latipinna] >gi|961853003|ref|XP_014843480.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Poecilia mexicana]
+MSKKQIFYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|4502859|ref|NP_001818.1|cyclin-dependent kinases regulatory subunit 2 [Homo sapiens] >gi|164519018|ref|NP_001106790.1| cyclin-dependent kinases regulatory subunit 2 [Bos taurus] >gi|388596682|ref|NP_001254472.1| cyclin-dependent kinases regulatory subunit 2 [Macaca mulatta] >gi|291383549|ref|XP_002708319.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Oryctolagus cuniculus] >gi|296189374|ref|XP_002742757.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Callithrix jacchus] >gi|297684759|ref|XP_002819984.1| cyclin-dependent kinases regulatory subunit 2 [Pongo abelii] >gi|311270269|ref|XP_003132838.1| cyclin-dependent kinases regulatory subunit 2 [Sus scrofa] >gi|332832272|ref|XP_003312208.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Pan troglodytes] >gi|344305873|ref|XP_003421614.1| cyclin-dependent kinases regulatory subunit 2 [Loxodonta africana] >gi|395844642|ref|XP_003795066.1| cyclin-dependent kinases regulatory subunit 2 [Otolemur garnettii] >gi|397469450|ref|XP_003806367.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Pan paniscus] >gi|426362239|ref|XP_004048278.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Gorilla gorilla gorilla] >gi|466013048|ref|XP_004270649.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Orcinus orca] >gi|471404396|ref|XP_004384290.1| cyclin-dependent kinases regulatory subunit 2 [Trichechus manatus latirostris] >gi|478508169|ref|XP_004428367.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Ceratotherium simum simum] >gi|488559826|ref|XP_004470015.1| cyclin-dependent kinases regulatory subunit 2 [Dasypus novemcinctus] >gi|530641951|ref|XP_005307698.1| cyclin-dependent kinases regulatory subunit 2 [Chrysemys picta bellii] >gi|544495348|ref|XP_005582164.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Macaca fascicularis] >gi|548478387|ref|XP_005684293.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Capra hircus] >gi|554583354|ref|XP_005883142.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Myotis brandtii] >gi|555990478|ref|XP_005907032.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Bos mutus] >gi|556753684|ref|XP_005972216.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Pantholops hodgsonii] >gi|558190476|ref|XP_006103308.1| cyclin-dependent kinases regulatory subunit 2 [Myotis lucifugus] >gi|560988716|ref|XP_006216522.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Vicugna pacos] >gi|562851332|ref|XP_006154395.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Tupaia chinensis] >gi|585720594|ref|XP_006902620.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Elephantulus edwardii] >gi|586484288|ref|XP_006872645.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Chrysochloris asiatica] >gi|586537234|ref|XP_006923471.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Pteropus alecto] >gi|591368891|ref|XP_007059281.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Chelonia mydas] >gi|594061245|ref|XP_006054706.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Bubalus bubalis] >gi|594081817|ref|XP_006064520.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Bubalus bubalis] >gi|602678732|ref|XP_007445682.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Lipotes vexillifer] >gi|617559537|ref|XP_007539952.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Erinaceus europaeus] >gi|635074545|ref|XP_007967894.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Chlorocebus sabaeus] >gi|641725745|ref|XP_008152850.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Eptesicus fuscus] >gi|667263382|ref|XP_008568266.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Galeopterus variegatus] >gi|724799804|ref|XP_010369580.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Rhinopithecus roxellana] >gi|742143336|ref|XP_010843103.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Bison bison bison] >gi|743710674|ref|XP_010948813.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Camelus bactrianus] >gi|759155613|ref|XP_011370673.1| cyclin-dependent kinases regulatory subunit 2 [Pteropus vampyrus] >gi|795109865|ref|XP_011830575.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Mandrillus leucophaeus] >gi|795197311|ref|XP_011803410.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Colobus angolensis palliatus] >gi|795479423|ref|XP_011769451.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Macaca nemestrina] >gi|795582382|ref|XP_011912342.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Cercocebus atys] >gi|817258400|ref|XP_012318759.1| cyclin-dependent kinases regulatory subunit 2 [Aotus nancymaae] >gi|826319896|ref|XP_012509012.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Propithecus coquereli] >gi|829811358|ref|XP_012629242.1| cyclin-dependent kinases regulatory subunit 2 [Microcebus murinus] >gi|984134905|ref|XP_015359437.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Marmota marmota marmota] >gi|1012256954|ref|XP_015978402.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Rousettus aegyptiacus] >gi|1016661656|ref|XP_016057969.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Miniopterus natalensis] >gi|1044356958|ref|XP_017383966.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Cebus capucinus imitator] >gi|1048457177|ref|XP_017510449.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Manis javanica] >gi|1059149776|ref|XP_017731663.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Rhinopithecus bieti] >gi|1121939731|ref|XP_019483929.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Hipposideros armiger] >gi|1124018948|ref|XP_019569337.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Rhinolophus sinicus] >gi|1131206860|ref|XP_019791811.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Tursiops truncatus] >gi|1131295459|ref|XP_019822195.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Bos indicus] >gi|1220180648|ref|XP_021783568.1| cyclin-dependent kinases regulatory subunit 2 [Papio anubis] >gi|1246238537|ref|XP_022416411.1| cyclin-dependent kinases regulatory subunit 2 [Delphinapterus leucas] >gi|1297745586|ref|XP_023050335.1| cyclin-dependent kinases regulatory subunit 2 [Piliocolobus tephrosceles] >gi|1333611252|ref|XP_023483336.1| cyclin-dependent kinases regulatory subunit 2 [Equus caballus] >gi|1348511753|ref|XP_023986637.1| cyclin-dependent kinases regulatory subunit 2 [Physeter catodon] >gi|1348511755|ref|XP_023986638.1| cyclin-dependent kinases regulatory subunit 2 [Physeter catodon] >gi|1351542586|ref|XP_024054713.1| cyclin-dependent kinases regulatory subunit 2 [Terrapene mexicana triunguis] >gi|461747|sp|P33552.1|CKS2_HUMAN RecName: Full=Cyclin-dependent kinases regulatory subunit 2; Short=CKS-2 >gi|118572226|sp|Q2KJI1.1|CKS2_BOVIN RecName: Full=Cyclin-dependent kinases regulatory subunit 2; Short=CKS-2 >gi|996143|pdb|1CKS|A Chain A, HUMAN CKSHS2 ATOMIC STRUCTURE: A ROLE FOR ITS HEXAMERIC ASSEMBLY IN CELL CYCLE CONTROL >gi|996144|pdb|1CKS|B Chain B, HUMAN CKSHS2 ATOMIC STRUCTURE: A ROLE FOR ITS HEXAMERIC ASSEMBLY IN CELL CYCLE CONTROL >gi|996145|pdb|1CKS|C Chain C, HUMAN CKSHS2 ATOMIC STRUCTURE: A ROLE FOR ITS HEXAMERIC ASSEMBLY IN CELL CYCLE CONTROL >gi|20454289|gb|AAM22232.1|AF506708_1 CDC28 protein kinase 2 [Homo sapiens] >gi|29979|emb|CAA38703.1| Cks1 protein homologue [Homo sapiens] >gi|13623665|gb|AAH06458.1| CDC28 protein kinase regulatory subunit 2 [Homo sapiens] >gi|30582099|gb|AAP35276.1| CDC28 protein kinase regulatory subunit 2 [Homo sapiens] >gi|49457232|emb|CAG46915.1| CKS2 [Homo sapiens] >gi|60656055|gb|AAX32591.1| CDC28 protein kinase regulatory subunit 2 [synthetic construct] >gi|60656057|gb|AAX32592.1| CDC28 protein kinase regulatory subunit 2 [synthetic construct] >gi|86821130|gb|AAI05332.1| CDC28 protein kinase regulatory subunit 2 [Bos taurus] >gi|119583166|gb|EAW62762.1| CDC28 protein kinase regulatory subunit 2 [Homo sapiens] >gi|261859264|dbj|BAI46154.1| CDC28 protein kinase regulatory subunit 2, partial [synthetic construct] >gi|296484447|tpg|DAA26562.1| TPA: cyclin-dependent kinases regulatory subunit 2 [Bos taurus] >gi|431892480|gb|ELK02917.1| Cyclin-dependent kinases regulatory subunit 2 [Pteropus alecto] >gi|440896149|gb|ELR48163.1| Cyclin-dependent kinases regulatory subunit 2 [Bos mutus] >gi|521036431|gb|EPQ18209.1| Cyclin-dependent kinases regulatory subunit 2 [Myotis brandtii] >gi|649099210|gb|AIC48514.1| CKS2, partial [synthetic construct] >gi|649150824|gb|AIC62473.1| CKS2, partial [synthetic construct] >gi|1147670232|emb|SJX24404.1| unnamed protein product, partial [Human ORFeome Gateway entry vector] >gi|1207829312|gb|OWK07187.1| CKS2 [Cervus elaphus hippelaphus] >gi|1331778668|gb|PNI38328.1| CKS2 isoform 1 [Pan troglodytes] >gi|1331923566|gb|PNJ71472.1| CKS2 isoform 1 [Pongo abelii]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|602674167|ref|XP_007442577.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Python bivittatus] >gi|602674169|ref|XP_007442578.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X2 [Python bivittatus] >gi|1002598936|ref|XP_015678495.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Protobothrops mucrosquamatus] >gi|1176299628|ref|XP_020652232.1| cyclin-dependent kinases regulatory subunit 2 isoform X2 [Pogona vitticeps]
+MAHKQIYYSDKYFDENYEYRHVMLPRELSKQVPKTHLMTEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKGQQK
+>gi|1228960524|ref|XP_022069603.1|cyclin-dependent kinases regulatory subunit 1-like [Acanthochromis polyacanthus]
+MSKKQIFYSDKYNDEEFEYRHVVLPKQLSKLVPTSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|1025161811|ref|XP_016356132.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus anshuiensis] >gi|1025161815|ref|XP_016356133.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus anshuiensis] >gi|1025161821|ref|XP_016356134.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus anshuiensis] >gi|1025305480|ref|XP_016382500.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus rhinocerous] >gi|1101600143|ref|XP_018965260.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cyprinus carpio] >gi|1101654441|ref|XP_018938901.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cyprinus carpio] >gi|966699962|gb|KTG32203.1| hypothetical protein cypCar_00036707 [Cyprinus carpio]
+SKKQIYYSDKYSDEEYEYRHVMLPKQLSKLVPSSHLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|1168920374|ref|XP_020503275.1|cyclin-dependent kinases regulatory subunit 1-like [Labrus bergylta]
+MSKKQIFYSDKYNDEEFEYRHVVLPKQLSKLVPTSHLMAEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|148709157|gb|EDL41103.1|mCG1274, isoform CRA_b, partial [Mus musculus]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|699691949|ref|XP_009889232.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Charadrius vociferus] >gi|697464075|gb|KGL98002.1| Cyclin-dependent kinases regulatory subunit 2 [Charadrius vociferus]
+MANKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKTHLMSEEEWRQLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDERK
+>gi|1209985567|ref|XP_021386109.1|cyclin-dependent kinases regulatory subunit 2 [Lonchura striata domestica] >gi|1208029111|gb|OWK55606.1| Cyclin-dependent kinases regulatory subunit 2 [Lonchura striata domestica]
+MAHKQIYYSNKYSDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|960976008|ref|XP_014803065.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Calidris pugnax] >gi|1315507187|gb|PKU42040.1| cyclin-dependent kinases regulatory subunit 2 [Limosa lapponica baueri]
+MAHKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDKQK
+>gi|543373792|ref|XP_005530112.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Pseudopodoces humilis] >gi|663240105|ref|XP_008504025.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Calypte anna] >gi|669290745|ref|XP_008638393.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Corvus brachyrhynchos] >gi|727018972|ref|XP_010398266.1| cyclin-dependent kinases regulatory subunit 2 [Corvus cornix cornix] >gi|998738669|ref|XP_015507627.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Parus major] >gi|1341052264|ref|XP_023800721.1| cyclin-dependent kinases regulatory subunit 2 [Cyanistes caeruleus] >gi|676422189|gb|KFO64045.1| Cyclin-dependent kinases regulatory subunit 2 [Corvus brachyrhynchos] >gi|676765495|gb|KFO95472.1| Cyclin-dependent kinases regulatory subunit 2 [Calypte anna]
+MAHKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|1169021846|ref|XP_020462735.1|cyclin-dependent kinases regulatory subunit 1-like [Monopterus albus]
+MSKKQMYYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|830036530|ref|XP_004684547.2|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Condylura cristata]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1325275561|ref|XP_023322455.1|cyclin-dependent kinases regulatory subunit 1-like [Eurytemora affinis]
+MPSKDIYYSDKYTDDKFEYRHVMLPKDVAKLVPTTHLMSEAEWRGIGVQQSQGWIHYMFHKPEPHILLFRRPLPEK
+>gi|1051187389|ref|XP_017676601.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Lepidothrix coronata]
+MAHKQIYYSDKYCDEEYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLQKAEQK
+>gi|914684904|pdb|4Y72|CChain C, Human Cdk1/cyclinb1/cks2 With Inhibitor >gi|1002351760|pdb|5HQ0|C Chain C, Ternary Complex Of Human Proteins Cdk1, Cyclin B And Cks2, Bound To An Inhibitor >gi|1130618994|pdb|5LQF|C Chain C, Cdk1/cyclinb1/cks2 In Complex With Nu6102 >gi|1130618997|pdb|5LQF|F Chain F, Cdk1/cyclinb1/cks2 In Complex With Nu6102 >gi|1189432308|pdb|4YC3|C Chain C, Cdk1/cyclinb1/cks2 Apo
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|332265188|ref|XP_003281610.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 isoform X1 [Nomascus leucogenys]
+MAHKQIYYSDKYFDEYYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1114666919|gb|APM86330.1|CDC28 protein kinase regulatory subunit 1B [Penaeus monodon]
+RIYYSDKYYDEKFEYRHVMLPKDLSKLVPKTHLMSESEWRSLGVQQSQGWVHYMIHEPEPHILLFRRPITTPPPK
+>gi|657579237|ref|XP_008293529.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Stegastes partitus]
+MSKKQIFYSDKYNDDEFEYRHVVLPKELSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|410921434|ref|XP_003974188.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Takifugu rubripes]
+MSKKQIYYSDKYNDEEFEYRHVVLPKELSKLVPSSHLMSEDEWRGLGVQQSQGWMHYMIHKPEPHILLFRRPLSK
+>gi|1101552105|ref|XP_018941971.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cyprinus carpio] >gi|966704371|gb|KTG36612.1| hypothetical protein cypCar_00020156 [Cyprinus carpio]
+KQIYYSDKYSDEEYEYRHVMLPKQLSKLVPASHLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|742240187|ref|XP_010904029.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Esox lucius]
+MAHKQIYYSDKYNDEHYEYRHVVLPREMAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKN
+>gi|1195685646|ref|XP_021036319.1|cyclin-dependent kinases regulatory subunit 2 [Mus caroli]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQPK
+>gi|113678784|ref|NP_001038434.1|cyclin-dependent kinases regulatory subunit 1 [Danio rerio] >gi|528516008|ref|XP_005170517.1| cyclin-dependent kinases regulatory subunit 1 isoform X1 [Danio rerio]
+KQIYYSDKYSDEEYEYRHVMLPKQLSKLVPSSHLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|821030154|ref|XP_012353353.1|PREDICTED: uncharacterized protein LOC105737969 [Nomascus leucogenys]
+QIYYLDKYNYEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGIQQSQGWVHYMIREPELHILLFRGPLPKKPK
+>gi|741919672|ref|XP_010801233.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Bos taurus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPE
+>gi|226372430|gb|ACO51840.1|Cyclin-dependent kinases regulatory subunit 2 [Rana catesbeiana]
+MSFKNIYYSDKYTDEKYEYRHVMLPKELAKQVPKTHLMSEEEWRRLGVQQSLGWAHYMIHEPEPHILLFRRPLPKDQQK
+>gi|831528832|ref|XP_012720256.1|cyclin-dependent kinases regulatory subunit 1 [Fundulus heteroclitus]
+MSKKQIFYSDKYNDDEFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|928063353|ref|XP_013881235.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Austrofundulus limnaeus]
+MSKKLIYYSDKYNDEEFEYRHVVLPKQLSKLVPTTHLMAEEEWRGLGVQQSEGWIHYMIHKPEPHILLFRRPLPKQ
+>gi|1158899645|ref|XP_020354528.1|cyclin-dependent kinases regulatory subunit 1-like [Oncorhynchus kisutch] >gi|1211364268|ref|XP_021459525.1| cyclin-dependent kinases regulatory subunit 1-like [Oncorhynchus mykiss] >gi|221219826|gb|ACM08574.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|221220080|gb|ACM08701.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|221221546|gb|ACM09434.1| Cyclin-dependent kinases regulatory subunit 1 [Salmo salar] >gi|642087976|emb|CDQ83251.1| unnamed protein product [Oncorhynchus mykiss]
+MSKKEIYYSDKYTDEAFEYRHVMLPKQLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|585723935|ref|XP_006903514.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Elephantulus edwardii]
+MAHRQIYYSDKYFDEHYEYRHVMLPRELSKHVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1101573669|ref|XP_018952505.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Cyprinus carpio]
+MAHKQIYYSDKYTDDLYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKK
+>gi|1308371334|ref|XP_023133513.1|cyclin-dependent kinases regulatory subunit 1-like [Amphiprion ocellaris]
+MSKKQIFYSDKYNDDEFEYRHVVLPKQLSKLVPTSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|696995969|ref|XP_009564655.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Cuculus canorus] >gi|676593606|gb|KFO80207.1| Cyclin-dependent kinases regulatory subunit 2 [Cuculus canorus]
+MAQKQIYYSDKYFDEEYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|573877916|ref|XP_006627196.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Lepisosteus oculatus]
+MAHKQIYYSDKYTDDHYEYRHVMLPKELAKQVPKTHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLQKE
+>gi|163914375|ref|NP_001106274.1|CDC28 protein kinase regulatory subunit 2 L homeolog [Xenopus laevis] >gi|126631304|gb|AAI33805.1| Cks2b protein [Xenopus laevis] >gi|1050399009|gb|OCU01199.1| hypothetical protein XELAEV_18006987mg [Xenopus laevis]
+MSFKNIYYSDKYTDEHYEYRHVVLPKELAKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|47225594|emb|CAG07937.1|unnamed protein product, partial [Tetraodon nigroviridis]
+MAKKQIYYSDKYNDEEFEYRHVVLPKELSKLVPSSHLMSEDEWRGLGVQQSQGWMHYMIHNPEPHILLFRRPLSK
+>gi|1338739782|ref|XP_023657706.1|cyclin-dependent kinases regulatory subunit 2 [Paramormyrops kingsleyae]
+MAHKQIYYSDKYNDEHYEYRHVVLPRELAKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHDPEPHILLFRRPLPKQ
+>gi|674089635|ref|XP_008852808.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Nannospalax galili]
+MAQKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKEQQK
+>gi|225712426|gb|ACO12059.1|Cyclin-dependent kinases regulatory subunit 1 [Lepeophtheirus salmonis] >gi|290562075|gb|ADD38434.1| Cyclin-dependent kinases regulatory subunit 1 [Lepeophtheirus salmonis]
+MASKNIYYSEKYFDDKYEYRHVMLPKELAKLVPKTHLMSESEWRNLGVQQSQGWVHYMAHEPEPHILLFRRPM
+>gi|1083276771|ref|XP_018586609.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Scleropages formosus]
+MSKKQIYYSDKYTDDEFEYRHVVLPEHLSKLCPTSHLMSEQEWRNLGVQQSQGWIHYMIHKPEPHVLLFRRPLPKE
+>gi|795172270|ref|XP_011842830.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X1 [Mandrillus leucophaeus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPDFPH
+>gi|148682329|gb|EDL14276.1|mCG1026411 [Mus musculus]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEQHILLFRRPLPKEQQK
+>gi|700410138|ref|XP_009959077.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Leptosomus discolor] >gi|677381842|gb|KFQ04393.1| Cyclin-dependent kinases regulatory subunit 2 [Leptosomus discolor]
+MAQKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKNEQK
+>gi|597778413|ref|XP_007252842.1|cyclin-dependent kinases regulatory subunit 2 [Astyanax mexicanus]
+MSHKQIYYSDKYNDDLYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPK
+>gi|926652977|ref|XP_013793068.1|cyclin-dependent kinases regulatory subunit-like [Limulus polyphemus]
+MSRKNIYYSDKYYDDKYEYRHVMLPKDIAKLVPKTRLMSETEWRSLGVQQSQGWIHYMMHEPEPHILLFRRPI
+>gi|1042303684|ref|XP_017348210.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Ictalurus punctatus]
+MAHKQIYYSDKYNDDLYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKQ
+>gi|1041070917|ref|XP_017263043.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Kryptolebias marmoratus] >gi|1041070919|ref|XP_017263044.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Kryptolebias marmoratus]
+MSRSQIYYSDRYNDDQFEYRHVVLPREMAKYVPRSHLMSEEEWRQLGVQQSQGWIHYMIHEPEPHILLFRRPLPK
+>gi|224088667|ref|XP_002192954.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Taeniopygia guttata]
+MANKQIYYSNKYSDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|529440293|ref|XP_005239890.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Falco peregrinus] >gi|541961262|ref|XP_005436254.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Falco cherrug]
+MANKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRQLGIQQSFGWVHYMIHEPEPHILLFRRPLPKNEQK
+>gi|1357698664|ref|XP_024135258.1|cyclin-dependent kinases regulatory subunit 1-like [Oryzias melastigma]
+MSKNQIFYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMSEDEWRGIGVQQSKGWIHYMIHKPEPHILLFRRPLPKE
+>gi|1343021667|ref|XP_023860481.1|cyclin-dependent kinases regulatory subunit 1-like [Salvelinus alpinus]
+MSKKEIYYSDKYTDEAFEYRHVMLPKPLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|568249487|gb|ETN59287.1|cyclin-dependent kinaseregulatory subunit [Anopheles darlingi]
+MSVKDIYYSDKYYDDEYEYRHVVLPKDIAKLVPKTHLMTENEWRSIGVQQSRGWVHYMIHQPEPHILLFRRPITK
+>gi|170029846|ref|XP_001842802.1|cyclin-dependent kinaseregulatory subunit [Culex quinquefasciatus] >gi|170059096|ref|XP_001865212.1| cyclin-dependent kinaseregulatory subunit [Culex quinquefasciatus] >gi|167864784|gb|EDS28167.1| cyclin-dependent kinaseregulatory subunit [Culex quinquefasciatus] >gi|167877907|gb|EDS41290.1| cyclin-dependent kinaseregulatory subunit [Culex quinquefasciatus]
+MSVKDIYYSDKYFDDEYEYRHVVLPKDIAKLVPKTHLMTETEWRSIGVQQSRGWIHYMIHQPEPHILLFRRPITK
+>gi|768358221|ref|XP_011576188.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Aquila chrysaetos canadensis]
+MAQKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDKQK
+>gi|929237030|ref|XP_013994356.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Salmo salar] >gi|1158872900|ref|XP_020340368.1| cyclin-dependent kinases regulatory subunit 2 [Oncorhynchus kisutch] >gi|1343037671|ref|XP_023868932.1| cyclin-dependent kinases regulatory subunit 2 [Salvelinus alpinus]
+MSHKQIYYSDKYNDEHYEYRHVVLPREMVKQVPKSHLMSEDEWRRMGVQQSLGWVHYMIHEPEPHILLFRRPLPKN
+>gi|657739627|ref|XP_008335028.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cynoglossus semilaevis]
+MSKKQIYYSDKYNDDDFEYRHVVLPKQLSKLVPSAHLMTEEEWRGLGVQQSQGWTHYMIHKPEPHILLFRRPLPKE
+>gi|1049266071|ref|XP_017573075.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Pygocentrus nattereri] >gi|1049266073|ref|XP_017573076.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Pygocentrus nattereri]
+MSKKQIYYSDKYTDDEYEYRHVMLPKHLSKLVPSSHLMSEEEWRGLGVQQSQGWVHYMIHKPEPHILLFRRPLSKE
+>gi|929120512|ref|XP_014071882.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Salmo salar]
+MSKKEMYYSDKYTDEAFEYRHVMLPKQLSKLVPTSHLMTEDEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|729741452|ref|XP_010566999.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Haliaeetus leucocephalus]
+MAQKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|594692324|ref|XP_007193469.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Balaenoptera acutorostrata scammoni]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWMRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1020466982|ref|XP_016138471.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus grahami] >gi|1020466984|ref|XP_016138472.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus grahami] >gi|1025039361|ref|XP_016327184.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus anshuiensis] >gi|1025039365|ref|XP_016327186.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus anshuiensis]
+KQIYYSDKYSDEEYEYRHVMLPKQLSKLVPASNLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|1207827400|gb|OWK05279.1|hypothetical protein Celaphus_00001946 [Cervus elaphus hippelaphus]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPGS----FLREKPRPPAK
+>gi|47115197|emb|CAG28558.1|CKS2, partial [Homo sapiens]
+MAHKQIYYSDKYFDEHYEYLHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1025033682|ref|XP_016325655.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Sinocyclocheilus anshuiensis] >gi|1025287615|ref|XP_016374570.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Sinocyclocheilus rhinocerous]
+MAHKQIYYSDKYTDDLYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKQ
+>gi|260814570|ref|XP_002601987.1|hypothetical protein BRAFLDRAFT_59154 [Branchiostoma floridae] >gi|229287292|gb|EEN57999.1| hypothetical protein BRAFLDRAFT_59154 [Branchiostoma floridae]
+MAHKHIYYSDKYYDDKFEYRHVMLPKELAKLVPKSHLMSETEWRGIGVQQSQGWCHYMKHEPEPHILLFRRPITTPPEQ
+>gi|1343948776|ref|XP_023810325.1|cyclin-dependent kinases regulatory subunit 1 [Oryzias latipes]
+MSKNQIFYSDKYNDEEFEYRHVVLPKQLSKLVPSSHLMSEEEWRGIGVQQSKGWIHYMIHKPEPHILLFRRPLPKE
+>gi|831325414|ref|XP_012695777.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Clupea harengus]
+MSQKQIYYSDKYTDEHYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPK
+>gi|118777340|ref|XP_307855.3|AGAP009442-PA [Anopheles gambiae str. PEST] >gi|116132904|gb|EAA03636.4| AGAP009442-PA [Anopheles gambiae str. PEST]
+MSVKDIYYSDKYYDDEYEYRHVVLPKDIAKLVPKTHLMTENEWRAIGVQQSRGWVHYMVHQPEPHILLFRRPITK
+>gi|1126168064|ref|XP_019615925.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Branchiostoma belcheri]
+MAHKHIYYSDKYYDDKFEYRHVMLPKELAKLVPKSHLMSESEWRGIGVQQSQGWCHYMKHEPEPHILLFRRPITTPP
+>gi|1126273183|ref|XP_019658603.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X3 [Ailuropoda melanoleuca]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEP
+>gi|1007779078|ref|XP_015826912.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Nothobranchius furzeri]
+MSKKQIFYSDKYNDDEFEYRHVVLPKQLSKLVPTSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLTKE
+>gi|1004001224|ref|XP_015704842.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Coturnix japonica]
+MAHKEIYYSDKYFDEQYEYRHVMLPRELLKRMPKTHLLSEEEWRSLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDEQK
+>gi|1025363734|ref|XP_016395853.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus rhinocerous] >gi|1025363738|ref|XP_016395854.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus rhinocerous] >gi|1025363740|ref|XP_016395855.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Sinocyclocheilus rhinocerous]
+KQIYYSDKYSDEEYEYRHVMLPKQLSKLVPDSNLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|348504648|ref|XP_003439873.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Oreochromis niloticus] >gi|499001726|ref|XP_004555052.1| cyclin-dependent kinases regulatory subunit 1 [Maylandia zebra] >gi|548380029|ref|XP_005734159.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Pundamilia nyererei] >gi|554820325|ref|XP_005920902.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Haplochromis burtoni] >gi|584011166|ref|XP_006800505.1| PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Neolamprologus brichardi]
+MSKKQIFYSDKYTDDDFEYRHVVLPKQLSKLVPSSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPK
+>gi|1331831410|gb|PNI90678.1|CKS1B isoform 7 [Pan troglodytes] >gi|1331908451|gb|PNJ56485.1| CKS1B isoform 2 [Pongo abelii]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEP
+>gi|18158610|gb|AAK91295.2|AF395863_1CDC28 protein kinase 1-like protein [Branchiostoma belcheri]
+MAHKHIYYSDKYYDDKFEYRHVMLPKELAKLVPKSHLMSESEWRGIGVQQSQGWCHYMKHEPEPHILLFRRPKTTTPE
+>gi|699666804|ref|XP_009899773.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Picoides pubescens] >gi|678201129|gb|KFV68111.1| Cyclin-dependent kinases regulatory subunit 2 [Picoides pubescens]
+MANKQIYYSDKYFDEQYEYRHVTLPKELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDVQK
+>gi|47219471|emb|CAG10835.1|unnamed protein product, partial [Tetraodon nigroviridis]
+MAHKQIYYSDKYDDDKYEYRHVMLPKEIAKRVPKTHLMSETEWRNLGVQQSQGWVHYMIHQPEPHILSF
+>gi|1022772127|gb|KZS16322.1|Cyclin-dependent kinases regulatory subunit 1 [Daphnia magna]
+MSYKNIYYSDKYYDDKYEYRHVQLPKDLAKLVPKSHLMTEAEWRGLGVQQSQGWIHYMIHQPEPHILLFRRPITTPP
+>gi|1024949764|ref|XP_016295570.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Sinocyclocheilus anshuiensis] >gi|1025370084|ref|XP_016397558.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Sinocyclocheilus rhinocerous] >gi|1101544161|ref|XP_018937901.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Cyprinus carpio] >gi|966699078|gb|KTG31319.1| hypothetical protein cypCar_00016823 [Cyprinus carpio]
+MAHKQIYYSDKYTDDLYEYRHVVLPRELAKQVPKSHLMTEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKQ
+>gi|1083271396|ref|XP_018606745.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Scleropages formosus]
+MAQKQIYYSDKYNDEYYEYRHVVLPRELAKQVPKSHLMSEDEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPK
+>gi|1316165638|ref|XP_023228148.1|cyclin-dependent kinases regulatory subunit 2-like [Centruroides sculpturatus]
+MSNKNIYYSDKYYDDKYEYRHVMLPKELAQLVPKTHLMSEEEWRKLGVQQSLGWIHYMIHEPEPHILLFRRPIQGKP
+>gi|831324148|ref|XP_012695081.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Clupea harengus]
+MSKNQIYYSDKYTDEDHEYRHVMLPKQLSKLVPQSHLMTEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLPKE
+>gi|148681025|gb|EDL12972.1|mCG117418 [Mus musculus]
+MSHKQIYYSDIYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRKLGVQQSQGWLHYMIHEPEPHC
+>gi|351704383|gb|EHB07302.1|Cyclin-dependent kinases regulatory subunit 1, partial [Heterocephalus glaber] >gi|1040298121|gb|OBS83099.1| hypothetical protein A6R68_22877, partial [Neotoma lepida]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEP
+>gi|1108477988|emb|CRK94338.1|CLUMA_CG007853, isoform A [Clunio marinus]
+AQSQIYYSDKYNDDEFEYRHVMLPKELARLVPKNHLMTESEWRGIGVQQSRGWVHYMIHQPEPHVLLFRRRLEKSQK
+>gi|584049354|ref|XP_006769404.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Myotis davidii]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEERRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQQK
+>gi|1129991357|ref|XP_019752529.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Hippocampus comes]
+MSKKDIYYSDKYNDDAFEYRHVMLPKQLSKLVPASHLMSEEEWRGLGVQQSQGWIHYMIHKPEPHILLFRRPLSK
+>gi|1159634257|gb|OPJ67540.1|cyclin-dependent kinases regulatory subunit 2 [Patagioenas fasciata monilis]
+MANKQIYYSDKYFDEQYEYRHVMLPRELSKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLAKDEQK
+>gi|1147280180|ref|XP_020021709.1|cyclin-dependent kinases regulatory subunit 1 isoform X1 [Castor canadensis]
+MSHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEP
+>gi|585709445|ref|XP_006899595.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Elephantulus edwardii]
+MAHKQIYYSDKYFDEHYEYRHVMLPRELSKQVPKTHLMSEEERRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDQEK
+>gi|1121093575|ref|XP_019537424.1|PREDICTED: cyclin-dependent kinases regulatory subunit [Aedes albopictus] >gi|1121148237|ref|XP_019561118.1| PREDICTED: cyclin-dependent kinases regulatory subunit [Aedes albopictus]
+MSVKDIYYSDKYYDDEYEYRHVVLPKDIAKLVPKTHLMTENEWRSIGVQQSRGWIHYMIHQPEPHILLFRRP
+>gi|1000196114|gb|KXJ70825.1|hypothetical protein RP20_CCG022393 [Aedes albopictus]
+MSVKDIYYSDKYYDDEYEYRHVVLPKDIAKLVPKTHLMTENEWRSIGVQQSRGWIHYMIHQPEPHILLFRRP
+>gi|157106355|ref|XP_001649286.1|cyclin-dependent kinases regulatory subunit [Aedes aegypti] >gi|108879887|gb|EAT44112.1| AAEL004492-PA [Aedes aegypti]
+MSVKDIYYSDKYYDDEYEYRHVVLPKDIAKLVPKTHLMTENEWRSIGVQQSRGWIHYMIHQPEPHILLFRRP
+>gi|675380837|gb|KFM73739.1|Cyclin-dependent kinases regulatory subunit 1, partial [Stegodyphus mimosarum]
+MADKNIYYSDKYYDDKFEYRHVIVPKEIAKLIPKTHLMTENEWRSLGVQQSQGWIHYMIHDPEPHILLFRRPL
+>gi|443695643|gb|ELT96509.1|hypothetical protein CAPTEDRAFT_164893 [Capitella teleta]
+MAEKQIYYSDKYQDGDYEYRHVMLPKEIAKLVPKTHLMSEAEWRSIGVQQSQGWQHYMVHEPEPHILLFRR
+>gi|1173906133|gb|OQR73410.1|cyclin-dependent kinases regulatory subunit 1-like [Tropilaelaps mercedesae]
+MASNEIFYSDKYFDESFEYRHVVLPKEVASRVPRTHLMSESEWRNIGVQQSHGWIHYMIHEPEPHILLFRRPLPQ
+>gi|634863513|ref|XP_007944520.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Orycteropus afer afer]
+MAHKHIYYSDKHFDEHYEYRHVMLPRELSKQVPKTHLMSEEEWRRLGVQQSLGWVHYMIHEPEPHILLFRRPLPRDQQK
+>gi|974068295|ref|XP_015231679.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like [Cyprinodon variegatus]
+MSKKQIFYSDKYNDDEFEYRHVVLPKQLSKLVPSSHLMKEEEWRGLGVQQSVGWIHYMIHKPEPHILLFRRPLPKE
+>gi|762100867|ref|XP_011432896.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 [Crassostrea gigas] >gi|405965052|gb|EKC30480.1| Cyclin-dependent kinases regulatory subunit 1 [Crassostrea gigas]
+MSADQISYSEKYYDEKFEYRHVILPNDIAKLVPKNHLMTETEWRNLGVQQSPGWIHYMVHTPEPHILLFRRPLPQS
+>gi|223006704|gb|ACM69341.1|CDC28 protein kinase regulatory subunit 1B [Scylla paramamosain]
+RIYYSDRYYDDKYEYRHVMLPKDLSKLVPKTHLMTESEWRSLGVQQSQGWVHYMIHEPEPHILLFRRPITTPPPK
+>gi|676479520|ref|XP_009061772.1|hypothetical protein LOTGIDRAFT_194309 [Lottia gigantea] >gi|556098928|gb|ESO87580.1| hypothetical protein LOTGIDRAFT_194309 [Lottia gigantea]
+MSTRQIYYSDKYFDEEFEYRHVMLPKDVAKMVPKNHLMSEAEWRSIGVQQSHGWIHYMKHEPEPHILLFRRKV
+>gi|259089337|ref|NP_001158707.1|cyclin-dependent kinases regulatory subunit 1 [Oncorhynchus mykiss] >gi|225704624|gb|ACO08158.1| Cyclin-dependent kinases regulatory subunit 2 [Oncorhynchus mykiss]
+MSHKQIYYSDKYNDEHYEYRHVVLPREMVKQVPKSHLMSEDEWGRMGVQQSLGWVHYMIHEPEPHILLFRRPLPKN
+>gi|908455512|ref|XP_013083675.1|PREDICTED: cyclin-dependent kinases regulatory subunit-like [Biomphalaria glabrata]
+KQIYYSDKYTDDEYEYRHVLLPKEIAKLVPKTHLMSETEWRSIGVQQSHGWVHYMRHDPEPHVLLFRRKLPDK
+>gi|1201912261|ref|XP_021237065.1|cyclin-dependent kinases regulatory subunit 2 [Numida meleagris]
+MAHKDIYYSDKYFDEQYEYRHVMLPRELLKRMPKTHLLSEEEWRSLGVQQSLGWVHYMIHEPEPHILLFRRPLPK
+>gi|1316156771|ref|XP_023223477.1|cyclin-dependent kinases regulatory subunit-like [Centruroides sculpturatus]
+MSRHNIYYSDKYYDDQYEYRHVMLPKDLAKMVQKSHLMSETEWRSLGVQQSQGWVHYMIHEPEPHILLFRRPLQGPP
+>gi|1188085675|ref|XP_020788884.1|cyclin-dependent kinases regulatory subunit 2-like [Boleophthalmus pectinirostris]
+MSKKQIYYSDKYTDDDFEYRHVVLPKQLAKLVPTSHLMTEEEWRGLGVQQSPGWMHYMVHKPEPHILLFRRPLPKDLKE
+>gi|1083300611|ref|XP_018599496.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Scleropages formosus]
+MAQKQIYYSDKYNDDHYEYRHVVLPRELAKQVPKSHLMSEEEWRRLGVQQSLGWVHYMIHDPEPHILLFRRPLPKN
+>gi|1169006027|ref|XP_020456492.1|cyclin-dependent kinases regulatory subunit 2-like [Monopterus albus]
+MSRSQIYYSDRYKDDHYEYRHVVLPREMAKYVPRSHLMSEDEWRQLGVQQSQGWIHYMIHEPEPHILLFRRPLPKN
+>gi|1005969639|ref|XP_015792561.1|PREDICTED: cyclin-dependent kinases regulatory subunit-like [Tetranychus urticae]
+MPSKNIYYSDKYYDDKYEYRHVTLPNEIAKMVPKTHLMSEDEWRSLGIQQSQGWIHYMIHEPEPHILLFRRPLKGQP
+>gi|348528091|ref|XP_003451552.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Oreochromis niloticus]
+MSRNQIYYSDRYSDDHYEYRHVVLPREMAKYIPKSHLMSEEEWRQLGVQQSQGWIHYMIHEPEPHILLFRRPLPPK
+>gi|1168966|sp|P41384.1|CKS1_PATVURecName: Full=Cyclin-dependent kinases regulatory subunit; AltName: Full=SUC1 homolog >gi|431959|emb|CAA82207.1| suc1 homologue [Patella vulgata]
+MSARQIYYSDKYFDEDFEYRHVMLPKDIAKMVPKNHLMSEAEWRSIGVQQSHGWIHYMKHEPEPHILLFRRKV
+>gi|692314717|ref|NP_001289047.1|cyclin-dependent kinases regulatory subunit 2 [Gallus gallus]
+MAHKDIYYSDKYFDEQYEYRHVMLPRELLKRMPKAHLLSEEEWRSLGVQQSLGWVHYMIHEPEPHILLFRRPLPKDDQK
+>gi|50344876|ref|NP_001002110.1|cyclin-dependent kinases regulatory subunit 2 [Danio rerio] >gi|47938020|gb|AAH71486.1| Zgc:86839 [Danio rerio]
+MSHKQIYYSDKYTDDHFEYRHVVLPRELAKQVPKSHLMSEDECRRLGVQQSLGWVHYMIHEPESHILLFRRPLPK
+>gi|1131237224|ref|XP_004318293.2|PREDICTED: cyclin-dependent kinases regulatory subunit 1-like, partial [Tursiops truncatus]
+FCYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|1242776352|ref|XP_022327822.1|cyclin-dependent kinases regulatory subunit 1-like [Crassostrea virginica]
+MSADQISYSEKYYDEKFEYRHVILPNDIAKLVPKNHLMTETEWRNLGVQQSPGWIHYMVHTPEPHILLFRRPLPQS
+>gi|1209988944|ref|XP_021387917.1|cyclin-dependent kinases regulatory subunit 1 isoform X1 [Lonchura striata domestica]
+VGERGGRPGAGYRHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPEK
+>gi|1160138391|ref|XP_020370383.1|cyclin-dependent kinases regulatory subunit 2 [Rhincodon typus]
+MANKQIYYSDKYYDDQYEYRHVMLPKELAKQVPKTHLMSEDEWRKLGVQQSLGWVHYMMHEPEPHILLFRRLLSKDQEK
+>gi|326935140|ref|XP_003213636.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2 [Meleagris gallopavo]
+MAHKDIYYSDKYFDEQYEYRHVMLPRELLKRMPKAHLLSEEEWRSLGVQQSLGWVHYMIHEPEPHILLFRRPLPK
+>gi|943967756|ref|XP_014365817.1|PREDICTED: cyclin-dependent kinases regulatory subunit [Papilio machaon] >gi|930668548|gb|KPJ09554.1| Cyclin-dependent kinases regulatory subunit [Papilio machaon]
+MPARDIYYSDKYYDDEFEYRHVVLPKDMVKLVPKNHLMSEQEWRNIGVQQSQGWVHYMTHQPEPHILLFRRKITTQQKK
+>gi|928032592|ref|XP_013864791.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Austrofundulus limnaeus] >gi|928032594|ref|XP_013864793.1| PREDICTED: cyclin-dependent kinases regulatory subunit 2-like [Austrofundulus limnaeus]
+MSRSQIYYSDRYSDDEFEYRHVVLPWEMAKYIPRSHLMSEEEWRQLGVQQSIGWIHYMIHEPEPHILLFRRPLPK
+>gi|1126273181|ref|XP_019658602.1|PREDICTED: cyclin-dependent kinases regulatory subunit 1 isoform X2 [Ailuropoda melanoleuca]
+RHVMLPKDIAKLVPKTHLMSESEWRNLGVQQSQGWVHYMIHEPEPHILLFRRPLPKKPKK
+>gi|1229130171|ref|XP_022095221.1|cyclin-dependent kinases regulatory subunit-like [Acanthaster planci]
+MAHKEIYYSDKYFDDTYEYRHVMLPKQIAKLVHKGHLMTEAEWRSLGVQQSQGWVHYMAHEPEPHILLFRRP
+>gi|1341054661|ref|XP_023802822.1|cyclin-dependent kinases regulatory subunit 1 isoform X2 [Cyanistes caeruleus]
+MAHKQIYYSDKYDDEEFEYRHVMLPKDIAKLVPKTHLLSESEWRNLGVQQSQGWVHYMIHE-APHPAL
+>gi|548335323|ref|XP_005720441.1|PREDICTED: cyclin-dependent kinases regulatory subunit 2-like isoform X2 [Pundamilia nyererei]
+MSRNQIYYSNRYNDDHYEYRHVVLPREMTKYIPKSHLMSEDEWRQLGVQQSQGWIHYMIHEPEPHILLFRRPLPPK
+>gi|675868904|ref|XP_009020012.1|hypothetical protein HELRODRAFT_185003 [Helobdella robusta] >gi|555699371|gb|ESO02604.1| hypothetical protein HELRODRAFT_185003 [Helobdella robusta]
+MSQKDIYYSDKYTDEFYEYRHVMLPKEIAKLVPKNHLMSEDEWRGIGVQQSQGWQHYMMHGPEPHILLFRRPL
+>gi|291225626|ref|XP_002732788.1|PREDICTED: cyclin-dependent kinases regulatory subunit-like [Saccoglossus kowalevskii]
+MSSKHIYYSDKYFDEKFEYRHVMLPKDIAKLVPDSHLMSEAEWRGIGVQQSQGWIHYMKHSPEPHILLFRR

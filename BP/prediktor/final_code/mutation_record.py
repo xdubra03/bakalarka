@@ -40,7 +40,7 @@ class Etree(Tree):
         structure = parser.get_structure(name,name+".pdb")
         model = structure[0]
         try:
-            chain = model['A']
+            chain = model[chain_type]
         except KeyError as error:
             print(error.reason)
         residue_list = Selection.unfold_entities(chain,'A')
@@ -81,16 +81,16 @@ class Etree(Tree):
 		 						count_pos +=1
 		 						if(count_pos == residue_start+index):
 		 							pos = i
-		 							print(word[i])
+		 							#print(word[i])
 		 							break
 		 			else:
-		 				print("Residue start: " + str(residue_start))
-		 				print("Index mutation:" + str(index))
+		 				#print("Residue start: " + str(residue_start))
+		 				#print("Index mutation:" + str(index))
 		 				count_pos = 0
 		 				if(residue_start < 0):
-		 					chain_res = index + abs(residue_start) - 1#+residue_start #+ abs(residue_start) + abs(residue_start) -1
+		 					chain_res = index + abs(residue_start)# - 1+residue_start #+ abs(residue_start) + abs(residue_start) -1
 		 				elif (residue_start == 1):
-		 					chain_res= index+residue_start
+		 					chain_res= index+residue_start-1
 		 				else:
 		 					chain_res= index+residue_start-1
 
@@ -99,11 +99,11 @@ class Etree(Tree):
 		 						count_pos +=1
 		 						if(count_pos == chain_res):
 		 							pos = i
-		 							print(chain_res)
-		 							print("ACID: " + str(word[i]))
+		 							#print(chain_res)
+		 							#print("ACID: " + str(word[i]))
 		 							break
 	 		break
-	 	print("POSITION:" + str(pos))
+	 	#print("POSITION:" + str(pos))
 	 	conservation_value = 0
 	 	base_acid = 0
 	 	weights = 0
@@ -321,7 +321,7 @@ class MutationRecord():
         structure = parser.get_structure(name,name+".pdb")
         model = structure[0]
         try:
-            chain = model['A']
+            chain = model[chain_type]
         except KeyError as error:
             print(error.reason)
         residue_list = Selection.unfold_entities(chain,'A')
@@ -372,19 +372,25 @@ class MutationRecord():
     #run standalone BLASTP for searching homologue sequences
     def run_blast(self):
         """search homologue sequences with BLASTP"""
-        FNULL = open(os.devnull, 'w')
-    	subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'],stdout=FNULL, stderr=subprocess.STDOUT)
-        FNULL.close()
+        #FNULL = open(os.devnull, 'w')
+        if(os.path.exists(self.pdb_id+'.xml') and os.path.getsize(self.pdb_id+'.xml') > 0):
+            pass
+    	else:
+            subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'], stderr=subprocess.STDOUT)
+        #FNULL.close()
 
     #run CLUSTAL OMEGA to create multiple sequence alignement
     def run_clustal(self):
         """create multiple sequence alignement with CLUSTAL"""
-    	in_file = self.pdb_id + ".txt"
-    	out_file = self.pdb_id + "clustal.fasta"
-        FNULL = open(os.devnull, 'w')
-    	clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
-    	subprocess.call(['./tools/clustalo','-i','%s'%in_file,'--outfmt=vie','-o','%s'%out_file,'--auto','-v','--force'],stdout=FNULL, stderr=subprocess.STDOUT)
-        FNULL.close()
+        if(os.path.exists(self.pdb_id+'clustal.fasta') and os.path.getsize(self.pdb_id+'clustal.fasta') > 0):
+            pass
+        else:
+    	    in_file = self.pdb_id + ".txt"
+    	    out_file = self.pdb_id + "clustal.fasta"
+            FNULL = open(os.devnull, 'w')
+    	    clustalomega_cline = ClustalOmegaCommandline(infile=in_file, outfile=out_file, verbose=True, auto=True)
+    	    subprocess.call(['./tools/clustalo','-i','%s'%in_file,'--outfmt=vie','-o','%s'%out_file,'--auto','-v','--force'],stdout=FNULL, stderr=subprocess.STDOUT)
+            FNULL.close()
 
     #create newick file with phylogenetic tree for conservation
     def create_newick_file(self):
@@ -422,7 +428,7 @@ class MutationRecord():
 
         #compute conservation score
         conservation_score = t.compute_conservation(clustal_file,residue_start,self.position,rootWeightsArray,self.wild_type)
-        print(conservation_score)
+        #print(conservation_score)
         return conservation_score
 
     #encode conservation score to int value
@@ -462,25 +468,25 @@ class MutationRecord():
 		 			#if(word[0] == 'M'):
 		 			#		count_pos -=1#-residue_start+1
                     if(residue_start > len(word)):
-                        print(residue_start)
-                        print(index)
+                        #print(residue_start)
+                        #print(index)
                         count_pos = residue_start
-                        print(count_pos)
+                        #print(count_pos)
                         for i in range(0,len(word),1):
                             if(word[i] != '-'):
                                 count_pos +=1
                                 if(count_pos == residue_start+index):
                                     pos = i
-                                    print(word[i])
+                                    #print(word[i])
                                     break
                     else:
-                        print(residue_start)
-                        print(index)
+                        #print(residue_start)
+                        #print(index)
                         count_pos = residue_start
                         if(residue_start < 0):
-                            chain_res = index#+residue_start #+ abs(residue_start) + abs(residue_start) -1
+                            chain_res = index + abs(residue_start)#+residue_start #+ abs(residue_start) + abs(residue_start) -1
                         elif (residue_start == 1):
-                            chain_res= index+residue_start
+                            chain_res= index+residue_start-1
                         else:
                             chain_res= index+residue_start-1
 
@@ -490,10 +496,10 @@ class MutationRecord():
                                 if(count_pos == chain_res):
                                     pos = i
 		 							#print(pos)
-                                    print("ACID:" + word[i])
+                                    #print("ACID:" + word[i])
                                     break
             break
-        print(pos)
+        #print(pos)
         return pos
 
     #create sequences file

@@ -57,10 +57,10 @@
 \contentsline {section}{\numberline {8.2}Pr\IeC {\'\i }prava muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu v Pythone}{29}{section.8.2}
 \contentsline {section}{\numberline {8.3}Testovanie met\IeC {\'o}d strojov\IeC {\'e}ho u\IeC {\v c}enia v Pythone}{30}{section.8.3}
 \contentsline {section}{\numberline {8.4}Ensemble syst\IeC {\'e}m v Pythone}{30}{section.8.4}
-\contentsline {chapter}{\numberline {9}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{34}{chapter.9}
-\contentsline {section}{\numberline {9.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{35}{section.9.1}
-\contentsline {chapter}{\numberline {10}Z\IeC {\'a}v\IeC {\v e}r}{37}{chapter.10}
-\contentsline {chapter}{Literatura}{38}{chapter*.2}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{41}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{42}{section*.4}
+\contentsline {chapter}{\numberline {9}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{33}{chapter.9}
+\contentsline {section}{\numberline {9.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{34}{section.9.1}
+\contentsline {chapter}{\numberline {10}Z\IeC {\'a}v\IeC {\v e}r}{36}{chapter.10}
+\contentsline {chapter}{Literatura}{37}{chapter*.2}
+\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{40}{appendix.A}
+\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{41}{section*.4}
 \contentsfinish 

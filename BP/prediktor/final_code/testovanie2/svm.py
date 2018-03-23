@@ -7,14 +7,16 @@ from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 import csv
 from sklearn.metrics import matthews_corrcoef
+import pickle
 
 #train_file = sys.argv[1]
 train_frame0 = pd.read_csv("train200_250_2.csv")
-train_frame1 = pd.read_csv("train250_250.csv")
-train_frame2 = pd.read_csv("train250_200.csv")
-train_frame3 = pd.read_csv("train300_300.csv")
-train_frame4 = pd.read_csv("train300_300_1.csv")
-train_frame5 = pd.read_csv("train300_300_2.csv")
+train_frame1 = pd.read_csv("train250_250_2.csv")
+train_frame2 = pd.read_csv("train250_200_2.csv")
+train_frame3 = pd.read_csv("train200_200_1.csv")
+train_frame4 = pd.read_csv("train250_200.csv")
+train_frame5 = pd.read_csv("train250_250_1.csv")
+train_frame6 = pd.read_csv("train200_200_2.csv")
 
 
 test_file = sys.argv[1]
@@ -32,22 +34,25 @@ cols2 = ['correlation','conservation','polaritychange','chargechange','hydroinde
 cols3 = ['correlation','conservation','polaritychange','chargechange','secondarystruc','sizechange']
 
 colsRes = ['class']
-#dataset 261,300 vsetky parametre
-#dataset 150 150 vsetky parametre
 
+#SVM so vsetkymi parametrami, 4 sety
 trainArr0 = train_frame0.as_matrix(cols)
 trainRes0 = train_frame0.as_matrix(colsRes)
 trainRes0 = trainRes0.ravel()
 
-#dataset 100 150 vsetky parametre
-trainArr1 = train_frame1.as_matrix(cols1)
+trainArr1 = train_frame1.as_matrix(cols)
 trainRes1 = train_frame1.as_matrix(colsRes)
 trainRes1 = trainRes1.ravel()
 
-#dataset 130 100 vsetky parametre
 trainArr2 = train_frame2.as_matrix(cols)
 trainRes2 = train_frame2.as_matrix(colsRes)
 trainRes2 = trainRes2.ravel()
+
+trainArr10 = train_frame6.as_matrix(cols)
+trainRes10 = train_frame6.as_matrix(colsRes)
+trainRes10 = trainRes10.ravel()
+
+
 
 #dataset 150 200 bez hydroindexu
 trainArr3 = train_frame3.as_matrix(cols)
@@ -96,36 +101,57 @@ testRes3 = test_frame.as_matrix(colsRes)
 testRes3 = testRes3.ravel()
 
 #200 250  SVM
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
-classifier.fit(trainArr0, trainRes0)
-results0 = classifier.predict(testArr)
+"""classifier1 = svm.SVC(kernel = 'poly',degree=4,class_weight='balanced')
+classifier1.fit(trainArr0, trainRes0)
+filename = 'svm_model10.sav'
+pickle.dump(classifier1, open(filename, 'wb'))
+results0 = classifier1.predict(testArr)
 #{1: .47, -1: .53 }
 #250 250 SVM
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .5, -1: .5 })
-classifier.fit(trainArr1, trainRes1)
-results1 = classifier.predict(testArr3)
-#200 250 bez asa SVM
-classifier = svm.SVC(kernel = 'linear',class_weight={1: .45, -1: .55 })
-classifier.fit(trainArr6, trainRes6)
-results2 = classifier.predict(testArr2)
+classifier2 = svm.SVC(kernel = 'poly',degree=4,class_weight='balanced')
+classifier2.fit(trainArr1, trainRes1)
+filename = 'svm_model11.sav'
+pickle.dump(classifier2, open(filename, 'wb'))
+results1 = classifier2.predict(testArr)
+#
+# 200 250 bez asa SVM
+classifier3 = svm.SVC(kernel = 'poly',degree=4,class_weight='balanced')
+classifier3.fit(trainArr2, trainRes2)
+filename = 'svm_model12.sav'
+pickle.dump(classifier3, open(filename, 'wb'))
+results2 = classifier3.predict(testArr)
+
+classifier4 = svm.SVC(kernel = 'poly',degree=4,class_weight='balanced')
+classifier4.fit(trainArr10, trainRes10)
+filename = 'svm_model13.sav'
+pickle.dump(classifier4, open(filename, 'wb'))
+results3 = classifier4.predict(testArr)
 #res_frame['predicted1'] = results
 #res_frame.to_csv("majority_voting.csv")
 #print(results)
+"""
+"""rf1 = RandomForestClassifier(max_features='auto',n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+rf1.fit(trainArr3,trainRes3)
+filename = 'rf_model10.sav'
+pickle.dump(rf1, open(filename, 'wb'))
+result0 = rf1.predict(testArr)
 
-rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+rf2 = RandomForestClassifier(max_features='auto',n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+rf2.fit(trainArr4,trainRes4)
+filename = 'rf_model11.sav'
+pickle.dump(rf2, open(filename, 'wb'))
+result2 = rf2.predict(testArr)
+
+rf3 = RandomForestClassifier(max_features='auto',n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+rf3.fit(trainArr5,trainRes5)
+filename = 'rf_model12.sav'
+pickle.dump(classifier1, open(filename, 'wb'))
+result3 = rf3.predict(testArr)
+"""
+rf = RandomForestClassifier(max_features='auto',n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
 rf.fit(trainArr2,trainRes2)
-result0 = rf.predict(testArr)
-
-rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-rf.fit(trainArr3,trainRes3)
-result2 = rf.predict(testArr)
-
-rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-rf.fit(trainArr4,trainRes4)
-result3 = rf.predict(testArr)
-
-rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
-rf.fit(trainArr5,trainRes5)
+filename = 'rf_model13.sav'
+pickle.dump(rf, open(filename, 'wb'))
 result4 = rf.predict(testArr)
 
 #rf = RandomForestClassifier(max_features=0.4,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
@@ -135,10 +161,10 @@ result4 = rf.predict(testArr)
 #rf = RandomForestClassifier(max_features=0.3,n_estimators=400,n_jobs=1,min_samples_leaf=50)
 #rf.fit(trainArr8,trainRes8)
 #result7 = rf.predict(testArr)
-
+"""
 with open('majority_voting4_new.csv', 'w') as f:
 	writer = csv.writer(f, delimiter=',')
-	writer.writerows(zip(results0,results1,results2,result0,result2,result3,result4))
+	writer.writerows(zip(results0,results1,results2,results3,result0,result2,result3))
 
 csv_file = open("majority_voting4_new.csv",'r')
 data_frame = csv.reader(csv_file,delimiter = ',')
@@ -189,3 +215,4 @@ print(str(mcc))
 #test_frame['predicted1'] = results
 #test_frame.to_csv(sys.argv[1])
 #print(test_frame)
+"""

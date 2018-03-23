@@ -43,10 +43,7 @@ names = ['train100_100.csv',
 'train250_200_2.csv',
 'train250_250.csv',
 'train250_250_1.csv',
-'train250_250_2.csv',
-'train300_300.csv',
-'train300_300_1.csv',
-'train300_300_2.csv']
+'train250_250_2.csv']
 
 #names = ['train_data_cleaned_new.csv']
 weights = [{1: .5, -1: .5 },
@@ -85,6 +82,10 @@ weights = [{1: .5, -1: .5 },
             {1: .5, -1: .5 },
             {1: .5, -1: .5 },
             {1: .5, -1: .5 },
+            {1: .5, -1: .5 },
+            {1: .5, -1: .5 },
+            {1: .5, -1: .5 },
+            {1: .5, -1: .5 },
             ]
 
 test_file = sys.argv[1]
@@ -101,23 +102,23 @@ for name in names:
     i = 0
     train_frame = pd.read_csv(name)
     #dataset 150 150 vsetky parametre
-    trainArr = train_frame.as_matrix(cols)
+    trainArr = train_frame.as_matrix(cols3)
     trainRes = train_frame.as_matrix(colsRes)
     trainRes = trainRes.ravel()
 
-    testArr = test_frame.as_matrix(cols)
+    testArr = test_frame.as_matrix(cols3)
     testRes = test_frame.as_matrix(colsRes)
     testRes = testRes.ravel()
 
     test_class = test_frame[['class']]
-    """rf = RandomForestClassifier(max_features=0.3,n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
+    rf = RandomForestClassifier(max_features='auto',n_estimators=1000,n_jobs=1,min_samples_leaf=50,class_weight="balanced")
     rf.fit(trainArr,trainRes)
     result = rf.predict(testArr)
-    """
-    classifier = svm.SVC(kernel = 'poly',class_weight='balanced')
+
+    """classifier = svm.SVC(kernel = 'poly',degree=4,class_weight='balanced')
     classifier.fit(trainArr, trainRes)
     result = classifier.predict(testArr)
-
+    """
     predicted_class = result
     #predicted_class = list(predicted_class)
     #predicted_class.remove(-1)

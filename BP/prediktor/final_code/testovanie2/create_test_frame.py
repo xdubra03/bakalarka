@@ -20,8 +20,8 @@ def create_test_frame(self):
 	positive_values = data_frame['class'] == 1
 	negative_values = data_frame['class'] == -1
 
-	pos_frame = pos_data.ix[random.sample(pos_data.index,250)]
-	neg_frame = neg_data.ix[random.sample(neg_data.index,200)]
+	pos_frame = pos_data.ix[random.sample(pos_data.index,265)]
+	neg_frame = neg_data.ix[random.sample(neg_data.index,265)]
 	print(pos_frame)
 	print(neg_frame)
 	#pos_frame = pos_data.take(np.random.permutation(len(pos_data))[:80])

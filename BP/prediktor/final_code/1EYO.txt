@@ -1,0 +1,12 @@
+>gi|22001563|sp|P58923.1|C7A_CONTURecName: Full=Conotoxin TVIIA
+SCSGRDSRCPPVCCMGLMCSRGKCVSIYGE
+>gi|10120518|pdb|1EYO|AChain A, Solution Structure Of Conotoxin Tviia From Conus Tulipa
+SCSGRDSRCXXVCCMGLMCSRGKCVSIYGE
+>gi|117734|sp|P15472.1|CGS_CONGERecName: Full=Mu-conotoxin GS; Short=CGS
+ACSGRGSRCPPQCCMGLRCGRGNPQKCIGAH
+>gi|610520176|dbj|BAO65615.1|G082_VD_Superfamily_O1_precursor_conopeptide [Conus geographus]
+ACSGRGSRCPPQCCMGLRCGRGNPQKCIGAHED
+>gi|610520222|dbj|BAO65625.1|G092_VD_Superfamily_O1-variant1_precursor_conopeptide [Conus geographus]
+ACSGRGSRCPPQCCMGLTCGR
+>gi|157829862|pdb|1AG7|AChain A, Conotoxin Gs, Nmr, 20 Structures
+ACSGRGSRCXXQCCMGLRCGRGNPQKCIGAHXD
