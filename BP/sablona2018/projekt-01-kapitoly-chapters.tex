@@ -567,7 +567,7 @@ Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je
 
 Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov sme zvolili knižnicu \textbf{Scikit-learn}\footnote{\url{}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a zahŕňa v sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a gradient boosting.
 
-Podľa výsledkov testovania rôznych metód uvedených v časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a RandomFor est. Na začiatku tejto fázy vývoja sme otestovali implementácie týchto metód s knižnice Scikit-learn na dátovej sade, z ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a bola vytvorená náhodným výberom z pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a 206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a hodnotou korelácie vyjadrenej Matthesovým korelačným koeficientom. Výsledky testovania sú prítomné v tabuľke \ref{scikittest}
+Podľa výsledkov testovania rôznych metód uvedených v časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a Random Forest. Na začiatku tejto fázy vývoja sme otestovali implementácie týchto metód z knižnice Scikit-learn na dátovej sade, z ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a bola vytvorená náhodným výberom z pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a 206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a hodnotou korelácie vyjadrenej Matthewsovým korelačným koeficientom (MCC). Výsledky testovania sú prítomné v tabuľke \ref{scikittest}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ | l | c | r | l| }
@@ -579,7 +579,7 @@ Podľa výsledkov testovania rôznych metód uvedených v časti \ref{wekatest} 
 	\caption {Výsledky testovanie algoritmov z knižnice Scikit-learn} \label{scikittest} 
 \end{table}
 
-Tabuľka \ref{scikittest} ukazuje, že v presnosti dosiahla metóda SVM veľmi dobré výsledky a presnosť dosiahla až 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu (MCC), SVM dosiahla hodnoty 0.36 a Random Forest 0.35. Pri testovaní metódy SVM bol použitý polynóm ako jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a vyjadruje vzťah predikovaných a skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a vytvoreného ensemble systému.
+Tabuľka \ref{scikittest} ukazuje, že v presnosti dosiahla metóda SVM veľmi dobré výsledky, presnosť bola 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu, SVM dosiahla hodnoty 0.36 a Random Forest 0.35. Pri testovaní metódy SVM bol použitý polynóm ako jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a vyjadruje vzťah predikovaných a skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a vytvoreného ensemble systému.
 
 \section{Ensemble systém v Pythone}
 
@@ -608,35 +608,36 @@ Základom ensemble systému je použitie viacerých klasifikátorov a spojenie i
 	\caption {Výsledky testovania podsád metódami Random Forest a SVM} \label{pythontest} 
 \end{table}
 
-Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na jednotlivých metódach. Podsady boli testované s prítomnosťou všetkých parametrov, v ďaľšom testovaní sme pristúpili k odstránení niektorých parametrov, ktoré by nemuseli mať taký výrazný vplyv na predikciu. Testovali sme podsady bez parametra zmeny náboja, veľkosti dostupnej povrchovej plochy a kombinácií parametrov zmeny indexu hydrofobicity a dostupnej povrchovej plochy.
+Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na jednotlivých metódach. Podsady boli testované s prítomnosťou všetkých parametrov, v ďaľšom testovaní sme pristúpili k odstránení niektorých parametrov, ktoré by nemuseli mať taký výrazný vplyv na predikciu. Testovali sme podsady bez parametra zmeny náboja, veľkosti dostupnej povrchovej plochy a kombinácií parametrov zmeny indexu hydrofobicity a dostupnej povrchovej plochy. Výsledky testovania sú uvedené v tabuľke \ref{pythontest1}.
 
 \begin{table}[H]
 	\centering
-\begin{tabular}{|c |c |c |c |c |c |c|}
+	\begin{tabular}{|l |c |c |c |c |c |c|}
 	\hline
-Dataset & \multicolumn{3}{c|}{MCC (SVM)} & \multicolumn{3}{c|}{MCC (RF)} \\ \cline{1-7}
-\hline 
-1. & 0.3 & 0.27 & 0.32 & 0.2 & 0.17 & 0.2 \\ \cline{1-7} 
-2. & 0.31 & 0.33 & 0.4 & 0.25 & 0.19 & 0.21\\ \cline{1-7} 
-3. & 0.28 & 0.4 & 0.38 & 0.2 & 0.18 & 0.13 \\ \cline{1-7}
-4. & 0.36 & 0.36 & 0.39 & 0.29 & 0.21 & 0.22 \\ \cline{1-7}
-5. & 0.41 & 0.42 & 0.41 & 0.28 & 0.23 & 0.24\\ \cline{1-7}
-6. & 0.44 & 0.41 & 0.4 & 0.3 & 0.29 & 0.25\\ \cline{1-7}
-7. & 0.4 & 0.29 & 0.39 & 0.26 & 0.28 & 0.3\\ \cline{1-7}
-8. & 0.47 & 0.36 & 0.42 & 0.28 & 0.29 & 0.29\\ \cline{1-7}
-9. & 0.45 & 0.36 & 0.41 & 0.27 & 0.26 & 0.31\\ \cline{1-7}
-10.& 0.36 & 0.42 & 0.46 & 0.29 & 0.28 & 0.32\\ \cline{1-7}
-11.& 0.43 & 0.39 & 0.42 & 0.32 & 0.32 & 0.27\\ \cline{1-7}
-12.& 0.44 & 0.4 & 0.43  & 0.33 & 0.31 & 0.32\\ \cline{1-7}
-13.& 0.41 & 0.36  & 0.41 & 0.27 & 0.28 & 0.33\\ \cline{1-7}
-14.& 0.44 & 0.42 & 0.44 & 0.28 & 0.3 &  0.31\\ \cline{1-7}
-\hline
-\end{tabular}
-\caption {Výsledky testovania podsád bez parametra zmeny náboja, dostupnej povrchovej plochy a kombinácie zmeny indexu hydrofobicity a dostupnej povrchovej plochy} \label{pythontest1} 
+	Dataset & \multicolumn{3}{c|}{MCC (SVM)} & \multicolumn{3}{c|}{MCC (RF)} \\ \cline{1-7}
+	\hline 
+	1. & 0.3 & 0.27 & 0.32 & 0.2 & 0.17 & 0.2 \\ \cline{1-7} 
+	2. & 0.31 & 0.33 & 0.4 & 0.25 & 0.19 & 0.21\\ \cline{1-7} 
+	3. & 0.28 & 0.4 & 0.38 & 0.2 & 0.18 & 0.13 \\ \cline{1-7}
+	4. & 0.36 & 0.36 & 0.39 & 0.29 & 0.21 & 0.22 \\ \cline{1-7}
+	5. & 0.41 & 0.42 & 0.41 & 0.28 & 0.23 & 0.24\\ \cline{1-7}
+	6. & 0.44 & 0.41 & 0.4 & 0.3 & 0.29 & 0.25\\ \cline{1-7}
+	7. & 0.4 & 0.29 & 0.39 & 0.26 & 0.28 & 0.3\\ \cline{1-7}
+	8. & 0.47 & 0.36 & 0.42 & 0.28 & 0.29 & 0.29\\ \cline{1-7}
+	9. & 0.45 & 0.36 & 0.41 & 0.27 & 0.26 & 0.31\\ \cline{1-7}
+	10.& 0.36 & 0.42 & 0.46 & 0.29 & 0.28 & 0.32\\ \cline{1-7}
+	11.& 0.43 & 0.39 & 0.42 & 0.32 & 0.32 & 0.27\\ \cline{1-7}
+	12.& 0.44 & 0.4 & 0.43  & 0.33 & 0.31 & 0.32\\ \cline{1-7}
+	13.& 0.41 & 0.36  & 0.41 & 0.27 & 0.28 & 0.33\\ \cline{1-7}
+	14.& 0.44 & 0.42 & 0.44 & 0.28 & 0.3 &  0.31\\ \cline{1-7}
+	\hline
+	\end{tabular}
+\caption {Výsledky testovania podsád bez parametra zmeny náboja, dostupnej povrchovej plochy a kombinácie zmeny indexu hydrofobicity a dostupnej povrchovej plochy} 
+\label{pythontest1} 
 \end{table}
 
 
-Tabuľka \ref{pythontest1}  ukazuje výsledky testovania podsád bez odstránených parametrov. Jednotlivé testovania slúžili na získanie údaju o korelačnom koeficiente, na základe získaných údajov boli vybrané podsady s najlepšími výsledkami. Tieto podsady sú základom ensemble systému a každá z nich slúži na natrénovanie jednej metódy strojového učenia.
+Tabuľka \ref{pythontest1}  ukazuje výsledky testovania podsád bez odstránených parametrov. Testovania so všetkými parametrami ale aj s odstránenými slúžili na získanie údaju o korelačnom koeficiente, na základe získaných údajov boli vybrané podsady s najlepšími výsledkami. Tieto podsady sú základom ensemble systému a každá z nich slúži na natrénovanie jednej metódy strojového učenia.
 
 Implementovaný ensemble systém pozostáva zo spojenia metód Random Forest a SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a metóda SVM štyrikrát. Každým natrénovaním sme získali údaj o výslednej triede, nakoniec sme mali sedem hodnôt predikovanej triedy pre mutáciu. Výslednú hodnotu výslednej triedy sme získali hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
 
@@ -653,8 +654,23 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 	\end{center}
 \end{figure}
 
+\section{Porovnanie s inými nástrojmi}
+
+Po implementovaní prediktora sme jeho predikčnú silu porovnali s niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, prevažne stabilizujúcich. Postup spočíval v otestovaní implementovaného prediktora na sade S350 a porovnaní výsledkov s nástrojmi, ktoré boli otestované na tejto sade. Daný postup sme zvolili najmä preto, že natrénovanie a otestovanie iných nástrojov na nami vytvorenej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len ako webová aplikácia.
+
+Pred fázou testovania sme zo sady S350 odstránili záznamy mutácií s hodnotou $\Delta\Delta$G v intervale $\left[-0.5,0.5\right]$, výsledná sada obsahovala 239 záznamov. 
 
 
+\begin{figure}[H]
+	\centering
+	\begin{center}
+		\scalebox{0.7}
+		{   
+			\includegraphics{porovnanie_nastrojov.png}
+		}
+		\caption{Graf s porovnaním hodnôt MCC vybraných nástrojov}
+	\end{center}
+\end{figure}
 
 
 \chapter{Typografické a~jazykové zásady}

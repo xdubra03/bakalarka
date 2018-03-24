@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  23 MAR 2018 20:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  24 MAR 2018 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -108,23 +108,23 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/04/23 3.9r The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
-Language: czech 2008/07/06 v3.1a Czech support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-slovak/slovak.ldf
+Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count100
 \U@D=\dimen112
 )
-Package babel Info: Making " an active character on input line 172.
-\cs@wordlen=\count101
-Package babel Info: Making - an active character on input line 226.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/babel-slovak/slovak.ldf
-Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
 Package babel Info: Making ^ an active character on input line 123.
+Package babel Info: Making " an active character on input line 126.
 Package babel Info: Making ' an active character on input line 129.
-LaTeX Info: Redefining \uv on input line 278.
+\cs@wordlen=\count101
+Package babel Info: Making - an active character on input line 294.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/babel-czech/czech.ldf
+Language: czech 2008/07/06 v3.1a Czech support from the babel system
+LaTeX Info: Redefining \uv on input line 210.
 \cs@wordlen=\count102
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
@@ -718,21 +718,6 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 Package: titletoc 2011/12/15 v1.6 TOC entries
 \ttl@leftsep=\dimen143
 )
-(/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
-Package: ae 2001/02/12 1.3 Almost European Computer Modern
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)
-LaTeX Font Info:    Try loading font information for T1+aer on input line 105.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
-File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-)<<t1.cmap>>))
 (/usr/share/texlive/texmf-dist/tex/latex/regexpatch/regexpatch.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2016/05/18 v6512 L3 programming layer (loader) 
@@ -1325,7 +1310,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 166.
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
+)<<t1.cmap>>
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 166.
 
@@ -1391,7 +1376,7 @@ File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 \@vyskaobr=\skip82
 \@sirkaobr=\skip83
 
-<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=258, 167.13641pt x 165.87971pt
+<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=262, 167.13641pt x 165.87971pt
 >
 File: template-fig/VUT_symbol_barevne_CMYK_CZ.pdf Graphic file (type pdf)
  <use template-fig/VUT_symbol_barevne_CMYK_CZ.pdf>
@@ -1477,15 +1462,15 @@ Kapitola 2.
 
 ]
 Overfull \hbox (5.88197pt too wide) in paragraph at lines 77--78
-\T1/lmr/m/n/10.95 ven-cie DNA (génu) do mo-le-kuly RNA. Dôle-ºitú úlohu zo-hráv
-a en-zým RNA-polymeráza,
+\T1/lmr/m/n/10.95 ven-cie DNA (génu) do mo-le-kuly RNA. Dô-le-ºitú úlohu zo-hrá
+va en-zým RNA-polymeráza,
  []
 
 [6]
 
 LaTeX Warning: Citation `bibid' on page 7 undefined on input line 87.
 
-<obrazky-figures/structure.png, id=408, 953.5625pt x 460.72125pt>
+<obrazky-figures/structure.png, id=413, 953.5625pt x 460.72125pt>
 File: obrazky-figures/structure.png Graphic file (type png)
 
 <use obrazky-figures/structure.png>
@@ -1500,7 +1485,7 @@ Overfull \hbox (47.94829pt too wide) in paragraph at lines 98--99
 Kapitola 3.
 [8
 
-] [9] <obrazky-figures/mutation_types.png, id=449, 626.34pt x 438.63875pt>
+] [9] <obrazky-figures/mutation_types.png, id=454, 626.34pt x 438.63875pt>
 File: obrazky-figures/mutation_types.png Graphic file (type png)
 
 <use obrazky-figures/mutation_types.png>
@@ -1518,11 +1503,11 @@ Kapitola 4.
 
 ]
 Overfull \hbox (1.54001pt too wide) in paragraph at lines 229--231
-\T1/lmr/m/n/10.95 Algoritmus J48 pa-trí k me-tó-dam roz-ho-do-va-cích stro-mov.
- Al-go-rit-mus pro-du-kuje klasifika£no-
+\T1/lmr/m/n/10.95 Algoritmus J48 patrí k me-tó-dam roz-ho-do-va-cích stro-mov. 
+Al-go-rit-mus pro-du-kuje klasifika£no-
  []
 
-[13] <obrazky-figures/rf.png, id=487, 445.665pt x 334.24875pt>
+[13] <obrazky-figures/rf.png, id=492, 445.665pt x 334.24875pt>
 File: obrazky-figures/rf.png Graphic file (type png)
 
 <use obrazky-figures/rf.png>
@@ -1532,7 +1517,7 @@ Package pdftex.def Info: obrazky-figures/rf.png used on input line 265.
 Kapitola 5.
 [17
 
-] <obrazky-figures/ensemble.png, id=518, 966.61125pt x 821.0675pt>
+] <obrazky-figures/ensemble.png, id=523, 966.61125pt x 821.0675pt>
 File: obrazky-figures/ensemble.png Graphic file (type png)
 
 <use obrazky-figures/ensemble.png>
@@ -1556,60 +1541,73 @@ Overfull \hbox (28.19458pt too wide) in paragraph at lines 590--608
  [][] 
  []
 
-[30] [31] <obrazky-figures/mcc.png, id=662, 702.625pt x 451.6875pt>
+[30] [31] <obrazky-figures/mcc.png, id=668, 702.625pt x 451.6875pt>
 File: obrazky-figures/mcc.png Graphic file (type png)
 
 <use obrazky-figures/mcc.png>
-Package pdftex.def Info: obrazky-figures/mcc.png used on input line 651.
+Package pdftex.def Info: obrazky-figures/mcc.png used on input line 652.
 (pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
 
-Overfull \hbox (64.46231pt too wide) in paragraph at lines 651--652
+Overfull \hbox (64.46231pt too wide) in paragraph at lines 652--653
  [] 
  []
 
 [32 <./obrazky-figures/mcc.png>]
+<obrazky-figures/porovnanie_nastrojov.png, id=675, 702.625pt x 451.6875pt>
+File: obrazky-figures/porovnanie_nastrojov.png Graphic file (type png)
+
+<use obrazky-figures/porovnanie_nastrojov.png>
+Package pdftex.def Info: obrazky-figures/porovnanie_nastrojov.png used on input
+ line 670.
+(pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
+
+Overfull \hbox (64.46231pt too wide) in paragraph at lines 670--671
+ [] 
+ []
+
+[33 <./obrazky-figures/porovnanie_nastrojov.png>]
 Kapitola 9.
-[33
+[34
 
 ]
 
-LaTeX Warning: Citation `Pravidla' on page 34 undefined on input line 692.
+LaTeX Warning: Citation `Pravidla' on page 35 undefined on input line 708.
 
-[34] [35]
+[35] [36]
 Kapitola 10.
-) (./projekt.bbl [36
+) (./projekt.bbl [37
 
-] [37
+] [38
 
-] [38])
+] [39])
 \c@ttl@toc@chapters=\count305
- (./projekt-30-prilohy-appendices.tex [39]
-P\IeC {\v r}\IeC {\'\i }loha A.
-[40
+ (./projekt-30-prilohy-appendices.tex [40]
+Pr\IeC {\'\i }loha A.
+[41
 
-] [41] [42] [43])
+] [42] [43] [44])
 \tf@ptc=\write5
 \openout5 = `projekt.ptc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [44]
+ [45]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./projekt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `projekt.out' has not changed.
-(rerunfilecheck)             Checksum: 65180E09F18ECAD973C1B8A8BB5152EC;10029.
+(rerunfilecheck)             Checksum: C04116114F796E7B081214576DEC3302;10242.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 22876 strings out of 493039
- 377229 string characters out of 6136943
- 456077 words of memory out of 5000000
- 25821 multiletter control sequences out of 15000+600000
- 124816 words of font info for 103 fonts, out of 8000000 for 9000
+ 22836 strings out of 493039
+ 376366 string characters out of 6136943
+ 454757 words of memory out of 5000000
+ 25789 multiletter control sequences out of 15000+600000
+ 123321 words of font info for 102 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  47i,12n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
@@ -1637,10 +1635,10 @@ hare/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm
 /lmtt9.pfb>
-Output written on projekt.pdf (47 pages, 1111207 bytes).
+Output written on projekt.pdf (48 pages, 1125304 bytes).
 PDF statistics:
- 882 PDF objects out of 1000 (max. 8388607)
- 771 compressed objects within 8 object streams
- 189 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 895 PDF objects out of 1000 (max. 8388607)
+ 781 compressed objects within 8 object streams
+ 192 named destinations out of 1000 (max. 500000)
+ 574 words of extra memory for PDF output out of 10000 (max. 10000000)
 

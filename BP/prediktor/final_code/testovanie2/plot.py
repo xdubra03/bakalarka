@@ -2,14 +2,13 @@ import plotly.plotly as py
 import plotly.graph_objs as go
 import plotly
 
-x = ['Random Forest', 'SVM', 'Ensemble']
-y=[0.356,-0.029,0.441]
-
+x = ['mCSM','Topologynet','MAESTRO','SDM','I-Mutant-2.0','NeeMo','Eris','PopMuSiC-2.0','Prediktor']
+y=[0.74,0.74,0.69,0.53,0.27,0.68,0.34,0.67,-0.34]
 data = [go.Bar(
 x=x,
 y=y,
 marker=dict(
-        color=['rgba(204,204,204,1)', 'rgba(204,204,204,1)', 'rgba(222,45,38,0.8)'])
+        color=['rgba(204,204,204,1)','rgba(204,204,204,1)','rgba(204,204,204,1)','rgba(204,204,204,1)','rgba(204,204,204,1)', 'rgba(204,204,204,1)','rgba(204,204,204,1)','rgba(204,204,204,1)', 'rgba(222,45,38,0.8)'])
     )]
 
 layout = go.Layout(
