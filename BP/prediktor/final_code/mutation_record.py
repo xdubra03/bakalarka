@@ -1,4 +1,4 @@
-#module for preparing mutation record, e.g. all features in record
+# module for preparing mutation record, e.g. all features in record
 """This module is used for preparing mutation record"""
 
 from __future__ import division
@@ -43,66 +43,130 @@ class Etree(Tree):
             chain = model[chain_type]
         except KeyError as error:
             print(error.reason)
-        residue_list = Selection.unfold_entities(chain,'A')
+        residue_list = Selection.unfold_entities(chain, 'A')
         residue_start = residue_list[0].get_full_id()[3][1]
         return residue_start
 
+    def compute_conservation(self, file, residue_start, index, weightsArray, acid1):
+        """compute conservation of mutated position"""
+        count_pos = 0
+        pos = 0
+        handle = open(file,"r")
+        lines = iter(handle.readlines())
+        for line in lines:
+            if line.startswith('>'):
+                continue
+            else:
+                for word in line.split():
+                    if (residue_start > len(word)):
+                        count_pos = 0
+                        for i in range(0, len(word), 1):
+                            if (word[i] != '-'):
+                                count_pos +=1
+                            if(count_pos == residue_start + index - residue_start):
+                                pos = i
+                                print(word[i])
+                                break
+                    else:
+                        #print("Residue start: " + str(residue_start))
+                        #print("Index mutation:" + str(index))
+                        count_pos = 0
+                        if(residue_start < 0):
+                            chain_res = index + abs(residue_start)
+                        else:
+                            chain_res = index + residue_start - 1
+
+                        for i in range(0, len(word), 1):
+                            count_pos +=1
+                            if (count_pos == chain_res):
+                                pos = i
+                                if(word[i] == acid1):
+                                    break
+                                else:
+                                    count_pos = 0
+                                    chain_res = index + residue_start - residue_start
+                                    for i in range(0, len(word), 1):
+                                        if (word[i] != '-'):
+                                            count_pos += 1
+                                        if (count_pos == chain_res):
+                                            pos = i
+                                            if(word[i] == acid1):
+                                                break
+            break
+        conservation_value = 0
+        base_acid = 0
+        weights = 0
+        for name in self._names:
+            sequence = self._idArray[name]
+            acid = sequence[pos]
+            if(acid == acid1):
+                base_acid = 1
+            else:
+                base_acid= 0
+            weights += weightsArray[name]
+            conservation_value += weightsArray[name] * base_acid
+
+        accuracy = conservation_value/ weights
+        return accuracy
+
+
     #compute conservation score on entered position
-    def compute_conservation(self,file,residue_start,index,weightsArray,acid1):
-        #"""computes conservation of mutated position"""
-		count_mezera = 0
-		count_basic_acid = 0
-		count_mutated_acid = 0
-		count_else=0
-		all_count =0
-		count_pos=0
-		start_position = 1 #meni sa
-		pos = 0
-		handle = open(file,"r")
-
-		lines = iter(handle.readlines())
-		for line in lines:
-			if(line.startswith('>')):
-				continue
-			else:
-				for word in line.split():
-	 			#if(word[0] == '-'):
-	 			#	break
-		 			#if(word[0] == 'M'):
-		 			#		count_pos -=1#-residue_start+1
-
-		 			if(residue_start > len(word)):
-		 				#print(residue_start)
-		 				#print(index)
-		 				count_pos = residue_start
-		 				#print(count_pos)
-		 				for i in range(0,len(word),1):
-		 					if(word[i] != '-'):
-		 						count_pos +=1
-		 						if(count_pos == residue_start+index):
-		 							pos = i
-		 							#print(word[i])
-		 							break
-		 			else:
+    """def compute_conservation(self, file, residue_start, index, weightsArray, acid1):
+        count_pos = 0
+        pos = 0
+        handle = open(file,"r")
+        lines = iter(handle.readlines())
+        for line in lines:
+            if(line.startswith('>')):
+                continue
+            else:
+                for word in line.split():
+                    if(residue_start > len(word)):
+                        count_pos = 0
+                        for i in range(0, len(word), 1):
+                            if (word[i] != '-'):
+                                count_pos += 1
+                            if (count_pos == residue_start + index - residue_start):
+                                pos = i
+                                print(word[i])
+                                break
+                    else:
 		 				#print("Residue start: " + str(residue_start))
 		 				#print("Index mutation:" + str(index))
-		 				count_pos = 0
-		 				if(residue_start < 0):
-		 					chain_res = index + abs(residue_start)# - 1+residue_start #+ abs(residue_start) + abs(residue_start) -1
-		 				elif (residue_start == 1):
-		 					chain_res= index+residue_start-1
-		 				else:
-		 					chain_res= index+residue_start-1
+                        count_pos = 0
+                        if(residue_start < 0):
+                            chain_res = index + abs(residue_start)# - 1+residue_start #+ abs(residue_start) + abs(residue_start) -1
+                        elif (residue_start == 1):
+                            chain_res= index+residue_start-1
+                        else:
+                            chain_res= index+residue_start-1
 
-		 				for i in range(0,len(word),1):
-		 					if(word[i] != '-'):
-		 						count_pos +=1
-		 						if(count_pos == chain_res):
-		 							pos = i
-		 							#print(chain_res)
-		 							#print("ACID: " + str(word[i]))
-		 							break
-	 		break
+                        for i in range(0,len(word),1):
+                            if(word[i] != '-'):
+                                count_pos +=1
+                                if(count_pos == chain_res):
+                                    pos = i
+                                    print(chain_res)
+                                    print("ACID: " + str(word[i]))
+                                    if(word[i] == acid1):
+                                        break
+                                    else:
+                                        count_pos = 0
+                                        chain_res = index + residue_start - residue_start
+                                        for i in range(0, len(word), 1):
+                                            if (word[i] != '-'):
+                                                print(word[i])
+                                                count_pos += 1
+                                        if (count_pos == chain_res):
+                                            pos = i
+                                            print(pos)
+                                            print("ACID:" + word[i])
+                                            if (word[i] == acid1):
+                                                print('Druhy pokus OK')
+                                                break
+                                            else:
+                                                print('Neuspech')
+                break
 	 	#print("POSITION:" + str(pos))
 	 	conservation_value = 0
 	 	base_acid = 0
@@ -118,7 +182,7 @@ class Etree(Tree):
 	 		conservation_value += weightsArray[name] * base_acid
 
 	 	accuracy = conservation_value/ weights
-	 	return accuracy
+	    return accuracy"""
 
     def create_ID_table(self):
 		"""create table where key is node name and value is sequence to speed up lookup"""
@@ -446,60 +510,69 @@ class MutationRecord():
             return 4
 
     #compute index of mutated position in aligned sequence
-    def compute_conservation(self,file,residue_start,index):
-        count_mezera = 0
-        count_basic_acid = 0
-        count_mutated_acid = 0
-        count_else=0
-        all_count =0
-        count_pos=0
-        start_position = 1 #meni sa
+    def compute_conservation(self, file, residue_start, index, wild_type):
+        count_pos = 0
         pos = 0
-        handle = open(file,"r")
+        handle = open(file, "r")
 
         lines = iter(handle.readlines())
         for line in lines:
-            if(line.startswith('>')):
+            if (line.startswith('>')):
                 continue
             else:
                 for word in line.split():
-                    #if(word[0] == '-'):
-	 			    #break
-		 			#if(word[0] == 'M'):
-		 			#		count_pos -=1#-residue_start+1
-                    if(residue_start > len(word)):
-                        #print(residue_start)
-                        #print(index)
-                        count_pos = residue_start
-                        #print(count_pos)
-                        for i in range(0,len(word),1):
-                            if(word[i] != '-'):
-                                count_pos +=1
-                                if(count_pos == residue_start+index):
-                                    pos = i
-                                    #print(word[i])
-                                    break
+                    if (residue_start > len(word)):
+                        count_pos = 0
+                        print(count_pos)
+                        for i in range(0, len(word), 1):
+                            if (word[i] != '-'):
+                                count_pos += 1
+                            if (count_pos == residue_start + index - residue_start):
+                                pos = i
+                                print(word[i])
+                                break
                     else:
-                        #print(residue_start)
-                        #print(index)
-                        count_pos = residue_start
-                        if(residue_start < 0):
-                            chain_res = index + abs(residue_start)#+residue_start #+ abs(residue_start) + abs(residue_start) -1
+                        print(residue_start)
+                        print(index)
+                        count_pos = 0
+                        if (residue_start < 0):
+                            chain_res = index + abs(
+                                residue_start)  # +residue_start #+ abs(residue_start) + abs(residue_start) -1
                         elif (residue_start == 1):
-                            chain_res= index+residue_start-1
+                            chain_res = index + residue_start - 1
                         else:
-                            chain_res= index+residue_start-1
+                            chain_res = index + residue_start - 1
 
-                        for i in range(0,len(word),1):
-                            if(word[i] != '-'):
-                                count_pos +=1
-                                if(count_pos == chain_res):
+                        for i in range(0, len(word), 1):
+                            if (word[i] != '-'):
+                                print(word[i])
+                                count_pos += 1
+                                if (count_pos == chain_res):
                                     pos = i
-		 							#print(pos)
-                                    #print("ACID:" + word[i])
-                                    break
+                                    print(pos)
+                                    print("ACID:" + word[i])
+                                    if (word[i] == wild_type):
+                                        print('Prvy pokus OK')
+                                        break
+                                    else:
+                                        count_pos = 0
+                                        chain_res = index + residue_start - residue_start
+                                        for i in range(0, len(word), 1):
+                                            if (word[i] != '-'):
+                                                print(word[i])
+                                                count_pos += 1
+                                                if (count_pos == chain_res):
+                                                    pos = i
+                                                    print(pos)
+                                                    print("ACID:" + word[i])
+                                                    if (word[i] == wild_type):
+                                                        print('Druhy pokus OK')
+                                                        return pos
+                                                    else:
+                                                        print('Neuspech')
+
             break
-        #print(pos)
+        print(pos)
         return pos
 
     #create sequences file
@@ -724,8 +797,8 @@ class MutationRecord():
         self.create_newick_file()
         residue_start = self.PDB_parse(self.pdb_id,self.chain)
         self.create_sequence_file(self.pdb_id+"correlation.txt",self.pdb_id+"clustal.fasta")
-        mutated_column_index = self.compute_conservation(self.pdb_id+"correlation.txt",residue_start,self.position)
-
+        mutated_column_index = self.compute_conservation(self.pdb_id+"correlation.txt",residue_start,self.position,self.wild_type)
+        print(mutated_column_index)
         #compute correlation of mutated position
         correlation = self.correlation(self.position,mutated_column_index,residue_start)
         #compute conservation of mutated position

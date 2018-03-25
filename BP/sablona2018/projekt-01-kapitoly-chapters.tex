@@ -669,8 +669,26 @@ Pred fázou testovania sme zo sady S350 odstránili záznamy mutácií s hodnoto
 			\includegraphics{porovnanie_nastrojov.png}
 		}
 		\caption{Graf s porovnaním hodnôt MCC vybraných nástrojov}
+		\label{porovnanie}
 	\end{center}
 \end{figure}
+
+Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u rôznych nástrojov na sade S350. Z grafu vidieť, že najlepšiu hodnotu dosiahol nástroj mCSM využívajúci grafovo založené vzory. Medzi ďaľšie nástroje s vysokou hodnotiu korelácie patria Topologynet, ktorý využíva tzv. hlbokého učenia; nástroj NeeMo využívajúci trojvrstvovú neurónovú sieť; PopMuSiC využívajúci štatistický potenciál a MAESTRO, ktorý kombinuje štatistický potenciál, neurónovú sieť, SVM a lineárnu regresiu. Všetky spomínané nástroje dosiahli korelácie väčšej ako 0.6.
+
+Zvyšné testované prediktory dosiahli menšej hodnoty korelácie, najlepšie výsledky z nich dosiahol nástroj SDM založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant využívajúci SVM a Eris založený na fyzikálnom potenciále.
+
+U ďaľších mnohých nástrojov je problém v získaní údajov a použitej dátovej sade na trénovanie a rovnako spôsob validácie nástroja, takže ich nie je možné brať do úvahy pri porovnávaní nástrojov.
+
+Pri porovnaní implementovaného nástroja s inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej zápornej korelácie ako nástroj I-Mutant. Dva ďaľšie nástroje mCSM a MAESTRO však dosahujú lepších výsledkov.
+
+Náš prediktor dosiahol hodnoty korelácie -0.34, čo je zapríčené najmä malým množstvom stabilizujúcich záznamov na trénovanie metód a testovacia sada ich obsahuje takmer rovanký počet ako je ich počet na trénovanie. 
+
+
+
+
+
+
+
 
 
 \chapter{Typografické a~jazykové zásady}
@@ -683,7 +701,7 @@ Pro sazbu na stránku formátu A4 je vhodné používat pro základní text pís
 Stupeň písma u~nadpisů různé úrovně volíme podle standardních typografických pravidel. 
 Pro všechny uvedené druhy nadpisů se obvykle používá polotučné nebo tučné písmo (jednotně buď všude polotučné nebo všude tučné). Proklad se volí tak, aby se následující text běžných odstavců sázel pokud možno na {\it pevný rejstřík}, to znamená jakoby na linky s~předem definovanou a~pevnou roztečí.
 
-Uspořádání jednotlivých částí textu musí být přehledné a~logické. Je třeba odlišit názvy kapitol a~podkapitol -- píšeme je malými písmeny kromě velkých začátečních písmen. U~jednotlivých odstavců textu odsazujeme první řádek odstavce asi o~jeden až dva čtverčíky (vždy o~stejnou, předem zvolenou hodnotu), tedy přibližně o~dvě šířky velkého písmene M základního textu. Poslední řádek předchozího odstavce a~první řádek následujícího odstavce se v~takovém případě neoddělují svislou mezerou. Proklad mezi těmito řádky je stejný jako proklad mezi řádky uvnitř odstavce.
+Uspořádání jednotlivých částí textu musí být přehledné a~logické. Je třeba odlišit názvy kapitol a~podkapitol -- píšeme je malými písmeny kromě velkých začátečních písmen. U~jednotlivých odstavců textu odsazujeme první řádek odstavce asi o~jeden až dva čtverčíky (vždy o~stejnou, předem zvolenou hodnotu), tedy přibližně o~dvě šířky velkého písmene M základního textu. Poslední řádek předchozího odstavce a~první řádek následujícího odstavce se v~takovém případě neoddělují svislou mezerou. Proklad mezi těmito řádky je stejný jako proklad mezi řádky uvnitř odstavce
 
 Při vkládání obrázků volte jejich rozměry tak, aby nepřesáhly oblast, do které se tiskne text (tj. okraje textu ze všech stran). Pro velké obrázky vyčleňte samostatnou stránku. Obrázky nebo tabulky o~rozměrech větších než A4 umístěte do písemné zprávy formou skládanky všité do přílohy nebo vložené do záložek na zadní desce.
 
