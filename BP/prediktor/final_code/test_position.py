@@ -29,7 +29,7 @@ def compute_conservation(file,residue_start,index,wild_type):
                     print(index)
                     count_pos = 0
                     if(residue_start < 0):
-                        chain_res = index + abs(residue_start)#+residue_start #+ abs(residue_start) + abs(residue_start) -1
+                        chain_res = index - abs(residue_start)#+residue_start #+ abs(residue_start) + abs(residue_start) -1
                     elif (residue_start == 1):
                         chain_res= index+residue_start-1
                     else:

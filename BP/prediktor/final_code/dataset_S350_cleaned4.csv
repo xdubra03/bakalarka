@@ -1,4 +1,4 @@
-,Unnamed: 0,5,Unnamed: 0.1,PDB_CHAIN,WILD_RES,POSITION,MUTANT_RES,PH,TEMPERATURE,EXP_DDG,class,chain,predicted1,predicted2,predicted3,predicted4,predicted5
+0,0,0,0,PDB_CHAIN,WILD_RES,POSITION,MUTANT_RES,PH,TEMPERATURE,EXP_DDG,class,chain,predicted1,predicted2,predicted3,predicted4,predicted5
 0,0,0,0,1AJ3,H,1,A,7.0,25.0,0.5,-1,A,-1,-1,-1,-1,-1
 1,1,1,1,1AJ3,I,14,A,7.0,25.0,-3.6,1,A,-1,-1,-1,-1,-1
 2,2,2,2,1AJ3,K,38,G,7.0,25.0,-0.5,1,A,-1,1,1,1,1

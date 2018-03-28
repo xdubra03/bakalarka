@@ -545,28 +545,28 @@ class MutationRecord():
 
                         for i in range(0, len(word), 1):
                             if (word[i] != '-'):
-                                print(word[i])
+                                #print(word[i])
                                 count_pos += 1
                                 if (count_pos == chain_res):
                                     pos = i
-                                    print(pos)
-                                    print("ACID:" + word[i])
+                                    #print(pos)
+                                    #print("ACID:" + word[i])
                                     if (word[i] == wild_type):
-                                        print('Prvy pokus OK')
+                                        #print('Prvy pokus OK')
                                         break
                                     else:
                                         count_pos = 0
                                         chain_res = index + residue_start - residue_start
                                         for i in range(0, len(word), 1):
                                             if (word[i] != '-'):
-                                                print(word[i])
+                                                #print(word[i])
                                                 count_pos += 1
                                                 if (count_pos == chain_res):
                                                     pos = i
-                                                    print(pos)
-                                                    print("ACID:" + word[i])
+                                                    #print(pos)
+                                                    #print("ACID:" + word[i])
                                                     if (word[i] == wild_type):
-                                                        print('Druhy pokus OK')
+                                                        #print('Druhy pokus OK')
                                                         return pos
                                                     else:
                                                         print('Neuspech')
@@ -760,7 +760,7 @@ class MutationRecord():
     	return sec_struc_res
 
     #compute ASA value and secondary structure
-    def compute_ASA(self,pdb_id):
+    def compute_ASA(self,pdb_id,wild_type):
         """compute accessible surface area and secondary structure"""
     	parser = PDBParser()
     	structure = parser.get_structure(pdb_id,pdb_id+".pdb")
@@ -769,7 +769,28 @@ class MutationRecord():
     	#index is position of mutation
         residue_start = self.PDB_parse(self.pdb_id,self.chain)
         index = self.position
-    	asa_key = list(dssp.keys())[index -residue_start+1-1]
+
+        asa_keys = list(dssp.keys())
+
+        if residue_start < 0:
+            position = index - abs(residue_start)
+        elif residue_start == 0:
+            position = index - 1
+        elif residue_start == 1:
+            position = index - residue_start + 1
+        else:
+            position = index + residue_start - 1
+
+        for key in asa_keys:
+            if key[1][1] == position:
+                if dssp[key][1] == wild_type:
+                    asa_key = key
+                else:
+                    position = index
+                    for key in asa_keys:
+                        if key[1][1] == position:
+                            asa_key = key
+
     	asa = str(dssp[asa_key][3])
     	sec_structure = str(dssp[asa_key][2])
     	sec_struc_id = self.sec_struc_code(sec_structure)
@@ -815,7 +836,7 @@ class MutationRecord():
         size = self.size_change(x,y)
         size = self._encode_size[size]
         #compute asa and seconda structure
-        struc_id,asa = self.compute_ASA(self.pdb_id)
+        struc_id,asa = self.compute_ASA(self.pdb_id,self.wild_type)
         asa_val = self.divide_asa(asa)
         asa_val = self._encode_asa[asa_val]
         struc_id = self._encode_sec_struc[struc_id]
