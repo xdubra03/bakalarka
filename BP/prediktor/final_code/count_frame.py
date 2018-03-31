@@ -22,7 +22,7 @@ def compute_mcc(self):
 	data_frame = pd.read_csv(self)
 	#print(data_frame['class'])
 	testarr = data_frame['class'].values
-	trainarr = data_frame['predicted6'].values
+	trainarr = data_frame['predicted2'].values
 	print(trainarr)
 	mcc = matthews_corrcoef(testarr, trainarr)
 	target_names = ['1', '-1']

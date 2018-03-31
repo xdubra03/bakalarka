@@ -31,6 +31,6 @@ for record in test_file:
     print(predicted_value)
     print('Protein' + str(j) + 'done')
 
-save_file = pd.read_csv('dataset_S350_cleaned3.csv')
-save_file['predicted6'] = predicted_class
-save_file.to_csv('dataset_S350_cleaned3.csv')
+save_file = pd.read_csv('dataset_S350_cleaned2_new.csv')
+save_file['predicted2'] = predicted_class
+save_file.to_csv('dataset_S350_cleaned2_new.csv')
