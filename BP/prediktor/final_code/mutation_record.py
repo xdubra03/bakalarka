@@ -65,11 +65,8 @@ class Etree(Tree):
                                 count_pos +=1
                             if(count_pos == residue_start + index - residue_start):
                                 pos = i
-                                print(word[i])
                                 break
                     else:
-                        #print("Residue start: " + str(residue_start))
-                        #print("Index mutation:" + str(index))
                         count_pos = 0
                         if(residue_start < 0):
                             chain_res = index + abs(residue_start)
@@ -93,6 +90,7 @@ class Etree(Tree):
                                             if(word[i] == acid1):
                                                 break
             break
+        handle.close()
         conservation_value = 0
         base_acid = 0
         weights = 0
@@ -108,81 +106,6 @@ class Etree(Tree):
 
         accuracy = conservation_value/ weights
         return accuracy
-
-
-    #compute conservation score on entered position
-    """def compute_conservation(self, file, residue_start, index, weightsArray, acid1):
-        count_pos = 0
-        pos = 0
-        handle = open(file,"r")
-        lines = iter(handle.readlines())
-        for line in lines:
-            if(line.startswith('>')):
-                continue
-            else:
-                for word in line.split():
-                    if(residue_start > len(word)):
-                        count_pos = 0
-                        for i in range(0, len(word), 1):
-                            if (word[i] != '-'):
-                                count_pos += 1
-                            if (count_pos == residue_start + index - residue_start):
-                                pos = i
-                                print(word[i])
-                                break
-                    else:
-		 				#print("Residue start: " + str(residue_start))
-		 				#print("Index mutation:" + str(index))
-                        count_pos = 0
-                        if(residue_start < 0):
-                            chain_res = index + abs(residue_start)# - 1+residue_start #+ abs(residue_start) + abs(residue_start) -1
-                        elif (residue_start == 1):
-                            chain_res= index+residue_start-1
-                        else:
-                            chain_res= index+residue_start-1
-
-                        for i in range(0,len(word),1):
-                            if(word[i] != '-'):
-                                count_pos +=1
-                                if(count_pos == chain_res):
-                                    pos = i
-                                    print(chain_res)
-                                    print("ACID: " + str(word[i]))
-                                    if(word[i] == acid1):
-                                        break
-                                    else:
-                                        count_pos = 0
-                                        chain_res = index + residue_start - residue_start
-                                        for i in range(0, len(word), 1):
-                                            if (word[i] != '-'):
-                                                print(word[i])
-                                                count_pos += 1
-                                        if (count_pos == chain_res):
-                                            pos = i
-                                            print(pos)
-                                            print("ACID:" + word[i])
-                                            if (word[i] == acid1):
-                                                print('Druhy pokus OK')
-                                                break
-                                            else:
-                                                print('Neuspech')
-                break
-	 	#print("POSITION:" + str(pos))
-	 	conservation_value = 0
-	 	base_acid = 0
-	 	weights = 0
-	 	for name in self._names:
-	 		sequence = self._idArray[name]
-	 		acid = sequence[pos]
-	 		if(acid == acid1):
-	 			base_acid = 1
-	 		else:
-	 			base_acid= 0
-	 		weights += weightsArray[name]
-	 		conservation_value += weightsArray[name] * base_acid
-
-	 	accuracy = conservation_value/ weights
-	    return accuracy"""
 
     def create_ID_table(self):
 		"""create table where key is node name and value is sequence to speed up lookup"""
@@ -251,22 +174,22 @@ class Etree(Tree):
 		#fudge factor constant to prevent 0 in the weights array
 		fugde_factor = 0.1
 
-		#traverse the tree and compute values in each node
+		# traverse the tree and compute values in each node
 		for node in self.traverse('postorder'):
 
-			#get children nodes of actual node
+			# get children nodes of actual node
 			children = node.get_children()
 
-			#if no children found, continue with next node
+			# if no children found, continue with next node
 			if not children:
 				continue
 			else:
 
 				i = 0
-				#array where value of multiplication for each item in array is stored
+				# array where value of multiplication for each item in array is stored
 				weight_vals = [1]*250
 
-				#calculate value for each child
+				# calculate value for each child
 				for child in children:
 
 					for parentItem in node._names:
@@ -275,16 +198,16 @@ class Etree(Tree):
 
 						for childItem in child._names:
 
-							#calculate probability of changing child sequence to parent sequence
+							# calculate probability of changing child sequence to parent sequence
 							sequence1 = child._idArray[childItem]
 							probability = probability_matrix.find_pair(sequence1,sequence2)
 
-							#calculate Pi*Li*t
+							# calculate Pi*Li*t
 							result += probability * child.weightsArray[childItem] * (child.dist + fugde_factor)
 
-						#value from each child needs to be multiplicated
+						# value from each child needs to be multiplicated
 						weight_vals[i] *= result
-						#store actual value to weightsArray item in parent node
+						# store actual value to weightsArray item in parent node
 						node.weightsArray[parentItem] = weight_vals[i]
 
 						i+=1
@@ -294,7 +217,8 @@ class Etree(Tree):
 
 class MutationRecord():
     """compute mutation record features and create record"""
-
+    #name of file with used blosum matrix
+    BLOSUM_MATRIX = 'blosum62.txt'
     # encoding secondary structure
     _encode_sec_struc = {
     	'C':'1','H':'2','S':'3'
@@ -375,7 +299,7 @@ class MutationRecord():
                 handle = urllib2.urlopen(url_pdb)
             except URLError as error:
                 print(error.reason)
-                sys.exit(1)
+                sys.exit(error.code)
             pdb_output.write(handle.read())
         pdb_output.close()
 
@@ -399,9 +323,9 @@ class MutationRecord():
             url = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
             try:
                 handle = urllib2.urlopen(url)
-            except urllib2.URLError as error:
+            except URLError as error:
                 print(error.reason)
-                sys.exit(1)
+                sys.exit(error.code)
             fasta_output.write(handle.read())
     	fasta_output.close()
 
@@ -436,12 +360,12 @@ class MutationRecord():
     #run standalone BLASTP for searching homologue sequences
     def run_blast(self):
         """search homologue sequences with BLASTP"""
-        #FNULL = open(os.devnull, 'w')
+        FNULL = open(os.devnull, 'w')
         if(os.path.exists(self.pdb_id+'.xml') and os.path.getsize(self.pdb_id+'.xml') > 0):
             pass
     	else:
-            subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'], stderr=subprocess.STDOUT)
-        #FNULL.close()
+            subprocess.call(['./tools/blastp','-query','%s.fasta'%self.pdb_id,'-db','nr','-outfmt','5','-out','%s.xml'%self.pdb_id,'-max_target_seqs','250','-remote'], stdout=FNULL,stderr=subprocess.STDOUT)
+        FNULL.close()
 
     #run CLUSTAL OMEGA to create multiple sequence alignement
     def run_clustal(self):
@@ -473,26 +397,22 @@ class MutationRecord():
     def conservation(self,newick_file,clustal_file,residue_start):
         """compute conservation score of mutated position"""
         #create blosum matrix and probability_matrix for conservation computation
-        matrix = BlosumMatrix('./tools/blosum62.txt')
+        matrix = BlosumMatrix('./tools/'+ self.BLOSUM_MATRIX)
         probability_matrix = ProbabilityMatrix(clustal_file,matrix)
         #create tree object
         t = Etree(newick_file)
         t.create_alignement_table(clustal_file)
-        #tree rooting
+        #tree rooting and create weight array in each node
         R = t.get_midpoint_outgroup()
         t.set_outgroup(R)
-
         t.get_names()
-
         t.add_node_array()
         t.create_names_table(clustal_file)
-
         t.create_ID_table()
         rootWeightsArray = t.calculate_weights(probability_matrix)
 
         #compute conservation score
         conservation_score = t.compute_conservation(clustal_file,residue_start,self.position,rootWeightsArray,self.wild_type)
-        #print(conservation_score)
         return conservation_score
 
     #encode conservation score to int value
@@ -523,21 +443,16 @@ class MutationRecord():
                 for word in line.split():
                     if (residue_start > len(word)):
                         count_pos = 0
-                        print(count_pos)
                         for i in range(0, len(word), 1):
                             if (word[i] != '-'):
                                 count_pos += 1
                             if (count_pos == residue_start + index - residue_start):
                                 pos = i
-                                print(word[i])
                                 break
                     else:
-                        print(residue_start)
-                        print(index)
                         count_pos = 0
                         if (residue_start < 0):
-                            chain_res = index + abs(
-                                residue_start)  # +residue_start #+ abs(residue_start) + abs(residue_start) -1
+                            chain_res = index + abs(residue_start)  # +residue_start #+ abs(residue_start) + abs(residue_start) -1
                         elif (residue_start == 1):
                             chain_res = index + residue_start - 1
                         else:
@@ -545,34 +460,26 @@ class MutationRecord():
 
                         for i in range(0, len(word), 1):
                             if (word[i] != '-'):
-                                #print(word[i])
                                 count_pos += 1
                                 if (count_pos == chain_res):
                                     pos = i
-                                    #print(pos)
-                                    #print("ACID:" + word[i])
                                     if (word[i] == wild_type):
-                                        #print('Prvy pokus OK')
                                         break
                                     else:
                                         count_pos = 0
                                         chain_res = index + residue_start - residue_start
                                         for i in range(0, len(word), 1):
                                             if (word[i] != '-'):
-                                                #print(word[i])
                                                 count_pos += 1
                                                 if (count_pos == chain_res):
                                                     pos = i
-                                                    #print(pos)
-                                                    #print("ACID:" + word[i])
                                                     if (word[i] == wild_type):
-                                                        #print('Druhy pokus OK')
                                                         return pos
                                                     else:
                                                         print('Neuspech')
 
             break
-        print(pos)
+        handle.close()
         return pos
 
     #create sequences file
@@ -771,7 +678,7 @@ class MutationRecord():
         index = self.position
 
         asa_keys = list(dssp.keys())
-
+        # find position of mutation to identify it in list of positions with secondary structure
         if residue_start < 0:
             position = index - abs(residue_start)
         elif residue_start == 0:
@@ -819,7 +726,6 @@ class MutationRecord():
         residue_start = self.PDB_parse(self.pdb_id,self.chain)
         self.create_sequence_file(self.pdb_id+"correlation.txt",self.pdb_id+"clustal.fasta")
         mutated_column_index = self.compute_conservation(self.pdb_id+"correlation.txt",residue_start,self.position,self.wild_type)
-        print(mutated_column_index)
         #compute correlation of mutated position
         correlation = self.correlation(self.position,mutated_column_index,residue_start)
         #compute conservation of mutated position
