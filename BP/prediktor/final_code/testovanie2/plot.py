@@ -3,7 +3,7 @@ import plotly.graph_objs as go
 import plotly
 
 x = ['mCSM','Topologynet','MAESTRO','SDM','I-Mutant-2.0','NeeMo','Eris','PopMuSiC-2.0','Prediktor']
-y=[0.74,0.74,0.69,0.53,0.27,0.68,0.34,0.67,-0.34]
+y=[0.74,0.74,0.69,0.53,0.27,0.68,0.34,0.67,0.3]
 data = [go.Bar(
 x=x,
 y=y,

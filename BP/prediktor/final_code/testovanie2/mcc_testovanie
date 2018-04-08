@@ -1,0 +1,12 @@
+['correlation','conservation','chargechange','secondarystruc'] => mcc = 0.25 RF, SVM 0.35 degree = 4
+['correlation','conservation','polaritychange','chargechange'] => 0.33 SVM degree = 4, 0.25 RF
+['correlation','conservation','polaritychange','hydroindexchange'] >= 0.15 RF, 0.21 SVM degree = 4
+['correlation','conservation','polaritychange','secondarystruc'] => 0.24 SVM degree = 3,0.18 RF
+['correlation','conservation','polaritychange','asa'] => 0.29 RF, SVM 0.29 ale rbf degree = 3
+['correlation','conservation','polaritychange','sizechange'] => 0.4 SVM rbf 3, 0.33 RF
+['correlation','conservation','hydroindexchange','secondarystruc','asa'] => 0.22 RF, 0.3 SVM rbf 3
+['conservation','polaritychange','hydroindexchange','secondarystruc','asa'] => 0.18 SVM rbf 3, 0.24 RF
+['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','asa','sizechange'] => 0.36 RF, 0.36 SVM
+['correlation','conservation','polaritychange','hydroindexchange','secondarystruc','asa','sizechange'] => 0.32 SVM, 0.3 RF
+['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','sizechange'] => 0.31 RF, 0.3 SVM rbf
+['correlation','conservation','polaritychange','chargechange','secondarystruc','sizechange'] => 0.46 SVM rbf, 0.39 RF

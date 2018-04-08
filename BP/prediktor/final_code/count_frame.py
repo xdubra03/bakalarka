@@ -11,8 +11,8 @@ import scipy.stats
 
 def count_frame(self):
 	data_frame = pd.read_csv(self)
-	new_frame = data_frame[(data_frame['class'] == 1) & (data_frame['predicted1'] == 1)]
-	neg_frame = data_frame[(data_frame['class'] == -1) & (data_frame['predicted1'] == -1)]
+	new_frame = data_frame[(data_frame['class'] == 1) & (data_frame['predicted2'] == 1)]
+	neg_frame = data_frame[(data_frame['class'] == -1) & (data_frame['predicted2'] == -1)]
 	#print(len(new_frame))
 	#print(len(neg_frame))
 	count = len(new_frame) + len(neg_frame)
@@ -22,8 +22,7 @@ def compute_mcc(self):
 	data_frame = pd.read_csv(self)
 	#print(data_frame['class'])
 	testarr = data_frame['class'].values
-	trainarr = data_frame['predicted2'].values
-	print(trainarr)
+	trainarr = data_frame['predicted1'].values
 	mcc = matthews_corrcoef(testarr, trainarr)
 	target_names = ['1', '-1']
 	print(classification_report(testarr,trainarr, target_names=target_names))
@@ -33,4 +32,3 @@ def compute_mcc(self):
 
 
 compute_mcc(sys.argv[1])
-#count_frame(sys.argv[1])

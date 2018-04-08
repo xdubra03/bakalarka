@@ -2,6 +2,28 @@
 % (c) Michal Bidlo, Bohuslav Křena, 2008
 
 \chapter{Úvod}
+Proteíny patria k~najzložitejším známym molekulám. Tieto zložité molekuly sú základnými stavebnými prvkami každého živého orgamizmu, čo z~nich robí významný cieľ skúmania, najmä z~hľadiska ich rôznych funkcií v~organizme.
+
+V~proteínoch dochádza k~mutáciam aminokyselín, ktoré môžu ovplyvniť stabilitu proteínu v~pozitívnom alebo negatívnom zmysle. Táto vlastnosť proteínov je veľmi dôležitá v~mnohých oblastiach priemyslu, najmä toho farmaceutického. V~poslednom období vzniklo množstvo rôznych nástrojov zaoberajúcich sa predikciou vplyvu mutácií na stabilitu využívajúc rôznych prístupov pri predikcií.
+
+Cieľom tejto práce je vytvorenie, otestovanie a~vyhodnotenie predikčného nástroja kombinujúceho viaceré metódy strojového učenia.
+
+Druhá kapitola sa zaoberá proteínmi a~aminokyselinami. Bližšie sú popísané základné vlastnosti ako štruktúra a~rozdelenie proteínov, rozdelenie aminokyselín a~základná dogma molekulárnej biológie.
+
+Tretia kapitola je určená mutáciam v~aminokyselinách a~stabilite proteínu. Bližšie je uvedená charakteristika stability a~jej súvis s~mutáciami, typy mutácií a~ich vzik.
+
+Štvrtá kapitola podáva stručný úvod do oblasti strojového učenia. Informuje o~základnom rozdelení metód strojového učenia a~ďalej obsahuje podrobnejšiu charakteristiku rôznych klasifikačných algoritmov.
+
+Piata kapitola je venovaná tzv. ensemble metódam slúžiacim na vylepšenie výsledkov pri rôznych problémoch s~ktorými sa stretávame pri využití strojového učenia. Konktrétne sú opísané dôvody na použitie takýchto metód a~najpoužívanejšie techniky na ich tvorbu.
+
+V~šiestej kapitole sú vymenované dostupné nástroje na predikciu stability proteínov. Jednotlivé nástroje obsahujú stručnú charakteristiku a~zaradenie do príslušnej skupiny podľa spôsobu predikcie.
+
+Siedma kapitola sa venuje tvorbe dátovej sady, problémov pri jej tvorbe a~jednotlivým parametrom mutácie použitých pri predikcií. Jednotlivé parametre sú stručne charakterizované.
+
+V~ôsmej kapitole je obsiahnutá implementácia nástroja. Kapitola obsahuje bližšie informácie o~postupe výberu metód strojového učenie pre nástroj, tvorbu tréningových podsád, stručnú charakteristiku použitých technológií a~vyhodnotenie nástroja na testovacej sade. Prítomné sú aj výsledky porovnania implementácie s~vybranými nástrojmi. 
+
+Záverečná kapitola podáva zhrnutie dosiahnutých výsledkov.
+
 
 \chapter{Proteíny}
 
@@ -51,7 +73,7 @@ Popis trojrozmernej štruktúry proteínov môžeme podľa \cite{aminokyseliny} 
 
 \begin{itemize}
 	\item \textbf{Primárna štruktúra:} sekvencia aminokyselín v~polypeptidovom reťazci
-	\item \textbf{Sekundárna štruktúra:} zachytáva elementy, ktoré na krátkych úsekoch v~sekvencií proteínu zaujímajú podobnú konformáciu. Ide najmä o~$\alpha$\--špirálu ($\alpha$\--helix) a $\beta$\--~štruktúra alebo ($\beta$\--skladaný list). $\alpha$\--špirála je také priestorové usporiadanie, kedy reťazec vytvára špirálu. Táto konformácia je stabilizovaná vodíkovými mostíkmi medzi peptidovými väzbami ležiacimi nad sebou \cite{bibid}. V~prípade $\beta$\--štruktúry prebiehajú úseky reťazca paralelne vedľa seba a~sú stabilizované vodíkovými mostíkmi medzi susediacimi úsekmi.
+	\item \textbf{Sekundárna štruktúra:} zachytáva elementy, ktoré na krátkych úsekoch v~sekvencií proteínu zaujímajú podobnú konformáciu. Ide najmä o~$\alpha$\--špirálu ($\alpha$\--helix) a $\beta$\--~štruktúra alebo $\beta$\--skladaný list. $\alpha$\--špirála je také priestorové usporiadanie, kedy reťazec vytvára špirálu. Táto konformácia je stabilizovaná vodíkovými mostíkmi medzi peptidovými väzbami ležiacimi nad sebou \cite{aminokyseliny}. V~prípade $\beta$\--štruktúry prebiehajú úseky reťazca paralelne vedľa seba a~sú stabilizované vodíkovými mostíkmi medzi susediacimi úsekmi.
 	\item \textbf{Terciálna štruktúra:} reprezentuje trojrozmerné priestorové usporiadanie zloženého polypeptidového reťazca \cite{aminokyseliny}. Na podobe výslednej terciálnej štruktúry majú vplyv chemické vlastnosti aminokyselín a~ich usporiadanie v reťazci. 
 	\item \textbf{Kvartérna štruktúra:} popisuje usporiadanie jednotlivých polypeptidových reťazcov v~molekule proteínu. Týka sa to však iba tzv. oligomerných proteínov, ktoré sú tvorené z~viac ako jedného polypetidového reťazca.
 	
@@ -74,7 +96,7 @@ Stabilita je jednou z~najdôležitejších vlastností proteínu. Motivácia sk�
 
 
 \section{Stabilita proteínu}
-Stabilita proteínu je určená množinou vzájomne pôsobiacich a~ovplyvňujúcich sa síl. Tieto sily určujú, či sa proteín nachádza vo svojom pôvodnom zloženom alebo rozloženom (denaturovanom) stave. Stabilita je úzko prepojená so stavom, v~ktorom sa proteín nachádza. Stabilný proteín sa nachádza v~zloženom stave, ktorý je stabilizovaný rôznymi vzájomnými interakciami, kde patria hydrofóbne, elektrostatické, vodíkové väzby alebo van der Waalsove sily. Naopak, nestabilný proteín sa nachádza v~denaturovanom stave, kde dominuje entropická a~neentropická voľná energia. \cite{gromiha}
+Stabilita proteínu je určená množinou vzájomne pôsobiacich a~ovplyvňujúcich sa síl. Tieto sily určujú, či sa proteín nachádza vo svojom pôvodnom zloženom alebo rozloženom (denaturovanom) stave. Stabilita je úzko prepojená so stavom, v~ktorom sa proteín nachádza. Stabilný proteín sa nachádza v~zloženom stave, ktorý je stabilizovaný rôznymi vzájomnými interakciami, kde patria hydrofóbne, elektrostatické, vodíkové väzby alebo van der Waalsove sily. Naopak, nestabilný proteín sa nachádza v~denaturovanom stave, kde dominuje entropická a~neentropická voľná energia \cite{gromiha}.
 
 Stabilitu proteínu je možné reprezentovať ako zmenu tzv. Gibbsovej (voľnej) energie ($\Delta$G) potrebnej na prechod proteínu zo zloženého do denaturovaného stavu alebo naopak. 
 Gibbsova voľná energia je termodynamický potenciál vyjadrujúci maximálne množstvo reverzibilnej práce, ktorá môže byť uskutočnená termodynamickým systémom pri konštantnej teplote a~tlaku. Gibbsova voľná energia je definovaná nasledujúcim vzťahom \cite{gibbs}:
@@ -501,13 +523,13 @@ Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti id
 	\begin{tabular}{ | l | c | c | c| }
 		\hline 
 		Metóda strojového učenia & TP rate & FP rate & Accuracy \\ \hline
-		Naive Bayes & 0,776 & 0,626 & 0,737 \\ \hline
-		LibSVM &  0,786   & 0,706   & 0,766  \\ \hline
-		SMO & 0,774 & 0,774 & 0,6\\ \hline
-		DecisionTable & 0,774 & 0,774 & 0,6\\ \hline
-		RandomForest & 0,793 & 0,692 & 0,797\\ \hline
-		RandomTree & 0,793 & 0,574 & 0,766\\ \hline
-		J48 & 0,774 & 0,626 & 0,74\\ \hline		
+		Naive Bayes & 0.776 & 0.626 & 0.737 \\ \hline
+		LibSVM &  0.786   & 0.706   & 0.766  \\ \hline
+		SMO & 0.774 & 0.774 & 0.6\\ \hline
+		DecisionTable & 0.774 & 0.774 & 0.6\\ \hline
+		RandomForest & 0.793 & 0.692 & 0.797\\ \hline
+		RandomTree & 0.793 & 0.574 & 0.766\\ \hline
+		J48 & 0.774 & 0.626 & 0.74\\ \hline		
 	\end{tabular}
 	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
 \end{table}
@@ -598,7 +620,7 @@ Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na 
 	14.& 0.44 & 0.42 & 0.44 & 0.28 & 0.3 &  0.31\\ \cline{1-7}
 	\hline
 	\end{tabular}
-\caption {Výsledky testovania podsád bez parametra zmeny náboja, dostupnej povrchovej plochy a~kombinácie zmeny indexu hydrofobicity a~dostupnej povrchovej plochy} 
+\caption {Výsledky testovania podsád bez parametra dostupnej povrchovej plochy, zmeny náboja a~kombinácie zmeny indexu hydrofobicity a~dostupnej povrchovej plochy} 
 \label{pythontest1} 
 \end{table}
 
@@ -607,7 +629,7 @@ Tabuľka \ref{pythontest1} ukazuje výsledky testovania podsád bez odstránený
 
 Implementovaný ensemble systém pozostáva so spojenia metód Random Forest a~SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a~metóda SVM štyrikrát. Každým natrénovaním sme získali údaj o~výslednej triede, nakoniec sme mali sedem hodnôt predikovanej triedy pre mutáciu. Výslednú hodnotu výslednej triedy sme získali hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
 
-Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 14 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra zmeny indexu náboja. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
+Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 14 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
 
 \begin{figure}[H]
 	\centering
@@ -622,10 +644,10 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 
 \section{Porovnanie s inými nástrojmi}
 
-Po implementovaní prediktora sme jeho predikčnú silu porovnali s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, ktoré sú prevažne stabilizujúce. 
-Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup sme zvolili najmä preto, že natrénovanie a~otestovanie iných nástrojov na nami vytvorenej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len ako webová aplikácia.
+Po implementovaní prediktora sme jeho predikčnú silu porovnali s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z ktorých je 95 stabilizujúcich a 255. 
+Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup sme zvolili najmä preto, že natrénovanie a~otestovanie iných nástrojov na nami vytvorenej dátovej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len v podobe webovej aplikácie.
 
-Pred fázou testovania sme zo sady S350 odstránili záznamy mutácií s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa nenáchadzajú ani v našej zostavenje sade, výsledná sada obsahovala 239 záznamov. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Podľa našeho rozhodovacieho prahu sme každému záznamu určili príslušnú triedu. 
+Zo sady S350 sme neodstránili záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v našej dátovej sade nevyskytujú. Záznamy s týmito hodnotami sme ponechali nakoľko by porovanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola taká, že mutácie s $\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti našej dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
 
 
 \begin{figure}[H]
@@ -640,21 +662,15 @@ Pred fázou testovania sme zo sady S350 odstránili záznamy mutácií s~hodnoto
 	\end{center}
 \end{figure}
 
-Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj mCSM využívajúci grafovo založené vzory vzdialeností medzi jednotlivými atómami. Medzi ďaľšie nástroje s~vysokou hodnotiu korelácie patria Topologynet, ktorý využíva tzv. hlbokého učenia; nástroj NeeMo využívajúci trojvrstvovú neurónovú sieť; PopMuSiC využívajúci štatistický potenciál a~MAESTRO, ktorý kombinuje štatistický potenciál, neurónovú sieť, SVM a~lineárnu regresiu. Všetky spomínané nástroje dosiahli koreláciu väčšiu ako 0.6.
+Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj mCSM využívajúci grafovo založené vzory vzdialeností medzi jednotlivými atómami. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria Topologynet, ktorý využíva tzv. hlbokého učenia; nástroj NeeMo využívajúci trojvrstvovú neurónovú sieť; PopMuSiC využívajúci štatistický potenciál a~MAESTRO, ktorý kombinuje štatistický potenciál, neurónovú sieť, SVM a~lineárnu regresiu. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0.6.
 
-Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahol nástroj SDM založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant využívajúci SVM a~Eris založený na fyzikálnom potenciále.
+Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahol nástroj SDM založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant využívajúci SVM a~Eris založený na fyzikálnom potenciále. U týchto dvoch nástrojov sa hodnota korelácie pohybuje okolo hodnoty 0.3.
 
 U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej dátovej sade na trénovanie a~rovnako spôsob validácie nástroja, takže ich nie je možné brať do úvahy pri porovnávaní nástrojov.
 
-Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej zápornej korelácie ako nástroj I-Mutant. Dva ďaľšie nástroje mCSM a~MAESTRO však dosahujú lepších výsledkov. Pri nástroji MAESTRO sa však jedná o~zložitejší systém, ktorý tiež vyžaduje viac výpočetného času. 
+Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej korelácie ako nástroj I-Mutant. Nejde o výrazný rozdiel, I-Mutant dosiahol koreláciu 0.27 a náš prediktor 0.3. Dva ďaľšie nástroje mCSM a~MAESTRO však dosahujú lepších výsledkov. Pri nástroji MAESTRO sa však jedná o~zložitejší systém, ktorý tiež vyžaduje viac prostriedkov na výpočet. 
 
-Náš prediktor dosiahol hodnoty korelácie -0.34, čo je zapríčené najmä malým množstvom stabilizujúcich záznamov na trénovanie metód a~testovacia sada ich obsahuje takmer rovanký počet ako je ich počet na trénovanie. Mnoho stabilizujúcich mutácií bolo nesprávne predikovaných ako destabilizujúce. 
-
-
-
-
-
-
+Náš prediktor dosiahol hodnoty korelácie 0.3, čo predstavuje relatívne dobrý výsledok, nakoľko množstvo dát s ktorými sme pracovali bol obmedzený. Rýchlosť predikcie a dosiahnutý výsledok tvorí kompromis medzi týmito hodnotami. 
 
 
 

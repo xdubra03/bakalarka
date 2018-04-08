@@ -38,7 +38,7 @@ class Ensemble():
         columns_asa = ['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','sizechange']
         class_column = ['class']
         predicted_class = list()
-        #prepare frame for test record with all columns
+        # prepare frame for test record with all columns
         X_testArray = self.X_test.as_matrix(columns)
         Y_testResults = self.X_test.as_matrix(class_column)
         Y_testResults = Y_testResults.ravel()
@@ -47,39 +47,37 @@ class Ensemble():
         Y_testResults1 = self.X_test.as_matrix(class_column)
         Y_testResults1 = Y_testResults1.ravel()
 
-        #train classifiers on specific subset of dataset, 3 SVM classifiers and 4 Random Forest
-        #200 250  SVM
-        classifier = pickle.load(open('./models/svm_model10.sav', 'rb'))
+        # train classifiers on specific subset of dataset, 4 SVM classifiers and 3 Random Forest
+
+        classifier = pickle.load(open('./models/svm_model1.sav', 'rb'))
         svm_results1 = classifier.predict(X_testArray)
         predicted_class.append(svm_results1)
 
-        #250 250 SVM
-        classifier = pickle.load(open('./models/svm_model11.sav', 'rb'))
+        classifier = pickle.load(open('./models/svm_model2.sav', 'rb'))
         svm_results2 = classifier.predict(X_testArray)
         predicted_class.append(svm_results2)
 
-        #200 250 bez asa SVM
-        classifier = pickle.load(open('./models/svm_model12.sav', 'rb'))
+        classifier = pickle.load(open('./models/svm_model3.sav', 'rb'))
         svm_results3 = classifier.predict(X_testArray)
         predicted_class.append(svm_results3)
 
-        classifier = pickle.load(open('./models/svm_model13.sav', 'rb'))
+        classifier = pickle.load(open('./models/svm_model4.sav', 'rb'))
         svm_results4 = classifier.predict(X_testArray)
         predicted_class.append(svm_results4)
 
-        rf = pickle.load(open('./models/rf_model10.sav', 'rb'))
+        rf = pickle.load(open('./models/rf_model1.sav', 'rb'))
         rf_result1 = rf.predict(X_testArray)
         predicted_class.append(rf_result1)
 
-        rf = pickle.load(open('./models/rf_model11.sav', 'rb'))
+        rf = pickle.load(open('./models/rf_model2.sav', 'rb'))
         rf_result2 = rf.predict(X_testArray)
         predicted_class.append(rf_result2)
 
-        rf = pickle.load(open('./models/rf_model12.sav', 'rb'))
+        rf = pickle.load(open('./models/rf_model3.sav', 'rb'))
         rf_result3 = rf.predict(X_testArray)
         predicted_class.append(rf_result3)
 
-        #get final result by majority voting
+        # get final result by majority voting
         countNeg = 0
         countPos = 0
         final_class = 1
@@ -105,17 +103,6 @@ class StabilityPredictor():
         self.mutant = ''
         self.position = ''
 
-    def getPdb(self):
-        return self.pdb_id
-    def getChain(self):
-        return self.chain
-    def getWildType(self):
-        return self.wild_type
-    def getMutant(self):
-        return self.mutant
-    def getPosition(self):
-        return self.position
-
     def print_help(self):
         sys.stderr.write('Predictor usage:\n')
         sys.stderr.write('------------------')
@@ -127,9 +114,11 @@ class StabilityPredictor():
         sys.stderr.write('POSITION position of mutation in protein sequence, at firt you have to renumber position as the residue would start at position 1\n')
         sys.stderr.write('WILD_TYPE wild type amino acid\n')
         sys.stderr.write('MUTANT mutated amino acid\n')
-    #parse command line arguments
+
+    # parse command line arguments
     def parseArguments(self):
         if('-h' in sys.argv or '--help' in sys.argv):
+
              self.print_help()
              sys.exit(0)
         elif(len(sys.argv) > 6):
@@ -147,20 +136,21 @@ class StabilityPredictor():
         self.wild_type = self.wild_type.upper()
         self.mutant = self.mutant.upper()
 
-    #prepare mutation record with mutation features
+    # prepare mutation record with mutation features
     def createMutationRecord(self):
         record = MutationRecord(self.pdb_id,self.chain,self.position,self.wild_type,self.mutant)
         record.create_record()
-    #predict class of mutation
+
+    # predict class of mutation
     def predict(self):
         ensemble = Ensemble()
         stability_class = ensemble.predict()
-        return stability_class
 
-        if(stability_class == -1):
-            return "destabilizing"
+        if(stability_class == 1):
+            return 'stabilizing'
         else:
-            return "stabilizing"
+            return 'destabilizing'
+
 
 def main():
     predictor = StabilityPredictor(object)

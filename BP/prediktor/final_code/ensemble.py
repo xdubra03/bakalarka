@@ -1,52 +1,67 @@
+#!/usr/bin/python3.6
 import numpy as np
 import pandas as pd
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
 import csv
+import pickle
 
 class Ensemble():
-
+    """ensemble system class"""
     def __init__(self):
-        X_frame1 = pd.read_csv("train200_250_2.csv")
-        X_frame2 = pd.read_csv("train250_250.csv")
-        X_frame3 = pd.read_csv("train250_200.csv")
-        X_frame4 = pd.read_csv("train300_300.csv")
-        X_frame5 = pd.read_csv("train300_300_1.csv")
-        X_frame6 = pd.read_csv("train300_300_2.csv")
+        self.X_test = pd.read_csv("records.csv")
 
     def predict(self):
+        """predict class of mutation"""
+
         columns = ['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','asa','sizechange']
         columns_asa = ['correlation','conservation','polaritychange','chargechange','hydroindexchange','secondarystruc','sizechange']
-        result_column = ['class']
-        # prepare X_frame1
-        X_trainArray0 = X_frame1.as_matrix(columns)
-        Y_trainResults0 = X_frame1.as_matrix(result_column)
-        Y_trainResults0 = X_trainResults0.ravel()
-        #prepare X_frame2
-        X_trainArray1 = X_frame2.as_matrix(columns)
-        Y_trainResults1 = X_frame2.as_matrix(result_column)
-        Y_trainResults1 = trainRes1.ravel()
-        #prapare X_fram3
-        trainArr2 = train_frame3.as_matrix(cols)
-        trainRes2 = train_frame3.as_matrix(colsRes)
-        trainRes2 = trainRes2.ravel()
+        class_column = ['class']
+        predicted_class = list()
+        #prepare frame for test record with all columns
+        X_testArray = self.X_test.as_matrix(columns)
+        Y_testResults = self.X_test.as_matrix(class_column)
+        Y_testResults = Y_testResults.ravel()
+        #prepare frame for test record without asa column
+        X_testArray1 = self.X_test.as_matrix(columns_asa)
+        Y_testResults1 = self.X_test.as_matrix(class_column)
+        Y_testResults1 = Y_testResults1.ravel()
 
-        #dataset 150 200 bez hydroindexu
-        trainArr3 = train_frame4.as_matrix(cols)
-        trainRes3 = train_frame4.as_matrix(colsRes)
-        trainRes3 = trainRes3.ravel()
+        #train classifiers on specific subset of dataset, 3 SVM classifiers and 4 Random Forest
+        #200 250  SVM
+        classifier = pickle.load(open('./models/svm_model10.sav', 'rb'))
+        svm_results1 = classifier.predict(X_testArray)
+        predicted_class.append(svm_results1)
 
-        #datset 261 300 bez asa
-        trainArr4 = train_frame5.as_matrix(cols)
-        trainRes4 = train_frame5.as_matrix(colsRes)
-        trainRes4 = trainRes4.ravel()
+        #250 250 SVM
+        classifier = pickle.load(open('./models/svm_model11.sav', 'rb'))
+        svm_results2 = classifier.predict(X_testArray)
+        predicted_class.append(svm_results2)
 
-        #200 200 bez asa/hydro
-        trainArr5 = train_frame6.as_matrix(cols)
-        trainRes5 = train_frame6.as_matrix(colsRes)
-        trainRes5 = trainRes5.ravel()
+        #200 250 bez asa SVM
+        classifier = pickle.load(open('./models/svm_model12.sav', 'rb'))
+        svm_results3 = classifier.predict(X_testArray)
+        predicted_class.append(svm_results3)
 
-        #daatset 250 250 bez asa/hydro
-        trainArr6 = train_frame1.as_matrix(cols2)
-        trainRes6 = train_frame1.as_matrix(colsRes)
-        trainRes6 = trainRes6.ravel()
+        classifier = pickle.load(open('./models/svm_model13.sav', 'rb'))
+        svm_results4 = classifier.predict(X_testArray)
+        predicted_class.append(svm_results4)
+
+        rf = pickle.load(open('./models/rf_model10.sav', 'rb'))
+        rf_result1 = rf.predict(X_testArray)
+        predicted_class.append(rf_result1)
+
+        rf = pickle.load(open('./models/rf_model11.sav', 'rb'))
+        rf_result2 = rf.predict(X_testArray)
+        predicted_class.append(rf_result2)
+
+        rf = pickle.load(open('./models/rf_model12.sav', 'rb'))
+        rf_result3 = rf.predict(X_testArray)
+        predicted_class.append(rf_result3)
+
+        with open('majority_voting4_new.csv', 'w') as f:
+            writer = csv.writer(f, delimiter=',')
+            writer.writerows(zip(svm_results1,svm_results2,svm_results3,svm_results4,rf_result1,rf_result2,rf_result3))
+
+e = Ensemble()
+e.predict()

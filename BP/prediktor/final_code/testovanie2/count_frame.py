@@ -10,10 +10,10 @@ from sklearn.metrics import classification_report
 
 def count_frame(self):
 	data_frame = pd.read_csv(self)
-	new_frame = data_frame[(data_frame['class'] == 1) & (data_frame['predicted1'] == 1)]
-	neg_frame = data_frame[(data_frame['class'] == -1) & (data_frame['predicted1'] == -1)]
-	#print(len(new_frame))
-	#print(len(neg_frame))
+	new_frame = data_frame[(data_frame['class'] == 1)]
+	neg_frame = data_frame[(data_frame['class'] == -1)]
+	print(len(new_frame))
+	print(len(neg_frame))
 	count = len(new_frame) + len(neg_frame)
 	print(count)
 
@@ -28,5 +28,5 @@ def compute_mcc(self):
 	print(mcc)
 
 
-compute_mcc(sys.argv[1])
-#count_frame(sys.argv[1])
+#compute_mcc(sys.argv[1])
+count_frame(sys.argv[1])

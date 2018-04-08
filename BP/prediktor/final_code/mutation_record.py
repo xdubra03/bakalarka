@@ -293,6 +293,8 @@ class MutationRecord():
     def get_pdb(self):
         """download PDB file"""
         protein_file = self.pdb_id + ".pdb"
+        if (os.path.exists(protein_file) and os.path.getsize(protein_file) > 0):
+            return
         with open(protein_file, "w") as pdb_output:
             url_pdb = "https://files.rcsb.org/download/%s.pdb" %self.pdb_id
             try:
@@ -319,11 +321,13 @@ class MutationRecord():
     def get_fasta(self):
         """get FASTA file for selected chain"""
     	fasta_file = self.pdb_id + ".fasta"
+        if(os.path.exists(fasta_file) and os.path.getsize(fasta_file) > 0):
+            return
     	with open(fasta_file,"w") as fasta_output:
             url = "https://www.rcsb.org/pdb/download/downloadFile.do?fileFormat=fastachain&compression=NO&structureId=%s&chainId=%s"%(self.pdb_id,self.chain)
             try:
                 handle = urllib2.urlopen(url)
-            except URLError as error:
+            except HTTPError as error:
                 print(error.reason)
                 sys.exit(error.code)
             fasta_output.write(handle.read())
@@ -746,8 +750,9 @@ class MutationRecord():
         asa_val = self.divide_asa(asa)
         asa_val = self._encode_asa[asa_val]
         struc_id = self._encode_sec_struc[struc_id]
-        #save inforrmations as a record for predictor
-        #record is stored in file pred_record.txt
+
+        # save inforrmations as a record for predictor
+        # record is stored in mutation_record.csv file
         with open("mutation_record.csv","w") as record:
             record.write('%s,%s,%s,%s,%s,%s,%s,%s\n' %("correlation","conservation","polaritychange","chargechange","hydroindexchange","secondarystruc","asa","sizechange"))
             record.write('%s,%s,%s,%s,%s,%s,%s,%s' %(correlation,conservation_code,f_polarity,f_charge,f_hydro_index,struc_id,asa_val,size))
