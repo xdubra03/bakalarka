@@ -22,7 +22,7 @@ Siedma kapitola sa venuje tvorbe dátovej sady, problémov pri jej tvorbe a~jedn
 
 V~ôsmej kapitole je obsiahnutá implementácia nástroja. Kapitola obsahuje bližšie informácie o~postupe výberu metód strojového učenie pre nástroj, tvorbu tréningových podsád, stručnú charakteristiku použitých technológií a~vyhodnotenie nástroja na testovacej sade. Prítomné sú aj výsledky porovnania implementácie s~vybranými nástrojmi. 
 
-Záverečná kapitola podáva zhrnutie dosiahnutých výsledkov.
+Záverečná deviata kapitola podáva zhrnutie dosiahnutých výsledkov v rámci testovania nástroja.
 
 
 \chapter{Proteíny}
@@ -604,20 +604,20 @@ Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na 
 	\hline
 	Dataset & \multicolumn{3}{c|}{MCC (SVM)} & \multicolumn{3}{c|}{MCC (RF)} \\ \cline{1-7}
 	\hline 
-	1. & 0.3 & 0.27 & 0.32 & 0.2 & 0.17 & 0.2 \\ \cline{1-7} 
-	2. & 0.31 & 0.33 & 0.4 & 0.25 & 0.19 & 0.21\\ \cline{1-7} 
-	3. & 0.28 & 0.4 & 0.38 & 0.2 & 0.18 & 0.13 \\ \cline{1-7}
-	4. & 0.36 & 0.36 & 0.39 & 0.29 & 0.21 & 0.22 \\ \cline{1-7}
-	5. & 0.41 & 0.42 & 0.41 & 0.28 & 0.23 & 0.24\\ \cline{1-7}
-	6. & 0.44 & 0.41 & 0.4 & 0.3 & 0.29 & 0.25\\ \cline{1-7}
-	7. & 0.4 & 0.29 & 0.39 & 0.26 & 0.28 & 0.3\\ \cline{1-7}
-	8. & 0.47 & 0.36 & 0.42 & 0.28 & 0.29 & 0.29\\ \cline{1-7}
-	9. & 0.45 & 0.36 & 0.41 & 0.27 & 0.26 & 0.31\\ \cline{1-7}
-	10.& 0.36 & 0.42 & 0.46 & 0.29 & 0.28 & 0.32\\ \cline{1-7}
+	1. & 0.3 & 0.27 & 0.32 & 0.17 & 0.2 & 0.2 \\ \cline{1-7} 
+	2. & 0.31 & 0.33 & 0.4 & 0.19 & 0.25 & 0.21\\ \cline{1-7} 
+	3. & 0.28 & 0.4 & 0.38 & 0.18 & 0.2 & 0.13 \\ \cline{1-7}
+	4. & 0.36 & 0.36 & 0.39 & 0.21 & 0.29 & 0.22 \\ \cline{1-7}
+	5. & 0.41 & 0.42 & 0.41 & 0.23 & 0.28 & 0.24\\ \cline{1-7}
+	6. & 0.44 & 0.41 & 0.4 & 0.29 & 0.3 & 0.25\\ \cline{1-7}
+	7. & 0.4 & 0.29 & 0.39 & 0.28 & 0.26 & 0.3\\ \cline{1-7}
+	8. & 0.47 & 0.36 & 0.42 & 0.29 & 0.28 & 0.29\\ \cline{1-7}
+	9. & 0.45 & 0.36 & 0.41 & 0.26 & 0.27 & 0.31\\ \cline{1-7}
+	10.& 0.36 & 0.42 & 0.46 & 0.28 & 0.29 & 0.32\\ \cline{1-7}
 	11.& 0.43 & 0.39 & 0.42 & 0.32 & 0.32 & 0.27\\ \cline{1-7}
-	12.& 0.44 & 0.4 & 0.43  & 0.33 & 0.31 & 0.32\\ \cline{1-7}
-	13.& 0.41 & 0.36  & 0.41 & 0.27 & 0.28 & 0.33\\ \cline{1-7}
-	14.& 0.44 & 0.42 & 0.44 & 0.28 & 0.3 &  0.31\\ \cline{1-7}
+	12.& 0.44 & 0.4 & 0.43  & 0.31 & 0.33 & 0.32\\ \cline{1-7}
+	13.& 0.41 & 0.36  & 0.41 & 0.28 & 0.27 & 0.33\\ \cline{1-7}
+	14.& 0.44 & 0.42 & 0.44 & 0.3 & 0.28 &  0.31\\ \cline{1-7}
 	\hline
 	\end{tabular}
 \caption {Výsledky testovania podsád bez parametra dostupnej povrchovej plochy, zmeny náboja a~kombinácie zmeny indexu hydrofobicity a~dostupnej povrchovej plochy} 
@@ -629,7 +629,7 @@ Tabuľka \ref{pythontest1} ukazuje výsledky testovania podsád bez odstránený
 
 Implementovaný ensemble systém pozostáva so spojenia metód Random Forest a~SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a~metóda SVM štyrikrát. Každým natrénovaním sme získali údaj o~výslednej triede, nakoniec sme mali sedem hodnôt predikovanej triedy pre mutáciu. Výslednú hodnotu výslednej triedy sme získali hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
 
-Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 14 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
+Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 13 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
 
 \begin{figure}[H]
 	\centering
@@ -671,6 +671,25 @@ U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej d�
 Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej korelácie ako nástroj I-Mutant. Nejde o výrazný rozdiel, I-Mutant dosiahol koreláciu 0.27 a náš prediktor 0.3. Dva ďaľšie nástroje mCSM a~MAESTRO však dosahujú lepších výsledkov. Pri nástroji MAESTRO sa však jedná o~zložitejší systém, ktorý tiež vyžaduje viac prostriedkov na výpočet. 
 
 Náš prediktor dosiahol hodnoty korelácie 0.3, čo predstavuje relatívne dobrý výsledok, nakoľko množstvo dát s ktorými sme pracovali bol obmedzený. Rýchlosť predikcie a dosiahnutý výsledok tvorí kompromis medzi týmito hodnotami. 
+
+\chapter{Závěr}
+
+Hlavnou náplňou tejto práce bolo vytvorenie predikčného nástroja využívajúceho metódy strojového učenia, ktorý by určoval vplyv aminokyselinových mutácií na stabilitu proteínu.
+
+Keďže ide o~predikčný nástroj, v~prvom kroku bolo potrebné získať dáta určené na trénovanie a~testovanie nástroja. Zostavený dataset obsahuje 1564 jednobodových mutácií získaných z~databázy \textit{ProTherm}. Jedná sa o~unikátny dataset, očistený od mutácií obsahujúce rôzne nedostatky pri uvádzaných hodnotách mutácií. Každá mutácia je doplnená o~8 parametrov slúžiacich na rozhodovanie.
+
+V~nasledujúcom kroku bolo potrebné zvoliť metódy strojového učenia. Pomocou nástroja WEKA bolo na zostavenom datasete odskúšaných viacero dostupných metód a~nakoniec boli vybrané metódy Random Forest a~SVM. Tieto metódy sa stali základom implementovaného ensemble systému.
+
+Nástroj obsahuje ensemble systém kombinujúci metódy Random Forest a~SVM na predikciu výsledného vplyvu mutácie. Zvolený prístup slúži na vysporiadanie sa s~menším množstvom dát a~rovnako na zlepšenie robustnosti predikcie. 
+Na vytvorenie ensemble stratégie bolo potrebné vytvoriť menšie podsady, ktoré slúžili na natrénovanie jednotlivých metód. Takýto prístup predikcie dosiahol na testovacej dátovej sade o~veľkosti 250 mutácií vytvoreného z~pôvodnej dátovej sady hodnotu korelačného koeficientu 0.55. Oproti použitiu samostanej metódy Random Forest, ktorá dosiahla na zostavenej sade koreláciu 0.34 alebo metóde SVM s~koreláciou 0.36 ide o~značné zlepšenie tejto hodnoty.
+
+Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mutácií S350. Na tejto sade dosiahol prediktor hodnotu korelačného koeficientu 0.3 a~presnosť dosiahla 67\%.
+
+Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobre nie je jednoduché, pretože databáza ProTherm obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
+Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenie fylogenetického stromu a~použitia Felsteinovho algoritmu.
+
+
+
 
 
 
@@ -715,7 +734,5 @@ Pojem {\it normovaná stránka} se vztahuje k~posuzování objemu práce, nikoli
 Orientační rozsah práce v~normostranách lze v~programu Microsoft Word zjistit pomocí funkce {\it Počet slov} v~menu {\it Nástroje}, když hodnotu {\it Znaky (včetně mezer)} vydělíte konstantou 1800. Do rozsahu práce se započítává pouze text uvedený v~jádru práce. Části jako abstrakt, klíčová slova, prohlášení, obsah, literatura nebo přílohy se do rozsahu práce nepočítají. Je proto nutné nejdříve označit jádro práce a~teprve pak si nechat spočítat počet znaků. Přibližný rozsah obrázků odhadnete ručně. Podobně lze postupovat i~při použití OpenOffice. Při použití systému LaTeX pro sazbu je situace trochu složitější. Pro hrubý odhad počtu normostran lze využít součet velikostí zdrojových souborů práce podělený konstantou cca 2000 (normálně bychom dělili konstantou 1800, jenže ve zdrojových souborech jsou i~vyznačovací příkazy, které se do rozsahu nepočítají). Pro přesnější odhad lze pak vyextrahovat holý text z~PDF (např. metodou cut-and-paste nebo {\it Save as Text\ldots}) a~jeho velikost podělit konstantou 1800. 
 
 
-\chapter{Závěr}
-Závěrečná kapitola obsahuje zhodnocení dosažených výsledků se zvlášť vyznačeným vlastním přínosem studenta. Povinně se zde objeví i zhodnocení z pohledu dalšího vývoje projektu, student uvede náměty vycházející ze zkušeností s řešeným projektem a uvede rovněž návaznosti na právě dokončené projekty.
 
 %=========================================================================
