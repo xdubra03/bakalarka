@@ -21,43 +21,44 @@
 \contentsline {subsection}{\numberline {4.3.2}Algoritmus SMO}{15}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Algoritmus Naive Bayes}{15}{section.4.4}
 \contentsline {chapter}{\numberline {5}Ensemble met\IeC {\'o}dy}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Tvorba ensemble syst\IeC {\'e}mov}{17}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Bagging}{17}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Boosting}{17}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Spojenie klasifik\IeC {\'a}torov}{18}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Tr\IeC {\'e}novate\IeC {\v l}n\IeC {\'e} met\IeC {\'o}dy}{18}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Netr\IeC {\'e}novate\IeC {\v l}n\IeC {\'e} met\IeC {\'o}dy}{19}{subsection.5.2.2}
-\contentsline {chapter}{\numberline {6}N\IeC {\'a}stroje na predikciu stability}{20}{chapter.6}
-\contentsline {section}{\numberline {6.1}Strojov\IeC {\'e} u\IeC {\v c}enie}{20}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}AUTO-MUTE}{20}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}I-Mutant}{20}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}iPTREE-STAB}{21}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}EASE-AA}{21}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}mCSM}{21}{subsection.6.1.5}
-\contentsline {subsection}{\numberline {6.1.6}MAESTRO}{21}{subsection.6.1.6}
-\contentsline {subsection}{\numberline {6.1.7}ELASPIC}{21}{subsection.6.1.7}
-\contentsline {section}{\numberline {6.2}Energetick\IeC {\'a} funkcia - fyzik\IeC {\'a}lny potenci\IeC {\'a}l}{22}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}CC/PBSA}{22}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}ERIS}{22}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Rosetta}{22}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}CUPSAT}{22}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Energetick\IeC {\'a} funkcia - \IeC {\v s}tatistick\IeC {\'y} potenci\IeC {\'a}l}{22}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}PopMuSiC}{23}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}DMutant}{23}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}FoldX}{23}{subsection.6.3.3}
-\contentsline {chapter}{\numberline {7}D\IeC {\'a}tov\IeC {\'a} sada a~jej parametre}{24}{chapter.7}
-\contentsline {section}{\numberline {7.1}Parametre muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu}{25}{section.7.1}
-\contentsline {section}{\numberline {7.2}Felsteinov algoritmus}{26}{section.7.2}
-\contentsline {chapter}{\numberline {8}Implement\IeC {\'a}cia}{27}{chapter.8}
-\contentsline {section}{\numberline {8.1}Testovanie vo WEKE}{27}{section.8.1}
-\contentsline {section}{\numberline {8.2}Pr\IeC {\'\i }prava muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu v Pythone}{28}{section.8.2}
-\contentsline {section}{\numberline {8.3}Testovanie met\IeC {\'o}d strojov\IeC {\'e}ho u\IeC {\v c}enia v Pythone}{29}{section.8.3}
-\contentsline {section}{\numberline {8.4}Ensemble syst\IeC {\'e}m v Pythone}{29}{section.8.4}
-\contentsline {section}{\numberline {8.5}Porovnanie s in\IeC {\'y}mi n\IeC {\'a}strojmi}{31}{section.8.5}
-\contentsline {chapter}{\numberline {9}Z\IeC {\'a}v\IeC {\v e}r}{34}{chapter.9}
-\contentsline {chapter}{\numberline {10}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{35}{chapter.10}
-\contentsline {section}{\numberline {10.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{36}{section.10.1}
-\contentsline {chapter}{Literat\IeC {\'u}ra}{38}{chapter*.2}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{41}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{42}{section*.4}
+\contentsline {section}{\numberline {5.1}R\IeC {\^o}znorodos\IeC {\v t} v ensemble syst\IeC {\'e}moch}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Tvorba ensemble syst\IeC {\'e}mov}{17}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Bagging}{18}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Boosting}{18}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Spojenie klasifik\IeC {\'a}torov}{19}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Tr\IeC {\'e}novate\IeC {\v l}n\IeC {\'e} met\IeC {\'o}dy}{19}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Netr\IeC {\'e}novate\IeC {\v l}n\IeC {\'e} met\IeC {\'o}dy}{20}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {6}N\IeC {\'a}stroje na predikciu stability}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Strojov\IeC {\'e} u\IeC {\v c}enie}{21}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}AUTO-MUTE}{21}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}I-Mutant}{21}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}iPTREE-STAB}{22}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}EASE-AA}{22}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}mCSM}{22}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}MAESTRO}{22}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}ELASPIC}{22}{subsection.6.1.7}
+\contentsline {section}{\numberline {6.2}Energetick\IeC {\'a} funkcia - fyzik\IeC {\'a}lny potenci\IeC {\'a}l}{23}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}CC/PBSA}{23}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}ERIS}{23}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Rosetta}{23}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}CUPSAT}{23}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Energetick\IeC {\'a} funkcia - \IeC {\v s}tatistick\IeC {\'y} potenci\IeC {\'a}l}{23}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}PopMuSiC}{24}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}DMutant}{24}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}FoldX}{24}{subsection.6.3.3}
+\contentsline {chapter}{\numberline {7}D\IeC {\'a}tov\IeC {\'a} sada a~jej parametre}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}Parametre muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu}{26}{section.7.1}
+\contentsline {section}{\numberline {7.2}Felsteinov algoritmus}{27}{section.7.2}
+\contentsline {chapter}{\numberline {8}Implement\IeC {\'a}cia}{28}{chapter.8}
+\contentsline {section}{\numberline {8.1}Testovanie vo WEKE}{28}{section.8.1}
+\contentsline {section}{\numberline {8.2}Pr\IeC {\'\i }prava muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu v Pythone}{29}{section.8.2}
+\contentsline {section}{\numberline {8.3}Testovanie met\IeC {\'o}d strojov\IeC {\'e}ho u\IeC {\v c}enia v Pythone}{30}{section.8.3}
+\contentsline {section}{\numberline {8.4}Ensemble syst\IeC {\'e}m v Pythone}{30}{section.8.4}
+\contentsline {section}{\numberline {8.5}Porovnanie s in\IeC {\'y}mi n\IeC {\'a}strojmi}{32}{section.8.5}
+\contentsline {chapter}{\numberline {9}Z\IeC {\'a}ver}{35}{chapter.9}
+\contentsline {chapter}{\numberline {10}Typografick\IeC {\'e} a~jazykov\IeC {\'e} z\IeC {\'a}sady}{36}{chapter.10}
+\contentsline {section}{\numberline {10.1}Co to je normovan\IeC {\'a} str\IeC {\'a}nka?}{37}{section.10.1}
+\contentsline {chapter}{Literat\IeC {\'u}ra}{39}{chapter*.2}
+\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{42}{appendix.A}
+\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{43}{section*.4}
 \contentsfinish 

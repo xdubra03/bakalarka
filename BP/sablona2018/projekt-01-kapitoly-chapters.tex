@@ -311,6 +311,20 @@ Podľa \cite{polikar} existuje mnoho teoretických a~praktických dôvodov na po
 	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná alebo leží mimo oblasti funkcií dostupných pre vybraný klasifikačný model. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov tzv. ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v~tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z~častí.
 \end{itemize}
 
+\section{Rôznorodosť v ensemble systémoch}
+
+V posedných rokoch niekoľko štúdií teoreticky \cite{bibid} aj prakticky \cite{bibid} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora keď členovia systému sú dostatočne presní a robia niekoľko zhodných chýb. Natrénovanie klasifikátora, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, potrebujeme klasifikátory ktoré robia chyby na odlišných častiach tréningových dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a presnejšej predikcie. 
+
+Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v jednej zo Zhangových štúdií \cite{}. V nej je demonštrované, že ensemble systém pozostávajúci z troch rovnakých klasifikátorov s presnosťou 95\% je horší ako ensemble pozostávajúci z klasifikátorov, ktorých presnosť je len 67\% a najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
+
+Existuje niekoľko možností ako dosiahnuť vysokú rozmanitosť jednotlivcov:
+\begin{itemize}
+	\item \textbf{Rôzne tréningové dátové sady:} Tréningová dátová sada môže byť rozdelená na menšie celky a každá takáto menšia podsada je použitá na natrénovanie jedného samostatného klasifikátora. Na rozdelenie dát môže byť použitá technika z niekoľkých dostupných prevzorkovávacích techník. Jednou z najbežnejších takýchto techník je tzv. bootstrap technika. Exituje však niekoľko ďaľších, napríklad metódy ako tzv. jack-knife.
+	\item \textbf{Rôzne tréningové parametre:} Použitie rôznych tréningových parametrov pre jednotlivé klasikikátory je tiež jednou z možných ciest. Napríklad viacvrstvová neurónová sieť môže byť trénovaná využitím rôznych vstupných váh vrstiev a uzlov v každej vrstve. Tento prístup umožňuje kontrolu nestability klasifikátorov a ako následok prispieva k ich rozmanitosti. 	
+	\item \textbf{Rôzne parametre pri predikcií:} Lineárny klasifikátor môže mať niekedy problém s nachádzaním vzorov u parametrov, ktoré sú veľmi vzdialené. Pre riešenie tohto problému môže byť prospešné experimentovanie s rozličnými podsadami predikovaných parametrov generovaných buď metódami učenia s učiteľom alebo bez neho. \cite{}	
+	\item \textbf{Rôzne typy klasikikátorov:} Neexistuje žiadny nadradený klasifikátor, ktorý by poskytoval najlepšie výsledky bez ohľadu na oblasť odborníka alebo množstva tréningových dát. Na druheje strane, na každý problém zvyčajne existuje niekoľko vhodných klasifikátorov, preto výber niekoľkých z nich a kombinácia ich výstupov je možnou cestou ako vytvoriť množinu klasifikátorv s rôznymi rozhodovacími hranicami.
+\end{itemize}
+.
 
 \section{Tvorba ensemble systémov}
 
@@ -662,17 +676,17 @@ Zo sady S350 sme neodstránili záznamy s~hodnotou $\Delta\Delta$G v~intervale $
 	\end{center}
 \end{figure}
 
-Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj mCSM využívajúci grafovo založené vzory vzdialeností medzi jednotlivými atómami. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria Topologynet, ktorý využíva tzv. hlbokého učenia; nástroj NeeMo využívajúci trojvrstvovú neurónovú sieť; PopMuSiC využívajúci štatistický potenciál a~MAESTRO, ktorý kombinuje štatistický potenciál, neurónovú sieť, SVM a~lineárnu regresiu. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0.6.
+Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj FoldX, ktorý patrí do kategórie nástrojov využívajúcich štatistický potenciál. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria nástroje PoPMuSiC rovnako patriaci do kategórie nástrojov využívajúcich štatistický potenciál a~nástroj Rosetta využívajúci fyzický potenciál. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0.3, pričom medzi najlepšie nástroje spomedzi uvedených patrí Rosetta.
 
-Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahol nástroj SDM založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant využívajúci SVM a~Eris založený na fyzikálnom potenciále. U týchto dvoch nástrojov sa hodnota korelácie pohybuje okolo hodnoty 0.3.
-
+Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahol nástroj SDM \cite{sdm} založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant3 a~MuPro \cite{mupro} . Obidva uvedené nástroje zhodne využívajú strojové učenie a~konktrétne metódu SVM.
+ 
 U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej dátovej sade na trénovanie a~rovnako spôsob validácie nástroja, takže ich nie je možné brať do úvahy pri porovnávaní nástrojov.
 
-Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej korelácie ako nástroj I-Mutant. Nejde o výrazný rozdiel, I-Mutant dosiahol koreláciu 0.27 a náš prediktor 0.3. Dva ďaľšie nástroje mCSM a~MAESTRO však dosahujú lepších výsledkov. Pri nástroji MAESTRO sa však jedná o~zložitejší systém, ktorý tiež vyžaduje viac prostriedkov na výpočet. 
+Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej korelácie ako nástroj I-Mutant3 aj ako MuPro. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14 a~hodnota u~MuPro bola 0.18. Implementovaný prediktor dosiahol na dase S350 korelácie 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0.16, resp. 0.12.
 
-Náš prediktor dosiahol hodnoty korelácie 0.3, čo predstavuje relatívne dobrý výsledok, nakoľko množstvo dát s ktorými sme pracovali bol obmedzený. Rýchlosť predikcie a dosiahnutý výsledok tvorí kompromis medzi týmito hodnotami. 
+Náš prediktor dosiahol hodnoty korelácie 0.3, čo spomedzi testovaných nástrojov predstavuje dobrú hodnotu, podobnú testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
 
-\chapter{Závěr}
+\chapter{Záver}
 
 Hlavnou náplňou tejto práce bolo vytvorenie predikčného nástroja využívajúceho metódy strojového učenia, ktorý by určoval vplyv aminokyselinových mutácií na stabilitu proteínu.
 
@@ -685,7 +699,7 @@ Na vytvorenie ensemble stratégie bolo potrebné vytvoriť menšie podsady, ktor
 
 Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mutácií S350. Na tejto sade dosiahol prediktor hodnotu korelačného koeficientu 0.3 a~presnosť dosiahla 67\%.
 
-Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobre nie je jednoduché, pretože databáza ProTherm obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
+Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobre nie je jednoduché, pretože databáza \textit{ProTherm} obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
 Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenie fylogenetického stromu a~použitia Felsteinovho algoritmu.
 
 

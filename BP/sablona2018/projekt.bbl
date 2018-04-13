@@ -47,6 +47,11 @@ Capriotti, E.; Fariselli, P.; Rossi, I.; aj.: A Three-State Prediction of
   Single Point Mutations on Protein Stability Changes. \emph{BMC
   Bioinformatics}, 2008.
 
+\bibitem{mupro}
+Cheng, J.; Randall, A.; Baldi, P.: Prediction of Protein Stability Changes for
+  Single-Site Mutations Using Support Vector Machines. \emph{Proteins},
+  ročník~62, 2006.
+
 \bibitem{popmusic}
 Dehouck, Y.; Kwasigroch, J.~M.; Gilis, D.; aj.: PoPMuSiC 2.1: a web server for
   the estimation of protein stability changes upon mutation and sequence
@@ -113,6 +118,11 @@ Masso, M.; Vaisman, I.~I.: AUTO-MUTE 2.0: A Portable Framework with Enhanced
 \bibitem{machine_learning}
 Mařík, V.; Štěpánková, O.; Lažanský, J.: \emph{{\it Umělá
   inteligence. 1}}. Academia, 1993, ISBN 80-200-0496-3.
+
+\bibitem{sdm}
+Pandurangan, A.~P.; Ochoa-Montaño, B.; Ascher, D.~B.; aj.: SDM: a server for
+  predicting effects of mutations on protein stability. \emph{Nucleic Acid
+  Research}, ročník~45, 2017.
 
 \bibitem{cupsat}
 Parthiban, V.; Gromiha, M.~M.; Schomburg, D.: CUPSAT: prediction of protein

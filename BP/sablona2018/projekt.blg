@@ -13,50 +13,48 @@ I was expecting a `,' or a `}'---line 110 of file projekt-20-literatura-bibliogr
  : @article{polikar,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Rybicka"
-Warning--I didn't find a database entry for "bibid"
 Warning--I didn't find a database entry for "Pravidla"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in proteiny
-You've used 38 entries,
+You've used 40 entries,
             3151 wiz_defined-function locations,
-            831 strings with 10571 characters,
-and the built_in function-call counts, 16643 in all, are:
-= -- 1110
-> -- 721
-< -- 10
-+ -- 379
-- -- 206
-* -- 864
-:= -- 2010
-add.period$ -- 76
-call.type$ -- 38
-change.case$ -- 169
+            838 strings with 10872 characters,
+and the built_in function-call counts, 17599 in all, are:
+= -- 1174
+> -- 770
+< -- 12
++ -- 405
+- -- 220
+* -- 918
+:= -- 2126
+add.period$ -- 80
+call.type$ -- 40
+change.case$ -- 179
 chr.to.int$ -- 0
-cite$ -- 39
-duplicate$ -- 1656
-empty$ -- 1506
-format.name$ -- 235
-if$ -- 3518
+cite$ -- 41
+duplicate$ -- 1750
+empty$ -- 1583
+format.name$ -- 251
+if$ -- 3717
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 424
-newline$ -- 126
-num.names$ -- 76
-pop$ -- 917
+int.to.str$ -- 40
+missing$ -- 449
+newline$ -- 132
+num.names$ -- 80
+pop$ -- 966
 preamble$ -- 1
-purify$ -- 167
+purify$ -- 177
 quote$ -- 0
-skip$ -- 678
+skip$ -- 717
 stack$ -- 0
-substring$ -- 295
-swap$ -- 784
-text.length$ -- 10
+substring$ -- 305
+swap$ -- 832
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
+type$ -- 146
 warning$ -- 1
-while$ -- 85
-width$ -- 40
-write$ -- 326
+while$ -- 89
+width$ -- 42
+write$ -- 344
 (There were 2 error messages)
