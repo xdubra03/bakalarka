@@ -313,16 +313,17 @@ Podľa \cite{polikar} existuje mnoho teoretických a~praktických dôvodov na po
 
 \section{Rôznorodosť v ensemble systémoch}
 
-V posedných rokoch niekoľko štúdií teoreticky \cite{bibid} aj prakticky \cite{bibid} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora keď členovia systému sú dostatočne presní a robia niekoľko zhodných chýb. Natrénovanie klasifikátora, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, potrebujeme klasifikátory ktoré robia chyby na odlišných častiach tréningových dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a presnejšej predikcie. 
+V posledných rokoch niekoľko štúdií teoreticky \cite{teoret1} aj empiricky \cite{empiric1} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora keď členovia systému sú dostatočne presní a~robia niekoľko zhodných chýb. 
+Pretože je takmer nemožné natrénovať klasifikátor, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, potrebujeme klasifikátory ktoré robia chyby na odlišných častiach tréningových dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a~presnejšej predikcie. 
 
-Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v jednej zo Zhangových štúdií \cite{}. V nej je demonštrované, že ensemble systém pozostávajúci z troch rovnakých klasifikátorov s presnosťou 95\% je horší ako ensemble pozostávajúci z klasifikátorov, ktorých presnosť je len 67\% a najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
+Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v~jednej zo Zhangových štúdií \cite{zhang}. V~nej je demonštrované, že ensemble systém pozostávajúci z~troch rovnakých klasifikátorov s~presnosťou 95\% je horší ako ensemble pozostávajúci z~klasifikátorov, ktorých presnosť je len 67\% a~najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
 
-Existuje niekoľko možností ako dosiahnuť vysokú rozmanitosť jednotlivcov:
+Existuje niekoľko možností ako dosiahnuť vysokú rôznorodosť jednotlivcov:
 \begin{itemize}
-	\item \textbf{Rôzne tréningové dátové sady:} Tréningová dátová sada môže byť rozdelená na menšie celky a každá takáto menšia podsada je použitá na natrénovanie jedného samostatného klasifikátora. Na rozdelenie dát môže byť použitá technika z niekoľkých dostupných prevzorkovávacích techník. Jednou z najbežnejších takýchto techník je tzv. bootstrap technika. Exituje však niekoľko ďaľších, napríklad metódy ako tzv. jack-knife.
-	\item \textbf{Rôzne tréningové parametre:} Použitie rôznych tréningových parametrov pre jednotlivé klasikikátory je tiež jednou z možných ciest. Napríklad viacvrstvová neurónová sieť môže byť trénovaná využitím rôznych vstupných váh vrstiev a uzlov v každej vrstve. Tento prístup umožňuje kontrolu nestability klasifikátorov a ako následok prispieva k ich rozmanitosti. 	
-	\item \textbf{Rôzne parametre pri predikcií:} Lineárny klasifikátor môže mať niekedy problém s nachádzaním vzorov u parametrov, ktoré sú veľmi vzdialené. Pre riešenie tohto problému môže byť prospešné experimentovanie s rozličnými podsadami predikovaných parametrov generovaných buď metódami učenia s učiteľom alebo bez neho. \cite{}	
-	\item \textbf{Rôzne typy klasikikátorov:} Neexistuje žiadny nadradený klasifikátor, ktorý by poskytoval najlepšie výsledky bez ohľadu na oblasť odborníka alebo množstva tréningových dát. Na druheje strane, na každý problém zvyčajne existuje niekoľko vhodných klasifikátorov, preto výber niekoľkých z nich a kombinácia ich výstupov je možnou cestou ako vytvoriť množinu klasifikátorv s rôznymi rozhodovacími hranicami.
+	\item \textbf{Rôzne tréningové dátové sady:} Tréningová dátová sada môže byť rozdelená na menšie celky a~každá takáto menšia podsada je použitá na natrénovanie jedného samostatného klasifikátora. Na rozdelenie dát môže byť použitá technika z~niekoľkých dostupných prevzorkovávacích techník. Jednou z~najbežnejších takýchto techník je tzv. bootstrap technika. Exituje však niekoľko ďaľších, napríklad metódy ako tzv. jack-knife.
+	\item \textbf{Rôzne tréningové parametre:} Použitie rôznych tréningových parametrov pre jednotlivé klasikikátory je tiež jednou z~možných ciest. Napríklad viacvrstvová neurónová sieť môže byť trénovaná využitím rôznych vstupných váh vrstiev a~uzlov v~každej vrstve. Tento prístup umožňuje kontrolu nestability klasifikátorov a~ako následok prispieva k~ich rozmanitosti. 	
+	\item \textbf{Rôzne parametre pri predikcií:} Lineárny klasifikátor môže mať niekedy problém s~nachádzaním vzorov u parametrov, ktoré sú veľmi vzdialené. Pre riešenie tohto problému môže byť prospešné experimentovanie s~rôznymi podsadami predikovaných parametrov generovaných buď metódami učenia s~učiteľom alebo bez neho. \cite{}	
+	\item \textbf{Rôzne typy klasikikátorov:} Neexistuje žiadny nadradený klasifikátor, ktorý by poskytoval najlepšie výsledky bez ohľadu na oblasť odborníka alebo množstva tréningových dát. Na druheje strane, na každý problém zvyčajne existuje niekoľko vhodných klasifikátorov, preto výber niekoľkých z~nich a kombinácia ich výstupov je možnou cestou ako vytvoriť množinu k1lasifikátory s~rôznymi rozhodovacími hranicami.
 \end{itemize}
 .
 
@@ -481,15 +482,15 @@ Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor 
 	\item \textbf{Zmena náboja}: Hodnota vyjadruje informáciu o~zmene náboja pôvodnej aminokyseliny a~aminokyseliny po mutácií. Výsledný údaj bol získaný z~tabuľkových hodnôt pre dané aminokyseliny. Uvažovaný bol negatívny, pozitívny a~neutrálny náboj. 
 	\item \textbf{Zmena indexu hydrofobicity:} Údaj o~výslednej zmene hydrofobicity mutovanej a~pôvodnej aminokyseliny. Číselný údaj značí rozdiel medzi tabuľkovými hodnotami týchto porovnávaných aminokyselín \cite{hydrophobicity}. 
 	\item \textbf{Zmena veľkosti aminokyseliny:} Údaj o~zmene veľkosti pôvodnej aminokyseliny. Aminokyseliny boli rozdelené do 3 intervalov na základe ich veľkosti. V~jednom intervale sa tak nachádzajú len aminokyseliny, pre ktoré platí, že rozdiel ich veľkostí je menší alebo rovný hodnote 50. Následne sme zisťovali, do akého z~jednotlivých intervalov patrí pôvodná a~mutovaná aminokyselina. Z~tohto údaju bolo možné určiť zmenu veľkosti z~veľkej na malú, opačnú zmenu alebo žiadnu zmenu, ak aminokyseliny patrili do rovnakého intervalu.
-	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o~sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v knižnici BioPython. Pre zjednodušenie sme každému proteínu priradili tento údaj len z~3 možností, ktorými sú helix, coil a sheet.
-	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o~údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru sme opäť použili modul DSSP prítomný v~knižnici BioPython.
+	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o~sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v~knižnici BioPython. Pre zjednodušenie sme každému proteínu priradili tento údaj len z~3 možností, ktorými sú helix, coil a sheet.
+	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o~údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru som opäť použil modul DSSP prítomný v~knižnici BioPython.
 	\item \textbf{Konzervovanosť:} Jeden z~najdôležitejších parametrov v~zázname mutácie. Informácia o konzervovanosti pozície na ktorej došlo k~mutácií je reprezentovaná
 	jednou z~5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felsteinov algoritmus, ktorý je podrobnejšie popísaný v~časti \ref{felstein}. Mutácie na konzervovanej pozícií sú z~hľadiska skúmania veľmi zaujímavé, pretože konzerované aminokyseliny bývajú dôležité pre stabilitu, aktivitu alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
 	\item \textbf{Korelácia:} Výpočet korelácie mutovanej pozície s~ostatnými pozíciami vo viacnásobnom zarovnaní. Stĺpec v~zarovnaní predstavuje náhodnú veličinu, počítame vzájomnú informáciu, ktorá vyjadruje závislosť dvojice náhodných veličín. Údaj o~vzájomnej informácií dostaneme pomocou nasledujúceho vzťahu: 	
 	\begin{align}
 	I(X;Y) = \underset{y \in Y}{\sum} \underset{x \in X}{\sum} p(x,y) \log_{2}\frac{p(x,y)}{p(x) p(y)}
 	\end{align}  
-	Po vypočítaní koeficientov sa zistí, či sa medzi získanými koeficientami nachádza aspoň jeden s~hodnotou nad stanoveným prahom. Ak áno, pozícia je korelovaná, v~opačnom prípade nie je. Korelácia danej pozície tiež znamená, že sa v~priebehu evolúcie menila spoločne s~pozíciami v sekvencií, na ktorých boli získané korelačné koeficienty nad stanoveným prahom. 
+	Po vypočítaní koeficientov sa zistí, či sa medzi získanými koeficientami nachádza aspoň jeden s~hodnotou nad stanoveným prahom. Ak áno, pozícia je korelovaná, v~opačnom prípade nie je. Korelácia danej pozície tiež znamená, že sa v~priebehu evolúcie menila spoločne s~pozíciami v~sekvencií, na ktorých boli získané korelačné koeficienty nad stanoveným prahom. 
 	
 \end{itemize}
 
@@ -497,7 +498,7 @@ Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor 
 \label{felstein}
 Felsteinov algoritmus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
 Algoritmus je založený na princípe dynamického programovania a~pozostáva z~viacerých krokov.
-Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty pre každý uzol podľa pravidiel, ktoré sú nasledovné:
+Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L-hodnoty pre každý uzol podľa pravidiel, ktoré sú nasledovné:
 \begin{itemize}
 	\item listový uzol
 	\begin{align}
@@ -516,14 +517,14 @@ Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L--hodnoty
 
 \end{itemize}
 
-L--hodnota je uložená v~poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~našom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkzom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
+L-hodnota je uložená v~poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. V~mojom prípade obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkzom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sledujeme zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov vypočítame konzervovanosť.
 
 \chapter{Implementácia}
 Finálnou časťou práce je implementácia predikčného nástroja. Táto kapitola bližšie popisuje výber použitých technológií, spôsob realizácie nástroja, dosiahnuté výsledky a~porovnanie finálnej implementácie s~podobnými nástrojmi.
 
 \section{Testovanie vo WEKE}
 \label{wekatest}
-Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj WEKA.
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady som zvolil nástroj WEKA.
 
 WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v~programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade; a~nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
 Pred testovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu nástroja. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybraných niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~na základe výsledkov boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
@@ -552,24 +553,24 @@ Z~tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovac�
 
 \section{Príprava mutačného záznamu v Pythone}
 
-Na implementáciu predikčného nástroja sme zvolili programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre jednoduché implementovanie strojového učenia vďaka dostupným knižniciam.
+Na implementáciu predikčného nástroja som zvolil programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre jednoduché implementovanie strojového učenia vďaka dostupným knižniciam.
 
 Prvou fázou pri tvorbe nástroja bola implementácia prípravy mutačného záznamu, ktorý tvorí vstup pre strojové učenie. Príprava záznamu zahŕňa výpočet jednotlivých parametrov mutácie a~celkovo pozostáva z~výpočtu 8 hodnôt. Výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
 
 Pre výpočet hodnôt zmien náboja, polarity, indexu hydrofobicity a~veľkosti aminokyseliny sú v~príslušnej triede prítomné dátové štruktúry obsahujúce hodnoty náboja, polarity, indexu hydrofobity a~veľkosti pre jednotlivé aminokyseliny. Hodnoty parametrov sa vypočítajú na základe zmeny podľa určenia pôvodnej aminokyseliny a~aminokyseliny po mutácií.
 
-Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica Biopython\footnote{Dostupné na \url{www.biopython.org}}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program \textbf{dssp}, ktorý modul používa na výpočet.
+Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet som použil knižnicu Biopython\footnote{Dostupné na \url{www.biopython.org}}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program \textbf{dssp}, ktorý modul používa na výpočet.
 
 Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu \textbf{BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu \textbf{Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
-PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinového algoritmu. Na vytvorenie stromu je použitý program \textbf{FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v Pythone bola použitá knižnica \textbf{ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
+PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinového algoritmu. Na vytvorenie stromu je použitý program \textbf{FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v~Pythone bola použitá knižnica \textbf{ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
 
 Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovananie sekvencií. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu sú nakoniec zakódované do svojej číselnej reprezentácie, aby s~nimi mohla pracovať metóda strojového učenia.
 
 \section{Testovanie metód strojového učenia v Pythone}
 
-Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov sme zvolili knižnicu \textbf{Scikit-learn}\footnote{Dostupné na \url{http://scikit-learn.org/stable/}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a~zahŕňa v~sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a~gradient boosting.
+Ďaľšou fázou tvorby nástroja bola implementácia metód strojového učenia. Na implementáciu jednotlivých algoritmov som zvolil knižnicu \textbf{Scikit-learn}\footnote{Dostupné na \url{http://scikit-learn.org/stable/}}. Scikit-learn je knižnica strojového učenia pre programovací jazyk Python a~zahŕňa v~sebe rozličné klasifikátory, zhlukovacie algoritmy ako napríklad support vector machines, random forests a~gradient boosting.
 
-Podľa výsledkov testovania rôznych metód uvedených v~časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a~Random Forest. Na začiatku tejto fázy vývoja sme otestovali implementácie týchto metód z~knižnice Scikit-learn na dátovej sade, z~ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a~bola vytvorená náhodným výberom z~pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a 206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a~hodnotou korelácie vyjadrenej Matthewsovým korelačným koeficientom (MCC). Výsledky testovania sú prítomné v~tabuľke \ref{scikittest}.
+Podľa výsledkov testovania rôznych metód uvedených v~časti \ref{wekatest} dosiahli najlepšie výsledky metódy SVM a~Random Forest. Na začiatku tejto fázy vývoja som otestoval implementácie týchto metód z~knižnice Scikit-learn na dátovej sade, z~ktorej boli odstránené záznamy slúžiace ako testovacie dáta. Testovacia sada obsahuje 250 záznamov a~bola vytvorená náhodným výberom z~pôvodnej sady. Je tvorená zo 45 stabilizujúcich mutácií a~206 destabilizujúcich mutácií. Tréningová sada obsahuje 1315 záznamov. Výsledky testovania sú reprezentované dvomi hodnotami, presnosťou (accuracy) a~hodnotou korelácie vyjadrenej Matthewsovým korelačným koeficientom (MCC). Výsledky testovania sú prítomné v~tabuľke \ref{scikittest}.
 \begin{table}[H]
 	\centering
 	\begin{tabular}{ | l | c | r | l| }
@@ -585,7 +586,7 @@ Tabuľka \ref{scikittest} ukazuje, že v~presnosti dosiahla metóda SVM veľmi d
 
 \section{Ensemble systém v Pythone}
 
-Základom ensemble systému je použitie viacerých klasifikátorov a~spojenie ich výsledkov. Pred natrénovaním jednotlivých metód bolo potrebné zostaviť tréningové dáta pre tento systém. Vytvorenie dát spočívalo vo vytvorení menších podsád z~pôvodnej sady. Na ich vytvorenie sme použili techniky bagging s~prekryvom dát v podsadách. Na zostavenie podsád bola použitá sada 1315 záznamov z~predchádzajúceho testovania. Celkovo bolo vytvorených 14 tréningových podsád, ktoré boli najskôr samostatne otestované na jednotlivých metódach. 
+Základom ensemble systému je použitie viacerých klasifikátorov a~spojenie ich výsledkov. Pred natrénovaním jednotlivých metód bolo potrebné zostaviť tréningové dáta pre tento systém. Vytvorenie dát spočívalo vo vytvorení menších podsád z~pôvodnej sady. Na ich vytvorenie som využil techniku bagging s~prekryvom dát v~podsadách. Na zostavenie podsád bola použitá sada 1315 záznamov z~predchádzajúceho testovania. Celkovo bolo vytvorených 14 tréningových podsád, ktoré boli najskôr samostatne otestované na jednotlivých metódach. 
   
 \begin{table}[H]
 	\centering
@@ -610,7 +611,7 @@ Základom ensemble systému je použitie viacerých klasifikátorov a~spojenie i
 	\caption {Výsledky testovania podsád metódami Random Forest a SVM} \label{pythontest} 
 \end{table}
 
-Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na vybraných metódach. Podsady boli testované s~prítomnosťou všetkých parametrov, v~ďaľšom testovaní sme pristúpili k~odstráneniu niektorých parametrov, ktoré by nemuseli mať taký výrazný vplyv na predikciu. Testovali sme podsady bez parametra zmeny náboja, veľkosti dostupnej povrchovej plochy a~kombinácií parametrov zmeny indexu hydrofobicity a~dostupnej povrchovej plochy. Výsledky testovania sú uvedené v~tabuľke \ref{pythontest1}.
+Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na vybraných metódach. Podsady boli testované s~prítomnosťou všetkých parametrov, v~ďaľšom testovaní sme pristúpili k~odstráneniu niektorých parametrov, ktoré by nemuseli mať taký výrazný vplyv na predikciu. Vytvorení podsady som otestoval bez parametra zmeny náboja, veľkosti dostupnej povrchovej plochy a~kombinácií parametrov zmeny indexu hydrofobicity a~dostupnej povrchovej plochy. Výsledky testovania sú uvedené v~tabuľke \ref{pythontest1}.
 
 \begin{table}[H]
 	\centering
@@ -641,14 +642,14 @@ Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na 
 
 Tabuľka \ref{pythontest1} ukazuje výsledky testovania podsád bez odstránených parametrov. Testovania so všetkými parametrami ale aj s~odstránenými slúžili na získanie údaju o~korelačnom koeficiente. Na základe získaných údajov boli vybrané podsady s~najlepšími výsledkami. Tieto podsady sú základom ensemble systému a~každá z~nich slúži na natrénovanie jednej metódy strojového učenia.
 
-Implementovaný ensemble systém pozostáva so spojenia metód Random Forest a~SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a~metóda SVM štyrikrát. Každým natrénovaním sme získali údaj o~výslednej triede, nakoniec sme mali sedem hodnôt predikovanej triedy pre mutáciu. Výslednú hodnotu výslednej triedy sme získali hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
+Implementovaný ensemble systém pozostáva so spojenia metód Random Forest a~SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a~metóda SVM štyrikrát. Každým natrénovaním bol získaný údaj o~výslednej triede, nakoniec som získal sedem hodnôt predikovanej triedy pre mutáciu. Výslednú hodnotu výslednej triedy som získal hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
 
 Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 13 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
 
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		\scalebox{0.7}
+		\scalebox{0.6}
 		{   
 			\includegraphics{mcc.png}
 		}
@@ -658,10 +659,10 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 
 \section{Porovnanie s inými nástrojmi}
 
-Po implementovaní prediktora sme jeho predikčnú silu porovnali s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z ktorých je 95 stabilizujúcich a 255. 
-Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup sme zvolili najmä preto, že natrénovanie a~otestovanie iných nástrojov na nami vytvorenej dátovej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len v podobe webovej aplikácie.
+Po implementovaní prediktora som pristúpil k~porovaniu predikčnej sily s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z~ktorých je 95 stabilizujúcich a~255 destabilizujúcich. 
+Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup bol zvolený najmä preto, že natrénovanie a~otestovanie iných nástrojov na vytvorenej dátovej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len v~podobe webovej aplikácie.
 
-Zo sady S350 sme neodstránili záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v našej dátovej sade nevyskytujú. Záznamy s týmito hodnotami sme ponechali nakoľko by porovanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola taká, že mutácie s $\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti našej dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
+Zo sady S350 som neodstránil záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v~dátovej sade nevyskytujú. Záznamy s~týmito hodnotami boli ponechané, pretože bez nich by porovanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola stanovená tak, že mutácie s~$\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a~zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
 
 
 \begin{figure}[H]
@@ -678,13 +679,13 @@ Zo sady S350 sme neodstránili záznamy s~hodnotou $\Delta\Delta$G v~intervale $
 
 Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj FoldX, ktorý patrí do kategórie nástrojov využívajúcich štatistický potenciál. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria nástroje PoPMuSiC rovnako patriaci do kategórie nástrojov využívajúcich štatistický potenciál a~nástroj Rosetta využívajúci fyzický potenciál. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0.3, pričom medzi najlepšie nástroje spomedzi uvedených patrí Rosetta.
 
-Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahol nástroj SDM \cite{sdm} založený na získavaní znalostí. Zostávajúcimi nástrojmi sú I-Mutant3 a~MuPro \cite{mupro} . Obidva uvedené nástroje zhodne využívajú strojové učenie a~konktrétne metódu SVM.
+Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahli nástroje SDM \cite{sdm}, CUPSAT a Eris. SDM predstavuje nástroj založený na získavaní znalostí, CUPSAT využíva na výpočet potenciál atómov a~torzných uhlov, Eris využíva fyzický potenciál. Zostávajúcimi nástrojmi sú I-Mutant3 a~MuPro \cite{mupro}. Obidva uvedené nástroje zhodne využívajú strojové učenie a~konktrétne metódu SVM.
  
 U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej dátovej sade na trénovanie a~rovnako spôsob validácie nástroja, takže ich nie je možné brať do úvahy pri porovnávaní nástrojov.
 
-Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že sme dosiali lepšej korelácie ako nástroj I-Mutant3 aj ako MuPro. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14 a~hodnota u~MuPro bola 0.18. Implementovaný prediktor dosiahol na dase S350 korelácie 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0.16, resp. 0.12.
+Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že implementovaný prediktor využívajúci ensemble prístup dosiahol lepšej korelácie ako nástroje I-Mutant3, MuPro, DMutant, CUPSAT a~Eris. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14, MuPro dosiahol korelácie 0.18, DMutant dosiahol hodnoty 0.12. CUPSAT a~Eris mali najlepšie hodnoty, CUPSAT 0.24 a~Eris 0.3. Implementovaný prediktor dosiahol na dátovej sade S350 koreláciu 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0.16, 0.12, 0.18, 0.06 a~pri Erise boli hodnoty totožné.
 
-Náš prediktor dosiahol hodnoty korelácie 0.3, čo spomedzi testovaných nástrojov predstavuje dobrú hodnotu, podobnú testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
+Prediktor dosiahol hodnoty korelácie 0.3, čo spomedzi testovaných nástrojov predstavuje dobrú hodnotu, podobnú testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
 
 \chapter{Záver}
 
@@ -701,52 +702,5 @@ Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mut
 
 Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobre nie je jednoduché, pretože databáza \textit{ProTherm} obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
 Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenie fylogenetického stromu a~použitia Felsteinovho algoritmu.
-
-
-
-
-
-
-\chapter{Typografické a~jazykové zásady}
-Při tisku odborného textu typu {\it technická zpráva} (anglicvky {\it technical report}), ke kterému patří například i~text kvalifikačních prací, se často volí formát A4 a~často se tiskne pouze po~jedné straně papíru. V~takovém případě volte levý okraj všech stránek o~něco větší než pravý -- v~tomto místě budou papíry svázány a~technologie vazby si tento požadavek vynucuje. Při vazbě s~pevným hřbetem by se levý okraj měl dělat o~něco širší pro tlusté svazky, protože se stránky budou hůře rozevírat a~levý okraj se tak bude oku méně odhalovat.
-
-Horní a~spodní okraj volte stejně veliký, případně potištěnou část posuňte mírně nahoru (horní okraj menší než dolní). Počítejte s~tím, že při vazbě budou okraje mírně oříznuty.
-
-Pro sazbu na stránku formátu A4 je vhodné používat pro základní text písmo stupně (velikosti) 11 bodů. Volte šířku sazby 15 až 16 centimetrů a~výšku 22 až 23 centimetrů (včetně případných hlaviček a~patiček). Proklad mezi řádky se volí 120 procent stupně použitého základního písma, což je optimální hodnota pro rychlost čtení souvislého textu. V~případě použití systému LaTeX ponecháme implicitní nastavení. Při psaní kvalifikační práce se řiďte příslušnými závaznými požadavky.
-
-Stupeň písma u~nadpisů různé úrovně volíme podle standardních typografických pravidel. 
-Pro všechny uvedené druhy nadpisů se obvykle používá polotučné nebo tučné písmo (jednotně buď všude polotučné nebo všude tučné). Proklad se volí tak, aby se následující text běžných odstavců sázel pokud možno na {\it pevný rejstřík}, to znamená jakoby na linky s~předem definovanou a~pevnou roztečí.
-
-Uspořádání jednotlivých částí textu musí být přehledné a~logické. Je třeba odlišit názvy kapitol a~podkapitol -- píšeme je malými písmeny kromě velkých začátečních písmen. U~jednotlivých odstavců textu odsazujeme první řádek odstavce asi o~jeden až dva čtverčíky (vždy o~stejnou, předem zvolenou hodnotu), tedy přibližně o~dvě šířky velkého písmene M základního textu. Poslední řádek předchozího odstavce a~první řádek následujícího odstavce se v~takovém případě neoddělují svislou mezerou. Proklad mezi těmito řádky je stejný jako proklad mezi řádky uvnitř odstavce
-
-Při vkládání obrázků volte jejich rozměry tak, aby nepřesáhly oblast, do které se tiskne text (tj. okraje textu ze všech stran). Pro velké obrázky vyčleňte samostatnou stránku. Obrázky nebo tabulky o~rozměrech větších než A4 umístěte do písemné zprávy formou skládanky všité do přílohy nebo vložené do záložek na zadní desce.
-
-Obrázky i~tabulky musí být pořadově očíslovány. Číslování se volí buď průběžné v~rámci celého textu, nebo -- což bývá praktičtější -- průběžné v~rámci kapitoly. V~druhém případě se číslo tabulky nebo obrázku skládá z~čísla kapitoly a~čísla obrázku/tabulky v~rámci kapitoly -- čísla jsou oddělena tečkou. Čísla podkapitol nemají na číslování obrázků a~tabulek žádný vliv.
-
-Tabulky a~obrázky používají své vlastní, nezávislé číselné řady. Z toho vyplývá, že v~odkazech uvnitř textu musíme kromě čísla udat i~informaci o~tom, zda se jedná o~obrázek či tabulku (například \uv{\ldots {\it viz tabulka 2.7} \ldots}). Dodržování této zásady je ostatně velmi přirozené.
-
-Pro odkazy na stránky, na čísla kapitol a~podkapitol, na čísla obrázků a~tabulek a~v~dalších podobných příkladech využíváme speciálních prostředků DTP programu, které zajistí vygenerování správného čísla i~v~případě, že se text posune díky změnám samotného textu nebo díky úpravě parametrů sazby. Příkladem takového prostředku v~systému LaTeX je odkaz na číslo odpovídající umístění značky v~textu, například návěští ($\backslash${\tt ref\{navesti\}} -- podle umístění návěští se bude jednat o~číslo kapitoly, podkapitoly, obrázku, tabulky nebo podobného číslovaného prvku), na stránku, která obsahuje danou značku ($\backslash${\tt pageref\{navesti\}}), nebo na literární odkaz ($\backslash${\tt cite\{identifikator\}}).
-
-Rovnice, na které se budeme v~textu odvolávat, opatříme pořadovými čísly při pravém okraji příslušného řádku. Tato pořadová čísla se píší v~kulatých závorkách. Číslování rovnic může být průběžné v~textu nebo v~jednotlivých kapitolách.
-
-Jste-li na pochybách při sazbě matematického textu, snažte se dodržet způsob sazby definovaný systémem LaTeX. Obsahuje-li vaše práce velké množství matematických formulí, doporučujeme dát přednost použití systému LaTeX.
-
-Mezeru neděláme tam, kde se spojují číslice s~písmeny v~jedno slovo nebo v~jeden znak -- například {\it 25krát}.
-
-Členicí (interpunkční) znaménka tečka, čárka, středník, dvojtečka, otazník a~vykřičník, jakož i~uzavírací závorky a~uvozovky se přimykají k~předcházejícímu slovu bez mezery. Mezera se dělá až za nimi. To se ovšem netýká desetinné čárky (nebo desetinné tečky). Otevírací závorka a~přední uvozovky se přimykají k~následujícímu slovu a~mezera se vynechává před nimi -- (takto) a~\uv{takto}.
-
-Pro spojovací a~rozdělovací čárku a~pomlčku nepoužíváme stejný znak. Pro pomlčku je vyhrazen jiný znak (delší). V~systému TeX (LaTeX) se spojovací čárka zapisuje jako jeden znak \uv{pomlčka} (například \uv{Brno-město}), pro sázení textu ve smyslu intervalu nebo dvojic, soupeřů a~podobně se ve zdrojovém textu používá dvojice znaků \uv{pomlčka} (například \uv{zápas Sparta -- Slavie}; \uv{cena 23--25 korun}), pro výrazné oddělení části věty, pro výrazné oddělení vložené věty, pro vyjádření nevyslovené myšlenky a~v~dalších situacích (viz Pravidla českého pravopisu) se používá nejdelší typ pomlčky, která se ve zdrojovém textu zapisuje jako trojice znaků \uv{pomlčka} (například \uv{Další pojem --- jakkoliv se může zdát nevýznamný --- bude neformálně definován v~následujícím odstavci.}). Při sazbě matematického mínus se při sazbě používá rovněž odlišný znak. V~systému TeX je ve zdrojovém textu zapsán jako normální mínus (tj. znak \uv{pomlčka}). Sazba v~matematickém prostředí, kdy se vzoreček uzavírá mezi dolary, zajistí vygenerování správného výstupu.
-
-Lomítko se píše bez mezer. Například školní rok 2008/2009.
-
-Pravidla pro psaní zkratek jsou uvedena v~Pravidlech českého pravopisu \cite{Pravidla}. I~z~jiných důvodů je vhodné, abyste tuto knihu měli po ruce. 
-
-
-\section{Co to je normovaná stránka?}
-Pojem {\it normovaná stránka} se vztahuje k~posuzování objemu práce, nikoliv k~počtu vytištěných listů. Z historického hlediska jde o~počet stránek rukopisu, který se psal psacím strojem na speciální předtištěné formuláře při dodržení průměrné délky řádku 60 znaků a~při 30 řádcích na stránku rukopisu. Vzhledem k~zápisu korekturních značek se používalo řádkování 2 (ob jeden řádek). Tyto údaje (počet znaků na řádek, počet řádků a~proklad mezi nimi) se nijak nevztahují ke konečnému vytištěnému výsledku. Používají se pouze pro posouzení rozsahu. Jednou normovanou stránkou se tedy rozumí 60*30 = 1800 znaků. Obrázky zařazené do textu se započítávají do rozsahu písemné práce odhadem jako množství textu, které by ve výsledném dokumentu potisklo stejně velkou plochu.
-
-Orientační rozsah práce v~normostranách lze v~programu Microsoft Word zjistit pomocí funkce {\it Počet slov} v~menu {\it Nástroje}, když hodnotu {\it Znaky (včetně mezer)} vydělíte konstantou 1800. Do rozsahu práce se započítává pouze text uvedený v~jádru práce. Části jako abstrakt, klíčová slova, prohlášení, obsah, literatura nebo přílohy se do rozsahu práce nepočítají. Je proto nutné nejdříve označit jádro práce a~teprve pak si nechat spočítat počet znaků. Přibližný rozsah obrázků odhadnete ručně. Podobně lze postupovat i~při použití OpenOffice. Při použití systému LaTeX pro sazbu je situace trochu složitější. Pro hrubý odhad počtu normostran lze využít součet velikostí zdrojových souborů práce podělený konstantou cca 2000 (normálně bychom dělili konstantou 1800, jenže ve zdrojových souborech jsou i~vyznačovací příkazy, které se do rozsahu nepočítají). Pro přesnější odhad lze pak vyextrahovat holý text z~PDF (např. metodou cut-and-paste nebo {\it Save as Text\ldots}) a~jeho velikost podělit konstantou 1800. 
-
-
 
 %=========================================================================

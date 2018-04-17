@@ -16,13 +16,8 @@ import numpy as np
 import pickle
 
 import Bio
-from Bio.PDB import *
-from Bio.Blast import NCBIWWW
-from Bio.Blast import NCBIXML
-from Bio.Align.Applications import ClustalOmegaCommandline
-from sklearn import svm
-from sklearn.ensemble import RandomForestClassifier
 
+from Bio.PDB import *
 from mutation_record import *
 from blosum import *
 
@@ -118,9 +113,8 @@ class StabilityPredictor():
     # parse command line arguments
     def parseArguments(self):
         if('-h' in sys.argv or '--help' in sys.argv):
-
-             self.print_help()
-             sys.exit(0)
+            self.print_help()
+            sys.exit(0)
         elif(len(sys.argv) > 6):
             sys.stderr.write("Too many arguments.\n")
             sys.exit(1)

@@ -580,7 +580,7 @@ protein,chain,mutation,realddg,struc,asa,konz,zpolarita,znáboj,zhydroindex
 2ci2,I,E42A,0.7,-,0.5154639175      N org 31        -       +       +5.3
 2ci2,I,R44A,0.58,-,0.1774193548     K 72.8          -       -       +6.3
 2ci2,I,D46A,0.8,T,0.2760736196      N org 49        -       +       +5.3
-2i2,I,V48A,4.91,E,0                K 96.8          0       0       -2.4
+2ci2,I,V48A,4.91,E,0                K 96.8          0       0       -2.4
 2ci2,I,L50A,3.74,E,0                N org 34        0       0       -2.0
 2ci2,I,F51V,2.39,E,0.1573604061     K 76            0       0       +1.4
 2ci2,I,F51A,3.84,E,0.1573604061     K 76            0       0       -1.0

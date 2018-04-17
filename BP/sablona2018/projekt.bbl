@@ -79,6 +79,11 @@ Guerois, R.; Nielsen, J.~E.; Serrano, L.: Predicting changes in the stability
   of proteins and protein complexes: a study of more than 1000 mutations.
   \emph{Journal of Molecular Biology}, 2002.
 
+\bibitem{teoret1}
+Hansen, L.~K.; Salamon, P.: Neural Network Ensembles. \emph{IEEE Transactions
+  on Pattern Analysis and Machine Intelligence}, ročník~12, 1990: s. 993 --
+  1001.
+
 \bibitem{dmutant}
 Hoppe, C.; Schomburg, D.: Prediction of protein thermostability with a
   direction- and distance-dependent knowledge-based potential. \emph{Protein
@@ -118,6 +123,11 @@ Masso, M.; Vaisman, I.~I.: AUTO-MUTE 2.0: A Portable Framework with Enhanced
 \bibitem{machine_learning}
 Mařík, V.; Štěpánková, O.; Lažanský, J.: \emph{{\it Umělá
   inteligence. 1}}. Academia, 1993, ISBN 80-200-0496-3.
+
+\bibitem{empiric1}
+Opitz, D.; Maclin, R.: Popular Ensemble Methods: An Empirical Study.
+  \emph{Journal of Artificial Intelligence Research}, ročník~11, 1999: s. 993
+  -- 1001.
 
 \bibitem{sdm}
 Pandurangan, A.~P.; Ochoa-Montaño, B.; Ascher, D.~B.; aj.: SDM: a server for
@@ -183,6 +193,11 @@ Witvliet, D.; Strokach, A.; Giraldo-Forero, A.~F.; aj.: ELASPIC web-server:
 \bibitem{eris}
 Yin, S.; Ding, F.; Dokholyan, N.~V.: Eris: an automated estimator of protein
   stability. \emph{Nature methods}, 2007.
+
+\bibitem{zhang}
+Zhang, Y.; Burer, S.; Street, W.~N.: Ensemble Pruning Via Semi-definite
+  Programming. \emph{Journal of Machine Learning Research}, ročník~7, 2006:
+  s. 1315--1338.
 
 \bibitem{mutace}
 Řehout, V.; Čítek, J.; Bláhová, B.; aj.: {\it Základy genetiky a

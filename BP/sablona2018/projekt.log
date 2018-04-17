@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  13 APR 2018 21:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  17 APR 2018 14:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1376,7 +1376,7 @@ File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 \@vyskaobr=\skip82
 \@sirkaobr=\skip83
 
-<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=250, 167.13641pt x 165.87971pt
+<template-fig/VUT_symbol_barevne_CMYK_CZ.pdf, id=242, 167.13641pt x 165.87971pt
 >
 File: template-fig/VUT_symbol_barevne_CMYK_CZ.pdf Graphic file (type pdf)
  <use template-fig/VUT_symbol_barevne_CMYK_CZ.pdf>
@@ -1463,7 +1463,7 @@ Overfull \hbox (5.88197pt too wide) in paragraph at lines 66--67
 va en-zým RNA-polymeráza,
  []
 
-[5] <obrazky-figures/structure.png, id=392, 953.5625pt x 460.72125pt>
+[5] <obrazky-figures/structure.png, id=382, 953.5625pt x 460.72125pt>
 File: obrazky-figures/structure.png Graphic file (type png)
 
 <use obrazky-figures/structure.png>
@@ -1478,7 +1478,7 @@ Overfull \hbox (47.94829pt too wide) in paragraph at lines 87--88
 Kapitola 3.
 [7
 
-] [8] <obrazky-figures/mutation_types.png, id=433, 626.34pt x 438.63875pt>
+] [8] <obrazky-figures/mutation_types.png, id=423, 626.34pt x 438.63875pt>
 File: obrazky-figures/mutation_types.png Graphic file (type png)
 
 <use obrazky-figures/mutation_types.png>
@@ -1500,7 +1500,7 @@ Overfull \hbox (1.54001pt too wide) in paragraph at lines 217--218
 Al-go-rit-mus pro-du-kuje klasifika£no-
  []
 
-[12] <obrazky-figures/rf.png, id=471, 445.665pt x 334.24875pt>
+[12] <obrazky-figures/rf.png, id=461, 445.665pt x 334.24875pt>
 File: obrazky-figures/rf.png Graphic file (type png)
 
 <use obrazky-figures/rf.png>
@@ -1510,18 +1510,11 @@ Package pdftex.def Info: obrazky-figures/rf.png used on input line 252.
 Kapitola 5.
 [16
 
-]
-
-LaTeX Warning: Citation `bibid' on page 17 undefined on input line 316.
-
-
-LaTeX Warning: Citation `bibid' on page 17 undefined on input line 316.
-
-[17] <obrazky-figures/ensemble.png, id=508, 966.61125pt x 821.0675pt>
+] [17] <obrazky-figures/ensemble.png, id=504, 966.61125pt x 821.0675pt>
 File: obrazky-figures/ensemble.png Graphic file (type png)
 
 <use obrazky-figures/ensemble.png>
-Package pdftex.def Info: obrazky-figures/ensemble.png used on input line 356.
+Package pdftex.def Info: obrazky-figures/ensemble.png used on input line 357.
 (pdftex.def)             Requested size: 966.6089pt x 821.0655pt.
  [18] [19 <./obrazky-figures/ensemble.png>]
 [20]
@@ -1537,80 +1530,62 @@ Kapitola 8.
 [28
 
 ] [29] [30]
-Overfull \hbox (28.19458pt too wide) in paragraph at lines 592--610
+Overfull \hbox (28.19458pt too wide) in paragraph at lines 593--611
  [][] 
  []
 
-[31] <obrazky-figures/mcc.png, id=652, 702.625pt x 451.6875pt>
+[31] <obrazky-figures/mcc.png, id=648, 702.625pt x 451.6875pt>
 File: obrazky-figures/mcc.png Graphic file (type png)
 
 <use obrazky-figures/mcc.png>
-Package pdftex.def Info: obrazky-figures/mcc.png used on input line 654.
+Package pdftex.def Info: obrazky-figures/mcc.png used on input line 655.
 (pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
-
-Overfull \hbox (64.46231pt too wide) in paragraph at lines 654--655
- [] 
- []
-
-[32 <./obrazky-figures/mcc.png>]
-<obrazky-figures/porovnanie_nastrojov.png, id=659, 702.625pt x 451.6875pt>
+ [32 <./obrazky-figures/mcc.png>]
+<obrazky-figures/porovnanie_nastrojov.png, id=655, 702.625pt x 451.6875pt>
 File: obrazky-figures/porovnanie_nastrojov.png Graphic file (type png)
 
 <use obrazky-figures/porovnanie_nastrojov.png>
 Package pdftex.def Info: obrazky-figures/porovnanie_nastrojov.png used on input
- line 673.
+ line 674.
 (pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
 
-Overfull \hbox (64.46231pt too wide) in paragraph at lines 673--674
+Overfull \hbox (64.46231pt too wide) in paragraph at lines 674--675
  [] 
  []
 
 [33 <./obrazky-figures/porovnanie_nastrojov.png>] [34]
 Kapitola 9.
-[35
+) (./projekt.bbl [35
 
-]
-Kapitola 10.
-[36
+] [36
 
-]
-
-LaTeX Warning: Citation `Pravidla' on page 37 undefined on input line 742.
-
-[37]) (./projekt.bbl [38] [39
-
-] [40])
+] [37])
 \c@ttl@toc@chapters=\count305
- (./projekt-30-prilohy-appendices.tex
-[41]
+ (./projekt-30-prilohy-appendices.tex [38]
 Pr\IeC {\'\i }loha A.
-[42
+[39
 
-] [43] [44] [45])
+] [40] [41] [42])
 \tf@ptc=\write5
 \openout5 = `projekt.ptc'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [46]
+ [43]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
  (./projekt.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
 Package rerunfilecheck Info: File `projekt.out' has not changed.
-(rerunfilecheck)             Checksum: 265CE026BBC2018427D8DEFB86426D47;9623.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 388156E7D181BDF0ED0DA7AEE20E9463;9200.
  ) 
 Here is how much of TeX's memory you used:
- 22835 strings out of 493039
- 376336 string characters out of 6136943
- 454890 words of memory out of 5000000
- 25788 multiletter control sequences out of 15000+600000
+ 22831 strings out of 493039
+ 376296 string characters out of 6136943
+ 455979 words of memory out of 5000000
+ 25786 multiletter control sequences out of 15000+600000
  123321 words of font info for 102 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
- 47i,12n,44p,10404b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texli
 ve/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texlive/texmf-dist/f
 onts/enc/dvips/opensans/opensans-03.enc}{/usr/share/texlive/texmf-dist/fonts/en
@@ -1636,10 +1611,10 @@ hare/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm
 /lmtt9.pfb>
-Output written on projekt.pdf (49 pages, 1129035 bytes).
+Output written on projekt.pdf (46 pages, 1118785 bytes).
 PDF statistics:
- 890 PDF objects out of 1000 (max. 8388607)
- 775 compressed objects within 8 object streams
- 192 named destinations out of 1000 (max. 500000)
- 550 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 873 PDF objects out of 1000 (max. 8388607)
+ 761 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 534 words of extra memory for PDF output out of 10000 (max. 10000000)
 

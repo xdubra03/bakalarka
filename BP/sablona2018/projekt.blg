@@ -3,12 +3,12 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: projekt.aux
 The style file: bib-styles/czechiso.bst
 Database file #1: projekt-20-literatura-bibliography.bib
-I was expecting a `,' or a `}'---line 100 of file projekt-20-literatura-bibliography.bib
+I was expecting a `,' or a `}'---line 128 of file projekt-20-literatura-bibliography.bib
  : 
  : @article{boosting,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 110 of file projekt-20-literatura-bibliography.bib
+I was expecting a `,' or a `}'---line 138 of file projekt-20-literatura-bibliography.bib
  : 
  : @article{polikar,
 (Error may have been on previous line)
@@ -16,45 +16,45 @@ I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "Pravidla"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in proteiny
-You've used 40 entries,
+You've used 43 entries,
             3151 wiz_defined-function locations,
-            838 strings with 10872 characters,
-and the built_in function-call counts, 17599 in all, are:
-= -- 1174
-> -- 770
-< -- 12
-+ -- 405
-- -- 220
-* -- 918
-:= -- 2126
-add.period$ -- 80
-call.type$ -- 40
-change.case$ -- 179
+            856 strings with 11277 characters,
+and the built_in function-call counts, 19520 in all, are:
+= -- 1336
+> -- 819
+< -- 18
++ -- 430
+- -- 234
+* -- 1027
+:= -- 2327
+add.period$ -- 86
+call.type$ -- 43
+change.case$ -- 192
 chr.to.int$ -- 0
-cite$ -- 41
-duplicate$ -- 1750
-empty$ -- 1583
-format.name$ -- 251
-if$ -- 3717
+cite$ -- 44
+duplicate$ -- 1923
+empty$ -- 1748
+format.name$ -- 268
+if$ -- 4155
 int.to.chr$ -- 0
-int.to.str$ -- 40
-missing$ -- 449
-newline$ -- 132
-num.names$ -- 80
-pop$ -- 966
+int.to.str$ -- 43
+missing$ -- 486
+newline$ -- 141
+num.names$ -- 86
+pop$ -- 1039
 preamble$ -- 1
-purify$ -- 177
+purify$ -- 190
 quote$ -- 0
-skip$ -- 717
+skip$ -- 809
 stack$ -- 0
-substring$ -- 305
-swap$ -- 832
-text.length$ -- 12
+substring$ -- 438
+swap$ -- 942
+text.length$ -- 18
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 146
+type$ -- 158
 warning$ -- 1
-while$ -- 89
-width$ -- 42
-write$ -- 344
+while$ -- 102
+width$ -- 45
+write$ -- 371
 (There were 2 error messages)
