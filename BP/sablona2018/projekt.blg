@@ -1,60 +1,67 @@
 This is BibTeX, Version 0.99d (TeX Live 2016)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: projekt.aux
-The style file: bib-styles/czechiso.bst
+The style file: bib-styles/slovakiso.bst
 Database file #1: projekt-20-literatura-bibliography.bib
-I was expecting a `,' or a `}'---line 128 of file projekt-20-literatura-bibliography.bib
- : 
- : @article{boosting,
+I was expecting a `,' or a `}'---line 100 of file projekt-20-literatura-bibliography.bib
+ :  
+ :  title = {Data Classification},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 138 of file projekt-20-literatura-bibliography.bib
  : 
+ : @article{boosting,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 148 of file projekt-20-literatura-bibliography.bib
+ : 
  : @article{polikar,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Pravidla"
+Warning--I didn't find a database entry for "fitWeb"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in proteiny
-You've used 43 entries,
+Warning--empty title in dataclass
+Warning--empty journal in dataclass
+You've used 45 entries,
             3151 wiz_defined-function locations,
-            856 strings with 11277 characters,
-and the built_in function-call counts, 19520 in all, are:
-= -- 1336
-> -- 819
-< -- 18
-+ -- 430
-- -- 234
-* -- 1027
-:= -- 2327
-add.period$ -- 86
-call.type$ -- 43
-change.case$ -- 192
+            859 strings with 11795 characters,
+and the built_in function-call counts, 20922 in all, are:
+= -- 1446
+> -- 868
+< -- 23
++ -- 456
+- -- 248
+* -- 1111
+:= -- 2477
+add.period$ -- 89
+call.type$ -- 45
+change.case$ -- 201
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 1923
-empty$ -- 1748
-format.name$ -- 268
-if$ -- 4155
+cite$ -- 48
+duplicate$ -- 2049
+empty$ -- 1857
+format.name$ -- 284
+if$ -- 4463
 int.to.chr$ -- 0
-int.to.str$ -- 43
-missing$ -- 486
-newline$ -- 141
-num.names$ -- 86
-pop$ -- 1039
+int.to.str$ -- 45
+missing$ -- 515
+newline$ -- 146
+num.names$ -- 90
+pop$ -- 1099
 preamble$ -- 1
-purify$ -- 190
+purify$ -- 200
 quote$ -- 0
-skip$ -- 809
+skip$ -- 884
 stack$ -- 0
-substring$ -- 438
-swap$ -- 942
-text.length$ -- 18
+substring$ -- 522
+swap$ -- 1020
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 158
-warning$ -- 1
-while$ -- 102
-width$ -- 45
-write$ -- 371
-(There were 2 error messages)
+type$ -- 166
+warning$ -- 3
+while$ -- 111
+width$ -- 47
+write$ -- 385
+(There were 3 error messages)

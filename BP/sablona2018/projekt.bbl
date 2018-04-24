@@ -19,7 +19,8 @@ Alpaydin, E.: \emph{{\it Introduction to Machine Learning}}. MIT Press, 2010,
 \bibitem{blastp}
 Altschul, S.~F.; Madden, T.~L.; Schäffer, A.~A.; aj.: Gapped BLAST and
   PSI-BLAST: a new generation of protein database search programs.
-  \emph{Nucleic Acids Research}, ročník~25, č.~17, 1997: s. 3389--3402.
+  \emph{Nucleic Acids Research}, ro\v{c}n\'{i}k~25, \v{c}.~17, 1997: s.
+  3389--3402.
 
 \bibitem{protherm}
 Bava, K.~A.; Gromiha, M.~M.; Uedaira, H.; aj.: ProTherm, version 4.0:
@@ -39,8 +40,8 @@ Boeckmann, B.; Bairoch, A.; Apweiler, R.; aj.: The SWISS-PROT protein
 Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
 
 \bibitem{breiman}
-Breiman, L.: Random Forests. \emph{Machine Learning}, ročník ročník 45,
-  2001.
+Breiman, L.: Random Forests. \emph{Machine Learning}, ro\v{c}n\'{i}k ročník
+  45, 2001.
 
 \bibitem{imutant}
 Capriotti, E.; Fariselli, P.; Rossi, I.; aj.: A Three-State Prediction of
@@ -50,7 +51,12 @@ Capriotti, E.; Fariselli, P.; Rossi, I.; aj.: A Three-State Prediction of
 \bibitem{mupro}
 Cheng, J.; Randall, A.; Baldi, P.: Prediction of Protein Stability Changes for
   Single-Site Mutations Using Support Vector Machines. \emph{Proteins},
-  ročník~62, 2006.
+  ro\v{c}n\'{i}k~62, 2006.
+
+\bibitem{biopython}
+Cock, P. J.~A.; Antao, T.; Chang, J.~T.; aj.: Biopython: freely available
+  Python tools for computational molecular biology and bioinformatics.
+  \emph{Bioinformatics}, ro\v{c}n\'{i}k~25, \v{c}.~11, 2009: s. 1422--1423.
 
 \bibitem{popmusic}
 Dehouck, Y.; Kwasigroch, J.~M.; Gilis, D.; aj.: PoPMuSiC 2.1: a web server for
@@ -81,8 +87,8 @@ Guerois, R.; Nielsen, J.~E.; Serrano, L.: Predicting changes in the stability
 
 \bibitem{teoret1}
 Hansen, L.~K.; Salamon, P.: Neural Network Ensembles. \emph{IEEE Transactions
-  on Pattern Analysis and Machine Intelligence}, ročník~12, 1990: s. 993 --
-  1001.
+  on Pattern Analysis and Machine Intelligence}, ro\v{c}n\'{i}k~12, 1990: s.
+  993 -- 1001.
 
 \bibitem{dmutant}
 Hoppe, C.; Schomburg, D.: Prediction of protein thermostability with a
@@ -126,17 +132,22 @@ Mařík, V.; Štěpánková, O.; Lažanský, J.: \emph{{\it Umělá
 
 \bibitem{empiric1}
 Opitz, D.; Maclin, R.: Popular Ensemble Methods: An Empirical Study.
-  \emph{Journal of Artificial Intelligence Research}, ročník~11, 1999: s. 993
-  -- 1001.
+  \emph{Journal of Artificial Intelligence Research}, ro\v{c}n\'{i}k~11, 1999:
+  s. 993 -- 1001.
 
 \bibitem{sdm}
 Pandurangan, A.~P.; Ochoa-Montaño, B.; Ascher, D.~B.; aj.: SDM: a server for
   predicting effects of mutations on protein stability. \emph{Nucleic Acid
-  Research}, ročník~45, 2017.
+  Research}, ro\v{c}n\'{i}k~45, 2017.
 
 \bibitem{cupsat}
 Parthiban, V.; Gromiha, M.~M.; Schomburg, D.: CUPSAT: prediction of protein
   stability upon point mutations. \emph{Nucleic Acids Research}, 2006.
+
+\bibitem{scikit-learn}
+Pedregosa, F.; Varoquaux, G.; Gramfort, A.; aj.: Scikit-learn: Machine Learning
+  in {P}ython. \emph{Journal of Machine Learning Research}, ro\v{c}n\'{i}k~12,
+  2011: s. 2825--2830.
 
 \bibitem{mcsm}
 Pires, D.~E.; Ascher, D.~B.; Blundell, T.~L.: mCSM: predicting the effects of
@@ -149,19 +160,13 @@ Polikar, R.: Ensemble based systems in decision making. \emph{IEEE Circuits
 
 \bibitem{free_energy}
 Ponnunswamy, P.; Gromiha, M.: On the conformational stability of folded
-  proteins. \emph{Journal of theoretical biology}, ročník 166, č.~1, 1994:
-  s. 63--74.
+  proteins. \emph{Journal of theoretical biology}, ro\v{c}n\'{i}k 166,
+  \v{c}.~1, 1994: s. 63--74.
 
 \bibitem{fasttree}
 Price, M.~N.; Dehal, P.~S.; Arkin, A.~P.: FastTree 2--approximately
-  maximum-likelihood trees for large alignments. \emph{PLoS One}, ročník~5,
-  2010.
-
-\bibitem{fitWeb}
-Rábová, Z.; Hanáček, P.; Peringer, P.; aj.: {\it Užitečné rady pro
-  psaní odborného textu}. FIT VUT v Brně, Listopad 2008, [Online;
-  navštíveno 12.05.2015].
-\newline\urlprefix\url{http://www.fit.vutbr.cz/info/statnice/psani_textu.html}
+  maximum-likelihood trees for large alignments. \emph{PLoS One},
+  ro\v{c}n\'{i}k~5, 2010.
 
 \bibitem{boosting}
 Schapire, R.~E.: The Strength of Weak Learnability. \emph{Machine Learning},
@@ -170,12 +175,15 @@ Schapire, R.~E.: The Strength of Weak Learnability. \emph{Machine Learning},
 \bibitem{clustal}
 Sievers, F.; Higgins, D.~G.: Clustal Omega, accurate alignment of very large
   numbers of sequences. Multiple sequence alignment methods. \emph{Methods Mol.
-  Biol.}, ročník 1079, 2014: s. 105--116.
+  Biol.}, ro\v{c}n\'{i}k 1079, 2014: s. 105--116.
 
 \bibitem{pdb}
 Sussman, J.~L.; Lin, D.; Jiang, J.; aj.: Protein Data Bank (PDB): Database of
   Three-Dimensional Structural Information of Biological Macromolecules.
   \emph{Acta Cryst.}, 1998.
+
+\bibitem{dataclass}
+Tang, J.; Alelyani, S.; Liu, H.: 2014.
 
 \bibitem{gibbs}
 Voet, D.; Voet, J.~G.; Pratt, C.~W.: \emph{{\it Fundamentals of Biochemistry:
@@ -196,12 +204,12 @@ Yin, S.; Ding, F.; Dokholyan, N.~V.: Eris: an automated estimator of protein
 
 \bibitem{zhang}
 Zhang, Y.; Burer, S.; Street, W.~N.: Ensemble Pruning Via Semi-definite
-  Programming. \emph{Journal of Machine Learning Research}, ročník~7, 2006:
-  s. 1315--1338.
+  Programming. \emph{Journal of Machine Learning Research}, ro\v{c}n\'{i}k~7,
+  2006: s. 1315--1338.
 
 \bibitem{mutace}
 Řehout, V.; Čítek, J.; Bláhová, B.; aj.: {\it Základy genetiky a
-  poradenství}. Únor 2003, [Online; cit. 17.12.2017].
+  poradenství}. Febru\'{a}r 2003, [Online; cit. 17.12.2017].
 \newline\urlprefix\url{http://www.zsf.jcu.cz/cs/katedra/katedra-klinickych-a-preklinickych-oboru/import/ucebni_texty/zaklady-genetiky-a-poradenstvi}
 
 \end{thebibliography}

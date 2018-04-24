@@ -31,7 +31,7 @@ layout = go.Layout(
     ),
     barmode='relative',
     bargap=0.15,
-    bargroupgap=0.1
+    bargroupgap=0.05
 )
 fig = go.Figure(data=data, layout=layout)
 plotly.offline.plot(fig, filename='basic-bar.html')

@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {4.4}Algoritmus Naive Bayes}{15}{section.4.4}
 \contentsline {chapter}{\numberline {5}Ensemble met\IeC {\'o}dy}{16}{chapter.5}
 \contentsline {section}{\numberline {5.1}R\IeC {\^o}znorodos\IeC {\v t} v ensemble syst\IeC {\'e}moch}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Tvorba ensemble syst\IeC {\'e}mov}{17}{section.5.2}
+\contentsline {section}{\numberline {5.2}Tvorba ensemble syst\IeC {\'e}mov}{18}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Bagging}{18}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Boosting}{18}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Spojenie klasifik\IeC {\'a}torov}{19}{section.5.3}
@@ -47,16 +47,16 @@
 \contentsline {subsection}{\numberline {6.3.2}DMutant}{24}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}FoldX}{24}{subsection.6.3.3}
 \contentsline {chapter}{\numberline {7}D\IeC {\'a}tov\IeC {\'a} sada a~jej parametre}{25}{chapter.7}
-\contentsline {section}{\numberline {7.1}Parametre muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu}{26}{section.7.1}
+\contentsline {section}{\numberline {7.1}Parametre z\IeC {\'a}znamu mut\IeC {\'a}cie}{26}{section.7.1}
 \contentsline {section}{\numberline {7.2}Felsteinov algoritmus}{27}{section.7.2}
 \contentsline {chapter}{\numberline {8}Implement\IeC {\'a}cia}{28}{chapter.8}
 \contentsline {section}{\numberline {8.1}Testovanie vo WEKE}{28}{section.8.1}
-\contentsline {section}{\numberline {8.2}Pr\IeC {\'\i }prava muta\IeC {\v c}n\IeC {\'e}ho z\IeC {\'a}znamu v Pythone}{29}{section.8.2}
+\contentsline {section}{\numberline {8.2}Pr\IeC {\'\i }prava z\IeC {\'a}znamu mut\IeC {\'a}cie v Pythone}{29}{section.8.2}
 \contentsline {section}{\numberline {8.3}Testovanie met\IeC {\'o}d strojov\IeC {\'e}ho u\IeC {\v c}enia v Pythone}{30}{section.8.3}
-\contentsline {section}{\numberline {8.4}Ensemble syst\IeC {\'e}m v Pythone}{30}{section.8.4}
-\contentsline {section}{\numberline {8.5}Porovnanie s in\IeC {\'y}mi n\IeC {\'a}strojmi}{32}{section.8.5}
-\contentsline {chapter}{\numberline {9}Z\IeC {\'a}ver}{35}{chapter.9}
-\contentsline {chapter}{Literat\IeC {\'u}ra}{36}{chapter*.2}
-\contentsline {chapter}{\numberline {A}Jak pracovat s touto \IeC {\v s}ablonou}{39}{appendix.A}
-\contentsline {paragraph}{Pozor na \IeC {\v c}\IeC {\'\i }slov\IeC {\'a}n\IeC {\'\i } str\IeC {\'a}nek!}{40}{section*.4}
+\contentsline {section}{\numberline {8.4}Ensemble syst\IeC {\'e}m v Pythone}{31}{section.8.4}
+\contentsline {section}{\numberline {8.5}Porovnanie s in\IeC {\'y}mi n\IeC {\'a}strojmi}{33}{section.8.5}
+\contentsline {chapter}{\numberline {9}Z\IeC {\'a}ver}{36}{chapter.9}
+\contentsline {chapter}{Literat\IeC {\'u}ra}{37}{chapter*.2}
+\contentsline {chapter}{\numberline {A}Obsah DVD}{40}{appendix.A}
+\contentsline {chapter}{\numberline {B}Manu\IeC {\'a}l}{41}{appendix.B}
 \contentsfinish 
