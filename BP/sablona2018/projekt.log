@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  24 APR 2018 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.9.27)  6 MAY 2018 10:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,13 +1452,8 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 31.
  [4
 
-]
-Overfull \hbox (5.88197pt too wide) in paragraph at lines 60--61
-\T1/lmr/m/n/10.95 ven-cie DNA (génu) do mo-le-kuly RNA. Dô-le-ºitú úlohu zo-hrá
-va en-zým RNA-polymeráza,
- []
-
-[5] <obrazky-figures/structure.png, id=387, 953.5625pt x 460.72125pt>
+] [5]
+<obrazky-figures/structure.png, id=387, 953.5625pt x 460.72125pt>
 File: obrazky-figures/structure.png Graphic file (type png)
 
 <use obrazky-figures/structure.png>
@@ -1473,14 +1468,14 @@ Overfull \hbox (47.94829pt too wide) in paragraph at lines 81--82
 Kapitola 3.
 [7
 
-] [8] <obrazky-figures/mutation_types.png, id=429, 626.34pt x 438.63875pt>
+] [8] <obrazky-figures/mutation_types.png, id=426, 626.34pt x 438.63875pt>
 File: obrazky-figures/mutation_types.png Graphic file (type png)
 
 <use obrazky-figures/mutation_types.png>
 Package pdftex.def Info: obrazky-figures/mutation_types.png used on input line 
-164.
+163.
 (pdftex.def)             Requested size: 626.33846pt x 438.63766pt.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 168.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 167.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -1489,27 +1484,21 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Kapitola 4.
 [11
 
-]
-Overfull \hbox (1.54001pt too wide) in paragraph at lines 212--213
-\T1/lmr/m/n/10.95 Algoritmus J48 patrí k me-tó-dam roz-ho-do-va-cích stro-mov. 
-Al-go-rit-mus pro-du-kuje klasifika£no-
- []
-
-[12] <obrazky-figures/rf.png, id=467, 445.665pt x 334.24875pt>
+] [12] <obrazky-figures/rf.png, id=464, 445.665pt x 334.24875pt>
 File: obrazky-figures/rf.png Graphic file (type png)
 
 <use obrazky-figures/rf.png>
-Package pdftex.def Info: obrazky-figures/rf.png used on input line 247.
+Package pdftex.def Info: obrazky-figures/rf.png used on input line 246.
 (pdftex.def)             Requested size: 445.66391pt x 334.24792pt.
  [13 <./obrazky-figures/rf.png>] [14] [15]
 Kapitola 5.
 [16
 
-] [17] <obrazky-figures/ensemble.png, id=514, 966.61125pt x 821.0675pt>
+] [17] <obrazky-figures/ensemble.png, id=518, 966.61125pt x 821.0675pt>
 File: obrazky-figures/ensemble.png Graphic file (type png)
 
 <use obrazky-figures/ensemble.png>
-Package pdftex.def Info: obrazky-figures/ensemble.png used on input line 361.
+Package pdftex.def Info: obrazky-figures/ensemble.png used on input line 360.
 (pdftex.def)             Requested size: 966.6089pt x 821.0655pt.
  [18] [19 <./obrazky-figures/ensemble.png>]
 [20]
@@ -1525,26 +1514,26 @@ Kapitola 8.
 [28
 
 ] [29] [30]
-Overfull \hbox (28.19458pt too wide) in paragraph at lines 598--616
+Overfull \hbox (28.19458pt too wide) in paragraph at lines 597--615
  [][] 
  []
 
-[31] <obrazky-figures/mcc.png, id=658, 702.625pt x 451.6875pt>
+[31] <obrazky-figures/mcc.png, id=664, 702.625pt x 451.6875pt>
 File: obrazky-figures/mcc.png Graphic file (type png)
 
 <use obrazky-figures/mcc.png>
-Package pdftex.def Info: obrazky-figures/mcc.png used on input line 660.
+Package pdftex.def Info: obrazky-figures/mcc.png used on input line 659.
 (pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
  [32]
-<obrazky-figures/porovnanie_nastrojov.png, id=663, 702.625pt x 451.6875pt>
+<obrazky-figures/porovnanie_nastrojov.png, id=670, 702.625pt x 451.6875pt>
 File: obrazky-figures/porovnanie_nastrojov.png Graphic file (type png)
 
 <use obrazky-figures/porovnanie_nastrojov.png>
 Package pdftex.def Info: obrazky-figures/porovnanie_nastrojov.png used on input
- line 679.
+ line 678.
 (pdftex.def)             Requested size: 702.62328pt x 451.68639pt.
 
-Overfull \hbox (64.46231pt too wide) in paragraph at lines 679--680
+Overfull \hbox (64.46231pt too wide) in paragraph at lines 678--679
  [] 
  []
 
@@ -1555,11 +1544,12 @@ Kapitola 9.
 
 ] [37
 
-] [38])
+] [38] [39])
 \c@ttl@toc@chapters=\count305
- (./projekt-30-prilohy-appendices.tex [39]
+ (./projekt-30-prilohy-appendices.tex
+[40]
 Pr\IeC {\'\i }loha A.
-[40
+[41
 
 ]
 Pr\IeC {\'\i }loha B.
@@ -1567,22 +1557,22 @@ Pr\IeC {\'\i }loha B.
 \tf@ptc=\write5
 \openout5 = `projekt.ptc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 304.
- [41
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+ [42
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 304.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
  (./projekt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 304.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 304.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `projekt.out' has not changed.
 (rerunfilecheck)             Checksum: 6B6C45C0727E5514BAB6CA175B22379A;9140.
  ) 
 Here is how much of TeX's memory you used:
- 22803 strings out of 493039
- 376052 string characters out of 6136943
- 456042 words of memory out of 5000000
- 25781 multiletter control sequences out of 15000+600000
+ 22814 strings out of 493039
+ 376128 string characters out of 6136943
+ 457044 words of memory out of 5000000
+ 25786 multiletter control sequences out of 15000+600000
  121776 words of font info for 96 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  47i,12n,44p,10404b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1611,10 +1601,10 @@ hare/texlive/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm
 /lmtt9.pfb>
-Output written on projekt.pdf (44 pages, 1089442 bytes).
+Output written on projekt.pdf (45 pages, 1092509 bytes).
 PDF statistics:
- 833 PDF objects out of 1000 (max. 8388607)
- 723 compressed objects within 8 object streams
- 173 named destinations out of 1000 (max. 500000)
+ 846 PDF objects out of 1000 (max. 8388607)
+ 735 compressed objects within 8 object streams
+ 179 named destinations out of 1000 (max. 500000)
  542 words of extra memory for PDF output out of 10000 (max. 10000000)
 

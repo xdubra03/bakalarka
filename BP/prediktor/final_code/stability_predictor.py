@@ -98,6 +98,21 @@ class StabilityPredictor():
         self.mutant = ''
         self.position = ''
 
+    def getPdb(self):
+        return self.pdb_id
+
+    def getChain(self):
+        return self.chain
+
+    def getWildType(self):
+        return self.wild_type
+
+    def getMutant(self):
+        return self.mutant
+
+    def getPosition(self):
+        return self.position
+
     def print_help(self):
         sys.stderr.write('Predictor usage:\n')
         sys.stderr.write('------------------')

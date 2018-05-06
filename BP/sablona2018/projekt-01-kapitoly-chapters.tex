@@ -3,11 +3,11 @@
 
 \chapter{Úvod}
 
-Proteíny sú komplexnými molekulami nachádzajúcimi sa v~ľudskom tele. Patria k~základným stavebným prvkom každého živého orgamizmu, čo z~nich robí významný cieľ skúmania, najmä z~hľadiska ich rôznych funkcií v~organizme.
+Proteíny patria k~základným stavebným prvkom každého živého organizmu. V~ňom sa podieľajú na množstve rôznych funkcií; ako trávenie alebo prenos kyslíka. Tieto rozličné funkcie z~nich robia významný cieľ skúmania. V~dnešnej dobe je snahou najmä vylepšovanie rôznych vlastností s~cieľom vytvoriť hodnotnejšie proteíny pre rôzne oblasti. Touto problematikou sa zaoberá oblasť proteínového inžinierstva.
 
-Jednou z~vlastností, ktorá je u~proteínov veľmi dôležitá, je stabilita. Stabilný proteín je pripravený lepšie zvládať nepriaznivé podmienky svojho okolia, napríklad vydržať vyššiu teplotu alebo rôzne chemické vlastnosti prostredia. Oblasť návrhu a~výroby stabilnejších proteínov je v~dnešnej dobe zaujímavá najmä pre farmaceutický priemysel, pretože stabilnejšie proteíny by viedli k~výrobe účinnejších liečiv. Poznatky spojené s~výrobou stabilnejších proteínov sú dôležité aj z~pohľadu poľnohospodárstva a~iných oblastí priemyslu.
+Jednou z~vlastností, ktorá je u~proteínov veľmi dôležitá, je stabilita. Stabilný proteín je pripravený lepšie zvládať nepriaznivé podmienky svojho okolia, napríklad vydržať vyššiu teplotu alebo rôzne chemické vlastnosti prostredia. Oblasť návrhu a~výroby stabilnejších proteínov je v~dnešnej dobe zaujímavá najmä pre priemysel, napríklad pri výrobe rôznych biotechnológií. Zaujímavou je aj pre farmaceutický priemysel, pretože stabilnejšie proteíny by viedli k~výrobe účinnejších liečiv.
 
-V~proteínoch však dochádza k~mutáciam aminokyselín tvoriacich proteínový reťazec. Mutácie sú predovšetkým dielom evolúcie, ale taktiež sú uskutočňované umelo s~určitým zámerom. Jedna zmena aminokyseliny v~reťazci môže znamenať zmenu stability proteínu v~pozitívnom ale aj negatívnom zmysle. Preto je snahou predikovať vplyv takýchto zmien. 
+V~proteínoch však dochádza k~mutáciam aminokyselín tvoriacich proteínový reťazec . Mutácie sú predovšetkým dielom evolúcie, ale taktiež sú uskutočňované umelo s~určitým zámerom. Jedna zmena aminokyseliny v~reťazci môže znamenať zmenu stability proteínu v~pozitívnom, ale aj negatívnom zmysle. Preto je snahou predikovať vplyv takýchto zmien. 
 V~poslednom období vzniklo množstvo rôznych nástrojov zaoberajúcich sa predikciou vplyvu mutácií na stabilitu, pričom využívajú rôzne prístupy pri predikcií.
 
 Cieľom tejto práce je vytvorenie, otestovanie a~vyhodnotenie predikčného nástroja kombinujúceho viaceré metódy strojového učenia.
@@ -38,7 +38,7 @@ Proteíny sú biopolyméry tvorené z~jedného alebo viacerých polypeptidových
 \end{itemize}
 
 \section{Aminokyseliny}
-Aminokyseliny sú odvodené od organických kyselín a~predstavujú rôzne triedy molekúl s~jednou spoločnou vlastnosťou, všetky vlastnia karboxylovú (COOH) a~aminovú ($NH_{2}$) skupinu. Tieto skupiny sú naviazané k~jednému uhlíkovému atómu, ktorý je označovaný ako $\alpha$ uhlík. Rôznorodosť jednotlivých aminokyselín spočíva v~postrannom reťazci (R) určujúcom chemické vlastnosti aminokyselín, resp. proteínov. Jednotlivé aminokyseliny sú v~proteínovej molekule vzájomne spojené peptidovou väzbou, ktorá prepojuje karboxylovú skupinu jednej aminokyseliny s~amino skupinou druhej. Reťazec viacerých aminokyselín je označovaný ako peptidový reťazec (polypeptid). 
+Aminokyseliny sú odvodené od organických kyselín a~predstavujú rôzne triedy molekúl s~jednou spoločnou vlastnosťou; všetky vlastnia karboxylovú (COOH) a~aminovú ($NH_{2}$) skupinu. Tieto skupiny sú naviazané k~jednému uhlíkovému atómu, ktorý je označovaný ako $\alpha$ uhlík. Rôznorodosť jednotlivých aminokyselín spočíva v~postrannom reťazci (R) určujúcom chemické vlastnosti aminokyselín, resp. proteínov. Jednotlivé aminokyseliny sú v~proteínovej molekule vzájomne spojené peptidovou väzbou, ktorá prepojuje karboxylovú skupinu jednej aminokyseliny s~amino skupinou druhej. Reťazec viacerých aminokyselín je označovaný ako peptidový reťazec (polypeptid). 
 Celkovo existuje 20 rôznych aminokyselín, ktoré môžeme na základe chemických vlastností postranných reťazcov rozdeliť na šesť základných skupín \cite{aminokyseliny}:
 
 \begin{itemize}
@@ -57,7 +57,7 @@ Proteíny vznikajú z DNA v~procese nazývanom proteosyntéza. Tento proces sa s
 
 \begin{itemize}
 
-\item \textbf{Transkripcia:} pri procese transkripcie dochádza k~prepisu časti nukleotidovaj sekvencie DNA (génu) do molekuly RNA. Dôležitú úlohu zohráva enzým RNA-polymeráza, ktorá musí pred začiatkom traskripcie nájsť oblasť tzv. promotoru obsahujúcu informáciu o~začiatku transkripcie a~následne sa na túto oblasť naviazať. Proces prepisu končí keď RNA-polymeráza narazí na sekvenciu tzv. terminátoru. Výsledná molekula RNA sa označuje ako mediátorová RNA (mRNA). 
+\item \textbf{Transkripcia:} pri procese transkripcie dochádza k~prepisu časti nukleotidovej sekvencie DNA (génu) do molekuly RNA. Dôležitú úlohu zohráva enzým RNA-polymeráza, ktorá musí pred začiatkom traskripcie nájsť oblasť tzv. promotoru obsahujúcu informáciu o~začiatku transkripcie a~následne sa na túto oblasť naviazať. Proces prepisu končí, keď RNA-polymeráza narazí na sekvenciu tzv. terminátoru. Výsledná molekula RNA sa označuje ako mediátorová RNA (mRNA). 
 \item \textbf{Translácia:} pri procese translácie dochádza k~prenosu informácie z~mRNA do polypeptidového reťazca aminokyselín. Sekvencia nukleotidov RNA sa postupne číta po trojiciach (tzv. kodónoch), pričom každý kodón je preložený na jednu z~dvadsiatich aminokyselín. Trojica nukleotidov umožňuje vytvoriť 64 možných kombinácií, takže jedna aminokyselina môže byť reprezentovaná viacerými kodónmi. Výsledkom translácie je proteín.
 
 \end{itemize}
@@ -86,13 +86,13 @@ Popis trojrozmernej štruktúry proteínov môžeme podľa \cite{aminokyseliny} 
 
 \chapter{Vplyv aminokyselinových substitúcií na stabilitu proteínu}
 
-Stabilita je jednou z~najdôležitejších vlastností proteínu. Motivácia skúmania stability je dnes veľká, pretože táto vlastnosť proteínov je dôležitá v~mnohých oblastich ako je medicína, kde chceme dosiahnuť výrobu účinnejších liečiv, v~oblasti priemyslu a~poľnohospodárstva. Stabilný proteín dokáže lepšie znášať nepriaznivé podmienky okolitého prostredia, akými sú vyššie teploty alebo chemické vlastnosti okolia v~ktorom sa proteín nachádza. Na stabilitu proteínu však vplývajú aminokyselinové substitúcie, ktoré môžu proteín stabilizovať, ale aj destabilizovať. Preto vzniká potreba skúmať vplyv substitúcií na stabilitu. V~tejto kapitole sa zmienim o~stabilite proteínu, čo stabilitu určuje a o~dôvodoch vzniku a~vplyve mutácií.
+Stabilita je jednou z~najdôležitejších vlastností proteínu. Motivácia skúmania stability je dnes veľká, pretože táto vlastnosť proteínov je dôležitá v~mnohých oblastich ako je medicína, kde je snahou dosiahnuť výrobu účinnejších liečiv, v~oblasti priemyslu a~poľnohospodárstva. Stabilný proteín dokáže lepšie znášať nepriaznivé podmienky okolitého prostredia, akými sú vyššie teploty alebo chemické vlastnosti okolia v~ktorom sa proteín nachádza. Na stabilitu proteínu však vplývajú aminokyselinové substitúcie, ktoré môžu proteín stabilizovať, ale aj destabilizovať. Preto vzniká potreba skúmať vplyv substitúcií na stabilitu. V~tejto kapitole sa zmienim o~stabilite proteínu, čo stabilitu určuje a o~dôvodoch vzniku a~vplyve mutácií.
 
 
 \section{Stabilita proteínu}
-Stabilita proteínu je určená množinou vzájomne pôsobiacich a~ovplyvňujúcich sa síl. Tieto sily určujú, či sa proteín nachádza vo svojom pôvodnom zloženom alebo rozloženom (denaturovanom) stave. Stabilita je úzko prepojená so stavom, v~ktorom sa proteín nachádza. Stabilný proteín sa nachádza v~zloženom stave, ktorý je stabilizovaný rôznymi vzájomnými interakciami, kde patria hydrofóbne, elektrostatické, vodíkové väzby alebo van der Waalsove sily. Naopak, nestabilný proteín sa nachádza v~denaturovanom stave, kde dominuje entropická a~neentropická voľná energia \cite{gromiha}.
+Stabilita proteínu je určená množinou vzájomne pôsobiacich a~ovplyvňujúcich sa síl. Tieto sily určujú, či sa proteín nachádza vo svojom pôvodnom zloženom alebo rozloženom (denaturovanom) stave. Stabilita je úzko prepojená so stavom, v~ktorom sa proteín nachádza. Stabilný proteín sa nachádza v~zloženom stave, ktorý je stabilizovaný rôznymi vzájomnými interakciami, kde patria hydrofóbne, elektrostatické, vodíkové väzby alebo aj van der Waalsove sily. Naopak, nestabilný proteín sa nachádza v~denaturovanom stave, kde dominuje entropická a~neentropická voľná energia \cite{gromiha}.
 
-Stabilitu proteínu je možné reprezentovať ako zmenu tzv. Gibbsovej (voľnej) energie ($\Delta$G) potrebnej na prechod proteínu zo zloženého do denaturovaného stavu alebo naopak. 
+Stabilitu proteínu je možné reprezentovať ako zmenu tzv. Gibbsovej (voľnej) energie ($\Delta$G) potrebnej na prechod proteínu zo zloženého do denaturovaného stavu, alebo naopak. 
 Gibbsova voľná energia je termodynamický potenciál vyjadrujúci maximálne množstvo reverzibilnej práce, ktorá môže byť uskutočnená termodynamickým systémom pri konštantnej teplote a~tlaku. Gibbsova voľná energia je definovaná nasledujúcim vzťahom \cite{gibbs}:
 \begin{align}
 	G = H - TS,
@@ -104,7 +104,7 @@ Zmena voľnej Gibbsovej energie ($\Delta G$) je daná vzťahom
 	\Delta G = G_{folded} - G_{unfoldeded},
 \end{align}
 kde $G_{folded}$ predstavuje voľnú energiu v~zloženom a~$G_{unfolded}$ energiu v~nezloženom stave.
-Existuje niekoľko laboratórnych metód na určenie stability ako napríklad cirkulárny dichroizmus (CD), diferencilna skenovacia kalorimetria (DSC), fluorescencia (Fl), absorpcia svetla (Abs), nukleárna magnetická rezonancia (NMR) \cite{gromiha}.
+Existuje niekoľko laboratórnych metód na určenie stability ako napríklad cirkulárny dichroizmus (CD), diferenciálna skenovacia kalorimetria (DSC), fluorescencia (Fl), absorpcia svetla (Abs), nukleárna magnetická rezonancia (NMR) \cite{gromiha}.
 
 Určenie stability bez použitia niektorej z~laboratórnych metód je možné uskutočniť výpočtom jedného z~existujúcich silových polí (Talaris, Score12, ...). Výpočet takéhoto poľa ukazuje nasledujúci jednoduchý príklad \cite{free_energy} \cite{gromiha}:
 
@@ -131,9 +131,9 @@ kde $G_{en}$ a~$G_{ne}$ sú entropické a~neentropické voľné energie.
 Mutácie sú náhodné alebo cielené zmeny v~DNA. Sú naprosto nevyhnutné pre biologickú evolúciu, bez nich by sa skôr či neskôr zastavila. Ak by sa výraznejšie zmenili podmienky vonkajšieho prostredia, organizmy by bez mutácií nemuseli na zmeny zareagovať a~pravdepodobne by vyhynuli. Za mutácie sú považované všetky také zmeny týkajúce sa genetickej informácie, ktoré nie sú výsledkom segregácií a~rekombinácií už existujúcich častí genotypov \cite{mutace}. 
 Podľa úrovne, na ktorej sa mutácia vyskytla, môžeme rozlišovať \cite{flegr}:
 \begin{itemize}
-	\item \textbf{Génové mutácie:} zmena v~stavbe DNA, ktorá je reprezentovaná zmenou nukleotidovej sekvencie na určitom mieste \cite{mutace}. Nazývajú sa tiež bodovými mutáciami a z~hľadiska predikcie sú najzásadnejšie.
+	\item \textbf{Génové mutácie:} zmena v~stavbe DNA, ktorá je reprezentovaná zmenou nukleotidovej sekvencie na určitom mieste. Nazývajú sa tiež bodovými mutáciami a z~hľadiska predikcie sú najzásadnejšie.
 	\item \textbf{Chromozómové mutácie:} mení sa štruktúra chromozómu.
-	\item \textbf{Genónové mutácie:} mení sa počet chromozómov.
+	\item \textbf{Genómové mutácie:} mení sa počet chromozómov.
 \end{itemize}
 
 \subsection{Vznik mutácií}
@@ -145,13 +145,12 @@ Medzi fyzikálne faktory patria rôzne zdroje žiarenia, najmä ionizujúce a~ul
 Medzi chemické faktory môžeme zaradiť genotoxické látky, tzv. genotoxíny. Takýchto látok je veľké množstvo a~patria medzi ne napríklad pesticídy, herbicídy, niektoré farbivá, konzervačné a~dezinfekčné látky \cite{mutace}. 
 
 \subsection{Typy mutácií}
-%todo citacia pri typoch, dat ich tam ?
 
-Podľa \cite{flegr} rozlišujeme tri základné typy génových mutácií:
+Podľa \cite{flegr} sa rozlišujú tri základné typy génových mutácií:
 \begin{itemize}
-	\item \textbf{Substitúcia:} jedná sa o~zámenu jedného alebo viacerých párov bází inými, jednotlivé báze nasledujú po sebe \cite{mutace}. V~tomto prípade sa nemení dĺžka pôvodného proteínu. Novovziknutý proteín sa oproti pôvodnému obvykle líši v~jednej aminokyseline.
-	\item \textbf{Vloženie:} jedná sa o~vloženie jedného alebo viacerých nových párov bází do pôvodnej sekvencie, spôsobuje zväčšenie dĺžky sekvencie \cite{mutace}.
-	\item \textbf{Odstránenie:} odstránenie jedného alebo viacerých po sebe nasledujúcich párov bází, mení dĺžku sekvencie rovnako ako vloženie.
+	\item \textbf{Substitúcia:} jedná sa o~zámenu jedného alebo viacerých nukleotidov. V~tomto prípade sa nemení dĺžka pôvodného proteínu. Novovziknutý proteín sa oproti pôvodnému obvykle líši v~jednej aminokyseline.
+	\item \textbf{Vloženie:} jedná sa o~vloženie jedného alebo viacerých nukleotidov do pôvodnej sekvencie, spôsobuje zväčšenie dĺžky sekvencie.
+	\item \textbf{Odstránenie:} odstránenie jedného alebo viacerých po sebe nasledujúcich nukleotidov, mení dĺžku sekvencie rovnako ako vloženie.
 \end{itemize}
 
 \begin{figure}[H]
@@ -167,7 +166,7 @@ Podľa \cite{flegr} rozlišujeme tri základné typy génových mutácií:
 \end{figure}
 \footnotetext{Zdroj: \url{https://www.bbc.co.uk/education/guides/zc499j6/revision/2}}
 
-V~prípade, že k~mutácií dôjde v~kódujúcej oblasti, môžeme mutácie rozlíšiť na \cite{flegr}:
+V~prípade, že k~mutácií dôjde v~kódujúcej oblasti, mutácie je možné rozlíšiť na \cite{flegr}:
 \begin{itemize}
 	\item \textbf{Synonymné:} vychádzajú z~tzv. degenerovanosti genetického kódu. Zámena nukleotidu v~kodóne sa tak na štruktúre proteínu nemusí vôbec prejaviť a~vyzerá to tak, ako keby k~mutácií vôbec nedošlo. 
 	\item \textbf{Nesynonymné:} pri zmene nukleotidu v~kodóne dochádza k~zmene aminokyseliny a~rovnako aj k~zmene konformácie proteínu.
@@ -184,7 +183,7 @@ Podľa tejto hodnoty je možné rozdeliť mutácie na stabilizujúce, neutrálne
 
 \chapter{Strojové učenie}
 \label{ml}
-Strojové učenie je v súčasnej dobe chápané ako disciplína umelej inteligencie. Základnou technikou strojového učenia je prehľadávanie stavového priestoru. K~charakteristickým vlastnostiam patrí využívanie znalostí, práca so symbolickými či štruktúrovanými premennými \cite{machine_learning}. Pojem strojové učenie takisto označuje počítačové metódy pracujúce s~obrovským množstvom dát, v ktorých sa hľadajú rôzne vzory a pravidelnosti. Takéto metódy nachádzajú svoje uplatnenie pri hľadaní riešení v~mnohých odvetviach akými sú počítačové videnie, rozpoznávanie reči a~takisto bioinformatika. Keďže strojové učenie nachádza v~mnohých odvetviach čoraz väčšie uplatnenie, je potrebné brať do úvahy jeho výhody a~rovnako aj nevýhody. Medzi výhody patrí automatické hľadanie spojitostí vo veľkom množstve dát. Medzi hlavné nevýhody metód patrí neschopnosť správnej analýzy dát pri nevyváženosti predložených dát, nesprávne výsledky pri malom množstve trénovacích dát pre metódu alebo príliš veľký počet parametrov vstupných dát.
+Strojové učenie je v~súčasnej dobe chápané ako disciplína umelej inteligencie. Základnou technikou strojového učenia je prehľadávanie stavového priestoru. K~charakteristickým vlastnostiam patrí využívanie znalostí, práca so symbolickými či štruktúrovanými premennými \cite{machine_learning}. Pojem strojové učenie takisto označuje počítačové metódy pracujúce s~obrovským množstvom dát, v~ktorých sa hľadajú rôzne vzory a~pravidelnosti. Takéto metódy nachádzajú svoje uplatnenie pri hľadaní riešení v~mnohých odvetviach akými sú počítačové videnie, rozpoznávanie reči a~takisto bioinformatika. Keďže strojové učenie nachádza v~mnohých odvetviach čoraz väčšie uplatnenie, je potrebné brať do úvahy jeho výhody a~rovnako aj nevýhody. Medzi výhody patrí automatické hľadanie spojitostí vo veľkom množstve dát. Medzi hlavné nevýhody metód patrí neschopnosť správnej analýzy dát pri nevyváženosti predložených dát, nesprávne výsledky pri malom množstve trénovacích dát pre metódu, alebo príliš veľký počet parametrov vstupných dát.
 
 V~tejto kapitole sa budem venovať základným technikám strojového učenia a~popisom používaných algoritmov. 
 
@@ -193,23 +192,23 @@ V~tejto kapitole sa budem venovať základným technikám strojového učenia a~
 Podľa \cite{alpaydin} je možné algoritmy strojového učenia rozdeliť do 3 základných skupín:
 \begin{itemize}
 	\item \textbf{Klasifikácia:} Rieši problém priradenia výstupnej triedy vstupným dátam, ktoré môžu byť reprezentované vektorom hodnôt. Ako príklad si je možné predstaviť zatriedenie žiadateľov o~pôžičku do tried s~vysokým alebo nízkym rizikom toho, že pôžičku nebudú schopní splácať na základe rôznych údajov o~žiadateľoch.
-	\item \textbf{Regresia:} Regresné metódy narozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia sa určiť priamo číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
+	\item \textbf{Regresia:} Regresné metódy na rozdiel od klasifikačných nepriraďujú vstupom výstupnú triedu, ale snažia sa určiť priamo číselnú hodnotu výstupu. Príkladom môže byť určenie ceny ojazdeného auta na základe parametrov ako počet najazdených kilometrov, značka, rok výroby.
 	\item \textbf{Hľadanie asociácií:} Asociačné pravidlá slúžia na hľadanie zaujímavých asociácií vo veľkom objeme dát. Pri ich hľadaní nás zaujíma podmienená pravdepodobnosť, ktorá sa uvádza vo forme $P(X|Y)$, $Y$ je produkt podmienený výskytom produktu $X$. 
 \end{itemize}
 
 \newpage
-Metódy strojového učenie môžeme ďalej rozdeliť na základe spôsobu, akým sa učia. Podľa \cite{alpaydin} ich rozdeľujeme na:
+Metódy strojového učenie môžeme ďalej rozdeliť na základe spôsobu, akým sa učia. Podľa \cite{alpaydin} sa rozdeľujú na:
 \begin{itemize}
-	\item \textbf{Učenie s~učiteľom:} Pri tomto type učenia je nutné mať k~dispozícií vstupné aj výstupné dáta. Cieľom je nájsť vzťahy medzi vstupom a výstupom, ktoré slúžia na naučenie metódy. Medzi algoritmy patriace do tejto skupiny radíme regresiu aj klasifikáciu.
-	\item \textbf{Učenie bez učiteľa:} V~tomto type učenie nie sú k~dispozícií referenčné výstupné dáta, ale len vstupné. Snahou je nachádzať pravidelnosti vo vstupných dátach. Medzi takéto metódy patria rôzne typy zhlukovania. 
+	\item \textbf{Učenie s~učiteľom:} Pri tomto type učenia je nutné mať k~dispozícií vstupné aj výstupné dáta. Cieľom je nájsť vzťahy medzi vstupom a výstupom, ktoré slúžia na naučenie metódy. Medzi algoritmy patriace do tejto skupiny sa radí regresia aj klasifikácia.
+	\item \textbf{Učenie bez učiteľa:} V~tomto type učenia nie sú k~dispozícií referenčné výstupné dáta, ale len vstupné. Snahou je nachádzať pravidelnosti vo vstupných dátach. Medzi takéto metódy patria rôzne typy zhlukovania. 
 \end{itemize}
 
 \section {Rozhodovacie stromy}
-Rozhodovací strom je hierarchický model so stromovou štruktúrou. Metódy tohto typu používajú učenie s~učiteľom a~môžeme ich použiť na klasifikáciu aj regresiu. Štruktúra stromu je tvorená z~dvoch typov uzlov, vnútorných (nelistových) a~listových uzlov. Každý z~nelistových uzlov obsahuje testovaciu funkciu. Po vyhodnotení tejto funkcie sa vyberie nasledujúci uzol, v~ktorom sa bude pokračovať. Tento proces začína v~koreňovom uzle a~pokračuje rekurzívne až do dosiahnutia listového uzlu. Listový uzol obsahuje označenie triedy do ktorej bude zaradený vstupný vektor alebo číselnú hodnotu.
+Rozhodovací strom je hierarchický model so stromovou štruktúrou. Metódy tohto typu používajú učenie s~učiteľom a~môžeme ich použiť na klasifikáciu aj regresiu. Štruktúra stromu je tvorená z~dvoch typov uzlov, vnútorných (nelistových) a~listových uzlov. Každý z~nelistových uzlov obsahuje testovaciu funkciu. Po vyhodnotení tejto funkcie sa vyberie nasledujúci uzol, v~ktorom sa bude pokračovať. Tento proces začína v~koreňovom uzle a~pokračuje rekurzívne až do dosiahnutia listového uzlu. Listový uzol obsahuje označenie triedy, do ktorej bude zaradený vstupný vektor, alebo číselnú hodnotu.
 
 \subsection{Algoritmus J48}
 
-Algoritmus J48 patrí k~metódam rozhodovacích stromov. Algoritmus produkuje klasifikačno-~rozhodovací strom pre poskytnuté dáta rekurzívnym rozdeľovaním dát. Pri rozhodovaní je využitá stratégia depth-first. Algortimus berie do úvahy všetky možné testy, ktoré môžu rozdeliť dáta a~vyberá test udávajúci najlepšiu informačnú hodnotu. Pre každý diskrétny atribút je zvážený jeden test s~počtom výsledkov, ktorý zodpovedá počtu rôznych hodnôt atribútov.  
+Algoritmus J48 patrí k~metódam rozhodovacích stromov. Jedná sa o modifikovanú implementáciu algoritmu C4.5 v~nástroji WEKA. Algoritmus produkuje klasifikačno-~rozhodovací strom pre poskytnuté dáta rekurzívnym rozdeľovaním dát. Pri rozhodovaní je využitá stratégia depth-first. Algoritmus berie do úvahy všetky možné testy, ktoré môžu rozdeliť dáta, a~vyberá test udávajúci najlepšiu informačnú hodnotu. Pre každý diskrétny atribút je zvážený jeden test s~počtom výsledkov, ktorý zodpovedá počtu rôznych hodnôt atribútov.  
 
 \subsection{Algoritmus Náhodný strom (Random Tree)}
 
@@ -228,11 +227,11 @@ Najväčšiu pozornosť tejto metódy tvoria 3 vlastnosti:
 	\item blízkosť medzi vzorkami môže byť meraná trénovaným modelom
 \end{itemize} 
 
-Algoritmus náhodný les pre klasifikáciu aj regresiu môžeme zjednodušene popísať nasledovne, pričom uvažujeme $M$ rozhodovacích stromov. Schéma metódy je znázornená na obrázku \ref{random_forest}:
+Algoritmus náhodný les pre klasifikáciu aj regresiu je možné zjednodušene popísať nasledovne, pričom je uvažovaných $M$ rozhodovacích stromov. Schéma metódy je znázornená na obrázku \ref{random_forest}:
 \begin{itemize}
-	\item Pre každý z~$M$ rozhodovacích stromov vytvoríme sadu trénovacích dát z~originálnych dát. Na ich výber slúži metóda tzv. bagging, ktorá náhodne vyberie zadaný počet trénovacích dát.
-	\item Pre každú množinu trénovacích dát vytvoríme klasifikačný alebo regresný strom, ktorý je následne natrénovaný na $M$-tej náhodnej množine trénovacích dát. V~tejto metóde je každý uzol rozdelený najlepším rozdelením spomedzi podmnožiny prediktorov náhodne vybraných v~tomto uzle. Naopak, pri klasických stromoch je uzol rozdelený na základe najlepšieho rozdelenia medzi všetkými premennými.
-	\item Predikcia nových dát spojením výsledkov predikcie M stromov, napríklad hlasovaním väčšiny (tzv. majority voting) pri klasifikácií alebo priemerom hodnôt pri regresí.
+	\item Pre každý z~$M$ rozhodovacích stromov sa vytvorí sada trénovacích dát z~originálnych dát. Na ich výber slúži metóda tzv. bagging, ktorá náhodne vyberie zadaný počet trénovacích dát.
+	\item Pre každú množinu trénovacích dát je vytvorený klasifikačný alebo regresný strom, ktorý je následne natrénovaný na $M$-tej náhodnej množine trénovacích dát. V~tejto metóde je každý uzol rozdelený najlepším rozdelením spomedzi podmnožiny prediktorov náhodne vybraných v~tomto uzle. Naopak, pri klasických stromoch je uzol rozdelený na základe najlepšieho rozdelenia medzi všetkými premennými.
+	\item Predikcia nových dát spojením výsledkov predikcie M stromov, napríklad hlasovaním väčšiny (tzv. majority voting) pri klasifikácií alebo priemerom hodnôt pri regresií.
 \end{itemize}
 
 Rozšírenie algoritmu náhodný les je momentálne veľmi aktívnou oblasťou vo výpočetnej biológií. Metóda nachádza veľké uplatnenie v~bioinformatike, napríklad aj pri nástrojoch predikujúcich stabilitu proteínov.
@@ -253,7 +252,7 @@ Rozšírenie algoritmu náhodný les je momentálne veľmi aktívnou oblasťou v
 
 \section {Support vector machines (SVM)}
 
-Support vector machines patria k~najnovším metódam strojového učenia. Tieto metódy uskutočňujú klasifikáciu konštruovaním N-dimenzionálnej nadroviny, ktorá optimálne rozdeľuje dáta do dvoch kategórií. Cieľom je nájsť takú nadrovinu, ktorá rozdelí vstupné vektory tak, že jedna skupina vektorov je na jednej strane roviny a~druhá na strane opačnej. Vektory nachádzajúce sa blízko nadroviny označujeme ako tzv. podporné vektory (support vectors). 
+Support vector machines patria k~najnovším metódam strojového učenia. Prvýkrát boli publikované v prácach \cite{svm} \cite{svm2}. Tieto metódy uskutočňujú klasifikáciu konštruovaním N-dimenzionálnej nadroviny, ktorá optimálne rozdeľuje dáta do dvoch kategórií. Cieľom je nájsť takú nadrovinu, ktorá rozdelí vstupné vektory tak, že jedna skupina vektorov je na jednej strane roviny a~druhá na strane opačnej. Vektory nachádzajúce sa blízko nadroviny sú označované ako tzv. podporné vektory (support vectors). 
 
 Ak sú trénovacie dáta lineárne rozdeliteľné, potom pár $(\textbf{w},b)$ existuje ako 
 
@@ -263,7 +262,7 @@ Ak sú trénovacie dáta lineárne rozdeliteľné, potom pár $(\textbf{w},b)$ e
     
 s~rozhodovacím pravidlom daným vzťahom $f_{\textbf{w},b} ( x ) = sgn(\textbf{w}^{T}x + b )$, kde $\textbf{w}$ je váhový vektor a~$b$ je odchýlka (tzv. bias).
 
-V prípade, že dáta sú lineárne rozdeliteľné do dvoch tried, optimálnu nadrovinu je možné nájsť minimalizovaním štvorcovej normy rozdeľujúcej nadroviny. Jedná sa o~konvexný kvadratický programovací problém.
+V~prípade, že dáta sú lineárne rozdeliteľné do dvoch tried, optimálnu nadrovinu je možné nájsť minimalizovaním štvorcovej normy rozdeľujúcej nadroviny. Jedná sa o~konvexný kvadratický programovací problém.
 Pri možnosti lineárneho rozdelenia sa snaží SVM nájsť 1-dimenzionálnu nadrovinu (priamku), ktorou rozdelí skupiny vstupných vektorov. Po rozdelení dát priamkou metóda zistí vzdialenosť priamky od najbližších podporných vektorov. Táto vzdialenosť sa označuje ako tzv. krajná hranica (margin), pričom sa hľadá najväčšia vzdialenosť medzi podpornými vektormi.  
 
 Lineárne rozdeliteľné dáta sú však len ideálnym príkladom. Ak by analýza pozostávala len z~premenných z~dvoch kategórií, dvoch predikovaných premenných a~množiny bodov rozdeliteľných priamkou, bolo by to veľmi jednoduché. V~skutočnosti sa tieto metódy musia vysporiadať s~viac ako dvomi predikovanými premennými, rozdelením dát nelineárnymi krivkami alebo množinami dát, ktoré nie je možné úplne rozdeliť. 
@@ -271,12 +270,12 @@ Lineárne rozdeliteľné dáta sú však len ideálnym príkladom. Ak by analýz
 \subsection{Jadrové funkcie}
 
 Pri väčšine reálnych problémov neexistuje lineárna nadrovina rozdeľujúca pozitívne a~negatívne vzorky v~trénovacích dátach. Jedným z~riešení je prenesenie dát do priestoru, ktorý má viac dimenzí a~definovať rozdeľujúcu nadrovinu v~tomto priestore. Takýto viacdimenzionálny priestor sa nazýva priestor transformovaných vlastností. S~vhodne vybraným priestorom transformovaných vlastností dostatočnej dimenzie je možné rozdeliť ľubovoľnú trénovaciu dátovú sadu.
-Mapovanie dát do iného (potencionálne nekonečného) Hilbertovho priestoru H je definované ako $\Phi:R^{d} \rightarrow H$. Trénovací algoritmus bude potom závisieť len na dátach skrz bodové produkty v~H, napríklad na funkciách v~tvare $\Phi(x_{i})\cdot\Phi(x_{j})$. Ak by existovala tzv. jadrová funkcia K taká, že $K(x_{i},x_{j}) = \Phi(x_{i})\cdot\Phi(x_{j})$, v~algoritme by sme potrebovali iba K. 
+Mapovanie dát do iného (potencionálne nekonečného) Hilbertovho priestoru H je definované ako $\Phi:R^{d} \rightarrow H$. Trénovací algoritmus bude potom závisieť len na dátach cez bodové produkty v~H, napríklad na funkciách v~tvare $\Phi(x_{i})\cdot\Phi(x_{j})$. Ak by existovala tzv. jadrová funkcia K taká, že $K(x_{i},x_{j}) = \Phi(x_{i})\cdot\Phi(x_{j})$, v~algoritme by sme potrebovali iba K. 
 
-Jadrové funkcie sú špeciálnou triedou funkcií umožňujúce výpočet vnútorných produktov priamo v~priestore vlastností bez nutnosti mapovania dát tak ako to bolo popísané vyššie. 
+Jadrové funkcie sú špeciálnou triedou funkcií umožňujúce výpočet vnútorných produktov priamo v~priestore vlastností bez nutnosti mapovania dát tak, ako to bolo popísané vyššie. 
 Akonáhle je vytvorená nadrovina, jadrová funkcia je použitá na mapovanie nových bodov do priestoru vlastností pre klasifikáciu.
 \newpage
-Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia definuje transformovaný priestor vlastností v~ktorom budú klasifikované trénovacie dáta. Medzi najpoužívanejšie jadrové funkcie patria
+Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia definuje transformovaný priestor vlastností v~ktorom budú klasifikované trénovacie dáta. Medzi najpoužívanejšie patria tieto jadrové funkcie \cite{alpaydin}: 
 \begin{itemize}
 	\item Polynomiálna funkcia stupňa $P$, ktorý je zvolený užívateľom
 	\begin{align}
@@ -295,7 +294,7 @@ Výber vhodnej aproximačnej jadrovej funkcie je dôležitý, pretože funkcia d
 
 \subsection{Algoritmus SMO}
 
-Sekvenčná minimalizačná optimalizácia (SMO) je algoritmus na trénovanie SVM, ktorý jednoducho rieši kvadratický SVM problém. SMO uskutočňuje dekompozíciu celkového problému na podproblémy riešené analyticky. Metóda si v~každom kroku vyberá na vyriešenie najmenší optimalizačný problém. Pre typický kvadratický SVM problém, najmenší možný optimalizačný problém zahŕňa dva Lagraengove násobitele. V~každom kroku si metóda vyberia dva tieto násobitele na spoločnú optimalizáciu, nájde pre ne optimálne hodnoty a~aktualizuje SVM. Výhodou tohto algoritmu je, že množstvo potrebnej pamäte pri trénovacej sade je lineárne, čo umožňuje algoritmu pracovať s~veľkými trénovacími sadami. 
+Sekvenčná minimalizačná optimalizácia (SMO) \cite{smo} je algoritmus na trénovanie SVM, ktorý jednoducho rieši kvadratický SVM problém. SMO uskutočňuje dekompozíciu celkového problému na podproblémy riešené analyticky. Metóda si v~každom kroku vyberá na vyriešenie najmenší optimalizačný problém. Pre typický kvadratický SVM problém, najmenší možný optimalizačný problém zahŕňa dva Lagraengove násobitele. V~každom kroku si metóda vyberia dva tieto násobitele na spoločnú optimalizáciu, nájde pre ne optimálne hodnoty a~aktualizuje SVM. Výhodou tohto algoritmu je, že množstvo potrebnej pamäte pri trénovacej sade je lineárne, čo umožňuje algoritmu pracovať s~veľkými trénovacími sadami. 
  
 \section{Algoritmus Naive Bayes}
 
@@ -305,20 +304,20 @@ Tento model je jednoduchý na vytvorenie, no napriek svojej jednoduchosti klasif
 
 \chapter{Ensemble metódy}
 
-V~posledných rokoch sa metódy strojového učenia využívajú vo veľkej miere v~oblasti bioinformatiky. Napriek ich výhodám narážame na rôzne problémy spojené najmä s~nedostatkom dát, veľkou rôznorodosťou dát alebo tzv. preučením metód. Jedným z~riešení, ktoré vykazujú dobré výsledky, je využitie výstupov z~viacerých klasifikátorov namiesto použitia jedného samostatného klasifikátora. Takáto kombinácia môže niekedy poskytnúť protichodné výsledky a~tým pomôže zvýšiť presnosť a~robustnosť predikcie. Prístup využitia viacerých klasifikátorov označujeme ako tzv. ensemble stratégiu.
+V~posledných rokoch sa metódy strojového učenia využívajú vo veľkej miere v~oblasti bioinformatiky. Napriek ich výhodám vznikajú rôzne problémy spojené najmä s~nedostatkom dát, veľkou rôznorodosťou dát, alebo tzv. preučením metód. Jedným z~riešení, ktoré vykazujú dobré výsledky, je využitie výstupov z~viacerých klasifikátorov namiesto použitia jedného samostatného klasifikátora. Takáto kombinácia môže niekedy poskytnúť protichodné výsledky a~tým pomôže zvýšiť presnosť a~robustnosť predikcie. Prístup využitia viacerých klasifikátorov je označovaný ako tzv. ensemble stratégia.
 
 Podľa \cite{polikar} existuje mnoho teoretických a~praktických dôvodov na použitie ensemble systémov:
 \begin{itemize}
-	\item \textbf{Štatistické dôvody:} Dobrý výkon metódy na trénovacích dátach nemusí predpovedať dobrú výkonnosť zovšeobecňovania. Množina klasifikátorov s~podobným výkonom na trénovacích dátach môže mať rôznu zovšeobecňovaciu výkonnosť. Tento poznatok je možné vidieť najmä ak testovacie dáta určené na rozlíšenie schopnosti zovšeobecňovať nie sú dostatočne reprezentatívne. V~takýchto prípadoch môže spriemerovanie výstupov niekoľkých klasifikátorov znížiť riziko zlého výberu alebo slabého klasifikátoru. 
+	\item \textbf{Štatistické dôvody:} Dobrý výkon metódy na trénovacích dátach nemusí predpovedať dobrú výkonnosť zovšeobecňovania. Množina klasifikátorov s~podobným výkonom na trénovacích dátach môže mať rôznu zovšeobecňovaciu výkonnosť. Tento poznatok je možné vidieť najmä, ak testovacie dáta určené na rozlíšenie schopnosti zovšeobecňovať nie sú dostatočne reprezentatívne. V~takýchto prípadoch môže spriemerovanie výstupov niekoľkých klasifikátorov znížiť riziko zlého výberu alebo slabého klasifikátoru. 
 	\item \textbf{Veľký objem dát:} V~určitých oblastiach môže nastať problém príliš veľkého objemu dát, ktorý má byť spracovaný. To nie je niekedy možné efektívne uskutočniť len pomocou jedného klasifikátora. V~takýchto situáciách je vhodné zvážiť rozdelenie dát na menšie celky, trénovať klasifikátory na menších celkoch a~skombinovať ich výstupy pomocou vhodného kombinačného pravidla.
 	\item \textbf{Malý objem dát:} Dostupnosť dostatočného a~reprezentatívneho mmnožstva trénovacích dát je dôležitá pre klasifikačný algoritmus, aby bol schopný dosiahnuť úspešného naučenia rozdelenia dát. Pri nedostatku trénovacích dát sa osvedčili techniky prevzorkovania, ktoré sú vhodné na vytvorenie náhodných prekrývajúcich sa podmnožín dostupných dát a~každú je možné použiť na učenie iného klasifikátora.
-	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná alebo leží mimo oblasti funkcií dostupných pre vybraný klasifikačný model. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov tzv. ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v~tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z~častí.
+	\item \textbf{Rozdeľuj a panuj:} Napriek dostatku dát sú niektoré problémy pre klasifikátory príliš zložité, napríklad rozhodovacia hranica rozdeľujúca dáta môže byť veľmi komplexná, alebo leží mimo oblasti funkcií dostupných pre vybraný klasifikačný model. Ako príklad je možné uviesť dáta, ktoré nie je možné lineárne rozdeliť. Žiadny lineárny klasifikátor nie je schopný dáta rozdeliť, avšak vhodná kombinácia lineárnych klasifikátorov tzv. ensemble systému by bola schopná naučiť sa túto nelineárnu hranicu. Dáta sú v~tomto prípade rozdelené na menšie celky, pričom každý klasifikátor sa učí jednu z~častí.
 \end{itemize}
 
 \section{Rôznorodosť v ensemble systémoch}
 
-V posledných rokoch niekoľko štúdií teoreticky \cite{teoret1} aj empiricky \cite{empiric1} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora keď členovia systému sú dostatočne presní a~robia niekoľko zhodných chýb. 
-Pretože je takmer nemožné natrénovať klasifikátor, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, potrebujeme klasifikátory ktoré robia chyby na odlišných častiach trénovacích dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a~presnejšej predikcie. 
+V~posledných rokoch niekoľko štúdií teoreticky \cite{teoret1} aj empiricky \cite{empiric1} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora, keď členovia systému sú dostatočne presní a~robia niekoľko zhodných chýb. 
+Pretože je takmer nemožné natrénovať klasifikátor, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, sú potrebné klasifikátory, ktoré robia chyby na odlišných častiach trénovacích dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a~presnejšej predikcie. 
 
 Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v~jednej zo Zhangových štúdií \cite{zhang}. V~nej je demonštrované, že ensemble systém pozostávajúci z~troch rovnakých klasifikátorov s~presnosťou 95\% je horší ako ensemble pozostávajúci z~klasifikátorov, ktorých presnosť je len 67\% a~najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
 
@@ -326,8 +325,8 @@ Existuje niekoľko možností ako dosiahnuť vysokú rôznorodosť jednotlivcov:
 \begin{itemize}
 	\item \textbf{Rôzne trénovacie dátové sady:} Trénovacia dátová sada môže byť rozdelená na menšie celky a~každá takáto menšia podsada je použitá na natrénovanie jedného samostatného klasifikátora. Na rozdelenie dát môže byť použitá technika z~niekoľkých dostupných prevzorkovávacích techník. Jednou z~najbežnejších takýchto techník je tzv. bootstrap technika. Exituje však niekoľko ďaľších, napríklad metódy ako tzv. jack-knife.
 	\item \textbf{Rôzne trénovacie parametre:} Použitie rôznych trénovacích parametrov pre jednotlivé klasikikátory je tiež jednou z~možných ciest. Napríklad viacvrstvová neurónová sieť môže byť trénovaná využitím rôznych vstupných váh vrstiev a~uzlov v~každej vrstve. Tento prístup umožňuje kontrolu nestability klasifikátorov a~ako následok prispieva k~ich rozmanitosti. 	
-	\item \textbf{Rôzne parametre pri predikcií:} Lineárny klasifikátor môže mať niekedy problém s~nachádzaním vzorov u parametrov, ktoré sú veľmi vzdialené. Pre riešenie tohto problému môže byť prospešné experimentovanie s~rôznymi podsadami predikovaných parametrov generovaných buď metódami učenia s~učiteľom alebo bez neho \cite{dataclass}.	
-	\item \textbf{Rôzne typy klasikikátorov:} Neexistuje žiadny nadradený klasifikátor, ktorý by poskytoval najlepšie výsledky bez ohľadu na oblasť odborníka alebo množstva trénovacích dát. Na druheje strane, na každý problém zvyčajne existuje niekoľko vhodných klasifikátorov, preto výber niekoľkých z~nich a kombinácia ich výstupov je možnou cestou ako vytvoriť množinu klasifikátory s~rôznymi rozhodovacími hranicami.
+	\item \textbf{Rôzne parametre pri predikcií:} Lineárny klasifikátor môže mať niekedy problém s~nachádzaním vzorov u parametrov, ktoré sú veľmi vzdialené. Pre riešenie tohto problému môže byť prospešné experimentovanie s~rôznymi podsadami predikovaných parametrov generovaných buď metódami učenia s~učiteľom alebo bez neho \cite{dataclas}.	
+	\item \textbf{Rôzne typy klasikikátorov:} Neexistuje žiadny nadradený klasifikátor, ktorý by poskytoval najlepšie výsledky bez ohľadu na oblasť odborníka alebo množstva trénovacích dát. Na druheje strane, na každý problém zvyčajne existuje niekoľko vhodných klasifikátorov, preto výber niekoľkých z~nich a~kombinácia ich výstupov je možnou cestou ako vytvoriť množinu klasifikátorou s~rôznymi rozhodovacími hranicami.
 \end{itemize}
 
 \newpage
@@ -337,9 +336,9 @@ Existujú dva základné spôsoby, ako vybrať členov ensemble systému: baggin
 
 \subsection{Bagging}
 
-Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z~najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri štatistickej klasifikácií a~regresií. Rôznorodosť je dosiahnutá využitím tzv. bootstrap podmnožín trénovacích dát, pričom rôzne trénovacie množiny sú vybrané náhodne s~náhradou z~celého množstva trénovacích dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovania väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
+Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z~najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri štatistickej klasifikácií a~regresií. Rôznorodosť je dosiahnutá využitím tzv. bootstrap podmnožín trénovacích dát, pričom rôzne trénovacie množiny sú vybrané náhodne s~náhradou z~celého množstva trénovacích dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovanie väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
 
-Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaisteneie dostatočného množstva trénovacích vzorkov v~podmnožinách je približne 75 až 100\% vzorkov prítomných v~každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a~mnoho vzorkov sa nachádza viackrát v~danej podmnožine. V~takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s~rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
+Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaistenie dostatočného množstva trénovacích vzorkov v~podmnožinách je približne 75 až 100\% vzorkov prítomných v~každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a~mnoho vzorkov sa nachádza viackrát v~danej podmnožine. V~takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s~rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
 
 \subsection{Boosting}
 
@@ -371,7 +370,7 @@ Po natrénovaní jednotlivých klasifikátorov je potrebné ich spojiť najvhodn
 \subsection{Trénovateľné metódy}
 Medzi trénovateľné metódy patria nasledovné:
 \begin{itemize}
-	\item \textit{Stacked generalization:} Snahou je vytvoriť metaklasifikátor s~využitím poznatkov o~presnoti klasifikátorov. Dostupné dáta sú rozdelené na trénovaciu a~testovaciu sadu. Všetky nástroje sú trénované na trénovacej sade, testovacia sada je použitá na určenie výkonnosti klasifikátorov a~tvorbu metaklasifikátoru.
+	\item \textit{Stacked generalization:} Snahou je vytvoriť metaklasifikátor s~využitím poznatkov o~presnosti klasifikátorov. Dostupné dáta sú rozdelené na trénovaciu a~testovaciu sadu. Všetky nástroje sú trénované na trénovacej sade, testovacia sada je použitá na určenie výkonnosti klasifikátorov a~tvorbu metaklasifikátoru.
 	\item \textit{Rozhodcovské stromy:} Jedná sa o~prístup zdola nahor pri tvorbe ensemble systému. V~prvom kroku sú dáta rozdelené do konečného počtu neprekrývajúcich sa podsád a~každá z~nich je určená na trénovanie toho istého typu klasifikátora. Pre každý pár je vytvorený tzv. rozhodca a~proces sa rekurzívne opakuje pokým nezostane len jeden klasifikátor na aktuálnej úrovni. 
 \end{itemize}
 
@@ -379,7 +378,7 @@ Medzi trénovateľné metódy patria nasledovné:
 
 Do kategórie netrénovateľných metód môžeme zaradiť nasledujúce metódy:
 \begin{itemize}
-	\item \textit{Hlasovanie väčšiny:} Najjednoduchšia metóda, ktorá priradí objektu triedu na základe počtu hlasov jednotlivých klasifikátorov. Existujú 3 typy: jednotné hlasovanie, kde sa všetky klasifikátory musia zhodnúť na predikcií; jednoduché hlasovanie v~ktorom sa aspoň polovica klasifikátorov musí zhodnúť na rozhodnutí; väčšinové hlasovanie kde je výsledok daný podľa počtu hlasov.
+	\item \textit{Hlasovanie väčšiny:} Najjednoduchšia metóda, ktorá priradí objektu triedu na základe počtu hlasov jednotlivých klasifikátorov. Existujú 3 typy: jednotné hlasovanie, kde sa všetky klasifikátory musia zhodnúť na predikcií; jednoduché hlasovanie v~ktorom sa aspoň polovica klasifikátorov musí zhodnúť na rozhodnutí; väčšinové hlasovanie, kde je výsledok daný podľa počtu hlasov.
 	\item \textit{Váhované hlasovanie väčšiny:} Tento prístup je vylepšením predchádzajúceho prístupu, jednotlivé klasifikátory majú rôznu váhu v konečnom rozhodovaní a~tieto váhy by mali byť prispôsobené ich presnosti.
 	\item \textit{Bayesova kombinácia:} Váhovaná metóda, váha spojená s~klasifikátorom je tzv. posterior pravdepodobnosť klasifikátora na trénovacej sade.
 	\item \textit{Váhovanie entropie:} Rovnako sa jedná o~váhovanú metódu a~váhy klasifikátorov sú nepriamo úmerné entropií klasifikačného vektoru.
@@ -438,7 +437,7 @@ Nástroj ERIS je zložený na silovom poli Medusa a~pozostáva z~celoatómového
 
 \subsection{Rosetta}
 
-Rosetta predstavuje sadu softvéru na makromolekulárne modelovanie. Zahŕňa celú skupinu rôznych silových polí založených na kombinácií prispievateľov voľnej enrgie ako sú van der Waalsova energia alebo elektrostatické interakcie. Väčšina z~protokolov tohto nástroja je veľmi časovo náročných a~preto je nástroj dostupný iba ako samostatná aplikácia \cite{rosetta}.
+Rosetta predstavuje sadu softvéru na makromolekulárne modelovanie. Zahŕňa celú skupinu rôznych silových polí založených na kombinácií prispievateľov voľnej energie ako sú van der Waalsova energia alebo elektrostatické interakcie. Väčšina z~protokolov tohto nástroja je veľmi časovo náročná, a~preto je nástroj dostupný iba ako samostatná aplikácia \cite{rosetta}.
 
 \subsection{CUPSAT}
 
@@ -455,7 +454,7 @@ Zmena stability danej bodovej mutácie je vypočítaná na základe štruktúry 
 
 \subsection{DMutant}
 
-Nástroj DMutant využíva kombináciu orientácie na základe poznatkov, vdialenostne závislý potenciál atómov aminokyselín a~potenciál torzného uhlu. Tieto časti tvoria diskriminačnú funkciu, ktorej parametre boli optimalizované trénovacou dátovou sadou. Nástroj je dostupný v~podobe samostatného programu \cite{dmutant}.
+Nástroj DMutant využíva kombináciu orientácie na základe poznatkov, vzdialenostne závislý potenciál atómov aminokyselín a~potenciál torzného uhlu. Tieto časti tvoria diskriminačnú funkciu, ktorej parametre boli optimalizované trénovacou dátovou sadou. Nástroj je dostupný v~podobe samostatného programu \cite{dmutant}.
 
 \subsection{FoldX}
 
@@ -467,7 +466,7 @@ Energetická funkcia nástroja zahŕňa požiadavky u~ktorých bolo zistené, ž
 Vytvorenie spoľahlivej, dostatočne veľkej a~rozmanitej trénovacej dátovej sady je rozhodujúcou vlastnosťou pri tvorbe každého predikčného nástroja. Dáta pre testovanie a~trénovanie prediktoru boli z~veľkej časti získané z~databázy ProTherm \cite{protherm}. Jedná sa o~najrozsiahlejšiu databázu obsahujúcu termodynamické parametre akými sú Gibssova voľná energia, tepelná kapacita alebo entalpia. Databáza taktiež obsahuje informácie o~použitých metódach a~meraniach, experimentálnych podmienkach a~informácie o~aktivite proteínu, sekundárnej štruktúre a~dostupnosti pôvodných reziduí. ProTherm je prepojená aj s~ďaľšími databázami, napríklad so sekvenčnou SWISS--PROT \cite{swissprot}, štrukturálnou PDB \cite{pdb} alebo funkcionálnou PMD \cite{pmd}.
 
 
-Databáza ProTherm bola naposledy aktualizovaná vo februári v~roku 2013 a~aktuálne obsahuje približne 26 000 záznamov jedno a~viacbodových mutantov navrhnutých nad viac ako 740 unikátnymi proteínmi získaných rôznymi experimentálnymi technikami. Pre tvorbu testovacích a~trénovacích dátových sád pre existujúce nástroje predikujúce vplyv aminokyselinových substitúcií na stabilitu proteínu je najpoužívanejším zdrojom dát práve databáza ProTherm. V~súčasnom stave však trpí množstvom serióznych nedostatkov. Aby sa predišlo problémom spojených s touto databázou, vyextrahované boli iba mutácie u~ktorých sú uvedené zmeny stability a~overili všetky zdroje. Najväčšími problémami pri získavaní dát boli:
+Databáza ProTherm bola naposledy aktualizovaná vo februári v~roku 2013 a~aktuálne obsahuje približne 26 000 záznamov jedno a~viacbodových mutantov navrhnutých nad viac ako 740 unikátnymi proteínmi získaných rôznymi experimentálnymi technikami. Pre tvorbu testovacích a~trénovacích dátových sád pre existujúce nástroje predikujúce vplyv aminokyselinových substitúcií na stabilitu proteínu je najpoužívanejším zdrojom dát práve databáza ProTherm. V~súčasnom stave však trpí množstvom serióznych nedostatkov. Aby sa predišlo problémom spojených s touto databázou, vyextrahované boli iba mutácie u~ktorých sú uvedené zmeny stability a~overené všetky zdroje. Najväčšími problémami pri získavaní dát boli:
 \begin{itemize}
 	\item Chýbajúca hodnota $\Delta\Delta G$
 	\item Opačné znamienka hodnoty $\Delta\Delta G$ 
@@ -489,7 +488,7 @@ Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor 
 	\item \textbf{Sekundárna štruktúra proteínu:} Údaj o~sekundárnej štruktúre proteínu bol získaný použitím modulu DSSP prítomného v~knižnici BioPython. Pre zjednodušenie bol každému proteínu priradený tento údaj len z~3 možností, ktorými sú helix, coil a sheet.
 	\item \textbf{Dostupná povrchová plocha (ASA):} Jedná sa o~údaj, ktorý udáva plochu aminokyseliny, ktorú môže dosiahnuť rozpúšťadlo. Na výpočet tohto parametru bol opäť použitý modul DSSP prítomný v~knižnici BioPython.
 	\item \textbf{Konzervovanosť:} Jeden z~najdôležitejších parametrov v~zázname mutácie. Informácia o konzervovanosti pozície na ktorej došlo k~mutácií je reprezentovaná
-	jednou z~5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felsteinov algoritmus, ktorý je podrobnejšie popísaný v~časti \ref{felstein}. Mutácie na konzervovanej pozícií sú z~hľadiska skúmania veľmi zaujímavé, pretože konzerované aminokyseliny bývajú dôležité pre stabilitu, aktivitu alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
+	jednou z~5 hodnôt od 0 po 4, ktoré kódujú percentuálne vyjadrenie miery konzervovanosti danej pozície. Na výpočet bol použitý fylogenetický strom a Felsteinov algoritmus, ktorý je podrobnejšie popísaný v~časti \ref{felstein}. Mutácie na konzervovanej pozícií sú z~hľadiska skúmania veľmi zaujímavé, pretože konzervované aminokyseliny bývajú dôležité pre stabilitu, aktivitu, alebo schopnosť proteínu vytvoriť terciárnu štruktúru.
 	\item \textbf{Korelácia:} Výpočet korelácie mutovanej pozície s~ostatnými pozíciami vo viacnásobnom zarovnaní. Stĺpec v~zarovnaní predstavuje náhodnú veličinu, počíta sa vzájomná informácia, ktorá vyjadruje závislosť dvojice náhodných veličín. Údaj o~vzájomnej informácií dostaneme pomocou nasledujúceho vzťahu: 	
 	\begin{align}
 	I(X;Y) = \underset{y \in Y}{\sum} \underset{x \in X}{\sum} p(x,y) \log_{2}\frac{p(x,y)}{p(x) p(y)}
@@ -500,7 +499,7 @@ Každý záznam mutácie je tvorený z~8 hodnôt, ktoré tvoria vstupný vektor 
 
 \section{Felsteinov algoritmus}
 \label{felstein}
-Felsteinov algoritmus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
+Felsteinov algoritmus slúži na riešenie tzv. maličkého likelihood problému a~snahou je určiť tzv. likelihood hodnotu stromu pre zadanú pozíciu v~sekvencií. Vstupom je viacnásobné zarovnanie sekvencií, tvar stromu spoločne s~ohodnotením vnútorných uzlov a~dĺžka hrán. 
 Algoritmus je založený na princípe dynamického programovania a~pozostáva z~viacerých krokov.
 Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L-hodnoty pre každý uzol podľa pravidiel, ktoré sú nasledovné:
 \begin{itemize}
@@ -521,19 +520,19 @@ Prvým krokom je priechod stromom od listov ku koreňu a~vyhodnotenie L-hodnoty 
 
 \end{itemize}
 
-L-hodnota je uložená v~poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. Pri použití algoritmu v~tejto práci obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkzom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sa sledujú zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov je vypočítaná konzervovanosť.
+L-hodnota je uložená v~poli, ktoré obsahuje každý uzol stromu. V~tomto prípade každý uzol obsahuje pole s~váhami jednotlivých nukleotidov, ktoré sú počítané počas priechodu stromom. Pri použití algoritmu v~tejto práci obsahuje pole hodnoty s~váhami pre jednotlivé sekvencie vo viacnásobnom zarovnaní. Počas priechodu sa počítajú hodnoty v~poli každého uzlu a~výsledkom je pole obsiahnuté v~koreni stromu. Pole s~váhami sa použije na zistenie konzervovanosti konkrétnej pozície. Počítaním váh sa sledujú zmeny na pozícií v~priebehu evolúcie proteínu a~na základe koeficientov je vypočítaná konzervovanosť.
 
 \chapter{Implementácia}
 Finálnou časťou práce je implementácia predikčného nástroja. Táto kapitola bližšie popisuje výber použitých technológií, spôsob realizácie nástroja, dosiahnuté výsledky a~porovnanie finálnej implementácie s~podobnými nástrojmi.
 
 \section{Testovanie vo WEKE}
 \label{wekatest}
-Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady som zvolil nástroj WEKA.
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj \texttt{WEKA}.
 
 WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v~programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade; a~nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
-Pred testovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu nástroja. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybraných niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Pomocou týchto metód bola dátová sada otestovaná a~na základe výsledkov boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
+Pred testovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu nástroja. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybraných niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Zvolené boli najmä rôzne stromové algoritmy a~rôzne verzie SVM. Pomocou týchto metód bola dátová sada otestovaná a~na základe výsledkov boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
 
-Testovanie zvolených metód bolo vykonané na celej dátovej sade, pri testovaní bola použitá krížová validácia a~testovacie dáta boli rozdelené do desiatich častí, pričom konečné výsledky sú spriemerované z~niekoľkých testovaní. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie predikcie stabilizujúcich mutácií ako destabilizjúcich, pretože v~trénovacej sade je väčší počet destabilizujúcich mutácií ako stabilizujúcich a~poslúžila na vyvažovanie nerovnomerného počtu záznamov. Výsledky testovania jednotlivých metód sú v~tabuľke \ref{testovanie}. 
+Testovanie zvolených metód bolo vykonané na celej dátovej sade, pri testovaní bola použitá krížová validácia a~testovacie dáta boli rozdelené do desiatich častí, pričom konečné výsledky sú spriemerované z~niekoľkých testovaní. Nastavená bola aj tzv. cost--sensitive matica, ktorá slúžila na postihovanie predikcie stabilizujúcich mutácií ako destabilizujúcich, pretože v~trénovacej sade je väčší počet destabilizujúcich mutácií ako stabilizujúcich a~poslúžila na vyvažovanie nerovnomerného počtu záznamov. Výsledky testovania jednotlivých metód sú v~tabuľke \ref{testovanie}. 
 
 Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti identifikácie stabilizujúcich a~destabilizujúcich položiek, ktoré sú skutočne stabilizujúce alebo destabilizujúce, FP (false positive) rate vyjadrenie presnosti určenia stabilizujúcej mutácie ako destabilizujúcej a~naopak. Posledným údajom je celková presnosť metódy pri predikcií na testovacej podsade. Na základe tohto údaju boli vybraté najlepšie metódy.
 
@@ -553,22 +552,22 @@ Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti id
 	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
 \end{table}
 
-Z~tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda Random Forest a z~metód implementujúcich SVM mala najlepší výsledok metóda LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes založená na bayesovskej pravdepodobnosti dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu Random Forest aj SVM a~preto boli tieto metódy určené ako základ vytváraného ensemble systému predikčného nástroja.
+Z~tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda Random Forest a z~metód implementujúcich SVM mala najlepší výsledok metóda LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes založená na bayesovskej pravdepodobnosti dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu Random Forest aj SVM, a~preto boli tieto metódy určené ako základ vytváraného ensemble systému predikčného nástroja.
 
 \section{Príprava záznamu mutácie v Pythone}
 
-Na implementáciu predikčného nástroja som zvolil programovací jazyk Python, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre jednoduché implementovanie strojového učenia vďaka dostupným knižniciam. Program má charakter konzolovej aplikácie ovládanej z~príkazového riadku s niekoľkými vstupnými parametrami od užívateľa.
+Na implementáciu predikčného nástroja bol zvolený programovací jazyk \texttt{Python}, najmä kvôli dostupnosti mnohých bioinformatických nástrojov a~knižníc, ale aj pre jednoduché implementovanie strojového učenia vďaka dostupným knižniciam. Program má charakter konzolovej aplikácie ovládanej z~príkazového riadku s niekoľkými vstupnými parametrami od užívateľa.
 
-Prvou fázou pri tvorbe nástroja bola implementácia prípravy záznamu reprezentujúceho jednu mutáciu, ktorý tvorí vstup pre strojové učenie. Príprava záznamu zahŕňa výpočet jednotlivých parametrov mutácie a~celkovo pozostáva z~výpočtu 8 hodnôt. Výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
+Prvou fázou pri tvorbe nástroja bola implementácia skriptu s prípravou záznamu reprezentujúceho jednu mutáciu, ktorý tvorí vstup pre strojové učenie. Príprava záznamu zahŕňa výpočet jednotlivých parametrov mutácie a~celkovo pozostáva z~výpočtu 8 hodnôt. Výsledný záznam má podobu CSV súboru s~jednotlivými parametrami.
 
 Pre výpočet hodnôt zmien náboja, polarity, indexu hydrofobicity a~veľkosti aminokyseliny sú v~príslušnej triede prítomné dátové štruktúry obsahujúce hodnoty náboja, polarity, indexu hydrofobity a~veľkosti pre jednotlivé aminokyseliny. Hodnoty parametrov sa vypočítajú na základe zmeny podľa určenia pôvodnej aminokyseliny a~aminokyseliny po mutácií.
 
-Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica Biopython \cite{biopython}, konktrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program {\tt dssp} , ktorý modul používa na výpočet.
+Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica \texttt{Biopython} \cite{biopython}, konkrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program {\tt dssp} \cite{dssp} , ktorý modul používa na výpočet.
 
-Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu {\tt BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií, zvolená bola hodnota 250 sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu {\tt Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
-PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinovho algoritmu. Na vytvorenie stromu je použitý program {\tt FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v~Pythone bola použitá knižnica {\tt ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu FastTree. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
+Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je \texttt{FASTA} súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. \texttt{FASTA} súbor slúži ako vstup programu {\tt BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií, zvolená bola hodnota 250 sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu {\tt Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
+PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinovho algoritmu. Na vytvorenie stromu je použitý program {\tt FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v~Pythone bola použitá knižnica {\tt ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu \texttt{FastTree}. Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
 
-Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovananie sekvencií. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu sú nakoniec zakódované do svojej číselnej reprezentácie, aby s~nimi mohla pracovať metóda strojového učenia.
+Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovnanie sekvencií. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu, sú nakoniec zakódované do svojej číselnej reprezentácie, aby s~nimi mohla pracovať metóda strojového učenia.
 
 \section{Testovanie metód strojového učenia v Pythone}
 
@@ -580,13 +579,13 @@ Podľa výsledkov testovania rôznych metód uvedených v~časti \ref{wekatest} 
 	\begin{tabular}{ | l | c | r | l| }
 		\hline 
 		Metóda  & Accuracy & MCC \\ \hline
-		Random Forest & 0.712 & 0.35\\ \hline
-		SVM & 0.81 & 0.36 \\\hline
+		Random Forest & 0.712 & 0.34\\ \hline
+		SVM & 0.813 & 0.36 \\\hline
 	\end{tabular}
 	\caption {Výsledky testovanie algoritmov z~knižnice Scikit-learn} \label{scikittest} 
 \end{table}
 
-Tabuľka \ref{scikittest} ukazuje, že v~presnosti dosiahla metóda SVM veľmi dobré výsledky, presnosť bola 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu, SVM dosiahla hodnoty 0.36 a Random Forest 0.35. Pri testovaní metódy SVM bolo použitých niekoľko jadrových funkcií a~najlepšie výsledky dosiahla polynomiálna jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a~vyjadruje vzťah predikovaných a~skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a~vytvoreného ensemble systému.
+Tabuľka \ref{scikittest} ukazuje, že v~presnosti dosiahla metóda SVM veľmi dobré výsledky, presnosť bola 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu, SVM dosiahla hodnoty 0.36 a Random Forest 0.34. Pri testovaní metódy SVM bolo použitých niekoľko jadrových funkcií a~najlepšie výsledky dosiahla polynomiálna jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a~vyjadruje vzťah predikovaných a~skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a~vytvoreného ensemble systému.
 
 \newpage
 \section{Ensemble systém v Pythone}
@@ -664,10 +663,10 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 
 \section{Porovnanie s inými nástrojmi}
 
-Po implementovaní prediktora som pristúpil k~porovaniu predikčnej sily s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z~ktorých je 95 stabilizujúcich a~255 destabilizujúcich. 
+Po implementovaní prediktora som pristúpil k~porovaniu predikčnej sily s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350 \cite{S350}, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z~ktorých je 95 stabilizujúcich a~255 destabilizujúcich. 
 Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup bol zvolený najmä preto, že natrénovanie a~otestovanie iných nástrojov na vytvorenej dátovej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len v~podobe webovej aplikácie.
 
-Zo sady S350 neboli odstránené záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v~dátovej sade nevyskytujú. Záznamy s~týmito hodnotami boli ponechané, pretože bez nich by porovanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola stanovená tak, že mutácie s~$\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a~zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
+Zo sady S350 neboli odstránené záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v~dátovej sade nevyskytujú. Záznamy s~týmito hodnotami boli ponechané, pretože bez nich by porovnanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola stanovená tak, že mutácie s~$\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a~zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
 
 
 \begin{figure}[H]
@@ -690,7 +689,7 @@ U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej d�
 
 Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že implementovaný prediktor využívajúci ensemble prístup dosiahol lepšej korelácie ako nástroje I-Mutant3, MuPro, DMutant, CUPSAT a~Eris. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14, MuPro dosiahol korelácie 0.18, DMutant dosiahol hodnoty 0.12. CUPSAT a~Eris mali najlepšie hodnoty, CUPSAT 0.24 a~Eris 0.3. Implementovaný prediktor dosiahol na dátovej sade S350 koreláciu 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0.16, 0.12, 0.18, 0.06 a~pri Erise boli dosiahnuté hodnoty totožné.
 
-Výsledky ensemble systému boli porovnané aj s hodnotami dosiahnutými použitím samostatným metód Random Forest a SVM. Samotný Random Forest dosiahol na sade S350 koreláciu 0.26 a SVM 0.28.
+Výsledky ensemble systému boli porovnané aj s hodnotami dosiahnutými použitím samostatných metód Random Forest a SVM. Samotný Random Forest dosiahol na sade S350 koreláciu 0.26 a SVM 0.28.
 
 Prediktor dosiahol hodnotu korelácie 0.3, čo spomedzi testovaných nástrojov predstavuje dobrú hodnotu, podobnú testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
 
@@ -707,7 +706,7 @@ Na vytvorenie ensemble stratégie bolo potrebné vytvoriť menšie podsady, ktor
 
 Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mutácií S350. Na tejto sade dosiahol prediktor hodnotu korelačného koeficientu 0.3 a~presnosť dosiahla 67\%.
 
-Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobre nie je jednoduché, pretože databáza \textit{ProTherm} obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
-Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenie fylogenetického stromu a~použitia Felsteinovho algoritmu.
+Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobe nie je jednoduché, pretože databáza \textit{ProTherm} obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
+Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenia fylogenetického stromu a~použitia Felsteinovho algoritmu.
 
 %=========================================================================

@@ -123,23 +123,23 @@
   supervisor.name={Miloš},   % jméno školitele / supervisor name 
   supervisor.surname={Musil},   % příjmení školitele / supervisor surname
   supervisor.title.p={Ing.},   %titul před jménem (nepovinné) / title before the name (optional)
-  supervisor.title.a={},    %titul za jménem (nepovinné) / title after the name (optional)
+  supervisor.title.a={ },    %titul za jménem (nepovinné) / title after the name (optional)
   % Klíčová slova / keywords
-  keywords.cs={Sem budou zapsána jednotlivá klíčová slova v českém (slovenském) jazyce, oddělená čárkami.}, % klíčová slova v českém či slovenském jazyce / keywords in czech or slovak language
-  keywords.en={Sem budou zapsána jednotlivá klíčová slova v anglickém jazyce, oddělená čárkami.}, % klíčová slova v anglickém jazyce / keywords in english
+  keywords.cs={proteínová stabilita, aminokyselinové substitúcie, mutácie, strojové učenie, ensemble systémy, support vector machines, náhodný les}, % klíčová slova v českém či slovenském jazyce / keywords in czech or slovak language
+  keywords.en={protein stability, amino acid substitutions, mutations, machine learning, ensemble systems, support vector machines, random forest}, % klíčová slova v anglickém jazyce / keywords in english
   % Abstrakt / Abstract
-  abstract.cs={Do tohoto odstavce bude zapsán výtah (abstrakt) práce v českém (slovenském) jazyce.}, % abstrakt v českém či slovenském jazyce / abstract in czech or slovak language
-  abstract.en={Do tohoto odstavce bude zapsán výtah (abstrakt) práce v anglickém jazyce.}, % abstrakt v anglickém jazyce / abstract in english
+  abstract.cs={
+	Táto práca sa zaoberá predikciou vplyvu aminokyselinových mutácií na stabilitu proteínu. Cieľom bolo vytvorenie nástroja klasifikujúceho výsledný charakter mutácie s~využitím kombinácie viacerých metód strojového učenia. Implementovaný prístup kombinujúci metódy SVM a Random Forest dosiahol lepšie výsledky ako použitie metód samostante. Nástroj bol porovnaný s~dostupnými nástrojmi na nezávislom datasete na ktorom dosiahol úspešnosť predikcie 67\% a koreláciu 0.3.  
+}, % abstrakt v českém či slovenském jazyce / abstract in czech or slovak language
+  abstract.en={The main focus of this thesis is the prediction of the effect of amino acid substitutions on protein stability. My goal was to develop a predictive tool for the classification of the effect of mutations by combining several machine learning techniques. The implemented predictor, which utilizes SVM and Random forest methods, has achieved higher accuracy than any of the integrated methods. The novel predictive tool was compared with the existing ones using independent testing dataset. The predictor has yield 67\% accuracy and MCC 0.3.}, % abstrakt v anglickém jazyce / abstract in english
   % Prohlášení (u anglicky psané práce anglicky, u slovensky psané práce slovensky) / Declaration (for thesis in english should be in english)
-  declaration={Prohlašuji, že jsem tuto bakalářskou práci vypracoval samostatně pod vedením pana X...
-Další informace mi poskytli...
-Uvedl jsem všechny literární prameny a publikace, ze kterých jsem čerpal.},
+  declaration={Prehlasujem, že som túto bakalársku prácu vypracoval samostatne pod vedením pána Ing. Miloša Musila. 
+  	Uviedol som všetky literárne pramene a publikácie z ktorých som čerpal.},
   %declaration={Hereby I declare that this bachelor's thesis was prepared as an original author’s work under the supervision of Mr. X
 % The supplementary information was provided by Mr. Y
 % All the relevant information sources, which were used during preparation of this thesis, are properly cited and included in the list of references.},
   % Poděkování (nepovinné, nejlépe v jazyce práce) / Acknowledgement (optional, ideally in the language of the thesis)
-  acknowledgment={V této sekci je možno uvést poděkování vedoucímu práce a těm, kteří poskytli odbornou pomoc
-(externí zadavatel, konzultant, apod.).},
+  acknowledgment={Ďakujem pánovi Ing. Milošovi Musilovi za rady a odborné vedenie tejto práce.},
   %acknowledgment={Here it is possible to express thanks to the supervisor and to the people which provided professional help
 %(external submitter, consultant, etc.).},
   % Rozšířený abstrakt (cca 3 normostrany) - lze definovat zde nebo níže / Extended abstract (approximately 3 standard pages) - can be defined here or below
@@ -301,4 +301,5 @@ Uvedl jsem všechny literární prameny a publikace, ze kterých jsem čerpal.},
   % Compilation piecewise (see above, it is necessary to uncomment it)
   %\subfile{projekt-30-prilohy-appendices}
   
+
 \end{document}

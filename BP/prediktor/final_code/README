@@ -1,0 +1,26 @@
+Toto je návod na použitie predikčného nástroja. Všetky potrebné nástroje a knižnice sa nachádzajú na priloženom DVD. Na spustenie je potrebné mať Python vo verzii 2.7. Nástroj sa spúšťa z príkazového riadku a má nasledovné parametre:
+
+./stability_predictor.py PDB_ID CHAIN POSITION WILD_TYPE MUTANT (-h|--help)
+
+PDB_ID PDB identifikátor proteínu
+CHAIN typ reťazca proteínu
+POSITION pozícia mutácie, je potrebné je prepočítať v prípade, že počiatočná pozícia je iná ako 1, tak aby zodpovedala pozícií v proteíne, kde je raťazec číslovaný od pozície 1
+WILD_TYPE aminokyselina pred mutáciou na zadanej pozícií
+MUTANT aminokyselina po mutácií na zadanej pozícií
+-h|--help spustenie nápovedy k programu v kombinácií s akýmkoľvek parametrom alebo samostatne
+
+Príklad spustenia:
+
+./stability_predictor.py 1AJ3 A 87 K G
+
+Výstup je realizovaný výpisom na terminál a má nasledujúci tvar:
+
+------------RESULTS------------
+PDB ID: 1AJ3
+CHAIN TYPE: A
+WILD TYPE ACID: K
+MUTANT ACID: G
+POSITION OF MUTATION: 87
+TYPE OF MUTATION: stabilizing
+
+

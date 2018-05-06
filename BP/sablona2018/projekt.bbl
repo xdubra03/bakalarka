@@ -36,6 +36,10 @@ Boeckmann, B.; Bairoch, A.; Apweiler, R.; aj.: The SWISS-PROT protein
   knowledgebase and its supplement TrEMBL in 2003. \emph{Nucleic Acids
   Research}, 2003.
 
+\bibitem{svm}
+Boser, B.; Guyon, I.; N.~Vapnik, V.: A Training Algorithm for Optimal Margin
+  Classifier. ro\v{c}n\'{i}k~5, 1996.
+
 \bibitem{breiman2}
 Breiman, L.: Bagging Predictors. \emph{Machine Learning}, 1996.
 
@@ -57,6 +61,16 @@ Cheng, J.; Randall, A.; Baldi, P.: Prediction of Protein Stability Changes for
 Cock, P. J.~A.; Antao, T.; Chang, J.~T.; aj.: Biopython: freely available
   Python tools for computational molecular biology and bioinformatics.
   \emph{Bioinformatics}, ro\v{c}n\'{i}k~25, \v{c}.~11, 2009: s. 1422--1423.
+
+\bibitem{svm2}
+Cortes, C.; Vapnik, V.: Support-Vector Networks. \emph{Machine Learning},
+  ro\v{c}n\'{i}k~20, \v{c}.~3, 1995: s. 273--297.
+
+\bibitem{S350}
+Dehouck, Y.; Grosfils, A.; Folch, B.; aj.: Fast and accurate predictions of
+  protein stability changes upon mutations using statistical potentials and
+  neural networks: PoPMuSiC-2.0. \emph{Bioinformatics}, ro\v{c}n\'{i}k~25,
+  \v{c}.~19, 2009: s. 2537--2543.
 
 \bibitem{popmusic}
 Dehouck, Y.; Kwasigroch, J.~M.; Gilis, D.; aj.: PoPMuSiC 2.1: a web server for
@@ -99,6 +113,11 @@ Hoppe, C.; Schomburg, D.: Prediction of protein thermostability with a
 Huang, L. T.~.; Gromiha, M.~M.; Ho, S.~Y.: iPTREE-STAB: interpretable decision
   tree based method for predicting protein stability changes upon mutations.
   \emph{Bioinformatics}, 2007.
+
+\bibitem{dssp}
+Kabsch, W.; Sander, C.: Dictionary of protein secondary structure: pattern
+  recognition of hydrogen-bonded and geometrical features. \emph{Biopolymers},
+  ro\v{c}n\'{i}k~22, 1983: s. 2577--2637.
 
 \bibitem{pmd}
 Kawabata, T.; Ota, M.; Nishikawa, K.: The protein mutant database.
@@ -154,6 +173,11 @@ Pires, D.~E.; Ascher, D.~B.; Blundell, T.~L.: mCSM: predicting the effects of
   mutations in proteins using graph-based signatures. \emph{Bioinformatics},
   2014.
 
+\bibitem{smo}
+Platt, J.~C.: Sequential Minimal Optimization: A Fast Algorithm for Training
+  Support Vector Machines. Technick\'{a} spr\'{a}va, ADVANCES IN KERNEL METHODS
+  - SUPPORT VECTOR LEARNING, 1998.
+
 \bibitem{polikar}
 Polikar, R.: Ensemble based systems in decision making. \emph{IEEE Circuits
   Syst Mag.}, 2006.
@@ -182,8 +206,9 @@ Sussman, J.~L.; Lin, D.; Jiang, J.; aj.: Protein Data Bank (PDB): Database of
   Three-Dimensional Structural Information of Biological Macromolecules.
   \emph{Acta Cryst.}, 1998.
 
-\bibitem{dataclass}
-Tang, J.; Alelyani, S.; Liu, H.: 2014.
+\bibitem{dataclas}
+Tang, J.; Alelyani, S.; Liu, H.: Data Classification. \emph{Chapman and
+  Hall/CRC}, 2014.
 
 \bibitem{gibbs}
 Voet, D.; Voet, J.~G.; Pratt, C.~W.: \emph{{\it Fundamentals of Biochemistry:

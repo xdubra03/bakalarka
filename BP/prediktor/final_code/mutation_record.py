@@ -479,8 +479,6 @@ class MutationRecord():
                                                     pos = i
                                                     if (word[i] == wild_type):
                                                         return pos
-                                                    else:
-                                                        print('Neuspech')
 
             break
         handle.close()
@@ -676,7 +674,9 @@ class MutationRecord():
     	parser = PDBParser()
     	structure = parser.get_structure(pdb_id,pdb_id+".pdb")
     	model = structure[0]
-    	dssp = DSSP(model,pdb_id+".pdb",dssp='/home/juraj/dssp-2.0.4-linux-amd64')
+        pwd = os.getcwd()
+        pwd = pwd + '/tools/dssp-2.0.4-linux-amd64'
+    	dssp = DSSP(model,pdb_id+".pdb",dssp=pwd)
     	# index is position of mutation
         residue_start = self.PDB_parse(self.pdb_id,self.chain)
         index = self.position
