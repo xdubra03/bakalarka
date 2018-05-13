@@ -1,19 +1,27 @@
-Toto je návod na použitie predikčného nástroja. Všetky potrebné nástroje a knižnice sa nachádzajú na priloženom DVD. Na spustenie je potrebné mať Python vo verzii 2.7. Nástroj sa spúšťa z príkazového riadku a má nasledovné parametre:
+This is the usage guide for prediction tool. For running this tools you will need to install required libraries. To install them, you can use these following commands using pip:
+1. Install Scikit-learn
+pip install -U scikit-learn
+2. Install ete3
+pip install --upgrade ete3
+3. Install Biopython
+pip install biopython
+
+After running these commmands, tool is ready to use. All external programs used in tool are provided on attached DVD. Prediction tool requires Python version 2.7. Tool is launched from the command line and has several input parameters:  
 
 ./stability_predictor.py PDB_ID CHAIN POSITION WILD_TYPE MUTANT (-h|--help)
 
-PDB_ID PDB identifikátor proteínu
-CHAIN typ reťazca proteínu
-POSITION pozícia mutácie, je potrebné je prepočítať v prípade, že počiatočná pozícia je iná ako 1, tak aby zodpovedala pozícií v proteíne, kde je raťazec číslovaný od pozície 1
-WILD_TYPE aminokyselina pred mutáciou na zadanej pozícií
-MUTANT aminokyselina po mutácií na zadanej pozícií
--h|--help spustenie nápovedy k programu v kombinácií s akýmkoľvek parametrom alebo samostatne
+PDB_ID PDB protein identifier
+CHAIN chain type 
+POSITION position of mutation, if position of the first residue is not 1, position has to be recomputed
+WILD_TYPE amino acid before mutation
+MUTANT amino acid after mutation
+-h|--help print help 
 
-Príklad spustenia:
+This is the example of input:
 
 ./stability_predictor.py 1AJ3 A 87 K G
 
-Výstup je realizovaný výpisom na terminál a má nasledujúci tvar:
+Output has simple text format and has following structure:
 
 ------------RESULTS------------
 PDB ID: 1AJ3

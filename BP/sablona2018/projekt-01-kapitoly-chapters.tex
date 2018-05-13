@@ -144,6 +144,7 @@ Medzi fyzikálne faktory patria rôzne zdroje žiarenia, najmä ionizujúce a~ul
 
 Medzi chemické faktory môžeme zaradiť genotoxické látky, tzv. genotoxíny. Takýchto látok je veľké množstvo a~patria medzi ne napríklad pesticídy, herbicídy, niektoré farbivá, konzervačné a~dezinfekčné látky \cite{mutace}. 
 
+\newpage
 \subsection{Typy mutácií}
 
 Podľa \cite{flegr} sa rozlišujú tri základné typy génových mutácií:
@@ -156,7 +157,7 @@ Podľa \cite{flegr} sa rozlišujú tri základné typy génových mutácií:
 \begin{figure}[H]
 	\centering
 	\begin{center}
-		\scalebox{0.6}
+		\scalebox{0.5}
 		{   
 			\includegraphics{mutation_types.png}
 			%https://www.bbc.co.uk/education/guides/zc499j6/revision/2
@@ -319,7 +320,7 @@ Podľa \cite{polikar} existuje mnoho teoretických a~praktických dôvodov na po
 V~posledných rokoch niekoľko štúdií teoreticky \cite{teoret1} aj empiricky \cite{empiric1} ukázalo, že použitie ensemble systému viacerých klasifikátorov prekonáva výsledky samostatného klasifikátora, keď členovia systému sú dostatočne presní a~robia niekoľko zhodných chýb. 
 Pretože je takmer nemožné natrénovať klasifikátor, ktorý by dokonale zvládol rozdeliť stavový priestor bez výskytu chyby, sú potrebné klasifikátory, ktoré robia chyby na odlišných častiach trénovacích dát. Ak sú splnené tieto podmienky, je možné dosiahnuť robustnejšej a~presnejšej predikcie. 
 
-Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v~jednej zo Zhangových štúdií \cite{zhang}. V~nej je demonštrované, že ensemble systém pozostávajúci z~troch rovnakých klasifikátorov s~presnosťou 95\% je horší ako ensemble pozostávajúci z~klasifikátorov, ktorých presnosť je len 67\% a~najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
+Ako príklad tohto faktu je možné uviesť demonštráciu uvedenú v~jednej zo Zhangových štúdií \cite{zhang}. V~nej je demonštrované, že ensemble systém pozostávajúci z~troch rovnakých klasifikátorov s~presnosťou 95 \% je horší ako ensemble pozostávajúci z~klasifikátorov, ktorých presnosť je len 67 \% a~najmenšou chybou medzi dvojicou klasifikátorov. Na základe týchto poznatkov je možné usúdiť, že rôznorodosť medzi členmi ensemble systému je rozhodujúca pri zlepšovaní predikcie.
 
 Existuje niekoľko možností ako dosiahnuť vysokú rôznorodosť jednotlivcov:
 \begin{itemize}
@@ -338,7 +339,7 @@ Existujú dva základné spôsoby, ako vybrať členov ensemble systému: baggin
 
 Bagging \cite{breiman2} alebo aj tzv. bootstrap aggregation je jednou z~najstarších, ľahko implementovateľných ensemble stratégií. Bola navrhnutá na zlepšenie presnosti algoritmov strojového učenia používaných pri štatistickej klasifikácií a~regresií. Rôznorodosť je dosiahnutá využitím tzv. bootstrap podmnožín trénovacích dát, pričom rôzne trénovacie množiny sú vybrané náhodne s~náhradou z~celého množstva trénovacích dát. Každá takáto podmnožina je určená na trénovanie iného klasifikátora rovnakého typu. Nakoniec sa využije hlasovanie väčšiny na výsledkoch jednotlivých klasifikátorov. Trieda vybraná najväčším počtom klasifikátorov sa stáva konečným rozhodnutím ensemble systému.
 
-Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaistenie dostatočného množstva trénovacích vzorkov v~podmnožinách je približne 75 až 100\% vzorkov prítomných v~každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a~mnoho vzorkov sa nachádza viackrát v~danej podmnožine. V~takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s~rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
+Bagging je výkonným mechanizmom najmä pri obmedzenom množstve spoľahlivých dát. Na zaistenie dostatočného množstva trénovacích vzorkov v~podmnožinách je približne 75 až 100 \% vzorkov prítomných v~každej podmnožine. Nastáva tak veľký prekryv medzi trénovacími podmnožinami a~mnoho vzorkov sa nachádza viackrát v~danej podmnožine. V~takomto prípade sa rôznorodosť zaistí použitím nestabilného klasifikačného modelu pre ktorý je možné získať rôzne rozhodovacie hranice s~rôznymi trénovacími dátami. Techniky ako neurónové siete alebo rozhodovacie stromy sú dobrými príkladmi na tento účel, pretože ich nestabilnosť je kontrolovateľná výberom ich parametrov.
 
 \subsection{Boosting}
 
@@ -419,6 +420,7 @@ Metóda identifikuje pre miesto mutácie všetky atómy v~zadanej vzdialenosti o
 
 MAESTRO je multiagentný systém strojového učenia. K~predikcií využíva informácie o~sekvencií a~štruktúre spoločne s~2 štatistickými funkciami, slúži na predikciu jednobodových ale aj viacbodových mutácií. Systém využíva kombináciu neurónových sietí, SVM a~lineárnej regresie, ktoré sú natrénované na nezávislých dátach a~nakoniec sú ich výsledky spojené. Vstupným vektorom strojového učenia je 9 hodnôt, ktoré sú rozdelené na štatistické skórovacie funkcie a~vlastnosti proteínov, ako napríklad veľkosť proteínu. Špeciálnou vlastnosťou prediktoru je možnosť predikcie stabilizujúcich disulfidových mostíkov. Nástroj je dostupný ako samostatná aplikácia a~aj ako webový server \cite{maestro}.
 
+\newpage
 \subsection{ELASPIC}
 
 ELASPIC je nástroj využívajúci ensemble stratégie. Slúži na predikciu hodnoty $\Delta\Delta G$. Na začiatku nástroj predikuje proteínové domény a~ich interakcie a~detekuje proteínové jadrá. Mutácie sú mapované a~molekulárne, evolučné a~energetické vlastnosti sú určené na vytvorenie prediktívneho modelu využívajúceho rozhodovacie stromy s~algoritmom Stochaistic Gradient boosting. ELASPIC je dostupný ako samostatná aplikácia aj ako webový server \cite{elaspic}.
@@ -527,7 +529,7 @@ Finálnou časťou práce je implementácia predikčného nástroja. Táto kapit
 
 \section{Testovanie vo WEKE}
 \label{wekatest}
-Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj \texttt{WEKA}.
+Výber vhodnej metódy strojového učenia na základe otestovania rôznych metód na zostavenej dátovej sade predstavoval prvú fázu pri tvorbe predikčného nástroja. Na otestovanie dátovej sady bol zvolený nástroj WEKA.
 
 WEKA \cite{weka} predstavuje voľne dostupný balík algoritmov strojového učenia napísaného v~programovacom jazyku Java. Ide o~veľmi populárny nástroj určený na použitie v~akademickej ale aj komerčnej sfére. Nástroj poskytuje množstvo algoritmov strojového učenia, ktoré je možné rýchlo vyskušať a~porovnať na zvolenej dátovej sade; a~nástroje na predspracovanie analyzovaných dát. WEKA poskytuje algoritmy na regresiu, zhlukovanie, klasifikáciu, získavanie asociačných pravidiel a~výber atribútov.
 Pred testovaním bola dátová sada prevedená do formátu ARFF, natívneho formátu nástroja. Nástroj ponúka nasledovné triedy algoritmov: Bayes, Functions, Lazy, Meta, Mi, Misc, Rules, Trees. Z~týchto tried bolo vybraných niekoľko algoritmov, ktoré sú bližšie popísané v kapitole \ref{ml}. Zvolené boli najmä rôzne stromové algoritmy a~rôzne verzie SVM. Pomocou týchto metód bola dátová sada otestovaná a~na základe výsledkov boli vybrané najlepšie metódy na ďaľšie použitie pri implementácií. Výsledky testovania obsahuje tabuľka \ref{testovanie}.
@@ -540,7 +542,7 @@ Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti id
 	\centering
 	\begin{tabular}{ | l | c | c | c| }
 		\hline 
-		Metóda strojového učenia & TP rate & FP rate & Accuracy \\ \hline
+		Metóda strojového učenia & TP rate & FP rate & Presnosť \\ \hline
 		Naive Bayes & 0.776 & 0.626 & 0.737 \\ \hline
 		LibSVM &  0.786   & 0.706   & 0.766  \\ \hline
 		SMO & 0.774 & 0.774 & 0.6\\ \hline
@@ -552,7 +554,7 @@ Tabuľka \ref{testovanie} obsahuje údaje TP (true positive) rate o~presnosti id
 	\caption {Výsledky testovanie algoritmov strojového učenia} \label{testovanie} 
 \end{table}
 
-Z~tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda Random Forest a z~metód implementujúcich SVM mala najlepší výsledok metóda LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70\%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes založená na bayesovskej pravdepodobnosti dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu Random Forest aj SVM, a~preto boli tieto metódy určené ako základ vytváraného ensemble systému predikčného nástroja.
+Z~tabuľky \ref{testovanie} je vidieť, že z~metód založených na rozhodovacích stromoch dosiahla najlepšie výsledky metóda Random Forest a z~metód implementujúcich SVM mala najlepší výsledok metóda LibSVM. Obidve metódy dosiahli presnosť vyššiu ako 70 \%. V~prípade SVM mal druhý algoritmus SMO horšie výsledky. Metóda Naive Bayes založená na bayesovskej pravdepodobnosti dosiahla len o~niečo horšie výsledky ako zvyšné metódy. Potvrdili sa však očakávania dobrých výsledkov algoritmu Random Forest aj SVM, a~preto boli tieto metódy určené ako základ vytváraného ensemble systému predikčného nástroja.
 
 \section{Príprava záznamu mutácie v Pythone}
 
@@ -564,8 +566,8 @@ Pre výpočet hodnôt zmien náboja, polarity, indexu hydrofobicity a~veľkosti 
 
 Výpočet údajov o~sekundárnej štruktúre proteínu a~hodnote dostupnej povrchovej plochy (ASA) prebieha spoločne. Na ich výpočet bola použitá knižnica \texttt{Biopython} \cite{biopython}, konkrétne modul DSSP. Pomocou neho je možné získať obidva údaje z~PDB súboru. Pre správne fungovanie modulu je však nutné mať prítomný samostatný program {\tt dssp} \cite{dssp}, ktorý modul používa na výpočet.
 
-Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je \texttt{FASTA} súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. \texttt{FASTA} súbor slúži ako vstup programu {\tt BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií, zvolená bola hodnota 250 sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu {\tt Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
-PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinovho algoritmu. Na vytvorenie koreňového stromu je použitý program {\tt FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v~Pythone bola použitá knižnica {\tt ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu \texttt{FastTree}. Pri použití Felsteinovho algorimu bolo potrebné poznať aj ohodnotenie prechodov medzi jednotlivými aminokyselinami. Na tento účel bolo použitá matica prechodov BLOSUM62, ktorá je zostavená dynamicky v~programe z~textového súboru, takže je možné použiť aj súbor s~inou maticou.
+Proces výpočtu konzervovanosti mutovanej pozície je o~niečo zložitejší ako ostatné výpočty. Vstupom výpočtu je FASTA súbor so sekvenciou požadovaného typu reťazca a~PDB súbor. FASTA súbor slúži ako vstup programu {\tt BLAST} \cite{blastp}, ktorý bol použitý na získane homológnych sekvencií, zvolená bola hodnota 250 sekvencií. Výstup v~podobe XML súboru je spracovaný do podoby textového súboru slúžiaceho ako vstup programu {\tt Clustal Omega} \cite{clustal}, ktorý vytvára viacnásobné zarovnanie vstupných sekvencií.
+PDB súbor je určený na získanie počiatočnej pozície rezidua, ktorá spoločne s~indexom mutácie slúži na získanie výsledného indexu mutácie vo viacnásobnom zarovnaní. Výpočet je založený na vytvorení fylogenetického stromu a~použití Felsteinovho algoritmu. Na vytvorenie koreňového stromu je použitý program {\tt FastTree} \cite{fasttree}. Na implementáciu fylogenetického stromu v~Pythone bola použitá knižnica {\tt ete3}\footnote{Dostupné na \url{http://etetoolkit.org/}}, ktorá využíva na zostavenie stromu výstup programu \texttt{FastTree}. Pri použití Felsteinovho algorimu bolo potrebné poznať aj ohodnotenie prechodov medzi jednotlivými aminokyselinami. Na tento účel bolo použitá matica prechodov \texttt{BLOSUM62}, ktorá je zostavená dynamicky v~programe z~textového súboru, takže je možné použiť aj súbor s~inou maticou.
 Výsledné váhy získané Felsteinovým algoritmom spoločne s~viacnásobným zarovnaním slúžia na konečný výpočet konzervovanosti, ktorá je rozdelená do 5 úrovní.
 
 Posledným parametrom je určenie korelácie mutovanej pozície. Na výpočet je opäť použité viacnásobné zarovnanie sekvencií. Jednotlivé hodnoty parametov, ktoré nemajú číselnú hodnotu výstupu, sú nakoniec zakódované do svojej číselnej reprezentácie, aby s~nimi mohla pracovať metóda strojového učenia.
@@ -579,14 +581,14 @@ Podľa výsledkov testovania rôznych metód uvedených v~časti \ref{wekatest} 
 	\centering
 	\begin{tabular}{ | l | c | r | l| }
 		\hline 
-		Metóda  & Accuracy & MCC \\ \hline
-		Random Forest & 0.712 & 0.34\\ \hline
-		SVM & 0.813 & 0.36 \\\hline
+		Metóda  & Presnosť & MCC \\ \hline
+		Random Forest & 0,712 & 0,34\\ \hline
+		SVM & 0,813 & 0,36 \\\hline
 	\end{tabular}
 	\caption {Výsledky testovanie algoritmov z~knižnice Scikit-learn} \label{scikittest} 
 \end{table}
 
-Tabuľka \ref{scikittest} ukazuje, že v~presnosti dosiahla metóda SVM veľmi dobré výsledky, presnosť bola 81\%. Metóda Random Forest dosiahla presnosti približne 71\%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu, SVM dosiahla hodnoty 0.36 a Random Forest 0.34. Pri testovaní metódy SVM bolo použitých niekoľko jadrových funkcií a~najlepšie výsledky dosiahla polynomiálna jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a~vyjadruje vzťah predikovaných a~skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a~vytvoreného ensemble systému.
+Tabuľka \ref{scikittest} ukazuje, že v~presnosti dosiahla metóda SVM veľmi dobré výsledky, presnosť bola 81 \%. Metóda Random Forest dosiahla presnosti približne 71 \%. Obe metódy dosiahli podobných výsledných hodnôt Matthewsovho korelačného koeficientu, SVM dosiahla hodnoty 0,36 a Random Forest 0,34. Pri testovaní metódy SVM bolo použitých niekoľko jadrových funkcií a~najlepšie výsledky dosiahla polynomiálna jadrová funkcia. Hodnota MCC je pre vyhodnotenie metódy smerodatnejšia a~vyjadruje vzťah predikovaných a~skutočných hodnôt. Dosiahnuté hodnoty korelácie budú slúžiť na porovnanie výsledkov samostatne použitej metódy a~vytvoreného ensemble systému.
 
 \newpage
 \section{Ensemble systém v Pythone}
@@ -597,21 +599,21 @@ Základom ensemble systému je použitie viacerých klasifikátorov a~spojenie i
 	\centering
 	\begin{tabular}{ |l | c | c | c | c|}
 		\hline 
-		Dátová sada & Stabilizujúce záznamy & Destabilizujúce záznamy & MCC (SVM) & MCC (RF)  \\ \hline
-	1. & 100 & 100 & 0.4 & 0.25\\ \hline
-	2. & 100 & 150 & 0.42 & 0.29\\ \hline
-	3. & 130 & 100 & 0.36 & 0.24\\ \hline
-	4. & 150 & 100 & 0.41 & 0.31\\ \hline
-	5. & 150 & 150 & 0.43 & 0.3\\ \hline
-	6. & 150 & 200 & 0.45 & 0.34\\ \hline
-	7. & 200 & 150 & 0.41 & 0.29\\ \hline
-	8. & 200 & 200 & 0.43 & 0.34\\ \hline
-	9. & 200 & 250 & 0.52 & 0.29\\ \hline
-	10. & 200 & 250 & 0.48 & 0.32\\ \hline
-	11. & 250 & 200 & 0.53 & 0.37\\ \hline
-	12. & 250 & 200 & 0.47 & 0.34\\ \hline
-	13. & 250 & 250 & 0.47 & 0.34\\ \hline
-	14. & 250 & 250 & 0.48 & 0.29\\ \hline
+		Dataset & Stabilizujúce záznamy & Destabilizujúce záznamy & MCC (SVM) & MCC (RF)  \\ \hline
+	1. & 100 & 100 & 0,4 & 0,25\\ \hline
+	2. & 100 & 150 & 0,42 & 0,29\\ \hline
+	3. & 130 & 100 & 0,36 & 0,24\\ \hline
+	4. & 150 & 100 & 0,41 & 0,31\\ \hline
+	5. & 150 & 150 & 0,43 & 0,3\\ \hline
+	6. & 150 & 200 & 0,45 & 0,34\\ \hline
+	7. & 200 & 150 & 0,41 & 0,29\\ \hline
+	8. & 200 & 200 & 0,43 & 0,34\\ \hline
+	9. & 200 & 250 & 0,52 & 0,29\\ \hline
+	10. & 200 & 250 & 0,48 & 0,32\\ \hline
+	11. & 250 & 200 & 0,53 & 0,37\\ \hline
+	12. & 250 & 200 & 0,47 & 0,34\\ \hline
+	13. & 250 & 250 & 0,47 & 0,34\\ \hline
+	14. & 250 & 250 & 0,48 & 0,29\\ \hline
 	\end{tabular}
 	\caption {Výsledky testovania podsád metódami Random Forest a SVM} \label{pythontest} 
 \end{table}
@@ -624,20 +626,20 @@ Tabuľka \ref{pythontest} ukazuje výsledky testovania jednotlivých podsád na 
 	\hline
 	Dataset & \multicolumn{3}{c|}{MCC (SVM)} & \multicolumn{3}{c|}{MCC (RF)} \\ \cline{1-7}
 	\hline 
-	1. & 0.3 & 0.27 & 0.32 & 0.17 & 0.2 & 0.2 \\ \cline{1-7} 
-	2. & 0.31 & 0.33 & 0.4 & 0.19 & 0.25 & 0.21\\ \cline{1-7} 
-	3. & 0.28 & 0.4 & 0.38 & 0.18 & 0.2 & 0.13 \\ \cline{1-7}
-	4. & 0.36 & 0.36 & 0.39 & 0.21 & 0.29 & 0.22 \\ \cline{1-7}
-	5. & 0.41 & 0.42 & 0.41 & 0.23 & 0.28 & 0.24\\ \cline{1-7}
-	6. & 0.44 & 0.41 & 0.4 & 0.29 & 0.3 & 0.25\\ \cline{1-7}
-	7. & 0.4 & 0.29 & 0.39 & 0.28 & 0.26 & 0.3\\ \cline{1-7}
-	8. & 0.47 & 0.36 & 0.42 & 0.29 & 0.28 & 0.29\\ \cline{1-7}
-	9. & 0.45 & 0.36 & 0.41 & 0.26 & 0.27 & 0.31\\ \cline{1-7}
-	10.& 0.36 & 0.42 & 0.46 & 0.28 & 0.29 & 0.32\\ \cline{1-7}
-	11.& 0.43 & 0.39 & 0.42 & 0.32 & 0.32 & 0.27\\ \cline{1-7}
-	12.& 0.44 & 0.4 & 0.43  & 0.31 & 0.33 & 0.32\\ \cline{1-7}
-	13.& 0.41 & 0.36  & 0.41 & 0.28 & 0.27 & 0.33\\ \cline{1-7}
-	14.& 0.44 & 0.42 & 0.44 & 0.3 & 0.28 &  0.31\\ \cline{1-7}
+	1. & 0,3 & 0,27 & 0,32 & 0,17 & 0,2 & 0,2 \\ \cline{1-7} 
+	2. & 0,31 & 0,33 & 0,4 & 0,19 & 0,25 & 0,21\\ \cline{1-7} 
+	3. & 0,28 & 0,4 & 0,38 & 0,18 & 0,2 & 0,13 \\ \cline{1-7}
+	4. & 0,36 & 0,36 & 0,39 & 0,21 & 0,29 & 0,22 \\ \cline{1-7}
+	5. & 0,41 & 0,42 & 0,41 & 0,23 & 0,28 & 0,24\\ \cline{1-7}
+	6. & 0,44 & 0,41 & 0,4 & 0,29 & 0,3 & 0,25\\ \cline{1-7}
+	7. & 0,4 & 0,29 & 0,39 & 0,28 & 0,26 & 0,3\\ \cline{1-7}
+	8. & 0,47 & 0,36 & 0,42 & 0,29 & 0,28 & 0,29\\ \cline{1-7}
+	9. & 0,45 & 0,36 & 0,41 & 0,26 & 0,27 & 0,31\\ \cline{1-7}
+	10.& 0,36 & 0,42 & 0,46 & 0,28 & 0,29 & 0,32\\ \cline{1-7}
+	11.& 0,43 & 0,39 & 0,42 & 0,32 & 0,32 & 0,27\\ \cline{1-7}
+	12.& 0,44 & 0,4 & 0,43  & 0,31 & 0,33 & 0,32\\ \cline{1-7}
+	13.& 0,41 & 0,36  & 0,41 & 0,28 & 0,27 & 0,33\\ \cline{1-7}
+	14.& 0,44 & 0,42 & 0,44 & 0,3 & 0,28 &  0,31\\ \cline{1-7}
 	\hline
 	\end{tabular}
 \caption {Výsledky testovania podsád bez parametra dostupnej povrchovej plochy, zmeny náboja a~kombinácie zmeny indexu hydrofobicity a~dostupnej povrchovej plochy.} 
@@ -649,7 +651,7 @@ Tabuľka \ref{pythontest1} ukazuje výsledky testovania podsád bez odstránený
 
 Implementovaný ensemble systém pozostáva so spojenia metód Random Forest a~SVM, konkrétne bola metóda Random Forest natrénovaná trikrát a~metóda SVM štyrikrát. Model metódy SVM využíva polynomiálnu jadrovú funkciu, vo všetkých testovanich dosiahla najlepšie výsledky. Ide o~funkciu druhého stupňa, s~pribúdajúcimi stupňami sa rýchlosť predikcie len zvyšovala ale nebolo viditeľné výrazné zlepšenie výsledkov. Každou predikciou bol získaný údaj o~výslednej triede, nakoniec bolo k~dispozícií sedem hodnôt predikovanej triedy pre mutáciu. Výsledná hodnota predikovanej triedy bola získaná hlasovaním väčšiny, výsledkom bola trieda, ktorá sa medzi hodnotami nachádzala častejšie.
 
-Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 13 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0.55. 
+Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č. 8, 9, 11, 14. Metóda Random Forest bola natrénovaná na podsadách č. 8, 11, 13 so všetkými parametrami. Metóda SVM bola natrénovaná na podsade č. 9, 11 a 14 so všetkými parametrami a~podsade č. 8 bez parametra dostupnej povrchovej plochy. Finálna hodnota korelačného koeficientu na testovacej sade dosiahla hodnotu 0,55. 
 
 \begin{figure}[H]
 	\centering
@@ -667,7 +669,7 @@ Ensemle systém bol vo finálnej implementácií natrénovaný na podsadách č.
 Po implementovaní prediktora som pristúpil k~porovaniu predikčnej sily s~niekoľkými dostupnými nástrojmi. Tieto nástroje boli zvolené podľa toho, či boli otestované na testovacej sade S350 \cite{S350}, ktoré mnohé nástroje používajú ako svoju testovaciu sadu. Táto sada obsahuje 350 záznamov mutácií, z~ktorých je 95 stabilizujúcich a~255 destabilizujúcich. 
 Porovnávanie spočívalo v~otestovaní implementovaného prediktora na sade S350 a~porovnaní výsledkov s~nástrojmi, ktoré boli otestované na tejto sade. Daný postup bol zvolený najmä preto, že natrénovanie a~otestovanie iných nástrojov na vytvorenej dátovej sade by nebolo úplne možné, pretože mnoho nástrojov je dostupných len v~podobe webovej aplikácie.
 
-Zo sady S350 neboli odstránené záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v~dátovej sade nevyskytujú. Záznamy s~týmito hodnotami boli ponechané, pretože bez nich by porovnanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola stanovená tak, že mutácie s~$\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a~zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti dátovej sade, upravené boli po dodatočnom skúmaní sady S350. 
+Zo sady S350 neboli odstránené záznamy s~hodnotou $\Delta\Delta$G v~intervale $\left[-0.5,0.5\right]$, ktoré sa v~dátovej sade nevyskytujú. Záznamy s~týmito hodnotami boli ponechané, pretože bez nich by porovnanie nebolo uskutočnené na rovnakej dátovej sade. Každému záznamu bolo dodatočne nutné určiť príslušnú triedu, pretože sada obsahuje iba hodnotu $\Delta\Delta$G. Rozhodovacia hranica bola stanovená tak, že mutácie s~$\Delta\Delta$G $>= 0$ boli označené ako stabilizujúce a~zvyšné mutácie ako destabilizujúce. Hranice sú naopak oproti dátovej sade použitej na trénovanie, upravené boli po dodatočnom skúmaní sady S350. 
 
 
 \begin{figure}[H]
@@ -682,32 +684,32 @@ Zo sady S350 neboli odstránené záznamy s~hodnotou $\Delta\Delta$G v~intervale
 	\end{center}
 \end{figure}
 
-Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj FoldX, ktorý patrí do kategórie nástrojov využívajúcich štatistický potenciál. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria nástroje PoPMuSiC rovnako patriaci do kategórie nástrojov využívajúcich štatistický potenciál a~nástroj Rosetta využívajúci fyzický potenciál. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0.3, pričom medzi najlepšie nástroje zo všetkých uvedených patrí Rosetta.
+Graf na obrázku \ref{porovnanie} ukazuje porovnanie hodnôt korelačného koeficientu u~rôznych nástrojov na sade S350. Z~grafu vidieť, že najlepšiu hodnotu dosiahol nástroj FoldX, ktorý patrí do kategórie nástrojov využívajúcich štatistický potenciál. Medzi ďaľšie nástroje s~vysokou hodnotou korelácie patria nástroje PoPMuSiC rovnako patriaci do kategórie nástrojov využívajúcich štatistický potenciál a~nástroj Rosetta využívajúci fyzický potenciál. Všetky uvedené nástroje dosiahli koreláciu väčšiu ako 0,3, pričom medzi najlepšie nástroje zo všetkých uvedených patrí Rosetta.
 
 Zvyšné zvolené prediktory dosiahli menšiu hodnotu korelácie, najlepšie výsledky z~nich dosiahli nástroje SDM \cite{sdm}, CUPSAT a Eris. SDM predstavuje nástroj založený na získavaní znalostí, CUPSAT využíva na výpočet potenciál atómov a~torzných uhlov, Eris využíva fyzický potenciál. Zostávajúcimi nástrojmi sú I-Mutant3 a~MuPro \cite{mupro}. Obidva uvedené nástroje zhodne využívajú strojové učenie a~konktrétne metódu SVM.
  
 U~mnohých ďaľších nástrojov je problém v~získaní údajov o~použitej dátovej sade na trénovanie a~rovnako spôsob validácie nástroja, takže ich nie je možné brať do úvahy pri porovnávaní nástrojov.
 
-Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že implementovaný prediktor využívajúci ensemble prístup dosiahol lepšej korelácie ako nástroje I-Mutant3, MuPro, DMutant, CUPSAT a~Eris. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14, MuPro dosiahol korelácie 0.18, DMutant dosiahol hodnoty 0.12. CUPSAT a~Eris mali najlepšie hodnoty, CUPSAT 0.24 a~Eris 0.3. Implementovaný prediktor dosiahol na dátovej sade S350 koreláciu 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0.16, 0.12, 0.18, 0.06 a~pri Erise boli dosiahnuté hodnoty totožné.
+Pri porovnaní implementovaného nástroja s~inými nástrojmi využívajúcimi strojové učenie je vidieť, že implementovaný prediktor využívajúci ensemble prístup dosiahol lepšej korelácie ako nástroje I-Mutant3, MuPro, DMutant, CUPSAT a~Eris. Korelácia nástroja I-Mutant3 dosiahla hodnotu 0.14, MuPro dosiahol korelácie 0.18, DMutant dosiahol hodnoty 0,12. CUPSAT a~Eris mali najlepšie hodnoty, CUPSAT 0,24 a~Eris 0,3. Implementovaný prediktor dosiahol na dátovej sade S350 koreláciu 0.3, čo je v~porovaní s týmito hodnotami zlepšenie o~0,16; 0,12; 0,18; 0,06 a~pri Erise boli dosiahnuté hodnoty totožné.
 
-Výsledky ensemble systému boli porovnané aj s hodnotami dosiahnutými použitím samostatných metód Random Forest a SVM. Samotný Random Forest dosiahol na sade S350 koreláciu 0.26 a SVM 0.28.
+Výsledky ensemble systému boli porovnané aj s hodnotami dosiahnutými použitím samostatných metód Random Forest a SVM. Samotný Random Forest dosiahol na sade S350 koreláciu 0,26 a SVM 0,28.
 
-Prediktor dosiahol hodnotu korelácie 0.3, čo spomedzi testovaných nástrojov predstavuje dobrú hodnotu, podobnú testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
+Prediktor dosiahol hodnotu korelácie 0,3. Spomedzi testovaných nástrojov predstavuje táto hodnota dobrý výsledok, podobný testovaným. Najlepšie výsledky pri predikcií však dosahujú nástroje založené na využití štatistického alebo fyzického potenciálu, aj keď hodnota MCC nie je najvyššia.
 
 \chapter{Záver}
 
 Hlavnou náplňou tejto práce bolo vytvorenie predikčného nástroja využívajúceho metódy strojového učenia, ktorý by určoval vplyv aminokyselinových mutácií na stabilitu proteínu.
 
-Keďže ide o~predikčný nástroj, v~prvom kroku bolo potrebné získať dáta určené na trénovanie a~testovanie nástroja. Zostavený dataset obsahuje 1564 jednobodových mutácií získaných z~databázy \textit{ProTherm}. Jedná sa o~unikátny dataset, očistený od mutácií obsahujúce rôzne nedostatky pri uvádzaných hodnotách mutácií. Každá mutácia je doplnená o~8 parametrov určených k vytvoreniu rozhodovacej hranice.
+Keďže ide o~predikčný nástroj, v~prvom kroku bolo potrebné získať dáta určené na trénovanie a~testovanie nástroja. Zostavený dataset obsahuje 1564 jednobodových mutácií získaných z~databázy ProTherm. Jedná sa o~unikátny dataset, očistený od mutácií obsahujúce rôzne nedostatky pri uvádzaných hodnotách mutácií. Každá mutácia je doplnená o~8 parametrov určených k vytvoreniu rozhodovacej hranice.
 
 V~nasledujúcom kroku bolo potrebné zvoliť metódy strojového učenia. Pomocou nástroja WEKA bolo na zostavenom datasete odskúšaných viacero dostupných metód a~nakoniec boli vybrané metódy Random Forest a~SVM. Tieto metódy sa stali základom implementovaného ensemble systému.
 
 Nástroj obsahuje ensemble systém kombinujúci metódy Random Forest a~SVM na predikciu výsledného vplyvu mutácie. Zvolený prístup slúži na vysporiadanie sa s~menším množstvom dát a~rovnako na zlepšenie robustnosti predikcie. 
-Na vytvorenie ensemble stratégie bolo potrebné vytvoriť menšie podsady, ktoré slúžili na natrénovanie jednotlivých metód. Takýto prístup predikcie dosiahol na testovacej dátovej sade o~veľkosti 250 mutácií vytvoreného z~pôvodnej dátovej sady hodnotu korelačného koeficientu 0.55. Oproti použitiu samostanej metódy Random Forest, ktorá dosiahla na zostavenej sade koreláciu 0.34 alebo metóde SVM s~koreláciou 0.36 ide o~značné zlepšenie tejto hodnoty.
+Na vytvorenie ensemble stratégie bolo potrebné vytvoriť menšie podsady, ktoré slúžili na natrénovanie jednotlivých metód. Takýto prístup predikcie dosiahol na testovacej dátovej sade o~veľkosti 250 mutácií vytvoreného z~pôvodnej dátovej sady hodnotu korelačného koeficientu 0,55. Oproti použitiu samostanej metódy Random Forest, ktorá dosiahla na zostavenej sade koreláciu 0,34 alebo metóde SVM s~koreláciou 0,36 ide o~značné zlepšenie tejto hodnoty.
 
-Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mutácií S350. Na tejto sade dosiahol prediktor hodnotu korelačného koeficientu 0.3 a~presnosť dosiahla 67\%.
+Na záver bol nástroj porovnaný s~vybranými nástrojmi na testovacej sade mutácií S350. Na tejto sade dosiahol prediktor hodnotu korelačného koeficientu 0,3 a~presnosť dosiahla 67 \%.
 
-Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobe nie je jednoduché, pretože databáza \textit{ProTherm} obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
+Návrhom zlepšenia predikčného nástroja je určite získanie väčšieho množstva relevantných dát, čo ale v~dnešnej dobe nie je jednoduché, pretože databáza ProTherm obsahuje rôzne nedostatky a~dáta nepribúdajú dostatočne rýchlo. 
 Ďaľším návrhom je možnosť zvolenia iných parametrov pre predikciu, ktoré by mohli mať dôležitý vplyv na stabilitu, alebo zlepšenie ich výpočtu. V~rámci zlepšenia výpočtu bolo v~tejto práci implementované vylepšenie určenia konzervovanosti pomocou zostavenia fylogenetického stromu a~použitia Felsteinovho algoritmu.
 
 %=========================================================================
